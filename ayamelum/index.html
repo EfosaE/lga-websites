@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Visit Ayamelum LGA: The Agricultural Hub of Anambra State. Explore the Omor Rice Fields, Anaku culture, and the majestic Omambala River." />
+    <meta
+      name="keywords"
+      content="Ayamelum, Anaku, Omor, Rice Farming, Omambala River, Anambra Tourism, Masquerades" />
+    <title>Visit Ayamelum | The Food Basket of Anambra</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AdministrativeArea",
+        "name": "Ayamelum Local Government Area",
+        "containsPlace": {
+          "@type": "City",
+          "name": "Anaku"
+        },
+        "url": "https://ayamelum.anambrastate.gov.ng",
+        "description": "An agrarian local government area in Anambra State, famous for rice production and fishing."
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ayaPrimary: "#1A237E", // Deep Indigo/Blue
+              ayaSecondary: "#9FA8DA", // Light Indigo/Lavender
+              ayaAccent: "#FDD835", // Bright Yellow/Gold
+            },
+            fontFamily: {
+              serif: ["Playfair Display", "serif"],
+              sans: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Agro-Pattern for Backgrounds */
+      .harvest-pattern {
+        background-color: #f8fafc;
+        background-image: repeating-linear-gradient(
+          135deg,
+          rgba(26, 35, 126, 0.03) 0px,
+          rgba(26, 35, 126, 0.03) 10px,
+          transparent 10px,
+          transparent 20px
+        );
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-50 harvest-pattern">
+    <nav
+      class="bg-ayaPrimary text-white sticky top-0 z-50 shadow-xl border-b-4 border-ayaAccent">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-wheat text-ayaAccent text-2xl"></i>
+          <div class="leading-tight">
+            <span class="block text-xl font-bold font-serif tracking-wide"
+              >AYAMELUM</span
+            >
+            <span class="block text-xs text-ayaSecondary font-light uppercase"
+              >The Agrarian Pride</span
+            >
+          </div>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium">
+          <a href="#overview" class="hover:text-ayaAccent transition"
+            >Overview</a
+          >
+          <a href="#culture" class="hover:text-ayaAccent transition">Culture</a>
+          <a href="#agro-tourism" class="hover:text-ayaAccent transition"
+            >Agro-Tourism</a
+          >
+          <a href="#towns" class="hover:text-ayaAccent transition"
+            >Communities</a
+          >
+        </div>
+        <button class="md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <header
+      class="relative h-[85vh] flex items-center justify-center text-center text-white">
+      <div class="absolute inset-0 bg-ayaPrimary/70 z-10"></div>
+
+      <div
+        class="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/9/98/Rice_Farm_in_Nigeria.jpg')] bg-cover bg-center mix-blend-overlay z-0"></div>
+
+      <div class="relative z-20 container mx-auto px-6 max-w-4xl">
+        <span
+          class="bg-ayaAccent text-ayaPrimary font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6 inline-block">
+          Welcome to the Food Basket
+        </span>
+        <h1
+          class="text-5xl md:text-7xl font-bold font-serif mb-6 drop-shadow-lg">
+          Where Culture Meets <br />
+          <span class="text-ayaAccent">Abundance</span>
+        </h1>
+        <p
+          class="text-xl md:text-2xl mb-10 font-light text-ayaSecondary max-w-2xl mx-auto">
+          Discover the massive rice fields of Omor, the fishing festivals of
+          Anaku, and the serene flow of the Omambala River.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#agro-tourism"
+            class="bg-ayaAccent text-ayaPrimary font-bold py-3 px-8 rounded shadow-lg hover:bg-white hover:text-ayaPrimary transition duration-300">
+            Explore Agriculture
+          </a>
+          <a
+            href="#towns"
+            class="border-2 border-white text-white font-bold py-3 px-8 rounded hover:bg-white hover:text-ayaPrimary transition duration-300">
+            Our Towns
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section id="overview" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold text-ayaPrimary font-serif mb-6">
+              Overview
+            </h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Ayamelum is a Local Government Area in Anambra North Senatorial
+              District. Renowned as an agricultural powerhouse, it utilizes the
+              fertile soil of the Lower Anambra River Basin to produce massive
+              quantities of rice, yams, and cassava.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              The headquarters, <strong>Anaku</strong>, along with towns like
+              Omor, are critical to the food security of southeastern Nigeria.
+              The region is also rich in aquatic life, making fishing a
+              secondary economic pillar.
+            </p>
+
+            <div class="flex gap-4 mt-4">
+              <div
+                class="px-6 py-4 bg-ayaSecondary/20 rounded-lg border-l-4 border-ayaPrimary">
+                <h4 class="font-bold text-ayaPrimary text-lg">HQ</h4>
+                <p>Anaku</p>
+              </div>
+              <div
+                class="px-6 py-4 bg-ayaSecondary/20 rounded-lg border-l-4 border-ayaAccent">
+                <h4 class="font-bold text-ayaPrimary text-lg">Zone</h4>
+                <p>Anambra North</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <img
+              src="https://via.placeholder.com/600x400?text=Ayamelum+Landscape"
+              alt="Ayamelum Landscape"
+              class="rounded-lg shadow-2xl relative z-10 border-4 border-ayaAccent" />
+            <div
+              class="absolute -bottom-6 -left-6 w-32 h-32 bg-ayaPrimary/10 rounded-full z-0"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="culture" class="py-20 bg-ayaSecondary/10">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold font-serif text-ayaPrimary">
+            Cultural Heritage
+          </h2>
+          <div class="w-16 h-1 bg-ayaAccent mx-auto mt-4 rounded"></div>
+          <p class="mt-4 text-gray-600">
+            The traditions of the Omambala people are vibrant and deeply
+            connected to the land.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://via.placeholder.com/400x300?text=Iwa+Ji+Festival"
+                alt="New Yam Festival"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+            <div class="p-6 border-b-4 border-ayaPrimary">
+              <h3 class="text-xl font-bold mb-2 text-ayaPrimary">
+                Iwa Ji (New Yam)
+              </h3>
+              <p class="text-gray-600 text-sm">
+                A massive celebration across all 8 communities, marking the
+                harvest season. The yam is king in Ayamelum.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://via.placeholder.com/400x300?text=Fishing+Festival"
+                alt="Fishing Festival"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+            <div class="p-6 border-b-4 border-ayaAccent">
+              <h3 class="text-xl font-bold mb-2 text-ayaPrimary">
+                Fishing Festivals
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Communal fishing in the lakes and tributaries of the Omambala
+                river, often accompanied by contests and feasting.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://via.placeholder.com/400x300?text=Masquerades"
+                alt="Masquerade"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+            </div>
+            <div class="p-6 border-b-4 border-ayaPrimary">
+              <h3 class="text-xl font-bold mb-2 text-ayaPrimary">
+                Mmanwu Festivals
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Ayamelum is known for powerful masquerades that perform during
+                the dry season and festive periods.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agro-tourism" class="py-20 bg-ayaPrimary text-white relative">
+      <div class="container mx-auto px-6 relative z-10">
+        <h2
+          class="text-3xl font-bold font-serif mb-10 pl-4 border-l-4 border-ayaAccent">
+          Destinations & Landmarks
+        </h2>
+
+        <div class="space-y-8">
+          <div
+            class="flex flex-col md:flex-row bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
+            <div class="md:w-1/3 h-64 bg-gray-800">
+              <img
+                src="https://via.placeholder.com/500x400?text=Omor+Rice+Fields"
+                class="w-full h-full object-cover opacity-80"
+                alt="Rice Fields" />
+            </div>
+            <div class="p-8 md:w-2/3 flex flex-col justify-center">
+              <h3 class="text-2xl font-bold text-ayaAccent mb-2">
+                Lower Anambra Irrigation Project (Omor)
+              </h3>
+              <p class="text-gray-200 mb-4">
+                Witness the scale of the famous Omor Rice. This massive
+                irrigation project supports year-round farming and is a sight to
+                behold for anyone interested in agriculture and engineering.
+              </p>
+              <span
+                class="inline-block bg-ayaAccent text-ayaPrimary text-xs font-bold px-3 py-1 rounded w-fit"
+                >Agro-Tourism</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row-reverse bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
+            <div class="md:w-1/3 h-64 bg-gray-800">
+              <img
+                src="https://via.placeholder.com/500x400?text=Omambala+River"
+                class="w-full h-full object-cover opacity-80"
+                alt="River View" />
+            </div>
+            <div
+              class="p-8 md:w-2/3 flex flex-col justify-center text-right md:items-end">
+              <h3 class="text-2xl font-bold text-ayaAccent mb-2">
+                The Omambala River
+              </h3>
+              <p class="text-gray-200 mb-4">
+                The lifeblood of Ayamelum. It offers scenic boat rides, fresh
+                fish markets at the banks, and a cool breeze that defines the
+                local climate.
+              </p>
+              <span
+                class="inline-block bg-ayaAccent text-ayaPrimary text-xs font-bold px-3 py-1 rounded w-fit"
+                >Nature</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="towns" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-10">
+          <div>
+            <h2 class="text-3xl font-bold font-serif text-ayaPrimary">
+              Communities
+            </h2>
+            <p class="text-gray-500 mt-2">The 8 major towns of Ayamelum LGA.</p>
+          </div>
+
+          <div class="mt-4 md:mt-0 relative w-full md:w-1/3">
+            <input
+              type="text"
+              id="townSearch"
+              placeholder="Find a town..."
+              class="w-full py-3 px-5 rounded-full border border-ayaSecondary focus:outline-none focus:border-ayaPrimary focus:ring-1 focus:ring-ayaPrimary transition shadow-sm" />
+            <i class="fas fa-search absolute right-5 top-4 text-gray-400"></i>
+          </div>
+        </div>
+
+        <div id="townsGrid" class="grid grid-cols-2 md:grid-cols-4 gap-6"></div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t-8 border-ayaAccent">
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <i class="fas fa-wheat text-ayaAccent text-xl"></i>
+            <span class="text-xl font-bold font-serif text-white"
+              >AYAMELUM LGA</span
+            >
+          </div>
+          <p class="text-sm text-gray-400">
+            Connecting the world to the rich agricultural heritage and vibrant
+            culture of the Omambala people.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#overview" class="hover:text-ayaAccent">History</a>
+            </li>
+            <li>
+              <a href="#agro-tourism" class="hover:text-ayaAccent"
+                >Investment</a
+              >
+            </li>
+            <li><a href="#towns" class="hover:text-ayaAccent">Towns</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white mb-4">Contact</h4>
+          <p class="text-sm mb-2">
+            <i class="fas fa-map-marker-alt mr-2 text-ayaAccent"></i>
+            Secretariat: Anaku
+          </p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center text-xs text-gray-600 mt-10 border-t border-gray-800 pt-6">
+        &copy; 2025 Ayamelum Local Government. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      // We wrap this in an event listener to ensure HTML is fully loaded first
+      document.addEventListener("DOMContentLoaded", function () {
+        // Renamed variable to 'ayamelumTowns' to avoid conflicts with other LGAs
+        const ayamelumTowns = [
+          "Anaku",
+          "Omor",
+          "Ifite-Ogwari",
+          "Igbakwu",
+          "Omasi",
+          "Umueje",
+          "Umuerum",
+          "Umumbo",
+        ];
+
+        const grid = document.getElementById("townsGrid");
+        const searchInput = document.getElementById("townSearch");
+
+        // Safety check: if elements are missing, stop to prevent crash
+        if (!grid || !searchInput) {
+          console.error(
+            "Error: 'townsGrid' or 'townSearch' ID not found in HTML."
+          );
+          return;
+        }
+
+        function renderAyamelumTowns(filter = "") {
+          grid.innerHTML = "";
+          const filtered = ayamelumTowns.filter((town) =>
+            town.toLowerCase().includes(filter.toLowerCase())
+          );
+
+          if (filtered.length === 0) {
+            grid.innerHTML = `<p class="col-span-full text-center text-gray-500 py-4">No community found.</p>`;
+            return;
+          }
+
+          filtered.forEach((town) => {
+            const div = document.createElement("div");
+            // We use standard tailwind colors + custom ones to ensure visibility
+            div.className =
+              "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-ayaPrimary hover:shadow-lg transition cursor-pointer flex flex-col items-center justify-center text-center group";
+
+            // Adding a special badge for HQ
+            let badge = "";
+            if (town === "Anaku") {
+              badge = `<span class="bg-yellow-400 text-blue-900 text-[10px] font-bold px-2 py-0.5 rounded-full mb-2 uppercase">Headquarters</span>`;
+            }
+
+            div.innerHTML = `
+                        ${badge}
+                        <span class="font-bold text-lg text-gray-700 group-hover:text-blue-900 transition">${town}</span>
+                    `;
+            grid.appendChild(div);
+          });
+        }
+
+        // Initial Render
+        renderAyamelumTowns();
+
+        // Search Listener
+        searchInput.addEventListener("input", (e) => {
+          renderAyamelumTowns(e.target.value);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Visit Aguata LGA: Home of the ancient Igbo-Ukwu Bronzes, Ekwulobia Urban Market, and the Obizi Spring. Discover heritage in Anambra." />
+    <title>Visit Aguata | The Cradle of Bronze Civilization</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              aguataPrimary: "#1B5E20",
+              aguataSecondary: "#A5D6A7",
+              aguataAccent: "#F9A825",
+            },
+            fontFamily: {
+              serif: ["Merriweather", "serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* New Grid Mesh Background for Hero */
+      .hero-mesh {
+        background-color: #1b5e20;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 40px 40px; /* Adjust size of grid squares here */
+      }
+
+      /* Subtle pattern for other sections */
+      .pattern-bg {
+        background-color: #f9fafb;
+        background-image: radial-gradient(#1b5e20 0.5px, transparent 0.5px),
+          radial-gradient(#1b5e20 0.5px, #f9fafb 0.5px);
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-50">
+    <nav
+      class="bg-aguataPrimary text-white sticky top-0 z-50 shadow-lg border-b-4 border-aguataAccent">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-landmark text-aguataAccent text-2xl"></i>
+          <div class="leading-tight">
+            <span class="block text-xl font-bold font-serif tracking-wide"
+              >AGUATA LGA</span
+            >
+            <span class="block text-xs text-aguataSecondary font-light"
+              >Anambra State</span
+            >
+          </div>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium">
+          <a href="#about" class="hover:text-aguataAccent transition"
+            >Overview</a
+          >
+          <a href="#heritage" class="hover:text-aguataAccent transition"
+            >Bronze Heritage</a
+          >
+          <a href="#leadership" class="hover:text-aguataAccent transition"
+            >Leadership</a
+          >
+          <a href="#destinations" class="hover:text-aguataAccent transition"
+            >Destinations</a
+          >
+          <a href="#towns" class="hover:text-aguataAccent transition">Towns</a>
+        </div>
+        <a
+          href="https://en.wikipedia.org/wiki/Aguata"
+          target="_blank"
+          class="hidden md:inline-block text-xs bg-white/10 hover:bg-white/20 px-3 py-1 rounded text-aguataSecondary border border-aguataSecondary/30">
+          <i class="fab fa-wikipedia-w mr-1"></i> Wiki
+        </a>
+        <button class="md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <header
+      class="relative h-[85vh] flex items-center justify-center text-center text-white hero-mesh overflow-hidden">
+      <div class="absolute inset-0 bg-aguataPrimary/80 z-10"></div>
+
+      <div
+        class="absolute inset-0 bg-[url('https://via.placeholder.com/1920x1080?text=Landscape+of+Aguata+Hills')] bg-cover bg-center mix-blend-overlay opacity-40 z-0"></div>
+
+      <div class="relative z-20 container mx-auto px-6 max-w-4xl">
+        <span
+          class="text-aguataAccent font-bold tracking-widest uppercase text-sm mb-2 block animate-pulse"
+          >The Heart of the Old Aguata Zone</span
+        >
+        <h1
+          class="text-4xl md:text-6xl font-bold font-serif mb-6 leading-tight">
+          Welcome to the Cradle of <br />
+          <span class="text-aguataAccent">Bronze Civilization</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 font-light text-gray-200">
+          Home to the world-famous Igbo-Ukwu artifacts, the bustling Ekwulobia
+          Market, and the serene Obizi Spring.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#destinations"
+            class="bg-aguataAccent text-aguataPrimary font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-400 transition transform hover:-translate-y-1">
+            Explore Landmarks
+          </a>
+          <a
+            href="#towns"
+            class="border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-aguataPrimary transition">
+            View Communities
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-aguataPrimary font-serif mb-6">
+              About Aguata
+            </h2>
+            <p class="text-lg leading-relaxed text-gray-600 mb-4">
+              Aguata is a prominent Local Government Area in Anambra South
+              Senatorial Zone. Its headquarters is located in
+              <strong>Ekwulobia</strong>, a major commercial city that serves as
+              a transit hub between Awka, Orlu, and Nnewi.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-600 mb-6">
+              Historically, Aguata is globally significant due to the
+              archaeological discoveries in <strong>Igbo-Ukwu</strong>, which
+              revealed sophisticated bronze casting dating back to the 9th
+              Century AD—centuries before similar European techniques.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div
+                class="p-4 bg-gray-50 rounded border-l-4 border-aguataPrimary">
+                <h4 class="font-bold text-gray-800">14 Major Towns</h4>
+                <p class="text-sm text-gray-500">From Achina to Umuona</p>
+              </div>
+              <div
+                class="p-4 bg-gray-50 rounded border-l-4 border-aguataAccent">
+                <h4 class="font-bold text-gray-800">Commercial Hub</h4>
+                <p class="text-sm text-gray-500">Eke Ekwulobia Market</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="https://via.placeholder.com/600x400?text=Ekwulobia+Town+Center"
+              alt="Ekwulobia"
+              class="rounded-xl shadow-2xl w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="leadership"
+      class="py-16 bg-gray-50 relative border-t border-gray-200">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <span
+            class="text-aguataPrimary font-bold uppercase tracking-widest text-sm"
+            >Governance</span
+          >
+          <h2 class="text-3xl font-bold font-serif text-gray-900 mt-2">
+            LGA Leadership
+          </h2>
+          <div class="w-16 h-1 bg-aguataAccent mx-auto mt-4 rounded"></div>
+        </div>
+
+        <div
+          class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+          <div
+            class="md:w-1/3 bg-aguataPrimary flex items-center justify-center p-8 relative overflow-hidden">
+            <div
+              class="absolute inset-0 bg-aguataAccent opacity-10 pattern-bg"></div>
+            <div class="relative text-center text-white z-10">
+              <div
+                class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center text-5xl border-4 border-aguataAccent">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3 class="font-bold text-xl">Office of the Chairman</h3>
+            </div>
+          </div>
+
+          <div class="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-aguataPrimary mb-1">
+              Dr. Chibueze Ofobuike
+            </h3>
+            <p
+              class="text-aguataAccent font-bold uppercase text-xs tracking-wide mb-6">
+              Transition Committee Chairman
+            </p>
+
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Under the leadership of Dr. Ofobuike, Aguata LGA is focusing on
+              urban renewal in Ekwulobia and sustaining the cultural heritage of
+              the region.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+              <div class="flex items-start">
+                <i
+                  class="fas fa-map-marker-alt text-aguataAccent mt-1 mr-3 text-lg"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">Secretariat Address</h4>
+                  <p class="text-gray-500">
+                    No 5, Emenuga Street,<br />Aguata, Anambra State
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-globe text-aguataAccent mt-1 mr-3 text-lg"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">Official Website</h4>
+                  <a
+                    href="https://aguata.an.gov.ng"
+                    target="_blank"
+                    class="text-aguataPrimary hover:underline"
+                    >aguata.an.gov.ng</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="heritage" class="py-16 bg-aguataSecondary/20 pattern-bg">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-serif text-aguataPrimary">
+            Cultural Heritage & Festivals
+          </h2>
+          <div class="w-20 h-1 bg-aguataAccent mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+            <div class="h-64 overflow-hidden bg-gray-200">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Igbo-Ukwu_bronze_vase.jpg"
+                alt="Igbo-Ukwu Bronze Roped Pot"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-aguataPrimary mb-2">
+                Igbo-Ukwu Bronzes
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Discovered in 1938, these artifacts proved the existence of a
+                wealthy, sophisticated civilization in this region over 1,000
+                years ago.
+              </p>
+              <a
+                href="https://en.wikipedia.org/wiki/Archaeology_of_Igbo-Ukwu"
+                target="_blank"
+                class="text-aguataAccent font-bold text-xs mt-3 inline-block hover:underline"
+                >Read on Wikipedia &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+            <div class="h-64 overflow-hidden bg-gray-200 relative">
+              <img
+                src="https://via.placeholder.com/400x300?text=New+Yam+Festival"
+                alt="Iwa Ji Festival"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              <div
+                class="absolute bottom-0 left-0 bg-aguataPrimary text-white text-xs px-2 py-1">
+                Annual Event
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-aguataPrimary mb-2">
+                Iwa Ji (New Yam)
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Celebrated between August and October. The 'Awuka' masquerades
+                of Aguluezechukwu and 'Nkpokiti' dances are highlights.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+            <div class="h-64 overflow-hidden bg-gray-200 relative">
+              <img
+                src="https://via.placeholder.com/400x300?text=Prof+Chukwuma+Soludo"
+                alt="Prof Soludo"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-aguataPrimary mb-2">
+                Notable Figures
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Aguata is the birthplace of many icons, including the current
+                Governor of Anambra State, Prof. Chukwuma Soludo (from Isuofia).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <h2
+          class="text-3xl font-bold font-serif text-aguataPrimary mb-10 pl-4 border-l-8 border-aguataAccent">
+          Places to Visit
+        </h2>
+
+        <div class="space-y-12">
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div
+              class="md:w-1/3 w-full h-64 bg-gray-100 rounded-lg overflow-hidden shadow-md">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Igbo-Ukwu_bronze_vase.jpg"
+                class="w-full h-full object-cover"
+                alt="National Museum Artifact" />
+            </div>
+            <div class="md:w-2/3">
+              <h3 class="text-2xl font-bold text-gray-800">
+                National Museum, Igbo-Ukwu
+              </h3>
+              <p class="text-aguataAccent font-bold text-sm mb-2">
+                HISTORY & ART
+              </p>
+              <p class="text-gray-600 mb-4">
+                Located in the town of Igbo-Ukwu, this museum houses replicas
+                and history regarding the bronze artifacts found by Isaiah
+                Anozie in 1938.
+              </p>
+              <ul class="flex gap-4 text-sm text-gray-500">
+                <li><i class="fas fa-clock mr-2"></i>9:00 AM - 4:00 PM</li>
+                <li><i class="fas fa-map-marker-alt mr-2"></i>Igbo-Ukwu</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+            <div
+              class="md:w-1/3 w-full h-64 bg-gray-100 rounded-lg overflow-hidden shadow-md">
+              <img
+                src="https://via.placeholder.com/500x350?text=Obizi+Spring+Uga"
+                class="w-full h-full object-cover"
+                alt="Obizi Spring Uga" />
+            </div>
+            <div class="md:w-2/3 text-left md:text-right">
+              <h3 class="text-2xl font-bold text-gray-800">
+                Obizi Spring, Uga
+              </h3>
+              <p class="text-aguataAccent font-bold text-sm mb-2">
+                NATURE & RECREATION
+              </p>
+              <p class="text-gray-600 mb-4">
+                A natural spring located in Uga town. It is a source of fresh
+                water and a cool recreational spot, especially during the dry
+                season.
+              </p>
+              <ul class="flex md:justify-end gap-4 text-sm text-gray-500">
+                <li><i class="fas fa-water mr-2"></i>Natural Spring</li>
+                <li><i class="fas fa-map-marker-alt mr-2"></i>Uga</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div
+              class="md:w-1/3 w-full h-64 bg-gray-100 rounded-lg overflow-hidden shadow-md">
+              <img
+                src="https://via.placeholder.com/500x350?text=Ekwulobia+Urban+Market"
+                class="w-full h-full object-cover"
+                alt="Eke Ekwulobia" />
+            </div>
+            <div class="md:w-2/3">
+              <h3 class="text-2xl font-bold text-gray-800">
+                Ekwulobia Urban Market (Eke)
+              </h3>
+              <p class="text-aguataAccent font-bold text-sm mb-2">
+                COMMERCE & TRADE
+              </p>
+              <p class="text-gray-600 mb-4">
+                One of the largest markets in Anambra South. It operates daily
+                but peaks on Eke market days. It is the commercial heartbeat of
+                the LGA.
+              </p>
+              <ul class="flex gap-4 text-sm text-gray-500">
+                <li>
+                  <i class="fas fa-calendar-alt mr-2"></i>Daily (Peak: Eke Day)
+                </li>
+                <li><i class="fas fa-map-marker-alt mr-2"></i>Ekwulobia</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="towns" class="py-20 bg-aguataPrimary text-white">
+      <div class="container mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mb-10">
+          <div>
+            <h2 class="text-3xl font-bold font-serif">
+              The 14 Towns of Aguata
+            </h2>
+            <p class="text-aguataSecondary mt-2">
+              Explore the communities that make up our LGA.
+            </p>
+          </div>
+          <div class="relative mt-6 md:mt-0">
+            <input
+              type="text"
+              id="townSearch"
+              placeholder="Find a town..."
+              class="bg-white/10 border border-white/30 rounded-full py-2 px-5 text-white placeholder-gray-300 focus:outline-none focus:bg-white/20 w-64 transition" />
+            <i class="fas fa-search absolute right-4 top-3 text-gray-300"></i>
+          </div>
+        </div>
+
+        <div
+          id="townsGrid"
+          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-gray-900 text-gray-400 py-12 border-t-8 border-aguataAccent">
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-sm">
+        <div>
+          <h4 class="text-white font-bold text-lg mb-4">Aguata LGA</h4>
+          <p class="mb-4">
+            Connecting the history of the past with the commerce of the future.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-twitter fa-lg"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="#about" class="hover:text-aguataAccent"
+                >History of Ekwulobia</a
+              >
+            </li>
+            <li>
+              <a href="#heritage" class="hover:text-aguataAccent"
+                >Igbo-Ukwu Art</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Aguata"
+                target="_blank"
+                class="hover:text-aguataAccent"
+                >Aguata on Wikipedia</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-lg mb-4">Contact</h4>
+          <p>
+            <i class="fas fa-map-marker-alt mr-2"></i> No 5, Emenuga Street,
+            Aguata
+          </p>
+          <p class="mt-2">
+            <i class="fas fa-envelope mr-2"></i> info@aguata.an.gov.ng
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const towns = [
+        "Achina",
+        "Aguluezechukwu",
+        "Akpo",
+        "Amesi",
+        "Ekwulobia",
+        "Ezinifite",
+        "Igbo-Ukwu",
+        "Ikenga",
+        "Isuofia",
+        "Nkpologwu",
+        "Oraeri",
+        "Uga",
+        "Umuchu",
+        "Umuona",
+      ];
+
+      const grid = document.getElementById("townsGrid");
+      const searchInput = document.getElementById("townSearch");
+
+      function renderTowns(filter = "") {
+        grid.innerHTML = "";
+        const filtered = towns.filter((t) =>
+          t.toLowerCase().includes(filter.toLowerCase())
+        );
+
+        if (filtered.length === 0) {
+          grid.innerHTML =
+            '<p class="col-span-full text-center text-gray-400">No town found.</p>';
+          return;
+        }
+
+        filtered.forEach((town) => {
+          const el = document.createElement("div");
+          el.className =
+            "bg-white/10 hover:bg-white/20 border border-white/10 p-4 rounded text-center cursor-default transition backdrop-blur-sm";
+          el.innerHTML = `
+                    <span class="block font-bold">${town}</span>
+                    <a href="https://en.wikipedia.org/wiki/${town}" target="_blank" class="text-[10px] text-aguataAccent hover:underline mt-1 block">
+                        View Wiki <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                `;
+          grid.appendChild(el);
+        });
+      }
+
+      renderTowns();
+
+      searchInput.addEventListener("input", (e) => {
+        renderTowns(e.target.value);
+      });
+    </script>
+  </body>
+</html>

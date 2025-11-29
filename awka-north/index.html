@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Official Portal of Awka North Local Government Area. Access public services, news, administrative information, and community resources." />
+    <title>Awka North LGA | Official Government Portal</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              anPrimary: "#004D40", // Teal 900 (Official Backgrounds)
+              anSecondary: "#80CBC4", // Teal 200 (Accents/Borders)
+              anAccent: "#FFB300", // Amber 600 (Action Buttons/Alerts)
+            },
+            fontFamily: {
+              sans: ["Roboto", "sans-serif"],
+              serif: ["Merriweather", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .gov-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-50">
+    <div class="bg-anAccent text-anPrimary py-2 text-sm font-bold">
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <span><i class="fas fa-phone-alt mr-2"></i> Emergency: 112 / 122</span>
+        <span class="hidden md:block"
+          >Official Service Portal of Awka North</span
+        >
+        <div class="space-x-4">
+          <a href="#" class="hover:underline">Staff Login</a>
+          <a href="#" class="hover:underline">Contact Support</a>
+        </div>
+      </div>
+    </div>
+
+    <nav
+      class="bg-anPrimary text-white shadow-lg sticky top-0 z-50 border-b-4 border-anSecondary">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+          <div
+            class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-anPrimary text-2xl font-bold border-2 border-anAccent">
+            <i class="fas fa-coat-of-arms"></i>
+          </div>
+          <div>
+            <h1 class="text-xl md:text-2xl font-serif font-bold leading-none">
+              AWKA NORTH
+            </h1>
+            <p class="text-anSecondary text-xs uppercase tracking-widest">
+              Local Government Council
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden md:flex space-x-6 text-sm font-medium items-center">
+          <a href="#home" class="hover:text-anAccent transition">Home</a>
+          <a href="#administration" class="hover:text-anAccent transition"
+            >Administration</a
+          >
+          <a href="#services" class="hover:text-anAccent transition"
+            >E-Services</a
+          >
+          <a href="#projects" class="hover:text-anAccent transition"
+            >Projects</a
+          >
+          <a href="#notices" class="hover:text-anAccent transition">Notices</a>
+          <a href="#documents" class="hover:text-anAccent transition"
+            >Documents</a
+          >
+          <a
+            href="#contact"
+            class="bg-anAccent text-anPrimary px-4 py-2 rounded font-bold hover:bg-white transition"
+            >Report Issue</a
+          >
+        </div>
+
+        <button class="md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <header id="home" class="relative bg-gray-900 h-[60vh] flex items-center">
+      <div
+        class="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/8/87/Amansea_Road_Awka.jpg')] bg-cover bg-center opacity-40"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-anPrimary to-transparent opacity-90"></div>
+
+      <div
+        class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-10 items-center">
+        <div class="text-white">
+          <span
+            class="bg-anSecondary text-anPrimary px-3 py-1 rounded text-xs font-bold uppercase mb-4 inline-block"
+            >Headquarters: Achalla</span
+          >
+          <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">
+            Service, Integrity, & Development
+          </h2>
+          <p class="text-lg text-gray-200 mb-8 max-w-lg">
+            Welcome to the official portal of Awka North. We are dedicated to
+            agricultural growth, infrastructure development, and transparent
+            governance for our 10 communities.
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="#services"
+              class="bg-anAccent text-anPrimary font-bold py-3 px-6 rounded shadow hover:bg-yellow-400 transition">
+              Access Services
+            </a>
+            <a
+              href="#notices"
+              class="border border-white text-white font-bold py-3 px-6 rounded hover:bg-white hover:text-anPrimary transition">
+              Latest Notices
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="hidden md:block bg-white text-gray-800 p-6 rounded-lg shadow-2xl border-t-4 border-anAccent w-3/4 ml-auto">
+          <h3 class="font-bold text-anPrimary text-lg mb-4 border-b pb-2">
+            Quick Actions
+          </h3>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#"
+                class="flex items-center hover:text-anPrimary font-medium"
+                ><i class="fas fa-file-invoice text-anAccent mr-3"></i> Pay
+                Local Levies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center hover:text-anPrimary font-medium"
+                ><i class="fas fa-baby text-anAccent mr-3"></i> Birth
+                Registration</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center hover:text-anPrimary font-medium"
+                ><i class="fas fa-tractor text-anAccent mr-3"></i> Agric
+                Support</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="flex items-center hover:text-anPrimary font-medium"
+                ><i class="fas fa-store text-anAccent mr-3"></i> Market Stall
+                Allocations</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section id="administration" class="py-16 bg-white">
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold text-anPrimary mb-4 font-serif">
+            Message from the Chairman
+          </h3>
+          <div class="bg-gray-50 p-6 rounded-l border-l-4 border-anPrimary">
+            <p class="text-gray-700 leading-relaxed mb-4">
+              "Fellow citizens of Awka North, our administration is focused on
+              leveraging our status as the food basket of the capital territory.
+              From the rice fields of Awba-Ofemili to the educational hubs in
+              Mgbakwu and Amansea, we are building a connected and prosperous
+              LGA."
+            </p>
+            <p class="font-bold text-anPrimary">
+              – Transition Committee Chairman
+            </p>
+          </div>
+
+          <div class="mt-10">
+            <h3 class="text-2xl font-bold text-anPrimary mb-6 font-serif">
+              Departments & Units
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                <i
+                  class="fas fa-briefcase-medical text-anPrimary text-2xl mb-2"></i>
+                <h4 class="font-bold">Health</h4>
+              </div>
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                <i class="fas fa-seedling text-anPrimary text-2xl mb-2"></i>
+                <h4 class="font-bold">Agriculture</h4>
+              </div>
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                <i class="fas fa-hard-hat text-anPrimary text-2xl mb-2"></i>
+                <h4 class="font-bold">Works</h4>
+              </div>
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                <i
+                  class="fas fa-graduation-cap text-anPrimary text-2xl mb-2"></i>
+                <h4 class="font-bold">Education</h4>
+              </div>
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                <i class="fas fa-coins text-anPrimary text-2xl mb-2"></i>
+                <h4 class="font-bold">Finance</h4>
+              </div>
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                <i class="fas fa-users text-anPrimary text-2xl mb-2"></i>
+                <h4 class="font-bold">Social Welfare</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-anPrimary text-white p-8 rounded-lg shadow-lg h-fit">
+          <h4 class="text-xl font-bold border-b border-anSecondary pb-2 mb-4">
+            LGA Fact Sheet
+          </h4>
+          <ul class="space-y-4 text-sm">
+            <li class="flex justify-between">
+              <span class="text-anSecondary">Headquarters:</span>
+              <span class="font-bold">Achalla</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-anSecondary">Dominant Industry:</span>
+              <span class="font-bold">Agriculture (Rice)</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-anSecondary">Key Institution:</span>
+              <span class="font-bold">Anambra State Polytechnic (Mgbakwu)</span>
+            </li>
+            <li class="flex justify-between">
+              <span class="text-anSecondary">Population:</span>
+              <span class="font-bold">Est. 150,000+</span>
+            </li>
+          </ul>
+          <div class="mt-8">
+            <img
+              src="https://via.placeholder.com/300x200?text=Map+of+Awka+North"
+              alt="Map"
+              class="w-full rounded opacity-80" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl font-bold text-anPrimary font-serif">
+            Public Services
+          </h2>
+          <p class="text-gray-600">
+            Access local government services from the comfort of your home.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6">
+          <a
+            href="#"
+            class="bg-white p-6 rounded shadow hover:shadow-lg hover:-translate-y-1 transition text-center group">
+            <div
+              class="w-16 h-16 mx-auto bg-anSecondary/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-anPrimary group-hover:text-white transition">
+              <i
+                class="fas fa-file-signature text-3xl text-anPrimary group-hover:text-white"></i>
+            </div>
+            <h4 class="font-bold text-gray-800">Business Permits</h4>
+            <p class="text-xs text-gray-500 mt-2">
+              Register shops and businesses.
+            </p>
+          </a>
+
+          <a
+            href="#"
+            class="bg-white p-6 rounded shadow hover:shadow-lg hover:-translate-y-1 transition text-center group">
+            <div
+              class="w-16 h-16 mx-auto bg-anSecondary/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-anPrimary group-hover:text-white transition">
+              <i
+                class="fas fa-trash-alt text-3xl text-anPrimary group-hover:text-white"></i>
+            </div>
+            <h4 class="font-bold text-gray-800">Waste Management</h4>
+            <p class="text-xs text-gray-500 mt-2">Schedules and payments.</p>
+          </a>
+
+          <a
+            href="#"
+            class="bg-white p-6 rounded shadow hover:shadow-lg hover:-translate-y-1 transition text-center group">
+            <div
+              class="w-16 h-16 mx-auto bg-anSecondary/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-anPrimary group-hover:text-white transition">
+              <i
+                class="fas fa-id-card text-3xl text-anPrimary group-hover:text-white"></i>
+            </div>
+            <h4 class="font-bold text-gray-800">Origin Certificate</h4>
+            <p class="text-xs text-gray-500 mt-2">
+              Apply for indigene letters.
+            </p>
+          </a>
+
+          <a
+            href="#"
+            class="bg-white p-6 rounded shadow hover:shadow-lg hover:-translate-y-1 transition text-center group">
+            <div
+              class="w-16 h-16 mx-auto bg-anSecondary/20 rounded-full flex items-center justify-center mb-4 group-hover:bg-anPrimary group-hover:text-white transition">
+              <i
+                class="fas fa-leaf text-3xl text-anPrimary group-hover:text-white"></i>
+            </div>
+            <h4 class="font-bold text-gray-800">Farming Inputs</h4>
+            <p class="text-xs text-gray-500 mt-2">
+              Govt fertilizer distribution.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="notices" class="py-16 bg-white">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-anPrimary font-serif">
+              Community Notice Board
+            </h3>
+            <a href="#" class="text-anPrimary font-bold text-sm hover:underline"
+              >View All</a
+            >
+          </div>
+          <div class="space-y-4">
+            <div
+              class="flex items-start bg-yellow-50 p-4 border-l-4 border-anAccent">
+              <div class="mr-4 text-center">
+                <span class="block text-xl font-bold text-gray-800">25</span>
+                <span class="block text-xs font-bold text-gray-500 uppercase"
+                  >Nov</span
+                >
+              </div>
+              <div>
+                <h4 class="font-bold text-anPrimary">
+                  Town Hall Meeting: Amansea
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Discussion on the new road construction project connecting
+                  UNIZIK back gate.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start bg-gray-50 p-4 border-l-4 border-anPrimary">
+              <div class="mr-4 text-center">
+                <span class="block text-xl font-bold text-gray-800">02</span>
+                <span class="block text-xs font-bold text-gray-500 uppercase"
+                  >Dec</span
+                >
+              </div>
+              <div>
+                <h4 class="font-bold text-anPrimary">
+                  Cocoa & Rice Seedling Distribution
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Collection at the LGA Secretariat, Achalla. Farmers must bring
+                  ID.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-start bg-gray-50 p-4 border-l-4 border-anPrimary">
+              <div class="mr-4 text-center">
+                <span class="block text-xl font-bold text-gray-800">10</span>
+                <span class="block text-xs font-bold text-gray-500 uppercase"
+                  >Dec</span
+                >
+              </div>
+              <div>
+                <h4 class="font-bold text-anPrimary">
+                  Health Center Immunization Drive
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Free polio vaccines available at all Primary Health Centers in
+                  Ugbene and Ebenebe.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="projects">
+          <h3 class="text-2xl font-bold text-anPrimary font-serif mb-6">
+            Strategic Projects
+          </h3>
+          <div class="bg-anPrimary text-white rounded-lg p-6 shadow-lg mb-4">
+            <div class="flex justify-between items-end mb-2">
+              <h4 class="font-bold">Achalla-Urum Road Grading</h4>
+              <span class="text-anAccent font-bold text-sm">75% Complete</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded-full h-2.5">
+              <div
+                class="bg-anAccent h-2.5 rounded-full"
+                style="width: 75%"></div>
+            </div>
+            <p class="text-xs text-anSecondary mt-2">
+              Improving market access for farmers.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border border-gray-200 rounded-lg p-6 shadow mb-4">
+            <div class="flex justify-between items-end mb-2">
+              <h4 class="font-bold text-gray-800">
+                Mgbakwu Water Scheme Rehab
+              </h4>
+              <span class="text-green-600 font-bold text-sm">Completed</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div
+                class="bg-green-600 h-2.5 rounded-full"
+                style="width: 100%"></div>
+            </div>
+            <p class="text-xs text-gray-500 mt-2">
+              Restored clean water access to 3 villages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-anSecondary/20">
+      <div class="container mx-auto px-6">
+        <h3
+          class="text-2xl font-bold text-anPrimary font-serif mb-6 text-center">
+          Our Communities
+        </h3>
+        <p class="text-center text-gray-600 mb-8">
+          Awka North consists of 10 major autonomous communities.
+        </p>
+
+        <div id="townsGrid" class="grid grid-cols-2 md:grid-cols-5 gap-4"></div>
+      </div>
+    </section>
+
+    <section id="documents" class="py-16 bg-white">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-xl font-bold text-anPrimary mb-4">
+            Public Documents
+          </h3>
+          <ul class="space-y-3">
+            <li
+              class="flex items-center justify-between p-3 bg-gray-50 border rounded">
+              <span class="text-sm"
+                ><i class="fas fa-file-pdf text-red-500 mr-2"></i> 2024 Budget
+                Estimate</span
+              >
+              <a
+                href="#"
+                class="text-anPrimary text-xs font-bold border border-anPrimary px-2 py-1 rounded hover:bg-anPrimary hover:text-white transition"
+                >Download</a
+              >
+            </li>
+            <li
+              class="flex items-center justify-between p-3 bg-gray-50 border rounded">
+              <span class="text-sm"
+                ><i class="fas fa-file-pdf text-red-500 mr-2"></i> LGA Bye-Laws
+                on Market Tax</span
+              >
+              <a
+                href="#"
+                class="text-anPrimary text-xs font-bold border border-anPrimary px-2 py-1 rounded hover:bg-anPrimary hover:text-white transition"
+                >Download</a
+              >
+            </li>
+            <li
+              class="flex items-center justify-between p-3 bg-gray-50 border rounded">
+              <span class="text-sm"
+                ><i class="fas fa-file-word text-blue-500 mr-2"></i> Business
+                Permit Application Form</span
+              >
+              <a
+                href="#"
+                class="text-anPrimary text-xs font-bold border border-anPrimary px-2 py-1 rounded hover:bg-anPrimary hover:text-white transition"
+                >Download</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-red-50 border border-red-100 p-6 rounded-lg">
+          <h3 class="text-xl font-bold text-red-800 mb-4">
+            <i class="fas fa-exclamation-triangle mr-2"></i> Emergency Contacts
+          </h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <p class="text-xs font-bold text-gray-500 uppercase">
+                Police (Achalla Div)
+              </p>
+              <p class="font-bold text-lg text-gray-800">0803-123-4567</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-gray-500 uppercase">
+                Ambulance / Health
+              </p>
+              <p class="font-bold text-lg text-gray-800">112</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-gray-500 uppercase">
+                Fire Service
+              </p>
+              <p class="font-bold text-lg text-gray-800">0803-FIRE-SVC</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-gray-500 uppercase">
+                LGA Security Desk
+              </p>
+              <p class="font-bold text-lg text-gray-800">0700-AWKA-NORTH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-anPrimary text-white pt-12 pb-6 border-t-8 border-anAccent">
+      <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <div>
+          <h5 class="font-bold text-lg mb-4 font-serif">AWKA NORTH LGA</h5>
+          <p class="text-sm text-anSecondary">
+            The official government portal for Awka North Local Government Area,
+            Anambra State.
+          </p>
+        </div>
+        <div>
+          <h5 class="font-bold mb-4">Quick Links</h5>
+          <ul class="text-sm space-y-2 text-anSecondary">
+            <li><a href="#" class="hover:text-white">Tenders & Bids</a></li>
+            <li><a href="#" class="hover:text-white">Staff Directory</a></li>
+            <li><a href="#" class="hover:text-white">Feedback Mechanism</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-4">Contact</h5>
+          <ul class="text-sm space-y-2 text-anSecondary">
+            <li>Secretariat Road, Achalla</li>
+            <li>info@awkanorth.gov.ng</li>
+            <li>Mon - Fri: 8:00 AM - 4:00 PM</li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-bold mb-4">Newsletter</h5>
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full px-3 py-2 text-gray-800 rounded-l focus:outline-none" />
+            <button
+              class="bg-anAccent text-anPrimary px-4 py-2 font-bold rounded-r hover:bg-white transition">
+              Sub
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center mt-12 pt-6 border-t border-anSecondary/30 text-xs text-anSecondary">
+        &copy; 2024 Awka North Local Government Area. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      // Official list of towns in Awka North [cite: 63]
+      const towns = [
+        "Achalla",
+        "Amansea",
+        "Amanuke",
+        "Awba-Ofemili",
+        "Ebenebe",
+        "Isu Aniocha",
+        "Mgbakwu",
+        "Ugbene",
+        "Ugbenu",
+        "Urum",
+      ];
+
+      const grid = document.getElementById("townsGrid");
+
+      towns.forEach((town) => {
+        const div = document.createElement("div");
+        // Styling as administrative buttons
+        div.className =
+          "bg-white border border-gray-200 py-3 px-2 rounded text-center text-sm font-bold text-anPrimary hover:bg-anPrimary hover:text-white transition cursor-pointer shadow-sm";
+        div.textContent = town;
+
+        // Highlight Headquarters
+        if (town === "Achalla") {
+          div.classList.add("ring-2", "ring-anAccent");
+          div.innerHTML +=
+            '<br><span class="text-[10px] uppercase font-normal text-anAccent">Headquarters</span>';
+        }
+
+        grid.appendChild(div);
+      });
+    </script>
+  </body>
+</html>
