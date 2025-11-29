@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Orumba North LGA – Ajalli | Data &amp; Statistics Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Data-centric profile of Orumba North Local Government Area, Ajalli – population, demographics, economy, education, health, agriculture and town-level data."
+  />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind theme for Orumba North -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            orumbaN: {
+              50:  '#F1F8E9',
+              100: '#DCEDC8',
+              200: '#C5E1A5',
+              300: '#AED581',
+              400: '#9CCC65',
+              500: '#8BC34A',
+              600: '#7CB342',
+              700: '#689F38',
+              800: '#558B2F',
+              900: '#2E7D32'  // primary
+            },
+            orumbaNSecondary: '#C8E6C9',
+            orumbaNAccent: '#FBC02D',
+            orumbaNAccentSoft: '#FFF59D',
+            orumbaNbg: '#F5F5F5',
+            orumbaNSurface: '#FFFFFF'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-orumbaNbg text-slate-900 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- TOP BAR -->
+    <header class="bg-orumbaN-900 text-orumbaN-50 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center justify-center h-9 w-9 rounded-md bg-orumbaNSecondary text-orumbaN-900 font-bold text-lg">
+            ON
+          </span>
+          <div>
+            <p class="text-sm font-semibold tracking-wide uppercase">Orumba North Local Government Area</p>
+            <p class="text-[0.7rem] text-orumbaN-100/80">Ajalli · Data &amp; Statistics Dashboard</p>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-4 text-[0.7rem]">
+          <div class="text-right">
+            <p class="font-semibold text-orumbaN-50">Headquarters</p>
+            <p class="text-orumbaN-100/80">Ajalli, Anambra State</p>
+          </div>
+          <a
+            href="#town-data"
+            class="inline-flex items-center rounded-full bg-orumbaNAccent px-4 py-2 font-semibold text-slate-900 hover:bg-orumbaNAccentSoft transition"
+          >
+            View Town Data
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION TABS -->
+    <div class="bg-orumbaN-800 text-orumbaN-50 border-b border-orumbaN-700">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
+        <div class="flex gap-2 text-[0.7rem]">
+          <a href="#population" class="px-3 py-1.5 rounded-full bg-orumbaN-700 whitespace-nowrap">
+            Population &amp; Demographics
+          </a>
+          <a href="#edu-health" class="px-3 py-1.5 rounded-full bg-orumbaN-900 hover:bg-orumbaN-700 whitespace-nowrap">
+            Education &amp; Health
+          </a>
+          <a href="#agriculture" class="px-3 py-1.5 rounded-full bg-orumbaN-900 hover:bg-orumbaN-700 whitespace-nowrap">
+            Agricultural Data
+          </a>
+          <a href="#economy" class="px-3 py-1.5 rounded-full bg-orumbaN-900 hover:bg-orumbaN-700 whitespace-nowrap">
+            Economic Activity
+          </a>
+          <a href="#infrastructure" class="px-3 py-1.5 rounded-full bg-orumbaN-900 hover:bg-orumbaN-700 whitespace-nowrap">
+            Infrastructure
+          </a>
+          <a href="#town-data" class="px-3 py-1.5 rounded-full bg-orumbaN-900 hover:bg-orumbaN-700 whitespace-nowrap">
+            Town‑Level Data
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 space-y-8">
+
+        <!-- OVERVIEW CARDS ROW -->
+        <section id="overview" class="grid md:grid-cols-3 gap-4">
+          <div class="bg-orumbaNSurface rounded-xl shadow-sm border border-orumbaN-100 px-4 py-4">
+            <p class="text-[0.7rem] font-semibold tracking-wide text-orumbaN-700 uppercase">Headquarters</p>
+            <p class="mt-1 text-sm font-semibold text-orumbaN-900">Ajalli</p>
+            <p class="mt-1 text-xs text-slate-700">
+              Orumba North LGA, one of the two Orumba LGAs in Anambra State, with Ajalli as the administrative centre.
+            </p>
+          </div>
+          <div class="bg-orumbaNSurface rounded-xl shadow-sm border border-orumbaN-100 px-4 py-4">
+            <p class="text-[0.7rem] font-semibold tracking-wide text-orumbaN-700 uppercase">Key Towns</p>
+            <p class="mt-1 text-xs text-slate-800">
+              Ajalli · Amaetiti · Awa · Nanka · Ndikelionwu · Ndiokolo · Oko · Ufuma · and others
+            </p>
+            <p class="mt-1 text-[0.7rem] text-slate-700">
+              (Confirm exact list from official Orumba North documentation.)
+            </p>
+          </div>
+          <div class="bg-orumbaNSurface rounded-xl shadow-sm border border-orumbaN-100 px-4 py-4">
+            <p class="text-[0.7rem] font-semibold tracking-wide text-orumbaN-700 uppercase">Area</p>
+            <p class="mt-1 text-lg font-semibold text-orumbaN-900">≈ 297 km²</p>
+            <p class="mt-1 text-xs text-slate-700">
+              According to published sources on Anambra LGA sizes.
+            </p>
+          </div>
+        </section>
+
+        <!-- POPULATION & DEMOGRAPHICS -->
+        <section id="population" class="bg-orumbaNSurface rounded-2xl shadow-sm border border-orumbaN-100 px-5 py-6">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+            <h2 class="text-sm font-semibold text-orumbaN-900 uppercase tracking-wide">
+              Population Statistics &amp; Demographic Breakdown
+            </h2>
+            <span class="inline-flex items-center rounded-full bg-orumbaN-100 px-3 py-1 text-[0.7rem] text-orumbaN-800">
+              Where figures unavailable, keep as API placeholders
+            </span>
+          </div>
+
+          <div class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6">
+            <!-- Basic Stats -->
+            <div class="space-y-3 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+                <p class="font-semibold text-orumbaN-900">Total Population</p>
+                <p class="mt-1 text-lg font-semibold text-orumbaN-900">≈ 172,405</p>
+                <p class="text-[0.7rem] text-slate-700">
+                  Based on 2006 census; more recent estimates should be sourced from state or national bureaus.
+                </p>
+              </div>
+              <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+                <p class="font-semibold text-orumbaN-900 mb-1">Urban vs Rural Split</p>
+                <p class="text-[0.8rem] text-slate-800">
+                  Orumba North has a mix of rural agrarian communities and emerging semi‑urban centres around
+                  Oko (home to Federal Polytechnic Oko) and other major towns.
+                </p>
+                <p class="mt-1 text-[0.7rem] text-slate-700">
+                  For exact % urban/rural, connect to official population datasets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Gender / Age placeholders -->
+            <div class="grid sm:grid-cols-2 gap-3 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl bg-orumbaNSurface border border-dashed border-orumbaN-200 px-3 py-3">
+                <p class="font-semibold text-orumbaN-900 mb-1">Gender Distribution</p>
+                <p class="text-[0.7rem] text-slate-700 mb-2">
+                  Placeholder – populate with % male / % female from integrated data source.
+                </p>
+                <div class="h-20 w-full bg-orumbaNSecondary rounded-md overflow-hidden flex">
+                  <div class="bg-orumbaNAccentSoft" style="width: 51%;"></div>
+                  <div class="bg-orumbaN-400" style="width: 49%;"></div>
+                </div>
+                <div class="mt-2 flex justify-between text-[0.7rem] text-slate-700">
+                  <span>Male [API]</span>
+                  <span>Female [API]</span>
+                </div>
+              </div>
+              <div class="rounded-xl bg-orumbaNSurface border border-dashed border-orumbaN-200 px-3 py-3">
+                <p class="font-semibold text-orumbaN-900 mb-1">Age Groups</p>
+                <p class="text-[0.7rem] text-slate-700 mb-2">
+                  Placeholder – connect to census API for age bands.
+                </p>
+                <div class="space-y-1.5">
+                  <div class="h-3 w-full bg-orumbaNSecondary rounded">
+                    <div class="h-3 bg-orumbaNAccentSoft rounded" style="width: 38%;"></div>
+                  </div>
+                  <div class="h-3 w-full bg-orumbaNSecondary rounded">
+                    <div class="h-3 bg-orumbaN-400 rounded" style="width: 50%;"></div>
+                  </div>
+                  <div class="h-3 w-full bg-orumbaNSecondary rounded">
+                    <div class="h-3 bg-orumbaN-700 rounded" style="width: 12%;"></div>
+                  </div>
+                </div>
+                <div class="mt-2 text-[0.7rem] text-slate-700 space-y-0.5">
+                  <p>0–14 yrs: [API]</p>
+                  <p>15–64 yrs: [API]</p>
+                  <p>65+ yrs: [API]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EDUCATION & HEALTH -->
+        <section id="edu-health" class="bg-orumbaNSurface rounded-2xl shadow-sm border border-orumbaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-orumbaN-900 mb-3 uppercase tracking-wide">
+            Education &amp; Health Indicators
+          </h2>
+          <div class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6 text-xs sm:text-[0.8rem]">
+            <!-- Education -->
+            <div>
+              <p class="font-semibold text-orumbaN-900 mb-2">Education</p>
+              <p class="text-slate-800 mb-2">
+                Orumba North hosts notable institutions including:
+              </p>
+              <ul class="list-disc list-inside text-slate-800 space-y-1">
+                <li><span class="font-semibold">Federal Polytechnic Oko</span> – a major federal tertiary institution</li>
+                <li>Awgbu Grammar School and other secondary schools</li>
+                <li>Primary schools and mission‑run educational centres across the LGA</li>
+              </ul>
+              <p class="mt-2 text-[0.7rem] text-slate-700">
+                Quantitative metrics like literacy rate, school enrolment, pupil‑teacher ratios should be sourced
+                from state education ministry or census reports.
+              </p>
+            </div>
+
+            <!-- Health -->
+            <div>
+              <p class="font-semibold text-orumbaN-900 mb-2">Health</p>
+              <p class="text-slate-800 mb-2">
+                Health facilities in Orumba North include primary health centres in major towns and private clinics.
+                For hospital and clinic counts, bed‑to‑population ratios and immunization coverage, plug in official
+                health bureau data.
+              </p>
+              <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+                <p class="font-semibold text-orumbaN-900 mb-1">Example Indicators (Placeholders)</p>
+                <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                  <li>Number of primary health centres: [API]</li>
+                  <li>Hospital beds per 10,000 residents: [API]</li>
+                  <li>Immunization coverage (% under‑5): [API]</li>
+                  <li>Maternal health outreach coverage: [API]</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AGRICULTURAL DATA -->
+        <section id="agriculture" class="bg-orumbaNSurface rounded-2xl shadow-sm border border-orumbaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-orumbaN-900 mb-3 uppercase tracking-wide">
+            Agricultural Data
+          </h2>
+          <div class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6 text-xs sm:text-[0.8rem]">
+            <div>
+              <p class="text-slate-800 mb-2">
+                Agriculture is central to Orumba North's economy. Key crops include:
+              </p>
+              <ul class="list-disc list-inside text-slate-800 space-y-1">
+                <li>Yam (widely cultivated and a staple)</li>
+                <li>Cassava and cocoyam</li>
+                <li>Rice (wet and upland types)</li>
+                <li>Palm produce (oil palm, kernels)</li>
+                <li>Vegetables and maize</li>
+              </ul>
+              <p class="mt-2 text-[0.7rem] text-slate-700">
+                Farmers also engage in poultry, goat and pig rearing, plus fishing in available water bodies.
+              </p>
+            </div>
+            <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+              <p class="font-semibold text-orumbaN-900 mb-1">Suggested Data Fields (for API)</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Total agricultural land area (hectares): [API]</li>
+                <li>Annual yam production (tonnes): [API]</li>
+                <li>Annual cassava / rice output: [API]</li>
+                <li>Number of registered farmer cooperatives: [API]</li>
+                <li>Agro‑processing centres operating: [API]</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ECONOMIC ACTIVITY INDEX -->
+        <section id="economy" class="bg-orumbaNSurface rounded-2xl shadow-sm border border-orumbaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-orumbaN-900 mb-3 uppercase tracking-wide">
+            Economic Activity &amp; Commercial Index
+          </h2>
+          <div class="grid lg:grid-cols-[1.7fr,1.3fr] gap-6 text-xs sm:text-[0.8rem]">
+            <div>
+              <p class="text-slate-800 mb-2">
+                Orumba North's economy combines agriculture with trade, education‑related services (due to Federal
+                Polytechnic Oko) and small‑scale industries. Markets operate on traditional Igbo market days
+                (Eke, Oye, Afor, Nkwo), serving local traders and farmers.
+              </p>
+              <p class="text-slate-800 mb-2">
+                Major commercial activities include farm produce trade, building materials, transport services and
+                retail shops catering to students and residents.
+              </p>
+              <p class="text-[0.7rem] text-slate-700">
+                For a quantitative "commercial activity index", plug in data such as number of registered businesses,
+                annual market turnover estimates or local government revenue figures.
+              </p>
+            </div>
+            <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+              <p class="font-semibold text-orumbaN-900 mb-1">Example Metrics (Placeholders)</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Registered businesses in Orumba North: [API]</li>
+                <li>Number of major markets: [API]</li>
+                <li>Share of employment in trade/services (%): [API]</li>
+                <li>Bank / microfinance branches: [API]</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- INFRASTRUCTURE SCORECARDS -->
+        <section id="infrastructure" class="bg-orumbaNSurface rounded-2xl shadow-sm border border-orumbaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-orumbaN-900 mb-3 uppercase tracking-wide">
+            Infrastructure Scorecards
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs sm:text-[0.8rem]">
+            <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+              <p class="font-semibold text-orumbaN-900 mb-1">Roads</p>
+              <p class="text-slate-800">
+                Network of state and local roads connecting Ajalli, Oko, Ufuma, Nanka, Ndikelionwu and other towns.
+                Metric: total km paved / condition rating [API].
+              </p>
+            </div>
+            <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+              <p class="font-semibold text-orumbaN-900 mb-1">Electricity</p>
+              <p class="text-slate-800">
+                National grid coverage with typical reliability challenges. Many households and businesses use
+                generators. Metric: % households with regular access [API].
+              </p>
+            </div>
+            <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+              <p class="font-semibold text-orumbaN-900 mb-1">Water &amp; Sanitation</p>
+              <p class="text-slate-800">
+                Mix of boreholes, public taps and private water schemes. Metric: % population with improved
+                water / sanitation [API].
+              </p>
+            </div>
+            <div class="rounded-xl bg-orumbaNSecondary px-3 py-3">
+              <p class="font-semibold text-orumbaN-900 mb-1">Telecom &amp; Internet</p>
+              <p class="text-slate-800">
+                Multiple GSM networks; growing internet penetration around Oko (polytechnic hub).
+                Metric: mobile penetration rate, broadband speed [API].
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- TOWN-LEVEL DATA TABLE -->
+        <section id="town-data" class="bg-orumbaNSurface rounded-2xl shadow-sm border border-orumbaN-100 px-5 py-6 mb-6">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+            <h2 class="text-sm font-semibold text-orumbaN-900 uppercase tracking-wide">
+              Town / Village‑Level Data – Orumba North
+            </h2>
+            <span class="inline-flex items-center rounded-full bg-orumbaNSecondary px-3 py-1 text-[0.7rem] text-orumbaN-800">
+              Connect these rows to your LGA → Towns/Villages JSON or database.
+            </span>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-orumbaN-100 bg-orumbaN-50/40">
+            <table class="min-w-full text-left text-[0.75rem] text-slate-800">
+              <thead class="bg-orumbaNSecondary border-b border-orumbaN-200">
+                <tr>
+                  <th class="px-3 py-2 font-semibold text-orumbaN-900">Town / Village</th>
+                  <th class="px-3 py-2 font-semibold text-orumbaN-900">Population (est.)</th>
+                  <th class="px-3 py-2 font-semibold text-orumbaN-900">Key Economic Activity</th>
+                  <th class="px-3 py-2 font-semibold text-orumbaN-900">Notes / Data Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-orumbaN-100">
+                  <td class="px-3 py-2 font-semibold text-orumbaN-900">Ajalli</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Administrative HQ, market, services [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Populate from town‑level data.</td>
+                </tr>
+                <tr class="border-t border-orumbaN-100">
+                  <td class="px-3 py-2 font-semibold text-orumbaN-900">Oko</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Federal Polytechnic, education services, student commerce [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Major education hub in Orumba North.</td>
+                </tr>
+                <tr class="border-t border-orumbaN-100">
+                  <td class="px-3 py-2 font-semibold text-orumbaN-900">Ufuma</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Agriculture, trading [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Use JSON / API for live figures.</td>
+                </tr>
+                <tr class="border-t border-orumbaN-100">
+                  <td class="px-3 py-2 font-semibold text-orumbaN-900">Nanka</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Farming, local trade [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Connect to your town database.</td>
+                </tr>
+                <tr class="border-t border-orumbaN-100">
+                  <td class="px-3 py-2 font-semibold text-orumbaN-900">Ndikelionwu</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Agriculture, residential [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Add more towns as needed from JSON.</td>
+                </tr>
+                <tr class="border-t border-orumbaN-100">
+                  <td class="px-3 py-2 font-semibold text-orumbaN-900">[Add more towns]</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">[Qualitative description]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Expand table from your LGA data.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="mt-2 text-[0.7rem] text-slate-700">
+            If your LGA → Towns/Villages JSON has detailed metrics per town, replace the columns with your schema
+            (e.g. "Town / Population / Metric 1 / Metric 2 / Metric 3").
+          </p>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-orumbaN-900 text-orumbaN-100 border-t border-orumbaN-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-[0.7rem]">
+          Orumba North Local Government Area, Ajalli – data‑centric profile (mix of confirmed facts and API‑ready placeholders).
+        </p>
+        <p class="text-[0.7rem]">
+          Always confirm critical figures with official Anambra State and Orumba North data sources.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

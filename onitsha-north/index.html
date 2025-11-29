@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Onitsha North LGA – Official Information &amp; Services Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Official-style portal for Onitsha North Local Government Area – welcome message, administrative structure, departments, projects, community notices, public service links, emergency contacts and downloadable documents."
+  />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind theme for Onitsha North -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            onitshaN: {
+              50:  '#FAFAFA',
+              100: '#F0F0F0',
+              200: '#E0E0E0',
+              300: '#BDBDBD', // secondary
+              400: '#9E9E9E',
+              500: '#757575',
+              600: '#424242',
+              700: '#303030',
+              800: '#212121', // primary
+              900: '#111111'
+            },
+            onitshaNAccent: '#FFD600',     // accent
+            onitshaNAccentSoft: '#FFF59D', // soft accent
+            onitshaNbg: '#EEEEEE',
+            onitshaNSurface: '#FFFFFF'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-onitshaNbg text-slate-900 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- TOP BAR -->
+    <header class="bg-onitshaN-900 text-onitshaN-50 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center justify-center h-9 w-9 rounded-md bg-onitshaN-300 text-onitshaN-900 font-bold text-lg">
+            ON
+          </span>
+          <div>
+            <p class="text-sm font-semibold tracking-wide uppercase">Onitsha North Local Government Area</p>
+            <p class="text-[0.7rem] text-onitshaN-100/80">Onitsha · Official Information &amp; Public Services</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-4 text-[0.75rem] font-medium">
+          <a href="#welcome" class="hover:text-onitshaNAccentSoft">Welcome</a>
+          <a href="#about" class="hover:text-onitshaNAccentSoft">About</a>
+          <a href="#admin-structure" class="hover:text-onitshaNAccentSoft">Administration</a>
+          <a href="#departments" class="hover:text-onitshaNAccentSoft">Departments</a>
+          <a href="#projects" class="hover:text-onitshaNAccentSoft">Projects</a>
+          <a href="#notice-board" class="hover:text-onitshaNAccentSoft">Notice Board</a>
+          <a href="#public-services" class="hover:text-onitshaNAccentSoft">Public Services</a>
+          <a href="#emergency" class="hover:text-onitshaNAccentSoft">Emergency</a>
+          <a href="#downloads" class="hover:text-onitshaNAccentSoft">Downloads</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- SECTION TABS (chips) -->
+    <div class="bg-onitshaN-800 text-onitshaN-50 border-b border-onitshaN-700">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
+        <div class="flex gap-2 text-[0.7rem]">
+          <a href="#welcome" class="px-3 py-1.5 rounded-full bg-onitshaN-700 whitespace-nowrap">
+            Welcome Message
+          </a>
+          <a href="#admin-structure" class="px-3 py-1.5 rounded-full bg-onitshaN-900 hover:bg-onitshaN-700 whitespace-nowrap">
+            Administrative Structure
+          </a>
+          <a href="#departments" class="px-3 py-1.5 rounded-full bg-onitshaN-900 hover:bg-onitshaN-700 whitespace-nowrap">
+            Departments &amp; Units
+          </a>
+          <a href="#projects" class="px-3 py-1.5 rounded-full bg-onitshaN-900 hover:bg-onitshaN-700 whitespace-nowrap">
+            Major Projects
+          </a>
+          <a href="#notice-board" class="px-3 py-1.5 rounded-full bg-onitshaN-900 hover:bg-onitshaN-700 whitespace-nowrap">
+            Community Notice Board
+          </a>
+          <a href="#public-services" class="px-3 py-1.5 rounded-full bg-onitshaN-900 hover:bg-onitshaN-700 whitespace-nowrap">
+            Public Service Links
+          </a>
+          <a href="#emergency" class="px-3 py-1.5 rounded-full bg-onitshaN-900 hover:bg-onitshaN-700 whitespace-nowrap">
+            Emergency Contacts
+          </a>
+          <a href="#downloads" class="px-3 py-1.5 rounded-full bg-onitshaN-900 hover:bg-onitshaN-700 whitespace-nowrap">
+            Downloadable Documents
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 space-y-8">
+
+        <!-- WELCOME + QUICK SUMMARY -->
+        <section id="welcome" class="grid lg:grid-cols-[1.6fr,1.4fr] gap-6 items-start">
+          <!-- Welcome message -->
+          <div class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-5">
+            <p class="text-[0.7rem] font-semibold tracking-[0.18em] text-onitshaN-600 uppercase">
+              Office of the Chairman / Mayor
+            </p>
+            <h1 class="mt-2 text-xl sm:text-2xl font-semibold text-onitshaN-900">
+              Welcome to Onitsha North LGA Public Information Portal
+            </h1>
+            <p class="mt-2 text-sm text-slate-800">
+              This portal provides residents, traders, visitors and partners with key information about Onitsha North
+              Local Government Area – leadership, departments, projects, notices and links to essential public
+              services. It is not a substitute for the official Anambra State or federal websites, but complements
+              them by highlighting local responsibilities within the Onitsha metropolis.
+            </p>
+          </div>
+
+          <!-- Quick stats / cards -->
+          <div class="grid sm:grid-cols-2 gap-3 text-xs">
+            <div class="bg-onitshaNSurface rounded-xl shadow-sm border border-onitshaN-100 px-4 py-3">
+              <p class="text-[0.65rem] uppercase tracking-wide text-onitshaN-600">Headquarters</p>
+              <p class="mt-1 text-sm font-semibold text-onitshaN-900">Onitsha city</p>
+              <p class="mt-1 text-[0.7rem] text-slate-700">
+                Onitsha North covers part of the Onitsha urban area on the banks of the River Niger in Anambra State.
+              </p>
+            </div>
+            <div class="bg-onitshaNSurface rounded-xl shadow-sm border border-onitshaN-100 px-4 py-3">
+              <p class="text-[0.65rem] uppercase tracking-wide text-onitshaN-600">Core Character</p>
+              <p class="mt-1 text-sm font-semibold text-onitshaN-900">Highly urban / commercial</p>
+              <p class="mt-1 text-[0.7rem] text-slate-700">
+                Home to major markets and dense residential, religious and business districts.
+              </p>
+            </div>
+            <div class="bg-onitshaNSurface rounded-xl shadow-sm border border-onitshaN-100 px-4 py-3">
+              <p class="text-[0.65rem] uppercase tracking-wide text-onitshaN-600">Key Economic Hub</p>
+              <p class="mt-1 text-sm font-semibold text-onitshaN-900">Main Market, Onitsha</p>
+              <p class="mt-1 text-[0.7rem] text-slate-700">
+                Widely regarded as one of Africa’s largest open‑air markets by size and volume of goods.
+              </p>
+            </div>
+            <div class="bg-onitshaNSurface rounded-xl shadow-sm border border-onitshaN-100 px-4 py-3">
+              <p class="text-[0.65rem] uppercase tracking-wide text-onitshaN-600">Official Channels</p>
+              <p class="mt-1 text-[0.7rem] text-slate-700">
+                For the latest official directives, always confirm with Anambra State Government and Onitsha North LGA
+                offices.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT LGA -->
+        <section id="about" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-onitshaN-900 mb-3 uppercase tracking-wide">
+            About Onitsha North LGA
+          </h2>
+          <div class="grid lg:grid-cols-[1.7fr,1.3fr] gap-6 text-xs sm:text-[0.8rem]">
+            <div>
+              <p class="text-slate-800 mb-2">
+                Onitsha North is one of the urban local government areas within the Onitsha metropolis of Anambra
+                State, Nigeria. It covers part of the historic river port city of Onitsha, long known as a major centre
+                of trade, transport, faith and culture in the south‑east.
+              </p>
+              <p class="text-slate-800 mb-2">
+                The LGA hosts markets, churches, schools, health facilities, public institutions and dense residential
+                neighbourhoods. It works alongside other Onitsha‑area LGAs and Anambra State agencies on issues such as
+                traffic management, sanitation, public order and infrastructure maintenance.
+              </p>
+              <p class="text-[0.7rem] text-slate-700">
+                Exact population, land area and ward breakdown should be taken from Anambra State and national
+                statistics; you can plug those figures into this page or an API when available.
+              </p>
+            </div>
+            <div class="space-y-2">
+              <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+                <p class="font-semibold text-onitshaN-900 text-[0.75rem] uppercase tracking-wide">Location</p>
+                <p class="mt-1 text-slate-800">
+                  North‑central section of Onitsha city, along the River Niger, with important road links to
+                  other parts of Anambra and neighbouring states.
+                </p>
+              </div>
+              <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+                <p class="font-semibold text-onitshaN-900 text-[0.75rem] uppercase tracking-wide">Neighbouring LGAs</p>
+                <p class="mt-1 text-slate-800">
+                  Bordered in different directions by Onitsha South and other Anambra LGAs (verify exact boundary
+                  listing from official maps when populating).
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ADMINISTRATIVE STRUCTURE -->
+        <section id="admin-structure" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-onitshaN-900 mb-3 uppercase tracking-wide">
+            Administrative Structure
+          </h2>
+          <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
+            <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Executive</p>
+              <p class="text-slate-800">
+                Headed by the Chairman / Mayor (and where applicable, a Transition Committee),
+                supported by Supervisors and heads of departments.
+              </p>
+            </div>
+            <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Legislative (Councillors)</p>
+              <p class="text-slate-800">
+                Ward Councillors form the legislative arm at the local level under the Anambra State legal
+                framework and enact bye‑laws for local governance.
+              </p>
+            </div>
+            <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Traditional &amp; Community Stakeholders</p>
+              <p class="text-slate-800">
+                Traditional institutions, market leaders, religious bodies and resident associations engage with the
+                LGA on community issues, security, cleanliness and social welfare.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- DEPARTMENTS & UNITS -->
+        <section id="departments" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-onitshaN-900 mb-3 uppercase tracking-wide">
+            Departments &amp; Units
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Administration</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Personnel &amp; records</li>
+                <li>Secretariat management</li>
+                <li>General administration</li>
+              </ul>
+            </div>
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Finance &amp; Revenue</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Budget &amp; accounts</li>
+                <li>Internally generated revenue (IGR)</li>
+                <li>Markets, rates &amp; levies</li>
+              </ul>
+            </div>
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Works &amp; Physical Planning</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Local roads &amp; drains (within LGA mandate)</li>
+                <li>Public facilities maintenance</li>
+              </ul>
+            </div>
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Health &amp; Environmental Services</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Primary health support &amp; outreach</li>
+                <li>Environmental sanitation &amp; waste</li>
+              </ul>
+            </div>
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Education, Youth &amp; Social Welfare</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Support to basic schools</li>
+                <li>Youth and sports activities</li>
+                <li>Social welfare initiatives</li>
+              </ul>
+            </div>
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Information &amp; Protocol</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Public information &amp; media</li>
+                <li>Protocol &amp; official events</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- MAJOR ONGOING PROJECTS -->
+        <section id="projects" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+            <h2 class="text-sm font-semibold text-onitshaN-900 uppercase tracking-wide">
+              Major Ongoing / Recent Projects
+            </h2>
+            <span class="inline-flex items-center rounded-full bg-onitshaN-100 px-3 py-1 text-[0.7rem] text-onitshaN-800">
+              Replace items below with verified project information from Onitsha North LGA.
+            </span>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4 text-xs sm:text-[0.8rem]">
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Inner‑City Road &amp; Drainage Works</p>
+              <p class="text-slate-800">
+                Local maintenance of streets, side drains and culverts in selected wards to improve access and
+                reduce flooding in built‑up areas. Insert street names, timelines and contractors where publicly
+                documented.
+              </p>
+            </div>
+            <div class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Market &amp; Sanitation Upgrades</p>
+              <p class="text-slate-800">
+                Installation or rehabilitation of market sheds, public toilets and waste‑collection points around
+                major trading areas. Add details once confirmed with official releases.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- COMMUNITY NOTICE BOARD -->
+        <section id="notice-board" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-onitshaN-900 mb-3 uppercase tracking-wide">
+            Community Notice Board
+          </h2>
+          <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1.5">
+            <li>
+              <span class="font-semibold">Public Meetings &amp; Consultations:</span> Dates, venues and agendas for
+              town‑hall meetings and ward‑level consultations to be posted here.
+            </li>
+            <li>
+              <span class="font-semibold">Sanitation &amp; Environmental Exercises:</span> Monthly or special
+              clean‑up campaigns, waste‑collection schedules and environmental health announcements.
+            </li>
+            <li>
+              <span class="font-semibold">Traffic &amp; Market Advisories:</span> Official changes to traffic
+              diversions, market opening hours or new regulations affecting traders and motorists.
+            </li>
+            <li>
+              <span class="font-semibold">Job &amp; Training Opportunities:</span> Youth and women empowerment
+              programmes, vocational training or public recruitment notices (with links to official portals).
+            </li>
+          </ul>
+        </section>
+
+        <!-- PUBLIC SERVICE LINKS -->
+        <section id="public-services" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-onitshaN-900 mb-3 uppercase tracking-wide">
+            Public Service Links
+          </h2>
+          <p class="text-xs sm:text-[0.8rem] text-slate-700 mb-3">
+            Connect these tiles to real state or federal platforms (birth registration, tax, health insurance,
+            permits). For now they serve as placeholders.
+          </p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[0.75rem]">
+            <a class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3 hover:border-onitshaNAccent hover:bg-onitshaN-100 transition cursor-pointer">
+              <p class="font-semibold text-onitshaN-900">Birth &amp; Death Registration</p>
+              <p class="mt-1 text-slate-800">
+                Link to National Population Commission or state e‑registration service.
+              </p>
+            </a>
+            <a class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3 hover:border-onitshaNAccent hover:bg-onitshaN-100 transition cursor-pointer">
+              <p class="font-semibold text-onitshaN-900">Tax &amp; Rates Payment</p>
+              <p class="mt-1 text-slate-800">
+                Connect to Anambra State IGR / e‑tax platform for approved local taxes and levies.
+              </p>
+            </a>
+            <a class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3 hover:border-onitshaNAccent hover:bg-onitshaN-100 transition cursor-pointer">
+              <p class="font-semibold text-onitshaN-900">Health Insurance &amp; NHIS</p>
+              <p class="mt-1 text-slate-800">
+                Point residents to state health insurance schemes and federal NHIS information.
+              </p>
+            </a>
+            <a class="rounded-xl border border-onitshaN-200 bg-onitshaNSurface px-3 py-3 hover:border-onitshaNAccent hover:bg-onitshaN-100 transition cursor-pointer">
+              <p class="font-semibold text-onitshaN-900">Business Permits &amp; Premises</p>
+              <p class="mt-1 text-slate-800">
+                Guidance on registering businesses and obtaining premises permits within Onitsha North.
+              </p>
+            </a>
+          </div>
+        </section>
+
+        <!-- EMERGENCY CONTACTS -->
+        <section id="emergency" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-onitshaN-900 mb-3 uppercase tracking-wide">
+            Emergency Contacts
+          </h2>
+          <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
+            <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Security</p>
+              <p class="text-slate-800">
+                Nearest police divisional headquarters: [Insert contact]<br />
+                State emergency number: [Insert]<br />
+                Neighbourhood vigilante / security contacts should be listed with official approval only.
+              </p>
+            </div>
+            <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Health Emergencies</p>
+              <p class="text-slate-800">
+                Major hospitals and ambulance lines serving Onitsha North (e.g. mission and public hospitals)
+                should be listed here with verified contact numbers.
+              </p>
+            </div>
+            <div class="rounded-xl bg-onitshaN-100 px-3 py-3">
+              <p class="font-semibold text-onitshaN-900 mb-1">Fire &amp; Disaster Response</p>
+              <p class="text-slate-800">
+                Anambra State Fire Service contact for Onitsha area and relevant NEMA / SEMA hotlines,
+                as published by official agencies.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- DOWNLOADABLE DOCUMENTS -->
+        <section id="downloads" class="bg-onitshaNSurface rounded-2xl shadow-sm border border-onitshaN-100 px-5 py-6 mb-4">
+          <h2 class="text-sm font-semibold text-onitshaN-900 mb-3 uppercase tracking-wide">
+            Downloadable Documents
+          </h2>
+          <p class="text-xs sm:text-[0.8rem] text-slate-700 mb-3">
+            Host public documents such as budget summaries, revenue schedules and selected bye‑laws.
+            Link to PDFs or other formats when available.
+          </p>
+          <div class="overflow-x-auto rounded-xl border border-onitshaN-200 bg-onitshaN-50/60">
+            <table class="min-w-full text-left text-[0.75rem] text-slate-800">
+              <thead class="bg-onitshaN-100 border-b border-onitshaN-200">
+                <tr>
+                  <th class="px-3 py-2 font-semibold text-onitshaN-900">Document Title</th>
+                  <th class="px-3 py-2 font-semibold text-onitshaN-900">Category</th>
+                  <th class="px-3 py-2 font-semibold text-onitshaN-900">Year</th>
+                  <th class="px-3 py-2 font-semibold text-onitshaN-900">Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-onitshaN-200">
+                  <td class="px-3 py-2">[Sample] Onitsha North LGA Approved Budget</td>
+                  <td class="px-3 py-2">Budget Summary (PDF)</td>
+                  <td class="px-3 py-2">[Year]</td>
+                  <td class="px-3 py-2 text-onitshaN-800">
+                    <a class="underline hover:text-onitshaNAccent cursor-pointer">Download</a>
+                  </td>
+                </tr>
+                <tr class="border-t border-onitshaN-200">
+                  <td class="px-3 py-2">[Sample] Official Rates &amp; Levies Schedule</td>
+                  <td class="px-3 py-2">Revenue Guide (PDF)</td>
+                  <td class="px-3 py-2">[Year]</td>
+                  <td class="px-3 py-2 text-onitshaN-800">
+                    <a class="underline hover:text-onitshaNAccent cursor-pointer">Download</a>
+                  </td>
+                </tr>
+                <tr class="border-t border-onitshaN-200">
+                  <td class="px-3 py-2">[Sample] Selected Local Bye‑Laws</td>
+                  <td class="px-3 py-2">Legal / Governance (PDF)</td>
+                  <td class="px-3 py-2">[Year]</td>
+                  <td class="px-3 py-2 text-onitshaN-800">
+                    <a class="underline hover:text-onitshaNAccent cursor-pointer">Download</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-onitshaN-900 text-onitshaN-100 border-t border-onitshaN-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-[0.7rem]">
+          Onitsha North Local Government Area – citizen information and public service directory (informational only).
+        </p>
+        <p class="text-[0.7rem]">
+          Always cross‑check critical notices and figures with official Anambra State and Onitsha North LGA sources.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
