@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nnewi North LGA – Nnewi | Data & Statistics Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Data-centric profile of Nnewi North Local Government Area, Nnewi – population, demographics, economy, education, health, agriculture and town-level data (with API-ready placeholders)."
+  />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind theme for Nnewi North -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nnewiN: {
+              50:  '#ECEFF1',
+              100: '#CFD8DC', // secondary
+              200: '#B0BEC5',
+              300: '#90A4AE',
+              400: '#78909C',
+              500: '#607D8B',
+              600: '#546E7A',
+              700: '#455A64',
+              800: '#37474F',
+              900: '#263238'  // primary
+            },
+            nnewiNAccent: '#FF3D00',     // your accent
+            nnewiNAccentSoft: '#FFAB91', // soft accent
+            nnewiNbg: '#ECEFF1',
+            nnewiNSurface: '#FFFFFF'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Simple structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AdministrativeArea",
+    "name": "Nnewi North Local Government Area",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nnewi",
+      "addressRegion": "Anambra State",
+      "addressCountry": "NG"
+    }
+  }
+  </script>
+</head>
+<body class="bg-nnewiNbg text-slate-900 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER: analytic bar -->
+    <header class="bg-nnewiN-900 text-nnewiN-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center justify-center h-9 w-9 rounded-md bg-nnewiN-100 text-nnewiN-900 font-bold text-lg">
+            NN
+          </span>
+          <div>
+            <p class="text-sm font-semibold tracking-wide uppercase">Nnewi North Local Government Area</p>
+            <p class="text-[0.7rem] text-nnewiN-100/80">Nnewi · Data &amp; Statistics Dashboard</p>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-4 text-[0.7rem]">
+          <div class="text-right">
+            <p class="font-semibold text-nnewiN-50">Headquarters</p>
+            <p class="text-nnewiN-100/80">Nnewi, Anambra State, Nigeria</p>
+          </div>
+          <a
+            href="#village-data"
+            class="inline-flex items-center rounded-full bg-nnewiNAccent px-4 py-2 font-semibold text-slate-900 hover:bg-nnewiNAccentSoft transition"
+          >
+            View Town / Quarter Data
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- TOP FILTER / SECTION NAV (chips) -->
+    <div class="bg-nnewiN-800 text-nnewiN-50 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
+        <div class="flex gap-2 text-[0.7rem]">
+          <a href="#population" class="px-3 py-1.5 rounded-full bg-nnewiN-700 text-nnewiN-50 whitespace-nowrap">
+            Population &amp; Demographics
+          </a>
+          <a href="#edu-health" class="px-3 py-1.5 rounded-full bg-nnewiN-900 hover:bg-nnewiN-700 whitespace-nowrap">
+            Education &amp; Health
+          </a>
+          <a href="#agriculture" class="px-3 py-1.5 rounded-full bg-nnewiN-900 hover:bg-nnewiN-700 whitespace-nowrap">
+            Agricultural Data
+          </a>
+          <a href="#commerce" class="px-3 py-1.5 rounded-full bg-nnewiN-900 hover:bg-nnewiN-700 whitespace-nowrap">
+            Commercial Activity Index
+          </a>
+          <a href="#infrastructure" class="px-3 py-1.5 rounded-full bg-nnewiN-900 hover:bg-nnewiN-700 whitespace-nowrap">
+            Infrastructure Scorecards
+          </a>
+          <a href="#village-data" class="px-3 py-1.5 rounded-full bg-nnewiN-900 hover:bg-nnewiN-700 whitespace-nowrap">
+            Town / Quarter‑Level Data
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 space-y-8">
+
+        <!-- OVERVIEW ROW -->
+        <section id="overview" class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6">
+          <div class="bg-nnewiNSurface rounded-2xl shadow-sm border border-nnewiN-100 px-5 py-5">
+            <h1 class="text-lg font-semibold text-nnewiN-900 mb-1">
+              Nnewi North LGA – Data Snapshot
+            </h1>
+            <p class="text-xs text-slate-700 mb-2">
+              Data‑centric overview based on publicly available information (e.g. Nnewi North article on Wikipedia).
+              Detailed indicators can be connected to live databases or APIs.
+            </p>
+            <p class="text-sm text-slate-800">
+              Nnewi North is an urban‑leaning Local Government Area in Anambra State, Nigeria. It is centred on
+              <span class="font-semibold">Nnewi town</span>, which is traditionally divided into four quarters:
+              <span class="font-semibold">Otolo, Uruagu, Umudim and Nnewichi</span>.
+              The area is widely known as a major indigenous industrial and commercial hub.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-3 gap-3 text-xs">
+            <div class="bg-nnewiNSurface rounded-xl shadow-sm border border-nnewiN-100 px-3 py-3">
+              <p class="text-[0.65rem] uppercase tracking-wide text-nnewiN-700">Population (estimate)</p>
+              <p class="mt-1 text-xl font-semibold text-nnewiN-900">≈ 221,500</p>
+              <p class="text-[0.7rem] text-slate-700">
+                2006 census figure for the area was lower; 2022 estimate reported around 221,500
+                (Wikipedia – Nnewi North).
+              </p>
+            </div>
+            <div class="bg-nnewiNSurface rounded-xl shadow-sm border border-nnewiN-100 px-3 py-3">
+              <p class="text-[0.65rem] uppercase tracking-wide text-nnewiN-700">Core Settlement</p>
+              <p class="mt-1 text-xl font-semibold text-nnewiN-900">Nnewi</p>
+              <p class="text-[0.7rem] text-slate-700">
+                Otolo · Uruagu · Umudim · Nnewichi quarters.
+              </p>
+            </div>
+            <div class="bg-nnewiNSurface rounded-xl shadow-sm border border-nnewiN-100 px-3 py-3">
+              <p class="text-[0.65rem] uppercase tracking-wide text-nnewiN-700">Economic Type</p>
+              <p class="mt-1 text-xl font-semibold text-nnewiN-900">Industrial / Commercial</p>
+              <p class="text-[0.7rem] text-slate-700">
+                Sometimes called “the Japan of Africa” due to dense indigenous manufacturing.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- POPULATION & DEMOGRAPHICS -->
+        <section id="population" class="bg-nnewiNSurface rounded-2xl shadow-sm border border-nnewiN-100 px-5 py-6">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
+            <h2 class="text-sm font-semibold text-nnewiN-900 uppercase tracking-wide">
+              Population Statistics &amp; Demographic Breakdown
+            </h2>
+            <span class="inline-flex items-center rounded-full bg-nnewiN-100 px-3 py-1 text-[0.7rem] text-nnewiN-800">
+              Where figures are not available, keep as API placeholders.
+            </span>
+          </div>
+
+          <div class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6">
+            <!-- Basic Stats -->
+            <div class="space-y-3 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+                <p class="font-semibold text-nnewiN-900">Total Population</p>
+                <p class="mt-1 text-lg font-semibold text-nnewiN-900">≈ 221,500</p>
+                <p class="text-[0.7rem] text-slate-700">
+                  Estimate mentioned in the Nnewi North article (based on growth from earlier census data).
+                  Replace with official state/UN figures when available.
+                </p>
+              </div>
+              <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+                <p class="font-semibold text-nnewiN-900">Urban vs Rural</p>
+                <p class="mt-1 text-[0.8rem] text-slate-800">
+                  Nnewi North is predominantly urban and peri‑urban around Nnewi town, with dense residential,
+                  commercial and industrial land use.
+                </p>
+                <p class="mt-1 text-[0.7rem] text-slate-700">
+                  For exact proportions (e.g. % urban), connect to official population datasets.
+                </p>
+              </div>
+            </div>
+
+            <!-- Gender / Age breakdown placeholders styled like charts -->
+            <div class="grid sm:grid-cols-2 gap-3 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl bg-nnewiNSurface border border-dashed border-nnewiN-200 px-3 py-3">
+                <p class="font-semibold text-nnewiN-900 mb-1">Gender Distribution</p>
+                <p class="text-[0.7rem] text-slate-700 mb-2">
+                  Placeholder – populate with % male / % female once data is integrated.
+                </p>
+                <div class="h-20 w-full bg-nnewiN-100 rounded-md overflow-hidden flex">
+                  <div class="bg-nnewiNAccentSoft" style="width: 52%;"></div>
+                  <div class="bg-nnewiN-400" style="width: 48%;"></div>
+                </div>
+                <div class="mt-2 flex justify-between text-[0.7rem] text-slate-700">
+                  <span>Male [API]</span>
+                  <span>Female [API]</span>
+                </div>
+              </div>
+              <div class="rounded-xl bg-nnewiNSurface border border-dashed border-nnewiN-200 px-3 py-3">
+                <p class="font-semibold text-nnewiN-900 mb-1">Age Groups</p>
+                <p class="text-[0.7rem] text-slate-700 mb-2">
+                  Placeholder – connect to census API or state bureau table for age bands.
+                </p>
+                <div class="space-y-1.5">
+                  <div class="h-3 w-full bg-nnewiN-100 rounded">
+                    <div class="h-3 bg-nnewiNAccentSoft rounded" style="width: 35%;"></div>
+                  </div>
+                  <div class="h-3 w-full bg-nnewiN-100 rounded">
+                    <div class="h-3 bg-nnewiN-400 rounded" style="width: 45%;"></div>
+                  </div>
+                  <div class="h-3 w-full bg-nnewiN-100 rounded">
+                    <div class="h-3 bg-nnewiN-700 rounded" style="width: 20%;"></div>
+                  </div>
+                </div>
+                <div class="mt-2 text-[0.7rem] text-slate-700 space-y-0.5">
+                  <p>0–14 yrs: [API]</p>
+                  <p>15–64 yrs: [API]</p>
+                  <p>65+ yrs: [API]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EDUCATION & HEALTH INDICATORS -->
+        <section id="edu-health" class="bg-nnewiNSurface rounded-2xl shadow-sm border border-nnewiN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-nnewiN-900 mb-3 uppercase tracking-wide">
+            Education &amp; Health Indicators
+          </h2>
+          <div class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6 text-xs sm:text-[0.8rem]">
+            <!-- Education -->
+            <div>
+              <p class="font-semibold text-nnewiN-900 mb-2">Education</p>
+              <p class="text-slate-800 mb-2">
+                Nnewi North hosts a number of notable secondary schools and training institutions. Wikipedia
+                lists schools such as:
+              </p>
+              <ul class="list-disc list-inside text-slate-800 space-y-1">
+                <li>Girls’ Secondary School, Nnewi</li>
+                <li>Maria Regina Model Comprehensive Secondary School, Nnewi</li>
+                <li>Nnewi High School, Nnewi</li>
+                <li>Nigerian Science &amp; Technical College, Nnewi</li>
+                <li>Okongwu Memorial Grammar School, Nnewi</li>
+                <li>Community/Women education centres and model schools in the quarters</li>
+              </ul>
+              <p class="mt-2 text-[0.7rem] text-slate-700">
+                Quantitative indicators like literacy rate, school enrolment and completion rates should be sourced
+                from official state or national education statistics.
+              </p>
+            </div>
+
+            <!-- Health -->
+            <div>
+              <p class="font-semibold text-nnewiN-900 mb-2">Health</p>
+              <p class="text-slate-800 mb-2">
+                The LGA is home to the <span class="font-semibold">Nnamdi Azikiwe University Teaching Hospital (NAUTH)</span>
+                in Nnewi, which provides tertiary medical services and training. There are also multiple private
+                clinics and smaller health facilities across the quarters.
+              </p>
+              <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+                <p class="font-semibold text-nnewiN-900 mb-1">Example Health Indicators (Placeholders)</p>
+                <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                  <li>Number of primary health centres: [API]</li>
+                  <li>Number of hospital beds per 10,000 residents: [API]</li>
+                  <li>Immunization coverage (% under‑5 fully immunized): [API]</li>
+                  <li>Maternal &amp; child health outreach coverage: [API]</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- AGRICULTURAL DATA -->
+        <section id="agriculture" class="bg-nnewiNSurface rounded-2xl shadow-sm border border-nnewiN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-nnewiN-900 mb-3 uppercase tracking-wide">
+            Agricultural Data
+          </h2>
+          <div class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6 text-xs sm:text-[0.8rem]">
+            <div>
+              <p class="text-slate-800 mb-2">
+                Although Nnewi North is heavily urbanized, pockets of agriculture and peri‑urban farming still
+                exist around the fringes and undeveloped land:
+              </p>
+              <ul class="list-disc list-inside text-slate-800 space-y-1">
+                <li>Root crops: cassava, yam and cocoyam (small‑scale plots).</li>
+                <li>Vegetables: okro, pumpkin leaves and other greens cultivated near homesteads.</li>
+                <li>Poultry and livestock: backyard and small commercial operations.</li>
+              </ul>
+            </div>
+            <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+              <p class="font-semibold text-nnewiN-900 mb-1">Suggested Data Fields (for API)</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Total agricultural land area (hectares): [API]</li>
+                <li>Annual cassava / yam production (tonnes): [API]</li>
+                <li>Number of registered agro‑processors: [API]</li>
+                <li>Number of cooperatives / farmer groups: [API]</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- COMMERCIAL ACTIVITY INDEX -->
+        <section id="commerce" class="bg-nnewiNSurface rounded-2xl shadow-sm border border-nnewiN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-nnewiN-900 mb-3 uppercase tracking-wide">
+            Commercial Activity Index
+          </h2>
+          <div class="grid lg:grid-cols-[1.7fr,1.3fr] gap-6 text-xs sm:text-[0.8rem]">
+            <div>
+              <p class="text-slate-800 mb-2">
+                Nnewi is widely described as a major manufacturing and commercial centre in Nigeria, hosting
+                indigenous companies in auto parts, plastics, electricals and other goods. Firms such as
+                Innoson Vehicle Manufacturing, Ibeto Group and other indigenous manufacturers are associated
+                with the greater Nnewi area.
+              </p>
+              <p class="text-slate-800 mb-2">
+                The <span class="font-semibold">Nkwo Nnewi main market</span> is a critical trading hub for
+                auto parts and a wide variety of goods, attracting buyers and sellers from across Nigeria
+                and West Africa.
+              </p>
+              <p class="text-[0.7rem] text-slate-700">
+                For a quantitative “commercial activity index”, plug in data such as number of registered
+                businesses, annual trade volumes, or tax receipts from official sources.
+              </p>
+            </div>
+            <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+              <p class="font-semibold text-nnewiN-900 mb-1">Example Metrics (Placeholders)</p>
+              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
+                <li>Registered businesses in Nnewi North: [API]</li>
+                <li>Annual market turnover estimate: [API]</li>
+                <li>Share of employment in trade/industry (%): [API]</li>
+                <li>Number of bank / microfinance branches: [API]</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- INFRASTRUCTURE SCORECARDS -->
+        <section id="infrastructure" class="bg-nnewiNSurface rounded-2xl shadow-sm border border-nnewiN-100 px-5 py-6">
+          <h2 class="text-sm font-semibold text-nnewiN-900 mb-3 uppercase tracking-wide">
+            Infrastructure Scorecards
+          </h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs sm:text-[0.8rem]">
+            <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+              <p class="font-semibold text-nnewiN-900 mb-1">Roads</p>
+              <p class="text-slate-800">
+                Network of state and local roads within Nnewi town and towards neighbouring LGAs.
+                Metric ideas: total km paved / unpaved, % roads in good condition [API].
+              </p>
+            </div>
+            <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+              <p class="font-semibold text-nnewiN-900 mb-1">Electricity</p>
+              <p class="text-slate-800">
+                Served by the national grid; many industries use supplementary generators.
+                Metric: proportion of households/enterprises with regular grid access [API].
+              </p>
+            </div>
+            <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+              <p class="font-semibold text-nnewiN-900 mb-1">Water &amp; Sanitation</p>
+              <p class="text-slate-800">
+                Combination of boreholes, private supplies and limited public schemes.
+                Metric: % population with improved water / sanitation facilities [API].
+              </p>
+            </div>
+            <div class="rounded-xl bg-nnewiN-100 px-3 py-3">
+              <p class="font-semibold text-nnewiN-900 mb-1">Digital &amp; Telecom</p>
+              <p class="text-slate-800">
+                Multiple GSM networks; growing internet penetration.
+                Metric: subscribers per 100 people, average broadband speed [API].
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- VILLAGE / TOWN-LEVEL DATA (quarters) -->
+        <section id="village-data" class="bg-nnewiNSurface rounded-2xl shadow-sm border border-nnewiN-100 px-5 py-6 mb-6">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
+            <h2 class="text-sm font-semibold text-nnewiN-900 uppercase tracking-wide">
+              Quarter‑Level Data – Nnewi Town
+            </h2>
+            <span class="inline-flex items-center rounded-full bg-nnewiN-100 px-3 py-1 text-[0.7rem] text-nnewiN-800">
+              Connect these rows to your town/quarter JSON or database.
+            </span>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-nnewiN-100 bg-nnewiN-50/40">
+            <table class="min-w-full text-left text-[0.75rem] text-slate-800">
+              <thead class="bg-nnewiN-100 border-b border-nnewiN-100">
+                <tr>
+                  <th class="px-3 py-2 font-semibold text-nnewiN-900">Quarter / Town</th>
+                  <th class="px-3 py-2 font-semibold text-nnewiN-900">Population (est.)</th>
+                  <th class="px-3 py-2 font-semibold text-nnewiN-900">Key Economic Activity</th>
+                  <th class="px-3 py-2 font-semibold text-nnewiN-900">Notes / Data Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-t border-nnewiN-100">
+                  <td class="px-3 py-2 font-semibold text-nnewiN-900">Otolo</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Residential, commerce, small industries [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Populate from your town‑level dataset.</td>
+                </tr>
+                <tr class="border-t border-nnewiN-100">
+                  <td class="px-3 py-2 font-semibold text-nnewiN-900">Uruagu</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Mixed commerce &amp; services [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Use same JSON structure as other LGAs.</td>
+                </tr>
+                <tr class="border-t border-nnewiN-100">
+                  <td class="px-3 py-2 font-semibold text-nnewiN-900">Umudim</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Residential, light manufacturing [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Connect to API for live figures.</td>
+                </tr>
+                <tr class="border-t border-nnewiN-100">
+                  <td class="px-3 py-2 font-semibold text-nnewiN-900">Nnewichi</td>
+                  <td class="px-3 py-2">[API]</td>
+                  <td class="px-3 py-2">Residential, trade, services [qualitative]</td>
+                  <td class="px-3 py-2 text-[0.7rem] text-slate-700">Additional quarters / areas can be added.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="mt-2 text-[0.7rem] text-slate-700">
+            If your LGA → Towns/Villages JSON has more granular units under Nnewi North, replace the rows and
+            columns with that structure (e.g. “Town / Village / Population / Key metric 1 / Key metric 2”).
+          </p>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-nnewiN-900 text-nnewiN-100 border-t border-nnewiN-900">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-[0.7rem]">
+          Nnewi North Local Government Area, Nnewi – data‑centric profile (mix of confirmed facts and API‑ready placeholders).
+        </p>
+        <p class="text-[0.7rem]">
+          Always confirm critical figures with official Anambra State and Nnewi North data sources.
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
