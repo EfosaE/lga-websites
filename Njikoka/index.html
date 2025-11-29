@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Njikoka LGA – Abagana | Government Services & Information Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Official-style information portal for Njikoka Local Government Area, Abagana – administrative structure, departments, projects, services, emergency contacts and downloads."
+  />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind theme for Njikoka -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            njikoka: {
+              50:  '#F9FFF3',
+              100: '#F1F8E9',
+              200: '#DCEDC8',
+              300: '#C5E1A5', // secondary
+              400: '#AED581',
+              500: '#8BC34A',
+              600: '#558B2F',
+              700: '#33691E', // primary
+              800: '#1B5E20',
+              900: '#0B3D0E'
+            },
+            njikokaAccent: '#FFB300',     // your accent
+            njikokaAccentDark: '#FF8F00', // complementary amber
+            njikokaSurface: '#FFFFFF',
+            njikokaSoftBg: '#F4FAF1'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Structured data (simple) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GovernmentOrganization",
+    "name": "Njikoka Local Government Area",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Abagana",
+      "addressRegion": "Anambra State",
+      "addressCountry": "NG"
+    },
+    "url": "https://njikoka.an.gov.ng"
+  }
+  </script>
+</head>
+<body class="bg-njikokaSoftBg text-slate-900 antialiased">
+  <div class="min-h-screen flex flex-col">
+
+    <!-- TOP GOV BAR -->
+    <header class="bg-njikoka-900 text-njikoka-100 shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center justify-center h-10 w-10 rounded-full bg-njikoka-300 text-njikoka-900 font-bold text-lg">
+            NJ
+          </span>
+          <div>
+            <p class="text-sm font-semibold tracking-wide uppercase">Njikoka Local Government Area</p>
+            <p class="text-xs text-njikoka-100/80">Abagana · Official Information &amp; Services</p>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-4 text-xs">
+          <div class="flex flex-col items-end">
+            <span class="font-semibold">Emergency Hotline</span>
+            <span class="text-njikoka-100/80">[Insert official emergency number]</span>
+          </div>
+          <a
+            href="#public-services"
+            class="inline-flex items-center rounded-full bg-njikokaAccent px-4 py-2 font-semibold text-slate-900 text-[0.75rem] hover:bg-njikokaAccentDark transition"
+          >
+            Public Service Links
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN LAYOUT: SIDEBAR + CONTENT -->
+    <div class="flex-1">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8 grid lg:grid-cols-[240px,1fr] gap-6">
+
+        <!-- LEFT SIDEBAR NAV -->
+        <aside class="bg-njikoka-900 text-njikoka-50 rounded-2xl shadow-md overflow-hidden">
+          <div class="px-4 py-4 border-b border-njikoka-800">
+            <h2 class="text-xs font-semibold tracking-[0.18em] uppercase text-njikoka-200">
+              Site Sections
+            </h2>
+          </div>
+          <nav class="text-[0.8rem]">
+            <a href="#welcome" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Welcome Message
+            </a>
+            <a href="#about" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              About Njikoka LGA
+            </a>
+            <a href="#admin-structure" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Administrative Structure
+            </a>
+            <a href="#departments" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Departments &amp; Units
+            </a>
+            <a href="#projects" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Major Projects
+            </a>
+            <a href="#notice-board" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Community Notice Board
+            </a>
+            <a href="#public-services" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Public Service Links
+            </a>
+            <a href="#emergency" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Emergency Contacts
+            </a>
+            <a href="#downloads" class="block px-4 py-2.5 hover:bg-njikoka-800 border-l-2 border-transparent hover:border-njikokaAccentDark">
+              Downloadable Documents
+            </a>
+          </nav>
+
+          <!-- Quick info -->
+          <div class="mt-auto px-4 py-4 border-t border-njikoka-800 text-[0.7rem]">
+            <p class="font-semibold text-njikoka-100">Headquarters</p>
+            <p class="text-njikoka-100/80">Abagana, Anambra State, Nigeria</p>
+            <p class="mt-2 font-semibold text-njikoka-100">Communities</p>
+            <p class="text-njikoka-100/80">
+              Abagana · Abba · Enugwu‑Agidi · Enugwu‑Ukwu · Nawfia · Nimo
+            </p>
+          </div>
+        </aside>
+
+        <!-- RIGHT MAIN CONTENT -->
+        <section class="space-y-6">
+
+          <!-- WELCOME + QUICK SUMMARY -->
+          <section id="welcome" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <div class="flex flex-col sm:flex-row sm:justify-between gap-4">
+              <div>
+                <h1 class="text-xl sm:text-2xl font-semibold text-njikoka-900">
+                  Welcome to Njikoka Local Government Area Portal
+                </h1>
+                <p class="mt-2 text-sm text-slate-700 max-w-xl">
+                  This page provides citizens, residents and visitors with essential information about Njikoka LGA –
+                  its leadership, departments, services, key projects and how to connect with the Secretariat in Abagana.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 text-xs sm:text-[0.75rem]">
+                <div class="rounded-xl bg-njikoka-100 px-3 py-2">
+                  <p class="font-semibold text-njikoka-800">Office Hours</p>
+                  <p class="text-slate-700">Mon–Fri, 8:00am – 4:00pm (official working hours)</p>
+                </div>
+                <div class="rounded-xl bg-njikoka-100 px-3 py-2">
+                  <p class="font-semibold text-njikoka-800">Official Website</p>
+                  <p class="text-slate-700">
+                    <a href="https://njikoka.an.gov.ng" class="text-njikoka-800 underline hover:text-njikokaAccentDark">njikoka.an.gov.ng</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ABOUT THE LGA -->
+          <section id="about" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <div class="grid md:grid-cols-[1.6fr,1.4fr] gap-6">
+              <div>
+                <h2 class="text-sm font-semibold text-njikoka-900 mb-2">About Njikoka LGA</h2>
+                <p class="text-sm text-slate-700">
+                  Njikoka Local Government Area is located in the central part of Anambra State, Nigeria, with its
+                  administrative headquarters in Abagana. The LGA comprises the communities of Abagana, Abba,
+                  Enugwu‑Agidi, Enugwu‑Ukwu, Nawfia and Nimo. The people are predominantly Igbo and are known
+                  for their strong town‑union structures, active religious life and rich cultural festivals.
+                </p>
+                <p class="mt-2 text-sm text-slate-700">
+                  The official Njikoka LGA website documents the evolution of the area from earlier local councils
+                  and customary courts into the current Local Government structure, which works in partnership
+                  with Anambra State Government and federal agencies to deliver services.
+                </p>
+              </div>
+              <div class="space-y-3 text-xs">
+                <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                  <p class="font-semibold text-njikoka-900 text-[0.75rem] uppercase tracking-wide">Headquarters</p>
+                  <p class="mt-1 text-slate-800">Njikoka Local Government Secretariat, Abagana, Anambra State.</p>
+                </div>
+                <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                  <p class="font-semibold text-njikoka-900 text-[0.75rem] uppercase tracking-wide">Core Communities</p>
+                  <p class="mt-1 text-slate-800">
+                    Abagana · Abba · Enugwu‑Agidi · Enugwu‑Ukwu · Nawfia · Nimo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ADMINISTRATIVE STRUCTURE -->
+          <section id="admin-structure" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <h2 class="text-sm font-semibold text-njikoka-900 mb-3">Administrative Structure</h2>
+            <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Executive Arm</p>
+                <p class="mt-1 text-slate-700">
+                  Led by the Chairman / Transition Committee Chairman, with Supervisors for key sectors
+                  (works, health, education, agriculture, etc.).
+                </p>
+              </div>
+              <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Legislative / Councillors</p>
+                <p class="mt-1 text-slate-700">
+                  Elected Councillors representing wards within the LGA (where applicable under current state law),
+                  providing oversight and bye‑laws.
+                </p>
+              </div>
+              <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Traditional &amp; Community Institutions</p>
+                <p class="mt-1 text-slate-700">
+                  Recognized traditional rulers (<span class="italic">Igwe</span>) and town unions from Abagana,
+                  Abba, Enugwu‑Agidi, Enugwu‑Ukwu, Nawfia and Nimo, working with the LGA on local matters.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- DEPARTMENTS & UNITS -->
+          <section id="departments" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <h2 class="text-sm font-semibold text-njikoka-900 mb-3">Departments &amp; Units</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Administration</p>
+                <ul class="mt-1 list-disc list-inside text-slate-700 space-y-0.5">
+                  <li>Personnel management</li>
+                  <li>Records &amp; secretariat services</li>
+                  <li>General administration</li>
+                </ul>
+              </div>
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Finance &amp; Revenue</p>
+                <ul class="mt-1 list-disc list-inside text-slate-700 space-y-0.5">
+                  <li>Budget &amp; accounts</li>
+                  <li>Internally Generated Revenue (IGR)</li>
+                  <li>Rates, levies &amp; markets</li>
+                </ul>
+              </div>
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Works &amp; Infrastructure</p>
+                <ul class="mt-1 list-disc list-inside text-slate-700 space-y-0.5">
+                  <li>Road maintenance (LGA scope)</li>
+                  <li>Public buildings &amp; utilities</li>
+                </ul>
+              </div>
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Health &amp; Social Services</p>
+                <ul class="mt-1 list-disc list-inside text-slate-700 space-y-0.5">
+                  <li>Primary health care support</li>
+                  <li>Immunization &amp; outreach</li>
+                  <li>Social welfare (where applicable)</li>
+                </ul>
+              </div>
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Education &amp; Youth</p>
+                <ul class="mt-1 list-disc list-inside text-slate-700 space-y-0.5">
+                  <li>Support to basic education</li>
+                  <li>Youth &amp; sports programmes</li>
+                </ul>
+              </div>
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Environment &amp; Agriculture</p>
+                <ul class="mt-1 list-disc list-inside text-slate-700 space-y-0.5">
+                  <li>Sanitation &amp; waste management</li>
+                  <li>Support to farmers &amp; cooperatives</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- MAJOR ONGOING PROJECTS -->
+          <section id="projects" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <h2 class="text-sm font-semibold text-njikoka-900">Major Ongoing Projects</h2>
+              <span class="inline-flex items-center rounded-full bg-njikoka-100 px-2.5 py-1 text-[0.7rem] text-njikoka-800">
+                Update from official sources where available
+              </span>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Road &amp; Drainage Works</p>
+                <p class="mt-1 text-slate-700">
+                  Examples: grading of local access roads, minor culvert construction and drainage clearing in
+                  Abagana, Enugwu‑Ukwu, Nimo and other communities. Replace with specific named projects and dates
+                  from the LGA’s official communication.
+                </p>
+              </div>
+              <div class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">School &amp; Health Facility Improvements</p>
+                <p class="mt-1 text-slate-700">
+                  Classroom renovations, furniture supply, and upgrades to primary health centres in partnership
+                  with state programmes. Insert concrete examples once confirmed.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- COMMUNITY NOTICE BOARD -->
+          <section id="notice-board" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <h2 class="text-sm font-semibold text-njikoka-900 mb-3">Community Notice Board</h2>
+            <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1.5">
+              <li>
+                <span class="font-semibold">Public meetings &amp; consultations</span> – Announce town‑hall meetings,
+                budget consultative forums and public hearings here.
+              </li>
+              <li>
+                <span class="font-semibold">Health &amp; vaccination campaigns</span> – Dates and locations for
+                immunization or health outreach within the six communities.
+              </li>
+              <li>
+                <span class="font-semibold">Environmental sanitation days</span> – Monthly or quarterly clean‑up
+                exercises and waste‑collection schedules.
+              </li>
+              <li>
+                <span class="font-semibold">Job &amp; training notices</span> – Youth empowerment, skills training and
+                women’s cooperative meetings.
+              </li>
+            </ul>
+          </section>
+
+          <!-- PUBLIC SERVICE LINKS -->
+          <section id="public-services" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <h2 class="text-sm font-semibold text-njikoka-900 mb-3">Public Service Links</h2>
+            <p class="text-xs sm:text-[0.8rem] text-slate-700 mb-3">
+              Connect to key state and federal services. Replace the URLs with actual platforms used by Anambra State
+              and Njikoka LGA (e‑tax portals, health insurance platforms, etc.).
+            </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[0.75rem]">
+              <a class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3 hover:border-njikokaAccentDark hover:bg-njikoka-100 transition cursor-pointer">
+                <p class="font-semibold text-njikoka-900">Birth &amp; Death Registration</p>
+                <p class="mt-1 text-slate-700">
+                  Link to National Population Commission / state registration portal.
+                </p>
+              </a>
+              <a class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3 hover:border-njikokaAccentDark hover:bg-njikoka-100 transition cursor-pointer">
+                <p class="font-semibold text-njikoka-900">Tax &amp; Levies Payment</p>
+                <p class="mt-1 text-slate-700">
+                  Connect to state IGR platform for approved taxes and levies.
+                </p>
+              </a>
+              <a class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3 hover:border-njikokaAccentDark hover:bg-njikoka-100 transition cursor-pointer">
+                <p class="font-semibold text-njikoka-900">Health Insurance</p>
+                <p class="mt-1 text-slate-700">
+                  State health insurance / basic health care scheme information.
+                </p>
+              </a>
+              <a class="rounded-xl border border-njikoka-100 bg-njikoka-50 px-3 py-3 hover:border-njikokaAccentDark hover:bg-njikoka-100 transition cursor-pointer">
+                <p class="font-semibold text-njikoka-900">Business Premises &amp; Permits</p>
+                <p class="mt-1 text-slate-700">
+                  Guidance on registering small businesses and obtaining permits.
+                </p>
+              </a>
+            </div>
+          </section>
+
+          <!-- EMERGENCY CONTACTS -->
+          <section id="emergency" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6">
+            <h2 class="text-sm font-semibold text-njikoka-900 mb-3">Emergency Contacts</h2>
+            <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
+              <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Security</p>
+                <p class="mt-1 text-slate-700">
+                  Police Division (Abagana / environs): [Insert phone]<br />
+                  State emergency number: [Insert]
+                </p>
+              </div>
+              <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Health Emergencies</p>
+                <p class="mt-1 text-slate-700">
+                  Nearest general / mission hospitals and ambulance lines applicable to Njikoka communities.
+                </p>
+              </div>
+              <div class="rounded-xl bg-njikoka-100 px-3 py-3">
+                <p class="font-semibold text-njikoka-900">Fire &amp; Disaster Response</p>
+                <p class="mt-1 text-slate-700">
+                  Anambra State Fire Service contact closest to Abagana / Njikoka and any local disaster response
+                  lines (to be confirmed from state sources).
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- DOWNLOADABLE DOCUMENTS -->
+          <section id="downloads" class="bg-njikokaSurface rounded-2xl shadow-sm border border-njikoka-100 px-5 py-5 sm:py-6 mb-4">
+            <h2 class="text-sm font-semibold text-njikoka-900 mb-3">Downloadable Documents</h2>
+            <p class="text-xs sm:text-[0.8rem] text-slate-700 mb-3">
+              Use this area to host public documents such as budget summaries, financial reports and key bye‑laws.
+              Link to PDF or other official files when available.
+            </p>
+            <div class="overflow-hidden rounded-xl border border-njikoka-100 bg-njikoka-50/40">
+              <table class="min-w-full text-left text-[0.75rem] text-slate-800">
+                <thead class="bg-njikoka-100 border-b border-njikoka-100">
+                  <tr>
+                    <th class="px-3 py-2 font-semibold text-njikoka-900">Document</th>
+                    <th class="px-3 py-2 font-semibold text-njikoka-900">Type</th>
+                    <th class="px-3 py-2 font-semibold text-njikoka-900">Year</th>
+                    <th class="px-3 py-2 font-semibold text-njikoka-900">Download</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-t border-njikoka-100">
+                    <td class="px-3 py-2">[Sample] Njikoka LGA Approved Budget</td>
+                    <td class="px-3 py-2">Budget Summary (PDF)</td>
+                    <td class="px-3 py-2">[Year]</td>
+                    <td class="px-3 py-2 text-njikoka-700">
+                      <a class="underline hover:text-njikokaAccentDark cursor-pointer">Download</a>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-njikoka-100">
+                    <td class="px-3 py-2">[Sample] Schedule of Official Rates &amp; Levies</td>
+                    <td class="px-3 py-2">Revenue Guide (PDF)</td>
+                    <td class="px-3 py-2">[Year]</td>
+                    <td class="px-3 py-2 text-njikoka-700">
+                      <a class="underline hover:text-njikokaAccentDark cursor-pointer">Download</a>
+                    </td>
+                  </tr>
+                  <tr class="border-t border-njikoka-100">
+                    <td class="px-3 py-2">[Sample] Selected Local Bye‑Laws</td>
+                    <td class="px-3 py-2">Bye‑Law (PDF)</td>
+                    <td class="px-3 py-2">[Year]</td>
+                    <td class="px-3 py-2 text-njikoka-700">
+                      <a class="underline hover:text-njikokaAccentDark cursor-pointer">Download</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+        </section>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-njikoka-900 text-njikoka-100 border-t border-njikoka-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-[0.7rem]">
+          Njikoka Local Government Area, Abagana – citizen information and public service directory.
+        </p>
+        <p class="text-[0.7rem]">
+          This layout uses a government portal style distinct from tourism‑focused LGA pages.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional minimal JS for future dynamic data (currently not required) -->
+  <script>
+    // You can attach API calls or JSON-driven content here later if needed.
+  </script>
+</body>
+</html>
