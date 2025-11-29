@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awka South Local Government Area – Anambra State</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+
+    <!-- NAVBAR -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
+      <nav class="flex items-center justify-between px-6 md:px-20 py-4">
+
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <img src="assets/awka-logo.png" class="w-10 h-10" alt="Awka South Logo" />
+          <span class="text-white text-2xl font-bold">Awka South LGA</span>
+        </div>
+
+        <!-- Desktop Links -->
+        <ul class="hidden md:flex space-x-10 text-white text-lg font-medium">
+          <li><a href="#about" class="hover:text-[#263238]">About</a></li>
+          <li><a href="#towns" class="hover:text-[#263238]">Towns</a></li>
+          <li><a href="#economy" class="hover:text-[#263238]">Economy</a></li>
+          <li><a href="#gallery" class="hover:text-[#263238]">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-[#263238]">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-white text-3xl">☰</button>
+      </nav>
+
+      <!-- Mobile Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden text-white flex flex-col space-y-4 px-6 py-6 md:hidden"
+        style="background-color:#BF360C">
+        <a href="#about" class="hover:text-[#263238]">About</a>
+        <a href="#towns" class="hover:text-[#263238]">Towns</a>
+        <a href="#economy" class="hover:text-[#263238]">Economy</a>
+        <a href="#gallery" class="hover:text-[#263238]">Gallery</a>
+        <a href="#contact" class="hover:text-[#263238]">Contact</a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative">
+      <img src="assets/awka-hero.png" class="w-full h-[450px] object-cover brightness-75" />
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-6">
+        <h1 class="text-4xl md:text-6xl font-bold">Awka South Local Government Area</h1>
+        <p class="mt-4 text-xl md:text-2xl max-w-3xl">
+          The heartbeat of Anambra State — home to government institutions,
+          commerce, culture, and innovation.
+        </p>
+
+        <a
+          href="#about"
+          class="mt-6 px-6 py-3 rounded-lg text-lg shadow-lg"
+          style="background-color:#BF360C">
+          Explore Awka South
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold mb-6">About Awka South</h2>
+
+      <p class="text-lg leading-relaxed max-w-4xl">
+        Awka South LGA is one of the most important administrative and commercial
+        regions in Anambra State. It is home to the **Anambra State Government
+        House**, state ministries, educational institutions, corporate offices,
+        and vibrant markets. Awka South consists of major towns including **Awka**,
+        **Amawbia**, **Nibo**, **Nise**, **Mbaukwu**, **Ezinato**, **Ezinifite**,
+        **Isiagu**, and **Okpuno**.
+      </p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white shadow-md p-6 rounded-xl">
+          <h3 class="font-semibold text-xl mb-2">Population</h3>
+          <p>Over <strong>200,000+</strong> residents (projected).</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-xl">
+          <h3 class="font-semibold text-xl mb-2">Headquarters</h3>
+          <p>Amawbia.</p>
+        </div>
+        <div class="bg-white shadow-md p-6 rounded-xl">
+          <h3 class="font-semibold text-xl mb-2">State Capital</h3>
+          <p>Awka South hosts the official seat of government in Anambra State.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="py-16 px-6 md:px-20" style="background-color:#263238">
+      <h2 class="text-3xl font-bold mb-10" style="color:#263238">Leadership</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-6 shadow rounded-xl">
+          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61" class="rounded-xl h-56 w-full object-cover" />
+          <h3 class="mt-4 text-xl font-bold">Transition Committee Chairman</h3>
+          <p class="text-gray-700 mt-1">Awka South LGA</p>
+        </div>
+
+        <div class="bg-white p-6 shadow rounded-xl">
+          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" class="rounded-xl h-56 w-full object-cover" />
+          <h3 class="mt-4 text-xl font-bold">Secretary to the LGA</h3>
+          <p class="text-gray-700 mt-1">Awka South LGA</p>
+        </div>
+
+        <div class="bg-white p-6 shadow rounded-xl">
+          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe" class="rounded-xl h-56 w-full object-cover" />
+          <h3 class="mt-4 text-xl font-bold">Head of Departments</h3>
+          <p class="text-gray-700 mt-1">Health • Education • Works • Agriculture</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOWNS -->
+    <section class="py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold mb-6">Towns in Awka South</h2>
+
+      <div class="grid md:grid-cols-3 gap-4 text-lg">
+        <span class="bg-white shadow p-4 rounded-lg">Awka</span>
+        <span class="bg-white shadow p-4 rounded-lg">Amawbia</span>
+        <span class="bg-white shadow p-4 rounded-lg">Nibo</span>
+        <span class="bg-white shadow p-4 rounded-lg">Nise</span>
+        <span class="bg-white shadow p-4 rounded-lg">Okpuno</span>
+        <span class="bg-white shadow p-4 rounded-lg">Isiagu</span>
+        <span class="bg-white shadow p-4 rounded-lg">Mbaukwu</span>
+        <span class="bg-white shadow p-4 rounded-lg">Ezinato</span>
+        <span class="bg-white shadow p-4 rounded-lg">Ezinifite</span>
+      </div>
+    </section>
+
+    <!-- ECONOMY -->
+    <section class="py-16 px-6 md:px-20" style="background-color:#263238">
+      <h2 class="text-3xl font-bold mb-6" style="color:#fff">Economy & Key Institutions</h2>
+
+      <ul class="text-lg leading-relaxed list-disc ml-6 space-y-3 text-white">
+        <li>Federal Polytechnic Oko (Awka Campus)</li>
+        <li>Nnamdi Azikiwe University (nearby)</li>
+        <li>Eke Awka Market, Amawbia Market, Nise Market</li>
+        <li>Government House & State Secretariat</li>
+        <li>Major hotels, plazas, tech hubs, and banking centers</li>
+        <li>Transport companies and interstate bus parks</li>
+      </ul>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="py-16 px-6 md:px-20">
+      <h2 class="text-3xl font-bold mb-10">Photo Gallery</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Awka_City.jpg" class="rounded-xl shadow object-cover h-64 w-full" />
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" class="rounded-xl shadow object-cover h-64 w-full" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Anambra-state-secretariat-awka.jpg" class="rounded-xl shadow object-cover h-64 w-full" />
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="rounded-xl shadow object-cover h-64 w-full" />
+        <img src="https://images.unsplash.com/photo-1517059224940-d4af9eec41e5" class="rounded-xl shadow object-cover h-64 w-full" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Ogbugbank_Statue_Awka.jpg" class="rounded-xl shadow object-cover h-64 w-full" />
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="py-16 px-6 md:px-20 text-white" style="background-color:#BF360C">
+      <h2 class="text-3xl font-bold mb-6">Contact Awka South LGA</h2>
+
+      <p class="text-lg max-w-3xl">
+        Awka South Local Government Headquarters, Amawbia, Anambra State, Nigeria.
+      </p>
+      <p class="mt-4">📞 0803-000-0000</p>
+      <p>📧 info@awkalsouth.gov.ng (placeholder)</p>
+
+      <div class="mt-8">
+        <a
+          href="#"
+          class="px-6 py-3 rounded-lg font-semibold"
+          style="background-color:#263238; color:#fff">
+          Visit Official Portal
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 text-center text-gray-200" style="background-color:#263238">
+      © 2025 Awka South Local Government Area. All Rights Reserved.
+    </footer>
+
+  </body>
+
+  <!-- JS -->
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const navbar = document.getElementById("navbar");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Make navbar turn solid on scroll
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        navbar.style.backgroundColor = "#BF360C";
+        navbar.classList.add("shadow-lg");
+      } else {
+        navbar.style.backgroundColor = "transparent";
+        navbar.classList.remove("shadow-lg");
+      }
+    });
+  </script>
+</html>
