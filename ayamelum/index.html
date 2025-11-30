@@ -10,7 +10,7 @@
     <meta
       name="keywords"
       content="Ayamelum, Anaku, Omor, Rice Farming, Omambala River, Anambra Tourism, Masquerades" />
-    <title>Visit Ayamelum | The Food Basket of Anambra</title>
+    <title>Ayamelum | The Food Basket of Anambra</title>
 
     <script type="application/ld+json">
       {
@@ -31,6 +31,8 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/ansg_favicon.png" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
@@ -74,7 +76,7 @@
   </head>
   <body class="font-sans text-gray-800 bg-gray-50 harvest-pattern">
     <nav
-      class="bg-ayaPrimary text-white sticky top-0 z-50 shadow-xl border-b-4 border-ayaAccent">
+      class="bg-ayaPrimary text-white sticky top-0 z-50 shadow-xl border-b-4 border-ayaAccent relative">
       <div
         class="container mx-auto px-6 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
@@ -88,6 +90,7 @@
             >
           </div>
         </div>
+
         <div class="hidden md:flex space-x-8 font-medium">
           <a href="#overview" class="hover:text-ayaAccent transition"
             >Overview</a
@@ -100,18 +103,47 @@
             >Communities</a
           >
         </div>
-        <button class="md:hidden text-white focus:outline-none">
+
+        <button
+          id="mobile-menu-btn"
+          class="md:hidden text-white focus:outline-none">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
-    </nav>
 
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-full left-0 w-full bg-ayaPrimary border-t border-ayaSecondary/20 shadow-xl z-50">
+        <div class="px-6 py-4 space-y-3 flex flex-col font-medium">
+          <a
+            href="#overview"
+            class="mobile-link block hover:text-ayaAccent transition py-2 border-b border-ayaSecondary/10"
+            >Overview</a
+          >
+          <a
+            href="#culture"
+            class="mobile-link block hover:text-ayaAccent transition py-2 border-b border-ayaSecondary/10"
+            >Culture</a
+          >
+          <a
+            href="#agro-tourism"
+            class="mobile-link block hover:text-ayaAccent transition py-2 border-b border-ayaSecondary/10"
+            >Agro-Tourism</a
+          >
+          <a
+            href="#towns"
+            class="mobile-link block hover:text-ayaAccent transition py-2"
+            >Communities</a
+          >
+        </div>
+      </div>
+    </nav>
     <header
       class="relative h-[85vh] flex items-center justify-center text-center text-white">
       <div class="absolute inset-0 bg-ayaPrimary/70 z-10"></div>
 
       <div
-        class="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/9/98/Rice_Farm_in_Nigeria.jpg')] bg-cover bg-center mix-blend-overlay z-0"></div>
+        class="absolute inset-0 bg-[url('https://scontent.flos5-2.fna.fbcdn.net/v/t39.30808-6/485725452_1221338416018892_3094969432991091560_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFuj43zsPgRk2_wlKLEJHbV4g0zv64kPgviDTO_riQ-CxlrOjKHaWQzrCRmZjlVsuHhZMzpAAqVIl0bjZiaV6Yi&_nc_ohc=C9y7YxjyFWsQ7kNvwEZHXy-&_nc_oc=Adn5ZQfPi5sUuscy-mFyNxAMk795SlezojkG94PJNgqt4dSb7aAqhSPnfZ-6Byru6T0&_nc_zt=23&_nc_ht=scontent.flos5-2.fna&_nc_gid=OHtEyU3CIZGfQVhRrDxiMw&oh=00_AfiFz19iKTGysnOo7XWfWo3PyJ8c9MYHIdSo0kmneeAm4g&oe=6931099A')] bg-cover bg-center z-0"></div>
 
       <div class="relative z-20 container mx-auto px-6 max-w-4xl">
         <span
@@ -178,7 +210,7 @@
           </div>
           <div class="md:w-1/2 relative">
             <img
-              src="https://via.placeholder.com/600x400?text=Ayamelum+Landscape"
+              src="https://www.nairaland.com/attachments/15562805_djiexport1654792932240_jpegea49b4c2e937b67cea773dfa3e9b1b2e"
               alt="Ayamelum Landscape"
               class="rounded-lg shadow-2xl relative z-10 border-4 border-ayaAccent" />
             <div
@@ -206,7 +238,7 @@
             class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
             <div class="h-48 bg-gray-200 overflow-hidden">
               <img
-                src="https://via.placeholder.com/400x300?text=Iwa+Ji+Festival"
+                src="https://scontent.flos5-2.fna.fbcdn.net/v/t39.30808-6/492365291_1154151830056105_3246531494145627730_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFACvueHPL3kHQ7pvpC1H3SG3ruPygTnWMbeu4_KBOdY0QHbdkzr9SFExxpM_iFNWtTnJPFBjcJyxXrotE7mm9_&_nc_ohc=lvWtYk8a4ygQ7kNvwEBqnMA&_nc_oc=AdmEZQBLHi5myIEa7VH5rLOyi8hcpxw0PNYV5S_SzF_jr2EeXXPKVdgxwZLhth5vhrA&_nc_zt=23&_nc_ht=scontent.flos5-2.fna&_nc_gid=TwZtc4fY0bLf0bsVhweryw&oh=00_AfgVF2pAJz2sZu8BGkDwWKcUImRfvJWVoIW0jyFljjPItQ&oe=6930F891"
                 alt="New Yam Festival"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
             </div>
@@ -244,7 +276,7 @@
             class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
             <div class="h-48 bg-gray-200 overflow-hidden">
               <img
-                src="https://via.placeholder.com/400x300?text=Masquerades"
+                src="https://rexclarkeadventures.com/wp-content/uploads/2025/10/A-masquerade-festival.-Photo-Nkoriko-1536x1021-1.jpg"
                 alt="Masquerade"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
             </div>
@@ -274,7 +306,7 @@
             class="flex flex-col md:flex-row bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
             <div class="md:w-1/3 h-64 bg-gray-800">
               <img
-                src="https://via.placeholder.com/500x400?text=Omor+Rice+Fields"
+                src="https://scontent.flos5-3.fna.fbcdn.net/v/t39.30808-6/480539286_9304804592968084_6244198189800510606_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEkAR_uUH7bnKhaWa13SDEUqj76yG5PdBWqPvrIbk90FT26mA-BVejhv76vYFKIeoh3JtfVi9IL_i6VN56hgEbQ&_nc_ohc=lqt0_lkVAlsQ7kNvwEThuZF&_nc_oc=Adk2i4w6vfpVXf2Ui54w5OI1R8qYjioNIAxrN13yScVWT8SBvsq6cVQ4GV7LLdw2a1w&_nc_zt=23&_nc_ht=scontent.flos5-3.fna&_nc_gid=71pepOP8Sara1xopTutE-Q&oh=00_Afg3i7gf2wuSVVwEsaCbzxEnoe30jQURRM7Eb78_PvWQzg&oe=693112C4"
                 class="w-full h-full object-cover opacity-80"
                 alt="Rice Fields" />
             </div>
@@ -298,7 +330,7 @@
             class="flex flex-col md:flex-row-reverse bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
             <div class="md:w-1/3 h-64 bg-gray-800">
               <img
-                src="https://via.placeholder.com/500x400?text=Omambala+River"
+                src="https://scontent.flos5-3.fna.fbcdn.net/v/t39.30808-6/491830272_1230788185358591_3465467160441052471_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFZ9xJ19PfmTkA5ureutrHQxa9eXYvX5bPFr15di9fls7gyeoi-ojbRBHczMFLh70_s1H2pwqSOT7musuvdraP-&_nc_ohc=J1y3uxKXWqYQ7kNvwE_uHik&_nc_oc=AdnZQbGVqOt4otNFWbWQWi0KlJU8XKQVr5lYzRsOy2fsaod9xbZ_PHcIIr690uePOeo&_nc_zt=23&_nc_ht=scontent.flos5-3.fna&_nc_gid=mj5q61FuNVVMulauFNYnuA&oh=00_AfiusqA7oakBb8uG4iRdgzsnNvF0xw3qbccqNWpIvjQMsw&oe=6931087B"
                 class="w-full h-full object-cover opacity-80"
                 alt="River View" />
             </div>
@@ -343,6 +375,87 @@
         </div>
 
         <div id="townsGrid" class="grid grid-cols-2 md:grid-cols-4 gap-6"></div>
+      </div>
+    </section>
+
+    <section
+      id="leadership"
+      class="py-16 bg-gray-50 border-t border-ayaSecondary/30">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <span
+            class="text-ayaPrimary font-bold uppercase tracking-widest text-sm"
+            >Governance</span
+          >
+          <h2 class="text-3xl font-bold font-serif text-gray-800 mt-2">
+            LGA Leadership
+          </h2>
+          <div class="w-16 h-1 bg-ayaAccent mx-auto mt-4 rounded"></div>
+        </div>
+
+        <div
+          class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+          <div
+            class="md:w-1/3 bg-ayaPrimary flex items-center justify-center p-8 relative">
+            <div class="absolute inset-0 bg-ayaSecondary/10 pattern-bg"></div>
+            <div class="relative text-center text-white z-10">
+              <div
+                class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 overflow-hidden border-4 border-ayaAccent shadow-lg">
+                <img
+                  src="assets/lga_chairman.png"
+                  class="w-full h-full object-cover"
+                  alt="Chairman" />
+              </div>
+
+              <h3 class="font-bold text-xl">Office of the Chairman</h3>
+            </div>
+          </div>
+
+          <div class="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-ayaPrimary mb-1">
+              Hon. Alphonsus Ofumele
+            </h3>
+            <p
+              class="text-ayaAccent font-bold uppercase text-xs tracking-wide mb-6">
+              Transition Committee Chairman
+            </p>
+
+            <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+              Driving the "Solution Agenda" in Ayamelum through agricultural
+              support, rural infrastructure development, and peace-building
+              initiatives across the 8 communities.
+            </p>
+
+            <div
+              class="grid md:grid-cols-2 gap-6 text-sm border-t border-gray-100 pt-6">
+              <div class="flex items-start">
+                <i
+                  class="fas fa-map-marker-alt text-ayaAccent mt-1 mr-3 text-lg"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">LGA Secretariat</h4>
+                  <p class="text-gray-500">Anaku, Anambra State</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <i class="fas fa-envelope text-ayaAccent mt-1 mr-3 text-lg"></i>
+                <div>
+                  <h4 class="font-bold text-gray-800">Official Contact</h4>
+                  <a
+                    href="mailto:info@ayamelum.an.gov.ng"
+                    class="text-ayaPrimary hover:underline block"
+                    >info@ayamelum.an.gov.ng</a
+                  >
+                  <a
+                    href="https://anambrastate.gov.ng"
+                    target="_blank"
+                    class="text-gray-400 text-xs hover:text-ayaPrimary"
+                    >Visit State Portal</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -399,8 +512,29 @@
     </footer>
 
     <script>
-      // We wrap this in an event listener to ensure HTML is fully loaded first
       document.addEventListener("DOMContentLoaded", function () {
+        // --- MOBILE MENU LOGIC START ---
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        const links = document.querySelectorAll(".mobile-link"); // Select all mobile links
+
+        // Toggle menu on button click
+        if (btn && menu) {
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        }
+
+        // Close menu when a link is clicked
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            if (menu) {
+              menu.classList.add("hidden");
+            }
+          });
+        });
+        // --- MOBILE MENU LOGIC END ---
+
         // Renamed variable to 'ayamelumTowns' to avoid conflicts with other LGAs
         const ayamelumTowns = [
           "Anaku",
@@ -437,7 +571,6 @@
 
           filtered.forEach((town) => {
             const div = document.createElement("div");
-            // We use standard tailwind colors + custom ones to ensure visibility
             div.className =
               "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-ayaPrimary hover:shadow-lg transition cursor-pointer flex flex-col items-center justify-center text-center group";
 

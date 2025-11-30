@@ -100,18 +100,30 @@
           class="hidden md:inline-block text-xs bg-white/10 hover:bg-white/20 px-3 py-1 rounded text-aguataSecondary border border-aguataSecondary/30">
           <i class="fab fa-wikipedia-w mr-1"></i> Wiki
         </a>
-        <button class="md:hidden text-white focus:outline-none">
+        <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden text-white focus:outline-none z-50">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
     </nav>
 
+    <!-- Mobile Menu (overlay; hidden by default) -->
+    <div id="mobileMenu" class="md:hidden hidden fixed left-0 right-0 bg-white shadow-lg overflow-auto" style="max-height:60vh; z-index:9999;">
+      <div class="container mx-auto px-6 py-4 space-y-3">
+        <a href="#about" class="block text-aguataPrimary font-medium">Overview</a>
+        <a href="#heritage" class="block text-aguataPrimary font-medium">Bronze Heritage</a>
+        <a href="#leadership" class="block text-aguataPrimary font-medium">Leadership</a>
+        <a href="#destinations" class="block text-aguataPrimary font-medium">Destinations</a>
+        <a href="#towns" class="block text-aguataPrimary font-medium">Towns</a>
+        <a href="https://en.wikipedia.org/wiki/Aguata" target="_blank" class="inline-block bg-aguataPrimary text-white px-4 py-2 rounded">Wiki</a>
+      </div>
+    </div>
+
     <header
       class="relative h-[85vh] flex items-center justify-center text-center text-white hero-mesh overflow-hidden">
-      <div class="absolute inset-0 bg-aguataPrimary/80 z-10"></div>
+      <div class="absolute inset-0 bg-aguataPrimary/50 z-10"></div>
 
       <div
-        class="absolute inset-0 bg-[url('https://via.placeholder.com/1920x1080?text=Landscape+of+Aguata+Hills')] bg-cover bg-center mix-blend-overlay opacity-40 z-0"></div>
+        class="absolute inset-0 bg-[url('assets/hill.jpg')] bg-cover bg-center mix-blend-overlay opacity-40 z-0"></div>
 
       <div class="relative z-20 container mx-auto px-6 max-w-4xl">
         <span
@@ -177,7 +189,7 @@
           </div>
           <div class="md:w-1/2">
             <img
-              src="https://via.placeholder.com/600x400?text=Ekwulobia+Town+Center"
+              src="assets/ekwulobia_town.jpg"
               alt="Ekwulobia"
               class="rounded-xl shadow-2xl w-full" />
           </div>
@@ -268,11 +280,11 @@
           <div class="w-20 h-1 bg-aguataAccent mx-auto mt-4"></div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid md:grid-cols-2 md:px-48 gap-8">
           <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
             <div class="h-64 overflow-hidden bg-gray-200">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Igbo-Ukwu_bronze_vase.jpg"
+                src="assets/igbo-ukwu.jpg"
                 alt="Igbo-Ukwu Bronze Roped Pot"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
             </div>
@@ -297,7 +309,7 @@
           <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
             <div class="h-64 overflow-hidden bg-gray-200 relative">
               <img
-                src="https://via.placeholder.com/400x300?text=New+Yam+Festival"
+                src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*wMqwTsRuBlgW3xXQfSfYYQ.jpeg"
                 alt="Iwa Ji Festival"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
               <div
@@ -316,7 +328,7 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
+          <!-- <div class="bg-white rounded-xl shadow-lg overflow-hidden group">
             <div class="h-64 overflow-hidden bg-gray-200 relative">
               <img
                 src="https://via.placeholder.com/400x300?text=Prof+Chukwuma+Soludo"
@@ -332,7 +344,7 @@
                 Governor of Anambra State, Prof. Chukwuma Soludo (from Isuofia).
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -349,7 +361,7 @@
             <div
               class="md:w-1/3 w-full h-64 bg-gray-100 rounded-lg overflow-hidden shadow-md">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Igbo-Ukwu_bronze_vase.jpg"
+                src="https://mindtrip.ai/cdn-cgi/image/format=webp,w=960/https://images.mindtrip.ai/attractions/0297/4c14/abbe/b462/6f93/feca/ff6d/2db3"
                 class="w-full h-full object-cover"
                 alt="National Museum Artifact" />
             </div>
@@ -376,7 +388,7 @@
             <div
               class="md:w-1/3 w-full h-64 bg-gray-100 rounded-lg overflow-hidden shadow-md">
               <img
-                src="https://via.placeholder.com/500x350?text=Obizi+Spring+Uga"
+                src="assets/uga.png"
                 class="w-full h-full object-cover"
                 alt="Obizi Spring Uga" />
             </div>
@@ -403,7 +415,7 @@
             <div
               class="md:w-1/3 w-full h-64 bg-gray-100 rounded-lg overflow-hidden shadow-md">
               <img
-                src="https://via.placeholder.com/500x350?text=Ekwulobia+Urban+Market"
+                src="https://scontent.flos5-3.fna.fbcdn.net/v/t39.30808-6/516382153_25003410655925574_7081770279528583181_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFWngPcY3HhMFsZEBIe0yUdE-aKCl68ggkT5ooKXryCCcIp7Bk3IJF42ugzUGiJsa1mxwwZI2fgneOeKBrxys_t&_nc_ohc=mJcioiKJIPoQ7kNvwFITcJa&_nc_oc=AdlhJo8PkfsxxlBeWLlxs-OZDM0yWKZZ8LTWQMr5-M4ZWYoPwtyyTsebqxV5equueZU&_nc_zt=23&_nc_ht=scontent.flos5-3.fna&_nc_gid=BuaWaNd31bqYmx34p5iU4Q&oh=00_AfjnMEjkJeYyrrYksFk0NqecDABsFLkZgAioUmgP8gz0WQ&oe=6930CE8A"
                 class="w-full h-full object-cover"
                 alt="Eke Ekwulobia" />
             </div>
@@ -513,6 +525,63 @@
     </footer>
 
     <script>
+      // Mobile menu functionality: toggle overlay, position under nav, lock body scroll
+      (function () {
+        const mobileBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const topNav = document.querySelector("nav");
+
+        function positionMobileMenu() {
+          if (!mobileMenu || !topNav) return;
+          const rect = topNav.getBoundingClientRect();
+          mobileMenu.style.top = rect.bottom + "px";
+          mobileMenu.style.left = 0;
+          mobileMenu.style.right = 0;
+        }
+
+        function openMenu(btn, menu) {
+          menu.classList.remove("hidden");
+          btn.setAttribute("aria-expanded", "true");
+          btn.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+          document.body.classList.add("overflow-hidden");
+        }
+
+        function closeMenu(btn, menu) {
+          menu.classList.add("hidden");
+          btn.setAttribute("aria-expanded", "false");
+          btn.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+          document.body.classList.remove("overflow-hidden");
+        }
+
+        if (mobileBtn && mobileMenu) {
+          positionMobileMenu();
+          mobileBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const expanded = this.getAttribute("aria-expanded") === "true";
+            if (expanded) closeMenu(this, mobileMenu);
+            else openMenu(this, mobileMenu);
+          });
+
+          // Close when clicking outside the menu
+          document.addEventListener("click", function (e) {
+            if (mobileMenu.classList.contains("hidden")) return;
+            const withinMenu = mobileMenu.contains(e.target);
+            const isBtn = mobileBtn.contains(e.target);
+            if (!withinMenu && !isBtn) closeMenu(mobileBtn, mobileMenu);
+          });
+
+          // Close on Escape
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
+              closeMenu(mobileBtn, mobileMenu);
+            }
+          });
+
+          window.addEventListener("resize", positionMobileMenu);
+          window.addEventListener("orientationchange", positionMobileMenu);
+        }
+      })();
+
       const towns = [
         "Achina",
         "Aguluezechukwu",

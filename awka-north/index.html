@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@700&display=swap"
       rel="stylesheet" />
 
+    <link rel="icon" type="image/x-icon" href="assets/ansg_favicon.png" />
+
     <script>
       tailwind.config = {
         theme: {
@@ -37,6 +39,9 @@
     </script>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       .gov-pattern {
         background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
       }
@@ -97,11 +102,43 @@
           >
         </div>
 
-        <button class="md:hidden text-white focus:outline-none">
+        <button
+          id="mobileMenuBtn"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          class="md:hidden text-white focus:outline-none z-50">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
     </nav>
+
+    <!-- Mobile Menu (overlay; hidden by default) -->
+    <div
+      id="mobileMenu"
+      class="md:hidden hidden fixed left-0 right-0 bg-white shadow-lg overflow-auto"
+      style="max-height: 60vh; z-index: 9999">
+      <div class="container mx-auto px-6 py-4 space-y-3">
+        <a href="#home" class="block text-anPrimary font-medium">Home</a>
+        <a href="#administration" class="block text-anPrimary font-medium"
+          >Administration</a
+        >
+        <a href="#services" class="block text-anPrimary font-medium"
+          >E-Services</a
+        >
+        <a href="#projects" class="block text-anPrimary font-medium"
+          >Projects</a
+        >
+        <a href="#notices" class="block text-anPrimary font-medium">Notices</a>
+        <a href="#documents" class="block text-anPrimary font-medium"
+          >Documents</a
+        >
+        <a
+          href="#contact"
+          class="inline-block bg-anAccent text-anPrimary px-4 py-2 rounded"
+          >Report Issue</a
+        >
+      </div>
+    </div>
 
     <header id="home" class="relative bg-gray-900 h-[60vh] flex items-center">
       <div
@@ -181,67 +218,124 @@
       </div>
     </header>
 
+
+
     <section id="administration" class="py-16 bg-white">
       <div class="container mx-auto px-6 grid md:grid-cols-3 gap-12">
         <div class="md:col-span-2">
-          <h3 class="text-2xl font-bold text-anPrimary mb-4 font-serif">
-            Message from the Chairman
+          <h3
+            class="text-2xl font-bold text-anPrimary mb-6 font-serif border-l-4 border-anAccent pl-3">
+            Governance & Leadership
           </h3>
-          <div class="bg-gray-50 p-6 rounded-l border-l-4 border-anPrimary">
-            <p class="text-gray-700 leading-relaxed mb-4">
-              "Fellow citizens of Awka North, our administration is focused on
-              leveraging our status as the food basket of the capital territory.
-              From the rice fields of Awba-Ofemili to the educational hubs in
-              Mgbakwu and Amansea, we are building a connected and prosperous
-              LGA."
-            </p>
-            <p class="font-bold text-anPrimary">
-              – Transition Committee Chairman
-            </p>
+
+          <div
+            class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden mb-10 flex flex-col sm:flex-row">
+            <div
+              class="sm:w-1/3 bg-anPrimary flex flex-col items-center justify-center p-6 text-white text-center">
+              <div
+                class="w-24 h-24 rounded-full border-4 border-anAccent flex items-center justify-center bg-white/10 mb-3 overflow-hidden">
+                <img
+                  src="assets/lga_chairman.png"
+                  class="w-full h-full object-cover"
+                  alt="Chairman" />
+              </div>
+              <h4 class="font-bold text-lg font-serif">
+                Hon. ThankGod Aniagoro
+              </h4>
+              <p
+                class="text-xs text-anSecondary uppercase tracking-widest mt-1">
+                LGA Chairman
+              </p>
+            </div>
+
+            <div class="sm:w-2/3 p-6">
+              <h5 class="text-anPrimary font-bold mb-2">
+                Message from the Council
+              </h5>
+              <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                "We are committed to transforming Awka North into the
+                agricultural hub of the state. Our administration prioritizes
+                security, rural road maintenance, and youth empowerment."
+              </p>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm border-t border-gray-100 pt-4">
+                <div>
+                  <span class="block text-xs font-bold text-gray-400 uppercase"
+                    >Official Contact</span
+                  >
+                  <a
+                    href="mailto:chairman@awkanorth.gov.ng"
+                    class="text-anPrimary font-medium hover:text-anAccent"
+                    >chairman@awkanorth.gov.ng</a
+                  >
+                </div>
+                <div>
+                  <span class="block text-xs font-bold text-gray-400 uppercase"
+                    >Office</span
+                  >
+                  <p class="text-gray-700">LGA Secretariat, Achalla</p>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-2">
+                <a
+                  href="#"
+                  class="inline-flex items-center text-xs font-bold text-white bg-anPrimary px-4 py-2 rounded hover:bg-anAccent hover:text-anPrimary transition">
+                  <i class="fas fa-external-link-alt mr-2"></i> Visit Official
+                  Profile
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="mt-10">
-            <h3 class="text-2xl font-bold text-anPrimary mb-6 font-serif">
+          <div class="mt-8">
+            <h3 class="text-xl font-bold text-anPrimary mb-4 font-serif">
               Departments & Units
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
               <div
-                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer group">
                 <i
-                  class="fas fa-briefcase-medical text-anPrimary text-2xl mb-2"></i>
-                <h4 class="font-bold">Health</h4>
+                  class="fas fa-briefcase-medical text-anPrimary text-2xl mb-2 group-hover:text-anAccent"></i>
+                <h4 class="font-bold text-sm">Health</h4>
               </div>
               <div
-                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
-                <i class="fas fa-seedling text-anPrimary text-2xl mb-2"></i>
-                <h4 class="font-bold">Agriculture</h4>
-              </div>
-              <div
-                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
-                <i class="fas fa-hard-hat text-anPrimary text-2xl mb-2"></i>
-                <h4 class="font-bold">Works</h4>
-              </div>
-              <div
-                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer group">
                 <i
-                  class="fas fa-graduation-cap text-anPrimary text-2xl mb-2"></i>
-                <h4 class="font-bold">Education</h4>
+                  class="fas fa-seedling text-anPrimary text-2xl mb-2 group-hover:text-anAccent"></i>
+                <h4 class="font-bold text-sm">Agriculture</h4>
               </div>
               <div
-                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
-                <i class="fas fa-coins text-anPrimary text-2xl mb-2"></i>
-                <h4 class="font-bold">Finance</h4>
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer group">
+                <i
+                  class="fas fa-hard-hat text-anPrimary text-2xl mb-2 group-hover:text-anAccent"></i>
+                <h4 class="font-bold text-sm">Works</h4>
               </div>
               <div
-                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer">
-                <i class="fas fa-users text-anPrimary text-2xl mb-2"></i>
-                <h4 class="font-bold">Social Welfare</h4>
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer group">
+                <i
+                  class="fas fa-graduation-cap text-anPrimary text-2xl mb-2 group-hover:text-anAccent"></i>
+                <h4 class="font-bold text-sm">Education</h4>
+              </div>
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer group">
+                <i
+                  class="fas fa-coins text-anPrimary text-2xl mb-2 group-hover:text-anAccent"></i>
+                <h4 class="font-bold text-sm">Finance</h4>
+              </div>
+              <div
+                class="p-4 border rounded hover:bg-anSecondary/10 transition cursor-pointer group">
+                <i
+                  class="fas fa-users text-anPrimary text-2xl mb-2 group-hover:text-anAccent"></i>
+                <h4 class="font-bold text-sm">Social Welfare</h4>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="bg-anPrimary text-white p-8 rounded-lg shadow-lg h-fit">
+        <div
+          class="bg-anPrimary text-white p-8 rounded-lg shadow-lg h-fit border-t-4 border-anAccent">
           <h4 class="text-xl font-bold border-b border-anSecondary pb-2 mb-4">
             LGA Fact Sheet
           </h4>
@@ -256,7 +350,9 @@
             </li>
             <li class="flex justify-between">
               <span class="text-anSecondary">Key Institution:</span>
-              <span class="font-bold">Anambra State Polytechnic (Mgbakwu)</span>
+              <span class="font-bold text-right"
+                >Anambra State Polytechnic (Mgbakwu)</span
+              >
             </li>
             <li class="flex justify-between">
               <span class="text-anSecondary">Population:</span>
@@ -267,7 +363,12 @@
             <img
               src="https://via.placeholder.com/300x200?text=Map+of+Awka+North"
               alt="Map"
-              class="w-full rounded opacity-80" />
+              class="w-full rounded opacity-80 border border-anSecondary" />
+            <a
+              href="#"
+              class="block text-center text-xs text-anAccent mt-2 hover:underline"
+              >View Interactive Map</a
+            >
           </div>
         </div>
       </div>
@@ -592,6 +693,63 @@
     </footer>
 
     <script>
+      // Mobile menu functionality: toggle overlay, position under nav, lock body scroll
+      (function () {
+        const mobileBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const topNav = document.querySelector("nav");
+
+        function positionMobileMenu() {
+          if (!mobileMenu || !topNav) return;
+          const rect = topNav.getBoundingClientRect();
+          mobileMenu.style.top = rect.bottom + "px";
+          mobileMenu.style.left = 0;
+          mobileMenu.style.right = 0;
+        }
+
+        function openMenu(btn, menu) {
+          menu.classList.remove("hidden");
+          btn.setAttribute("aria-expanded", "true");
+          btn.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+          document.body.classList.add("overflow-hidden");
+        }
+
+        function closeMenu(btn, menu) {
+          menu.classList.add("hidden");
+          btn.setAttribute("aria-expanded", "false");
+          btn.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
+          document.body.classList.remove("overflow-hidden");
+        }
+
+        if (mobileBtn && mobileMenu) {
+          positionMobileMenu();
+          mobileBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const expanded = this.getAttribute("aria-expanded") === "true";
+            if (expanded) closeMenu(this, mobileMenu);
+            else openMenu(this, mobileMenu);
+          });
+
+          // Close when clicking outside the menu
+          document.addEventListener("click", function (e) {
+            if (mobileMenu.classList.contains("hidden")) return;
+            const withinMenu = mobileMenu.contains(e.target);
+            const isBtn = mobileBtn.contains(e.target);
+            if (!withinMenu && !isBtn) closeMenu(mobileBtn, mobileMenu);
+          });
+
+          // Close on Escape
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && !mobileMenu.classList.contains("hidden")) {
+              closeMenu(mobileBtn, mobileMenu);
+            }
+          });
+
+          window.addEventListener("resize", positionMobileMenu);
+          window.addEventListener("orientationchange", positionMobileMenu);
+        }
+      })();
+
       // Official list of towns in Awka North [cite: 63]
       const towns = [
         "Achalla",

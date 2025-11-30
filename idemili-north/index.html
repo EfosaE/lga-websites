@@ -1,322 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Discover Idemili North: The home of Chinua Achebe, the sacred Idemili Python, and the vibrant Ito-Ogbo festival. Explore Ogidi, Obosi, and Nkpor.">
-    <meta name="keywords" content="Idemili North, Ogidi, Chinua Achebe, Obosi, Ito-Ogbo, Nkpor, Idemili River, Anambra Tourism">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Discover Idemili North: The home of Chinua Achebe, the sacred Idemili Python, and the vibrant Ito-Ogbo festival. Explore Ogidi, Obosi, and Nkpor."
+    />
+    <meta
+      name="keywords"
+      content="Idemili North, Ogidi, Chinua Achebe, Obosi, Ito-Ogbo, Nkpor, Idemili River, Anambra Tourism"
+    />
     <title>Idemili North LGA | Heritage of Giants</title>
-    
+
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AdministrativeArea",
-      "name": "Idemili North Local Government Area",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Ogidi",
-        "addressRegion": "Anambra State"
-      },
-      "url": "https://anambrastate.gov.ng/idemili-north",
-      "containsPlace": [
-        { "@type": "City", "name": "Ogidi" },
-        { "@type": "City", "name": "Obosi" },
-        { "@type": "City", "name": "Nkpor" }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "AdministrativeArea",
+        "name": "Idemili North Local Government Area",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ogidi",
+          "addressRegion": "Anambra State"
+        },
+        "url": "https://anambrastate.gov.ng/idemili-north",
+        "containsPlace": [
+          { "@type": "City", "name": "Ogidi" },
+          { "@type": "City", "name": "Obosi" },
+          { "@type": "City", "name": "Nkpor" }
+        ]
+      }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="assets/ansg_favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        inPrimary: '#01579B',   // Light Blue 900
-                        inSecondary: '#81D4FA', // Light Blue 200
-                        inAccent: '#FF8F00',    // Amber 800
-                    },
-                    fontFamily: {
-                        serif: ['Cinzel', 'serif'],
-                        sans: ['Nunito Sans', 'sans-serif'],
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              inPrimary: "#01579B", // Light Blue 900
+              inSecondary: "#81D4FA", // Light Blue 200
+              inAccent: "#FF8F00", // Amber 800
+            },
+            fontFamily: {
+              serif: ["Cinzel", "serif"],
+              sans: ["Nunito Sans", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
-    
+
     <style>
-        .river-texture {
-            background-color: #ffffff;
-            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2381D4FA' fill-opacity='0.2'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
+      .river-texture {
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2381D4FA' fill-opacity='0.2'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
-</head>
-<body class="font-sans text-gray-800 bg-gray-50 river-texture">
-
-    <nav class="bg-inPrimary text-white sticky top-0 z-50 shadow-xl border-b-4 border-inAccent">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-book-reader text-inAccent text-2xl"></i>
-                <div class="leading-tight">
-                    <span class="block text-xl font-bold font-serif tracking-widest">IDEMILI NORTH</span>
-                    <span class="block text-xs text-inSecondary font-sans uppercase">Heritage & Commerce</span>
-                </div>
-            </div>
-            <div class="hidden md:flex space-x-8 font-bold text-sm tracking-wide">
-                <a href="#legend" class="hover:text-inAccent transition">The Legend</a>
-                <a href="#literary" class="hover:text-inAccent transition">Achebe's Home</a>
-                <a href="#culture" class="hover:text-inAccent transition">Festivals</a>
-                <a href="#towns" class="hover:text-inAccent transition">Towns</a>
-            </div>
-            <button class="md:hidden text-white focus:outline-none">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-50 river-texture">
+    
+    <nav class="bg-inPrimary text-white sticky top-0 z-50 shadow-xl border-b-4 border-inAccent relative">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-book-reader text-inAccent text-2xl"></i>
+          <div class="leading-tight">
+            <span class="block text-xl font-bold font-serif tracking-widest">IDEMILI NORTH</span>
+            <span class="block text-xs text-inSecondary font-sans uppercase">Heritage & Commerce</span>
+          </div>
         </div>
+        
+        <div class="hidden md:flex space-x-8 font-bold text-sm tracking-wide">
+          <a href="#legend" class="hover:text-inAccent transition">The Legend</a>
+          <a href="#literary" class="hover:text-inAccent transition">Achebe's Home</a>
+          <a href="#culture" class="hover:text-inAccent transition">Festivals</a>
+          <a href="#towns" class="hover:text-inAccent transition">Towns</a>
+        </div>
+        
+        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-inPrimary border-t border-inSecondary/30 shadow-2xl z-50">
+        <div class="flex flex-col p-4 space-y-4 font-bold text-sm tracking-wide">
+          <a href="#legend" class="mobile-link block hover:text-inAccent transition py-2 border-b border-inSecondary/10">The Legend</a>
+          <a href="#literary" class="mobile-link block hover:text-inAccent transition py-2 border-b border-inSecondary/10">Achebe's Home</a>
+          <a href="#culture" class="mobile-link block hover:text-inAccent transition py-2 border-b border-inSecondary/10">Festivals</a>
+          <a href="#towns" class="mobile-link block hover:text-inAccent transition py-2">Towns</a>
+        </div>
+      </div>
     </nav>
+    <header class="py-20 px-6 bg-gray-50 relative overflow-hidden">
+      <div class="absolute inset-0 river-texture opacity-30 pointer-events-none"></div>
 
-    <header class="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
-        <div class="absolute inset-0 bg-inPrimary/80 z-10"></div>
-        
-        <div class="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/6/69/Ijele_Masquerade.jpg')] bg-cover bg-center mix-blend-multiply opacity-60 z-0"></div>
-        
-        <div class="relative z-20 container mx-auto px-6 max-w-4xl">
-            <span class="bg-inAccent text-white font-bold px-4 py-1 rounded-full text-xs uppercase tracking-widest mb-6 inline-block shadow-lg animate-pulse">
-                The Pillar of Anambra Waters
-            </span>
-            <h1 class="text-4xl md:text-6xl font-bold font-serif mb-6 drop-shadow-xl leading-tight">
-                Land of the Sacred Python <br> & Literary Giants
-            </h1>
-            <p class="text-xl md:text-2xl mb-10 font-light text-inSecondary max-w-2xl mx-auto">
-                Explore Ogidi, the birthplace of Chinua Achebe, and experience the timeless traditions of the Idemili people.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#literary" class="bg-inAccent text-inPrimary font-bold py-3 px-8 rounded shadow-lg hover:bg-white transition duration-300">
-                    Visit Literary History
-                </a>
-                <a href="#towns" class="border-2 border-white text-white font-bold py-3 px-8 rounded hover:bg-white hover:text-inPrimary transition duration-300">
-                    Explore Towns
-                </a>
-            </div>
+      <div class="container mx-auto max-w-6xl relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-inAccent font-bold tracking-widest uppercase text-sm mb-4 block animate-pulse">The Pillar of Anambra Waters</span>
+          <h1 class="text-5xl md:text-6xl font-bold font-serif text-inPrimary mb-6 leading-tight">
+            Welcome to <br />
+            Idemili North
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600 font-light">
+            Explore Ogidi, the birthplace of Chinua Achebe, the sacred traditions of the Idemili Python, and the vibrant commerce of Nkpor.
+          </p>
+
+          <div class="mt-8 flex justify-center gap-4">
+            <a href="#literary" class="bg-inPrimary text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-inAccent transition transform hover:-translate-y-1">
+              Our History
+            </a>
+            <a href="#towns" class="border-2 border-inPrimary text-inPrimary font-bold py-3 px-8 rounded-full hover:bg-inPrimary hover:text-white transition">
+              View Towns
+            </a>
+          </div>
         </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-16">
+          <div class="h-64 md:h-80 w-full overflow-hidden rounded-2xl shadow-xl group relative">
+            <img src="assets/masquerade.jpg" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out" alt="Masquerade Culture" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white font-bold text-sm">Rich Culture</span>
+            </div>
+          </div>
+
+          <div class="h-64 md:h-80 w-full overflow-hidden rounded-2xl shadow-xl group relative mt-0 md:mt-10">
+            <img src="assets/chinua-achebe.jpg" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out" alt="Literary History" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white font-bold text-sm">Home of Achebe</span>
+            </div>
+          </div>
+
+          <div class="h-64 md:h-80 w-full overflow-hidden rounded-2xl shadow-xl group relative">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600&auto=format&fit=crop" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out" alt="Idemili River Nature" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white font-bold text-sm">Idemili River</span>
+            </div>
+          </div>
+
+          <div class="h-64 md:h-80 w-full overflow-hidden rounded-2xl shadow-xl group relative mt-0 md:mt-10">
+            <img src="https://nnewicommunity.com/wp-content/uploads/2021/02/Nnewi_Skyview-4.jpg" class="h-full w-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out" alt="Commerce and Trade" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-white font-bold text-sm">Vibrant Commerce</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section id="legend" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <span class="text-inPrimary font-bold uppercase tracking-widest text-sm mb-2 block border-l-4 border-inAccent pl-2">The Origin Story</span>
-                    <h2 class="text-4xl font-serif font-bold text-gray-900 mb-6">The Legend of the River Goddess</h2>
-                    <div class="prose text-gray-600 leading-relaxed text-lg">
-                        <p class="mb-6">
-                            The name "Idemili" is derived from the great <strong>Idemili River</strong> that flows through our land. In our cosmology, the river is more than water; it is a Goddess.
-                        </p>
-                        <p class="mb-6">
-                            The Goddess Idemili sent the <strong>Royal Python (Eke Idemili)</strong> as her messenger. To this day, across Ogidi, Obosi, and neighboring towns, the Python is revered. It is forbidden to harm it. If found in a home, it is gently guided out, treated not as a pest, but as a guest. This deep respect for nature defines our identity.
-                        </p>
-                    </div>
-                </div>
-                <div class="md:w-1/2 relative">
-                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-inSecondary/30 rounded-full z-0"></div>
-                    <img src="https://via.placeholder.com/600x400?text=Idemili+River+Vegetation" alt="Idemili River Basin" class="rounded-lg shadow-2xl relative z-10 border-4 border-inPrimary object-cover">
-                </div>
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/2">
+            <span class="text-inPrimary font-bold uppercase tracking-widest text-sm mb-2 block border-l-4 border-inAccent pl-2">The Origin Story</span>
+            <h2 class="text-4xl font-serif font-bold text-gray-900 mb-6">
+              The Legend of the River Goddess
+            </h2>
+            <div class="prose text-gray-600 leading-relaxed text-lg">
+              <p class="mb-6">
+                The name "Idemili" is derived from the great <strong>Idemili River</strong> that flows through our land. In our cosmology, the river is more than water; it is a Goddess.
+              </p>
+              <p class="mb-6">
+                The Goddess Idemili sent the <strong>Royal Python (Eke Idemili)</strong> as her messenger. To this day, across Ogidi, Obosi, and neighboring towns, the Python is revered. It is forbidden to harm it. If found in a home, it is gently guided out, treated not as a pest, but as a guest. This deep respect for nature defines our identity.
+              </p>
             </div>
+          </div>
+          <div class="md:w-1/2 relative">
+            <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-inSecondary/30 rounded-full z-0"></div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yJ3LkO2tkf7ZyPOmrCs3bg0kq4nrFTFDNg&s" alt="Idemili River Basin" class="rounded-lg shadow-2xl relative z-10 border-4 border-inPrimary object-cover" />
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="literary" class="py-20 bg-inPrimary text-white relative">
-        <div class="container mx-auto px-6 relative z-10">
-            <h2 class="text-3xl font-bold font-serif mb-12 text-center">Home of the Eagle on the Iroko</h2>
-            
-            <div class="bg-inPrimary/50 backdrop-blur-md border border-inSecondary/30 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 shadow-2xl">
-                <div class="md:w-1/3">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Chinua_Achebe_-_Buffalo_2008_crop.jpg/800px-Chinua_Achebe_-_Buffalo_2008_crop.jpg" 
-                         alt="Chinua Achebe" 
-                         class="rounded-xl shadow-lg border-4 border-inAccent w-full object-cover h-80">
-                </div>
-                <div class="md:w-2/3">
-                    <h3 class="text-3xl font-serif font-bold text-inAccent mb-2">Prof. Chinua Achebe</h3>
-                    <p class="text-inSecondary text-sm uppercase tracking-widest mb-6">Native of Ogidi, Idemili North</p>
-                    <p class="text-lg text-gray-200 mb-6 leading-relaxed">
-                        The father of modern African literature and author of <em>Things Fall Apart</em> rests here in Ogidi. His legacy draws scholars and tourists from around the world to Idemili North.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white/10 p-4 rounded border-l-2 border-inAccent">
-                            <h4 class="font-bold">St. Philip's Church</h4>
-                            <p class="text-xs text-gray-300">Where Achebe was baptized and buried.</p>
-                        </div>
-                        <div class="bg-white/10 p-4 rounded border-l-2 border-inAccent">
-                            <h4 class="font-bold">Ogidi Town Hall</h4>
-                            <p class="text-xs text-gray-300">Center of community decisions.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container mx-auto px-6 relative z-10">
+        <h2 class="text-3xl font-bold font-serif mb-12 text-center">
+          Home of the Eagle on the Iroko
+        </h2>
+
+        <div class="bg-inPrimary/50 backdrop-blur-md border border-inSecondary/30 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 shadow-2xl">
+          <div class="md:w-1/3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Chinua_Achebe_-_Buffalo_25Sep2008_crop.jpg/960px-Chinua_Achebe_-_Buffalo_25Sep2008_crop.jpg?20081002151709" alt="Chinua Achebe" class="rounded-xl shadow-lg border-4 border-inAccent w-full object-cover h-80" />
+          </div>
+          <div class="md:w-2/3">
+            <h3 class="text-3xl font-serif font-bold text-inAccent mb-2">
+              Prof. Chinua Achebe
+            </h3>
+            <p class="text-inSecondary text-sm uppercase tracking-widest mb-6">
+              Native of Ogidi, Idemili North
+            </p>
+            <p class="text-lg text-gray-200 mb-6 leading-relaxed">
+              The father of modern African literature and author of <em>Things Fall Apart</em> rests here in Ogidi. His legacy draws scholars and tourists from around the world to Idemili North.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white/10 p-4 rounded border-l-2 border-inAccent">
+                <h4 class="font-bold">St. Philip's Church</h4>
+                <p class="text-xs text-gray-300">
+                  Where Achebe was baptized and buried.
+                </p>
+              </div>
+              <div class="bg-white/10 p-4 rounded border-l-2 border-inAccent">
+                <h4 class="font-bold">Ogidi Town Hall</h4>
+                <p class="text-xs text-gray-300">
+                  Center of community decisions.
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="culture" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-inPrimary font-serif">Living Culture</h2>
-                <div class="w-16 h-1 bg-inAccent mx-auto mt-4 rounded"></div>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="https://via.placeholder.com/400x300?text=Ito-Ogbo+Festival" alt="Ito Ogbo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 right-4 bg-inAccent text-white text-xs font-bold px-2 py-1 rounded">Obosi</div>
-                    </div>
-                    <div class="p-6 bg-white border-b-4 border-inPrimary">
-                        <h3 class="text-xl font-bold text-inPrimary mb-2">Ito-Ogbo Festival</h3>
-                        <p class="text-gray-600 text-sm">
-                            A unique triennial celebration honoring octogenarians (those turning 80). It is a massive carnival of longevity exclusive to Obosi Kingdom.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="https://via.placeholder.com/400x300?text=Nkpor+Market" alt="Nkpor Market" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 right-4 bg-gray-800 text-white text-xs font-bold px-2 py-1 rounded">Nkpor</div>
-                    </div>
-                    <div class="p-6 bg-white border-b-4 border-inSecondary">
-                        <h3 class="text-xl font-bold text-inPrimary mb-2">Commerce at Nkpor</h3>
-                        <p class="text-gray-600 text-sm">
-                            Strategically located near Onitsha, Nkpor is the commercial gateway of the LGA, bustling with auto-parts markets and trade.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="https://via.placeholder.com/400x300?text=Masquerade" alt="Masquerade" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 right-4 bg-inAccent text-white text-xs font-bold px-2 py-1 rounded">General</div>
-                    </div>
-                    <div class="p-6 bg-white border-b-4 border-inPrimary">
-                        <h3 class="text-xl font-bold text-inPrimary mb-2">The Masquerade Cult</h3>
-                        <p class="text-gray-600 text-sm">
-                            From the wonderous <em>Ijele</em> to the aggressive <em>Agaba</em>, Idemili North is famous for its colorful masquerade outings during Christmas and Easter.
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-inPrimary font-serif">
+            Living Culture
+          </h2>
+          <div class="w-16 h-1 bg-inAccent mx-auto mt-4 rounded"></div>
         </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer">
+            <div class="h-56 overflow-hidden relative">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA8CQ_5fh9qJgsFh--H8Hw53yaMgVGKlt-eg&s" alt="Ito Ogbo" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+              <div class="absolute top-4 right-4 bg-inAccent text-white text-xs font-bold px-2 py-1 rounded">
+                Obosi
+              </div>
+            </div>
+            <div class="p-6 bg-white border-b-4 border-inPrimary">
+              <h3 class="text-xl font-bold text-inPrimary mb-2">
+                Ito-Ogbo Festival
+              </h3>
+              <p class="text-gray-600 text-sm">
+                A unique triennial celebration honoring octogenarians (those turning 80). It is a massive carnival of longevity exclusive to Obosi Kingdom.
+              </p>
+            </div>
+          </div>
+
+          <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer">
+            <div class="h-56 overflow-hidden relative">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMED4-8aSNehZIvzM5k6trNJnAXn57I0Q2PA&s" alt="Nkpor Market" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+              <div class="absolute top-4 right-4 bg-gray-800 text-white text-xs font-bold px-2 py-1 rounded">
+                Nkpor
+              </div>
+            </div>
+            <div class="p-6 bg-white border-b-4 border-inSecondary">
+              <h3 class="text-xl font-bold text-inPrimary mb-2">
+                Commerce at Nkpor
+              </h3>
+              <p class="text-gray-600 text-sm">
+                Strategically located near Onitsha, Nkpor is the commercial gateway of the LGA, bustling with auto-parts markets and trade.
+              </p>
+            </div>
+          </div>
+
+          <div class="group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 cursor-pointer">
+            <div class="h-56 overflow-hidden relative">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaYzV3gxtelWp46IXn5BD8fovtoxrUTmh6Fw&s" alt="Masquerade" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" />
+              <div class="absolute top-4 right-4 bg-inAccent text-white text-xs font-bold px-2 py-1 rounded">
+                General
+              </div>
+            </div>
+            <div class="p-6 bg-white border-b-4 border-inPrimary">
+              <h3 class="text-xl font-bold text-inPrimary mb-2">
+                The Masquerade Cult
+              </h3>
+              <p class="text-gray-600 text-sm">
+                From the wonderous <em>Ijele</em> to the aggressive <em>Agaba</em>, Idemili North is famous for its colorful masquerade outings during Christmas and Easter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="towns" class="py-20 bg-inSecondary/20">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-10">
-                <div>
-                    <h2 class="text-3xl font-bold font-serif text-inPrimary">Communities</h2>
-                    <p class="text-gray-600 mt-2">The 10 autonomous communities of Idemili North.</p>
-                </div>
-                
-                <div class="mt-4 md:mt-0 relative w-full md:w-1/3">
-                    <input type="text" id="townSearch" placeholder="Find a community..." 
-                        class="w-full py-3 px-5 rounded-full border border-white bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-inPrimary transition">
-                    <i class="fas fa-search absolute right-5 top-4 text-gray-400"></i>
-                </div>
-            </div>
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-10">
+          <div>
+            <h2 class="text-3xl font-bold font-serif text-inPrimary">
+              Communities
+            </h2>
+            <p class="text-gray-600 mt-2">
+              The 10 autonomous communities of Idemili North.
+            </p>
+          </div>
 
-            <div id="townsGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                </div>
+          <div class="mt-4 md:mt-0 relative w-full md:w-1/3">
+            <input type="text" id="townSearch" placeholder="Find a community..." class="w-full py-3 px-5 rounded-full border border-white bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-inPrimary transition" />
+            <i class="fas fa-search absolute right-5 top-4 text-gray-400"></i>
+          </div>
         </div>
+
+        <div id="townsGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+      </div>
     </section>
 
     <footer class="bg-gray-900 text-gray-400 py-12 border-t-8 border-inAccent">
-        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
-            <div>
-                <div class="flex items-center space-x-2 mb-4">
-                    <i class="fas fa-book-reader text-inAccent text-xl"></i>
-                    <span class="text-xl font-bold font-serif text-white">IDEMILI NORTH</span>
-                </div>
-                <p class="text-sm">
-                    Connecting the legacy of our ancestors with the commerce of today. The heartbeat of Anambra central.
-                </p>
-            </div>
-            
-            <div>
-                <h4 class="font-bold text-white mb-4">Explore</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#literary" class="hover:text-inAccent">Chinua Achebe History</a></li>
-                    <li><a href="#culture" class="hover:text-inAccent">Ito-Ogbo Festival</a></li>
-                    <li><a href="#towns" class="hover:text-inAccent">Community Directory</a></li>
-                </ul>
-            </div>
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <i class="fas fa-book-reader text-inAccent text-xl"></i>
+            <span class="text-xl font-bold font-serif text-white">IDEMILI NORTH</span>
+          </div>
+          <p class="text-sm">
+            Connecting the legacy of our ancestors with the commerce of today. The heartbeat of Anambra central.
+          </p>
+        </div>
 
-            <div>
-                <h4 class="font-bold text-white mb-4">Contact</h4>
-                <p class="text-sm"><i class="fas fa-map-marker-alt mr-2"></i> Ogidi, Anambra State</p>
-                <div class="flex space-x-4 mt-4">
-                    <a href="#" class="text-white hover:text-inAccent"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="#" class="text-white hover:text-inAccent"><i class="fab fa-twitter fa-lg"></i></a>
-                </div>
-            </div>
+        <div>
+          <h4 class="font-bold text-white mb-4">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#literary" class="hover:text-inAccent">Chinua Achebe History</a>
+            </li>
+            <li>
+              <a href="#culture" class="hover:text-inAccent">Ito-Ogbo Festival</a>
+            </li>
+            <li>
+              <a href="#towns" class="hover:text-inAccent">Community Directory</a>
+            </li>
+          </ul>
         </div>
-        <div class="text-center text-xs text-gray-600 mt-10 pt-6 border-t border-gray-800">
-            &copy; 2025 Idemili North Local Government.
+
+        <div>
+          <h4 class="font-bold text-white mb-4">Contact</h4>
+          <p class="text-sm">
+            <i class="fas fa-map-marker-alt mr-2"></i> Ogidi, Anambra State
+          </p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-white hover:text-inAccent"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white hover:text-inAccent"><i class="fab fa-twitter fa-lg"></i></a>
+          </div>
         </div>
+      </div>
+      <div class="text-center text-xs text-gray-600 mt-10 pt-6 border-t border-gray-800">
+        &copy; 2025 Idemili North Local Government.
+      </div>
     </footer>
 
     <script>
-        // Official list of towns in Idemili North
+      document.addEventListener("DOMContentLoaded", function () {
+        
+        // --- MOBILE MENU LOGIC ---
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        const links = document.querySelectorAll(".mobile-link");
+
+        if (btn && menu) {
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        }
+
+        // Close menu when clicking a link
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if(menu) menu.classList.add('hidden');
+            });
+        });
+
+
+        // --- TOWNS LOGIC ---
         const towns = [
-            "Ogidi", 
-            "Obosi", 
-            "Nkpor", 
-            "Abatete", 
-            "Eziowelle", 
-            "Ideani", 
-            "Oraukwu", 
-            "Uke", 
-            "Umuoji", 
-            "Umuuji" // Note: Sometimes Umuuji is considered part of Umuoji, but listing for completeness
+          "Ogidi",
+          "Obosi",
+          "Nkpor",
+          "Abatete",
+          "Eziowelle",
+          "Ideani",
+          "Oraukwu",
+          "Uke",
+          "Umuoji",
+          "Umuuji",
         ];
 
-        const grid = document.getElementById('townsGrid');
-        const searchInput = document.getElementById('townSearch');
+        const grid = document.getElementById("townsGrid");
+        const searchInput = document.getElementById("townSearch");
+
+        // Safety check
+        if(!grid || !searchInput) return;
 
         function renderTowns(filter = "") {
-            grid.innerHTML = "";
-            const filtered = towns.filter(town => town.toLowerCase().includes(filter.toLowerCase()));
-            
-            if(filtered.length === 0) {
-                grid.innerHTML = `<p class="col-span-full text-center text-gray-500 py-4">No community found.</p>`;
-                return;
-            }
+          grid.innerHTML = "";
+          const filtered = towns.filter((town) =>
+            town.toLowerCase().includes(filter.toLowerCase())
+          );
 
-            filtered.forEach(town => {
-                const div = document.createElement('div');
-                div.className = "bg-white p-6 rounded-xl shadow-sm hover:shadow-lg border-l-4 border-inSecondary hover:border-inPrimary transition cursor-pointer group";
-                
-                // Special Badge for Headquarters
-                let badge = "";
-                if(town === "Ogidi") badge = `<span class="block text-[10px] text-inAccent uppercase font-bold mb-1">Headquarters</span>`;
+          if (filtered.length === 0) {
+            grid.innerHTML = `<p class="col-span-full text-center text-gray-500 py-4">No community found.</p>`;
+            return;
+          }
 
-                div.innerHTML = `
-                    ${badge}
-                    <div class="flex justify-between items-center">
-                        <span class="font-bold text-lg text-gray-800 group-hover:text-inPrimary transition">${town}</span>
-                        <i class="fas fa-chevron-right text-gray-300 group-hover:text-inAccent"></i>
-                    </div>
-                `;
-                grid.appendChild(div);
-            });
+          filtered.forEach((town) => {
+            const div = document.createElement("div");
+            div.className =
+              "bg-white p-6 rounded-xl shadow-sm hover:shadow-lg border-l-4 border-inSecondary hover:border-inPrimary transition cursor-pointer group";
+
+            // Special Badge for Headquarters
+            let badge = "";
+            if (town === "Ogidi")
+              badge = `<span class="block text-[10px] text-inAccent uppercase font-bold mb-1">Headquarters</span>`;
+
+            div.innerHTML = `
+                      ${badge}
+                      <div class="flex justify-between items-center">
+                          <span class="font-bold text-lg text-gray-800 group-hover:text-inPrimary transition">${town}</span>
+                          <i class="fas fa-chevron-right text-gray-300 group-hover:text-inAccent"></i>
+                      </div>
+                  `;
+            grid.appendChild(div);
+          });
         }
 
         renderTowns();
 
-        searchInput.addEventListener('input', (e) => {
-            renderTowns(e.target.value);
+        searchInput.addEventListener("input", (e) => {
+          renderTowns(e.target.value);
         });
+      });
     </script>
-</body>
+  </body>
 </html>

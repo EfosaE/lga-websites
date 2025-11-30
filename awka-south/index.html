@@ -20,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Fira+Code:wght@400;600&family=Merriweather:wght@700&display=swap"
       rel="stylesheet" />
 
+    <link rel="icon" type="image/x-icon" href="assets/ansg_favicon.png" />
+
     <script>
       tailwind.config = {
         theme: {
@@ -40,6 +42,9 @@
     </script>
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       .data-grid {
         background-image: linear-gradient(#263238 1px, transparent 1px),
           linear-gradient(90deg, #263238 1px, transparent 1px);
@@ -104,33 +109,44 @@
           >
         </div>
 
-        <button class="md:hidden text-asPrimary text-2xl">
+        <button id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden text-asPrimary text-2xl z-50 focus:outline-none">
           <i class="fas fa-bars"></i>
         </button>
       </div>
     </nav>
 
+    <!-- Mobile Menu (overlay; hidden by default, toggled via JS) -->
+    <div id="mobileMenu" class="md:hidden hidden fixed left-0 right-0 bg-white shadow-lg overflow-auto" style="max-height:60vh; z-index:9999;">
+      <div class="container mx-auto px-6 py-4 space-y-3">
+        <a href="#dashboard" class="block text-asAccent font-medium">Dashboard</a>
+        <a href="#economy" class="block text-asAccent font-medium">Economy</a>
+        <a href="#infrastructure" class="block text-asAccent font-medium">Infrastructure</a>
+        <a href="#towns" class="block text-asAccent font-medium">Town Data</a>
+        <a href="#contact" class="inline-block bg-asPrimary text-white px-4 py-2 rounded">Contact Admin</a>
+      </div>
+    </div>
+
     <header
-      class="relative bg-asAccent h-[500px] flex items-center overflow-hidden">
+      class="relative bg-asAccent h-[420px] md:h-[500px] flex items-center overflow-hidden">
       <div class="data-grid opacity-10"></div>
 
       <img
         src="assets/awka-hero.png"
-        class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay"
+        class="absolute inset-0 w-full h-full object-cover opacity-20 md:opacity-30 mix-blend-overlay"
         alt="Awka City View"
         onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/2c/Awka_City.jpg'" />
 
       <div
-        class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
+        class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0">
         <div class="md:w-1/2 text-white">
           <span
             class="bg-asSecondary text-asPrimary px-3 py-1 rounded text-xs font-bold uppercase mb-4 inline-block shadow-lg">
             Administrative Headquarters
           </span>
-          <h2 class="text-5xl font-serif font-bold mb-4 leading-tight">
+          <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4 leading-tight">
             The Pulse of <br />Anambra State
           </h2>
-          <p class="text-gray-300 text-lg mb-8 max-w-md">
+          <p class="text-gray-300 text-base md:text-lg mb-8 max-w-md">
             Awka South is the seat of power, commerce, and education. We combine
             transparent governance with data-driven development.
           </p>
@@ -144,7 +160,7 @@
         </div>
 
         <div
-          class="md:w-1/3 mt-8 md:mt-0 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl text-white">
+          class="hidden md:block md:w-1/3 mt-8 md:mt-0 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl text-white">
           <h3
             class="font-mono text-sm text-asSecondary uppercase mb-4 border-b border-white/20 pb-2">
             Key Indicators (2024 Est)
@@ -280,12 +296,16 @@
             class="md:w-1/3 bg-asAccent relative p-8 flex flex-col items-center text-center justify-center text-white">
             <div
               class="w-32 h-32 rounded-full border-4 border-asSecondary overflow-hidden mb-4 bg-gray-700 flex items-center justify-center">
-              <i class="fas fa-user-tie text-5xl text-gray-400"></i>
+              <img
+                src="assets/lga_chairman.png"
+                alt="Profile"
+                class="w-full h-full object-cover" />
             </div>
+
             <h3 class="text-xl font-bold font-serif">Prince Chinedu Okafor</h3>
             <p
               class="text-asSecondary text-xs font-bold uppercase tracking-widest mt-1">
-              Transition Committee Chairman
+              Local Government Chairman
             </p>
             <div class="mt-6 w-full pt-6 border-t border-white/10">
               <p class="text-xs text-gray-400 mb-2">Office Status</p>
@@ -298,7 +318,7 @@
 
           <div class="md:w-2/3 p-8 md:p-12">
             <h3 class="text-2xl font-bold text-asPrimary mb-6">
-              Council Secretariat
+              LGA Secretariat
             </h3>
 
             <div class="grid md:grid-cols-2 gap-8">
@@ -601,7 +621,7 @@
             <li>
               <i class="fas fa-map-marker-alt mr-2"></i> Secretariat: Amawbia
             </li>
-            <li><i class="fas fa-phone mr-2"></i> 0803-000-0000</li>
+            <li><i class="fas fa-phone mr-2"></i> 0813 074 5717</li>
             <li><i class="fas fa-envelope mr-2"></i> info@awkasouth.gov.ng</li>
           </ul>
         </div>
@@ -624,6 +644,37 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle (overlay positioning to avoid pushing content)
+        const mobileBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const topNav = document.querySelector("nav");
+        function positionMobileMenu() {
+          if (!mobileMenu || !topNav) return;
+          const rect = topNav.getBoundingClientRect();
+          // place the overlay directly under the nav
+          mobileMenu.style.top = rect.bottom + "px";
+          // ensure overlay covers full width
+          mobileMenu.style.left = 0;
+          mobileMenu.style.right = 0;
+        }
+
+        if (mobileBtn && mobileMenu) {
+          // ensure correct initial position
+          positionMobileMenu();
+
+          mobileBtn.addEventListener("click", function () {
+            const expanded = this.getAttribute("aria-expanded") === "true";
+            this.setAttribute("aria-expanded", String(!expanded));
+            mobileMenu.classList.toggle("hidden");
+            // swap icon between bars and times for clarity
+            this.innerHTML = this.getAttribute("aria-expanded") === "true" ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+          });
+
+          // update position on resize/scroll in case nav size or position changes
+          window.addEventListener("resize", positionMobileMenu);
+          window.addEventListener("orientationchange", positionMobileMenu);
+        }
+
         const ctx = document.getElementById("economyChart").getContext("2d");
 
         // Colors from Tailwind Config

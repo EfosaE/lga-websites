@@ -7,10 +7,12 @@
     <title>Anambra West LGA, Anambra State - History, Towns & Stories</title>
     <meta
       name="description"
-      content="Discover Anambra West, the food basket of the state. Explore the stories of Nzam, Anam, and our riverine communities. Learn about our history, culture, and challenges." />
+      content="Discover Anambra West, the food basket of the state. Explore the stories of Nzam, Anam, and our riverine communities. Learn about our history, culture, and challenges."
+    />
     <meta
       name="keywords"
-      content="Anambra West, Nzam, Anam, Mmiata, Anambra State, Local Government, Farming, Igala, Culture" />
+      content="Anambra West, Nzam, Anam, Mmiata, Anambra State, Local Government, Farming, Igala, Culture"
+    />
 
     <script type="application/ld+json">
       {
@@ -32,11 +34,15 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="assets/ansg_favicon.png" />
 
     <script>
       tailwind.config = {
@@ -67,57 +73,58 @@
     </style>
   </head>
   <body class="font-sans text-awPrimary bg-gray-50 texture-paper">
-    <nav
-      class="bg-awPrimary text-white sticky top-0 z-50 shadow-md border-b-4 border-awAccent">
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <nav class="bg-awPrimary text-white sticky top-0 z-50 shadow-md border-b-4 border-awAccent relative">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-3">
           <i class="fas fa-seedling text-awAccent text-2xl"></i>
-          <span class="text-xl font-bold font-serif tracking-wider"
-            >ANAMBRA WEST</span
-          >
+          <span class="text-xl font-bold font-serif tracking-wider">ANAMBRA WEST</span>
         </div>
-        <div
-          class="hidden md:flex space-x-8 font-serif italic text-awSecondary">
+        
+        <div class="hidden md:flex space-x-8 font-serif italic text-awSecondary">
+          <a href="#about" class="hover:text-white transition">About</a>
+          <a href="#leadership" class="hover:text-white transition">Leadership</a>
           <a href="#stories" class="hover:text-white transition">Our Stories</a>
           <a href="#culture" class="hover:text-white transition">Culture</a>
-          <a href="#heroes" class="hover:text-white transition">Heroes</a>
           <a href="#towns" class="hover:text-white transition">Communities</a>
         </div>
-        <button class="md:hidden text-white focus:outline-none">
+        
+        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
-    </nav>
 
-    <header
-      class="relative h-[80vh] flex items-center justify-center text-center text-white">
+      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-awPrimary border-t border-awSecondary/20 shadow-xl z-50">
+        <div class="flex flex-col p-4 space-y-4 font-serif italic text-awSecondary">
+            <a href="#about" class="mobile-link block hover:text-white transition py-2 border-b border-awSecondary/10">About</a>
+            <a href="#leadership" class="mobile-link block hover:text-white transition py-2 border-b border-awSecondary/10">Leadership</a>
+            <a href="#stories" class="mobile-link block hover:text-white transition py-2 border-b border-awSecondary/10">Our Stories</a>
+            <a href="#culture" class="mobile-link block hover:text-white transition py-2 border-b border-awSecondary/10">Culture</a>
+            <a href="#towns" class="mobile-link block hover:text-white transition py-2">Communities</a>
+        </div>
+      </div>
+    </nav>
+    <header class="relative h-[80vh] flex items-center justify-center text-center text-white">
       <div class="absolute inset-0 bg-awPrimary/60 z-10"></div>
-      <div
-        class="absolute inset-0 bg-[url('https://upload.wikimedia.org/wikipedia/commons/e/e4/River_Niger_at_Onitsha.jpg')] bg-cover bg-center mix-blend-overlay z-0"></div>
+      <div class="absolute inset-0 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyOEW6oQqvsYVEWta0vN50EM4J9_6DyRY1uyEE4KAqqzaBcV3iyVhSEDc0dXNd-lQD4xU&usqp=CAU')] bg-cover bg-center  z-0"></div>
 
       <div class="relative z-20 container mx-auto px-6 max-w-3xl">
         <p class="text-awAccent font-serif italic text-xl mb-4">
           Where the River Meets the Soil
         </p>
-        <h1
-          class="text-5xl md:text-6xl font-bold font-serif mb-6 leading-tight">
+        <h1 class="text-5xl md:text-6xl font-bold font-serif mb-6 leading-tight">
           The Food Basket of the State
         </h1>
         <p class="text-lg md:text-xl mb-10 font-light text-awSecondary">
-          From the banks of Nzam to the farmlands of Anam, we are a people
-          defined by resilience, agriculture, and the rhythms of the Omambala
-          River.
+          From the banks of Nzam to the farmlands of Anam, we are a people defined by resilience, agriculture, and the rhythms of the Omambala River.
         </p>
-        <a
-          href="#stories"
-          class="bg-awAccent text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-500 transition">
+        <a href="#stories" class="bg-awAccent text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-500 transition">
           Read Our Stories
         </a>
       </div>
     </header>
 
-    <section class="py-20 bg-white">
+    <section id="about" class="py-20 bg-white">
       <div class="container mx-auto px-6 max-w-4xl text-center">
         <i class="fas fa-book-open text-4xl text-awAccent mb-6"></i>
         <h2 class="text-4xl font-bold font-serif mb-8 text-awPrimary">
@@ -125,23 +132,57 @@
         </h2>
         <div class="text-lg leading-loose text-gray-700 font-serif">
           <p class="mb-6">
-            Anambra West is unique in its geography and heritage. Located in the
-            northernmost part of the state, it shares borders with Kogi State,
-            which has historically influenced our dialect and culture.
+            Anambra West is unique in its geography and heritage. Located in the northernmost part of the state, it shares borders with Kogi State, which has historically influenced our dialect and culture.
           </p>
           <p class="mb-6">
-            With our headquarters in
-            <strong class="text-awPrimary">Nzam</strong>, our people are
-            predominantly of the <strong>Anam</strong> clan and other riverine
-            communities. We are the guardians of the confluence, living in
-            harmony with the great River Niger and the Omambala River. History
-            tells us of our ancestors' mastery of the waters—expert fishermen
-            and farmers who tamed the fertile floodplains to feed the nation.
+            With our headquarters in <strong class="text-awPrimary">Nzam</strong>, our people are predominantly of the <strong>Anam</strong> clan and other riverine communities. We are the guardians of the confluence, living in harmony with the great River Niger and the Omambala River. History tells us of our ancestors' mastery of the waters—expert fishermen and farmers who tamed the fertile floodplains to feed the nation.
           </p>
         </div>
       </div>
     </section>
 
+    <section id="leadership" class="py-20 bg-gray-100 border-t border-b border-gray-200">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <span class="text-awAccent font-bold uppercase tracking-widest text-sm">Administration</span>
+            <h2 class="text-3xl md:text-4xl font-bold font-serif text-awPrimary mt-2">Local Leadership</h2>
+            <div class="w-16 h-1 bg-awAccent mx-auto mt-4 rounded"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-2/5 relative h-96 md:h-auto">
+                    <img src="assets/image.png" 
+                         alt="Chairman Anambra West" 
+                         class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-awPrimary/90 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 text-white z-10">
+                        <span class="bg-awAccent px-2 py-1 text-xs font-bold rounded uppercase">Office of the Chairman</span>
+                    </div>
+                </div>
+                <div class="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
+                    <h3 class="text-3xl font-bold font-serif text-awPrimary mb-1">Hon. Fidelis Nnazo</h3>
+                    <p class="text-gray-500 font-serif italic mb-6">Transition Committee Chairman</p>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Tasked with navigating the unique topographical challenges of Anambra West, the Chairman is focused on maximizing the agricultural potential of the region while improving access to riverine communities.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div class="flex items-center space-x-3 text-sm text-gray-700">
+                            <i class="fas fa-map-marker-alt text-awAccent"></i>
+                            <span>Secretariat: Nzam</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm text-gray-700">
+                            <i class="fas fa-envelope text-awAccent"></i>
+                            <span>contact@anambra-west.gov.ng</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <section id="stories" class="py-20 bg-awSecondary/10">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold font-serif text-center mb-12">
@@ -149,19 +190,13 @@
         </h2>
 
         <div class="grid md:grid-cols-2 gap-12">
-          <div
-            class="bg-white p-8 rounded-tl-[3rem] rounded-br-[3rem] shadow-lg border-l-4 border-awAccent relative">
-            <i
-              class="fas fa-quote-left text-4xl text-awSecondary/30 absolute top-4 left-4"></i>
+          <div class="bg-white p-8 rounded-tl-[3rem] rounded-br-[3rem] shadow-lg border-l-4 border-awAccent relative">
+            <i class="fas fa-quote-left text-4xl text-awSecondary/30 absolute top-4 left-4"></i>
             <p class="italic text-gray-600 mb-6 relative z-10">
-              "The flood comes every year, but so does the harvest. When the
-              waters recede, they leave behind soil so rich you don't need
-              fertilizer. My yams from Mmiata-Anam are known in Onitsha markets
-              for their size. We don't just farm; we feed the state."
+              "The flood comes every year, but so does the harvest. When the waters recede, they leave behind soil so rich you don't need fertilizer. My yams from Mmiata-Anam are known in Onitsha markets for their size. We don't just farm; we feed the state."
             </p>
             <div class="flex items-center">
-              <div
-                class="w-12 h-12 bg-awPrimary rounded-full flex items-center justify-center text-white font-bold">
+              <div class="w-12 h-12 bg-awPrimary rounded-full flex items-center justify-center text-white font-bold">
                 O
               </div>
               <div class="ml-4">
@@ -171,24 +206,17 @@
             </div>
           </div>
 
-          <div
-            class="bg-white p-8 rounded-tr-[3rem] rounded-bl-[3rem] shadow-lg border-r-4 border-awAccent relative">
-            <i
-              class="fas fa-quote-left text-4xl text-awSecondary/30 absolute top-4 left-4"></i>
+          <div class="bg-white p-8 rounded-tr-[3rem] rounded-bl-[3rem] shadow-lg border-r-4 border-awAccent relative">
+            <i class="fas fa-quote-left text-4xl text-awSecondary/30 absolute top-4 left-4"></i>
             <p class="italic text-gray-600 mb-6 relative z-10">
-              "The Omambala river is our road and our market. I learned to
-              paddle before I could walk. While others fear the water, we
-              respect it. It gives us the best fish in Nigeria. Come to Otuocha
-              market on a busy day, and you will see the bounty of Anambra
-              West."
+              "The Omambala river is our road and our market. I learned to paddle before I could walk. While others fear the water, we respect it. It gives us the best fish in Nigeria. Come to Otuocha market on a busy day, and you will see the bounty of Anambra West."
             </p>
             <div class="flex items-center justify-end text-right">
               <div class="mr-4">
                 <h4 class="font-bold text-awPrimary">Nneka Udeh</h4>
                 <p class="text-sm text-awAccent">Fish Trader, Nzam</p>
               </div>
-              <div
-                class="w-12 h-12 bg-awPrimary rounded-full flex items-center justify-center text-white font-bold">
+              <div class="w-12 h-12 bg-awPrimary rounded-full flex items-center justify-center text-white font-bold">
                 N
               </div>
             </div>
@@ -197,49 +225,30 @@
       </div>
     </section>
 
-    <section
-      id="culture"
-      class="py-20 bg-awPrimary text-white relative overflow-hidden">
-      <div
-        class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <section id="culture" class="py-20 bg-awPrimary text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
       <div class="container mx-auto px-6 relative z-10">
         <div class="flex flex-col md:flex-row items-center gap-10">
           <div class="md:w-1/2">
-            <span
-              class="text-awAccent tracking-widest uppercase text-sm font-bold"
-              >Heritage</span
-            >
+            <span class="text-awAccent tracking-widest uppercase text-sm font-bold">Heritage</span>
             <h2 class="text-4xl font-serif font-bold mt-2 mb-6">
               The Rhythm of the Seasons
             </h2>
             <p class="text-awSecondary text-lg leading-relaxed mb-6">
-              In Anambra West, our culture is tied to the agricultural calendar.
-              The <strong>New Yam Festival (Iwa Ji)</strong> is not just a
-              party; it is a thanksgiving to the earth.
+              In Anambra West, our culture is tied to the agricultural calendar. The <strong>New Yam Festival (Iwa Ji)</strong> is not just a party; it is a thanksgiving to the earth.
             </p>
             <p class="text-awSecondary text-lg leading-relaxed">
-              We are also famous for our Masquerades and boat regattas. The
-              riverine festivals showcase our strength, where colorful boats
-              race across the Niger, cheered on by the entire community.
+              We are also famous for our Masquerades and boat regattas. The riverine festivals showcase our strength, where colorful boats race across the Niger, cheered on by the entire community.
             </p>
-            <a
-              href="https://en.wikipedia.org/wiki/Anambra_West"
-              target="_blank"
-              class="text-awAccent border-b border-awAccent pb-1 inline-block mt-4 hover:text-white hover:border-white transition">
+            <a href="https://en.wikipedia.org/wiki/Anambra_West" target="_blank" class="text-awAccent border-b border-awAccent pb-1 inline-block mt-4 hover:text-white hover:border-white transition">
               Learn more on Wikipedia
               <i class="fas fa-external-link-alt ml-1 text-xs"></i>
             </a>
           </div>
           <div class="md:w-1/2 grid grid-cols-2 gap-4">
-            <img
-              src="https://via.placeholder.com/300x400?text=Yam+Festival"
-              alt="Yam Festival"
-              class="rounded-lg shadow-2xl transform translate-y-4 border-2 border-awSecondary/20" />
-            <img
-              src="https://via.placeholder.com/300x400?text=Boat+Regatta"
-              alt="Boat Regatta"
-              class="rounded-lg shadow-2xl transform -translate-y-4 border-2 border-awSecondary/20" />
+            <img src="https://via.placeholder.com/300x400?text=Yam+Festival" alt="Yam Festival" class="rounded-lg shadow-2xl transform translate-y-4 border-2 border-awSecondary/20" />
+            <img src="https://via.placeholder.com/300x400?text=Boat+Regatta" alt="Boat Regatta" class="rounded-lg shadow-2xl transform -translate-y-4 border-2 border-awSecondary/20" />
           </div>
         </div>
       </div>
@@ -253,32 +262,25 @@
           </h2>
           <div class="w-24 h-1 bg-awAccent mx-auto mt-4 mb-6"></div>
           <p class="text-gray-600">
-            Our story is not without struggle. We face nature head-on every
-            year.
+            Our story is not without struggle. We face nature head-on every year.
           </p>
         </div>
 
         <div class="flex flex-col md:flex-row gap-8">
-          <div
-            class="flex-1 bg-red-50 p-8 rounded-lg border-l-4 border-red-400">
+          <div class="flex-1 bg-red-50 p-8 rounded-lg border-l-4 border-red-400">
             <h3 class="text-xl font-bold text-red-800 mb-3">
               <i class="fas fa-water mr-2"></i> The Challenge: Flooding
             </h3>
             <p class="text-gray-700">
-              Being located in the Lower Niger Basin, Anambra West is prone to
-              annual seasonal flooding, which often displaces communities and
-              threatens early harvests.
+              Being located in the Lower Niger Basin, Anambra West is prone to annual seasonal flooding, which often displaces communities and threatens early harvests.
             </p>
           </div>
-          <div
-            class="flex-1 bg-green-50 p-8 rounded-lg border-l-4 border-green-400">
+          <div class="flex-1 bg-green-50 p-8 rounded-lg border-l-4 border-green-400">
             <h3 class="text-xl font-bold text-green-800 mb-3">
               <i class="fas fa-hands-helping mr-2"></i> The Solution: Resilience
             </h3>
             <p class="text-gray-700">
-              Our people have adapted with flood-resistant farming cycles. We
-              are also working with the State Government on IDP centers and
-              early warning systems to protect our heritage.
+              Our people have adapted with flood-resistant farming cycles. We are also working with the State Government on IDP centers and early warning systems to protect our heritage.
             </p>
           </div>
         </div>
@@ -297,17 +299,11 @@
         </div>
 
         <div class="max-w-md mx-auto mb-10 relative">
-          <input
-            type="text"
-            id="townSearch"
-            placeholder="Find a community..."
-            class="w-full py-3 px-6 rounded-full border border-awSecondary focus:outline-none focus:ring-2 focus:ring-awAccent shadow-sm" />
+          <input type="text" id="townSearch" placeholder="Find a community..." class="w-full py-3 px-6 rounded-full border border-awSecondary focus:outline-none focus:ring-2 focus:ring-awAccent shadow-sm" />
           <i class="fas fa-search absolute right-5 top-3.5 text-gray-400"></i>
         </div>
 
-        <div
-          id="townsGrid"
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        <div id="townsGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
       </div>
     </section>
 
@@ -318,88 +314,97 @@
           Anambra West LGA
         </h3>
         <p class="mb-8 max-w-lg mx-auto">
-          Nzam Headquarters. Driven by agriculture, sustained by culture, united
-          by the river.
+          Nzam Headquarters. Driven by agriculture, sustained by culture, united by the river.
         </p>
 
         <div class="flex justify-center space-x-6 mb-8">
-          <a href="#" class="hover:text-awAccent transition"
-            ><i class="fab fa-facebook fa-lg"></i
-          ></a>
-          <a href="#" class="hover:text-awAccent transition"
-            ><i class="fab fa-twitter fa-lg"></i
-          ></a>
-          <a href="#" class="hover:text-awAccent transition"
-            ><i class="fas fa-envelope fa-lg"></i
-          ></a>
+          <a href="#" class="hover:text-awAccent transition"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="hover:text-awAccent transition"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="hover:text-awAccent transition"><i class="fas fa-envelope fa-lg"></i></a>
         </div>
 
         <div class="border-t border-gray-700 pt-8 text-sm">
           &copy; 2025 Anambra West Local Government. <br />
-          <span class="text-xs text-gray-600"
-            >Images are for illustrative purposes.</span
-          >
+          <span class="text-xs text-gray-600">Images are for illustrative purposes.</span>
         </div>
       </div>
     </footer>
 
     <script>
-      // Data Source: Accurate list of towns in Anambra West
-      // Including Nzam (HQ) and the various Anam communities
-      const towns = [
-        "Nzam",
-        "Mmiata Anam",
-        "Umuenwelum Anam",
-        "Owelle",
-        "Oroma-Etiti",
-        "Umueze Anam",
-        "Abegbu Anam",
-        "Umuikwu Anam",
-        "Ukwalla",
-        "Inoma",
-        "Igbedor",
-        "Igbokenyi",
-        "Iyiora Anam",
-      ];
+      document.addEventListener("DOMContentLoaded", function () {
+        
+        // --- MOBILE MENU LOGIC ---
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        const links = document.querySelectorAll(".mobile-link");
 
-      const grid = document.getElementById("townsGrid");
-      const searchInput = document.getElementById("townSearch");
-
-      function renderTowns(filter = "") {
-        grid.innerHTML = "";
-        const filtered = towns.filter((t) =>
-          t.toLowerCase().includes(filter.toLowerCase())
-        );
-
-        if (filtered.length === 0) {
-          grid.innerHTML =
-            '<p class="col-span-full text-center text-gray-500 italic">No community found.</p>';
-          return;
+        if (btn && menu) {
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
         }
 
-        filtered.forEach((town) => {
-          const el = document.createElement("div");
-          // Styling for "Storytelling" vibe - card look
-          el.className =
-            "bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 cursor-default border-t-4 border-awSecondary";
-
-          let extraInfo = "";
-          if (town === "Nzam")
-            extraInfo =
-              "<span class='block text-xs text-awAccent font-bold mt-1 uppercase'>Headquarters</span>";
-
-          el.innerHTML = `
-                    <h4 class="font-bold text-awPrimary text-lg">${town}</h4>
-                    ${extraInfo}
-                `;
-          grid.appendChild(el);
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if(menu) menu.classList.add('hidden');
+            });
         });
-      }
 
-      renderTowns();
 
-      searchInput.addEventListener("input", (e) => {
-        renderTowns(e.target.value);
+        // --- TOWNS DATA & FILTER ---
+        const towns = [
+            "Nzam",
+            "Mmiata Anam",
+            "Umuenwelum Anam",
+            "Owelle",
+            "Oroma-Etiti",
+            "Umueze Anam",
+            "Abegbu Anam",
+            "Umuikwu Anam",
+            "Ukwalla",
+            "Inoma",
+            "Igbedor",
+            "Igbokenyi",
+            "Iyiora Anam",
+        ];
+
+        const grid = document.getElementById("townsGrid");
+        const searchInput = document.getElementById("townSearch");
+
+        if (grid && searchInput) {
+            function renderTowns(filter = "") {
+                grid.innerHTML = "";
+                const filtered = towns.filter((t) =>
+                    t.toLowerCase().includes(filter.toLowerCase())
+                );
+
+                if (filtered.length === 0) {
+                    grid.innerHTML = '<p class="col-span-full text-center text-gray-500 italic">No community found.</p>';
+                    return;
+                }
+
+                filtered.forEach((town) => {
+                    const el = document.createElement("div");
+                    el.className = "bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 cursor-default border-t-4 border-awSecondary";
+
+                    let extraInfo = "";
+                    if (town === "Nzam")
+                        extraInfo = "<span class='block text-xs text-awAccent font-bold mt-1 uppercase'>Headquarters</span>";
+
+                    el.innerHTML = `
+                        <h4 class="font-bold text-awPrimary text-lg">${town}</h4>
+                        ${extraInfo}
+                    `;
+                    grid.appendChild(el);
+                });
+            }
+
+            renderTowns();
+
+            searchInput.addEventListener("input", (e) => {
+                renderTowns(e.target.value);
+            });
+        }
       });
     </script>
   </body>

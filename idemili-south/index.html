@@ -1,374 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Idemili South LGA Official Profile. Administrative data, leadership contact, economic statistics, and community directory. Headquarters: Ojoto.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Idemili South LGA Official Profile. Administrative data, leadership contact, economic statistics, and community directory. Headquarters: Ojoto."
+    />
     <title>Idemili South LGA | Official Data Profile</title>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/ansg_favicon.png" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        isPrimary: '#2E7D32',   // Forest Green
-                        isSecondary: '#A5D6A7', // Pale Green
-                        isAccent: '#FF6F00',    // Deep Orange/Amber
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        header: ['Oswald', 'sans-serif'],
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              isPrimary: "#2E7D32", // Forest Green
+              isSecondary: "#A5D6A7", // Pale Green
+              isAccent: "#FF6F00", // Deep Orange/Amber
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              header: ["Oswald", "sans-serif"],
+            },
+          },
+        },
+      };
     </script>
 
     <style>
-        /* subtle grid pattern for data feel */
-        .stat-grid {
-            background-image: linear-gradient(#A5D6A7 1px, transparent 1px), linear-gradient(90deg, #A5D6A7 1px, transparent 1px);
-            background-size: 30px 30px;
-            background-color: #ffffff;
-            opacity: 0.1;
-        }
+      /* subtle grid pattern for data feel */
+      .stat-grid {
+        background-image: linear-gradient(#a5d6a7 1px, transparent 1px),
+          linear-gradient(90deg, #a5d6a7 1px, transparent 1px);
+        background-size: 30px 30px;
+        background-color: #ffffff;
+        opacity: 0.1;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
-</head>
-<body class="font-sans text-gray-800 bg-gray-50">
-
-    <div class="bg-isPrimary text-white text-xs py-2 uppercase tracking-widest font-bold border-b border-isSecondary">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <span><i class="fas fa-check-circle mr-2 text-isSecondary"></i> Official Council Portal</span>
-            <span class="font-mono text-isSecondary">STATUS: ACTIVE</span>
-        </div>
+  </head>
+  <body class="font-sans text-gray-800 bg-gray-50">
+    <div
+      class="bg-isPrimary text-white text-xs py-2 uppercase tracking-widest font-bold border-b border-isSecondary"
+    >
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <span><i class="fas fa-check-circle mr-2 text-isSecondary"></i> Official Council Portal</span>
+        <span class="font-mono text-isSecondary">STATUS: ACTIVE</span>
+      </div>
     </div>
 
-    <nav class="bg-white border-b-4 border-isAccent sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <i class="fas fa-tree text-isPrimary text-3xl"></i>
-                <div>
-                    <h1 class="text-2xl font-header font-bold text-isPrimary leading-none uppercase">Idemili South</h1>
-                    <p class="text-isAccent text-[10px] uppercase font-bold tracking-widest">Local Government Area</p>
-                </div>
-            </div>
-
-            <div class="hidden md:flex space-x-8 font-medium text-sm text-gray-600">
-                <a href="#leadership" class="hover:text-isPrimary transition text-isPrimary font-bold">Leadership</a>
-                <a href="#dashboard" class="hover:text-isPrimary transition">Statistics</a>
-                <a href="#economy" class="hover:text-isPrimary transition">Economy</a>
-                <a href="#towns" class="hover:text-isPrimary transition">Communities</a>
-                <a href="#contact" class="bg-isPrimary text-white px-5 py-2 rounded hover:bg-isAccent transition font-bold">Contact Us</a>
-            </div>
-            
-            <button class="md:hidden text-isPrimary text-2xl"><i class="fas fa-bars"></i></button>
+    <nav class="bg-white border-b-4 border-isAccent sticky top-0 z-50 shadow-sm relative">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+          <i class="fas fa-tree text-isPrimary text-3xl"></i>
+          <div>
+            <h1 class="text-2xl font-header font-bold text-isPrimary leading-none uppercase">
+              Idemili South
+            </h1>
+            <p class="text-isAccent text-[10px] uppercase font-bold tracking-widest">
+              Local Government Area
+            </p>
+          </div>
         </div>
+
+        <div class="hidden md:flex space-x-8 font-medium text-sm text-gray-600">
+          <a href="#leadership" class="hover:text-isPrimary transition text-isPrimary font-bold">Leadership</a>
+          <a href="#dashboard" class="hover:text-isPrimary transition">Statistics</a>
+          <a href="#economy" class="hover:text-isPrimary transition">Economy</a>
+          <a href="#towns" class="hover:text-isPrimary transition">Communities</a>
+          <a href="#contact" class="bg-isPrimary text-white px-5 py-2 rounded hover:bg-isAccent transition font-bold">Contact Us</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden text-isPrimary text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white border-t-4 border-isPrimary shadow-2xl z-50">
+        <div class="flex flex-col p-6 space-y-4 font-bold text-sm text-gray-600">
+            <a href="#leadership" class="mobile-link block hover:text-isPrimary transition border-b border-gray-100 pb-2">Leadership</a>
+            <a href="#dashboard" class="mobile-link block hover:text-isPrimary transition border-b border-gray-100 pb-2">Statistics</a>
+            <a href="#economy" class="mobile-link block hover:text-isPrimary transition border-b border-gray-100 pb-2">Economy</a>
+            <a href="#towns" class="mobile-link block hover:text-isPrimary transition border-b border-gray-100 pb-2">Communities</a>
+            <a href="#contact" class="mobile-link block bg-isPrimary text-white text-center py-3 rounded hover:bg-isAccent transition">Contact Us</a>
+        </div>
+      </div>
     </nav>
-
     <header class="relative bg-gray-900 h-[550px] flex items-center overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1597985021238-a764d084050d?q=80&w=1920&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-40" alt="Idemili Landscape">
-        
-        <div class="absolute inset-0 bg-gradient-to-r from-isPrimary/90 to-transparent"></div>
+      <img
+        src="https://cdn.guardian.ng/wp-content/uploads/2017/11/Anambra-State-1062x598.jpg"
+        class="absolute inset-0 w-full h-full object-cover opacity-40"
+        alt="Idemili Landscape"
+      />
 
-        <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
-            <div class="md:w-1/2 text-white">
-                <span class="bg-isAccent text-white px-3 py-1 rounded text-xs font-bold uppercase mb-4 inline-block shadow-lg">
-                    The Seven Towns of Unity
-                </span>
-                <h2 class="text-5xl font-header font-bold mb-4 leading-tight">
-                    Strategic Commerce & <br> Serene Living
-                </h2>
-                <p class="text-isSecondary text-lg mb-8 max-w-md border-l-4 border-isSecondary pl-4">
-                    Headquartered in <strong>Ojoto</strong>, Idemili South is a critical junction connecting the industrial north to the commercial south of Anambra.
-                </p>
-                <div class="flex space-x-4">
-                    <a href="#leadership" class="bg-white text-isPrimary font-bold py-3 px-6 rounded shadow-lg hover:bg-isSecondary hover:text-white transition">
-                        Meet the Administration
-                    </a>
-                </div>
-            </div>
-            
-            <div class="md:w-1/3 mt-8 md:mt-0 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl text-white shadow-2xl">
-                <h3 class="font-mono text-sm text-isAccent uppercase mb-4 border-b border-white/20 pb-2 font-bold">LGA Quick Facts</h3>
-                <div class="space-y-4">
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">Headquarters</span>
-                        <span class="font-bold font-mono text-lg text-isSecondary">Ojoto</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">Communities</span>
-                        <span class="font-bold font-mono text-lg">7</span>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <span class="text-sm">Key Economic Zone</span>
-                        <span class="font-bold font-mono text-lg">Oba / Nnobi</span>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-white/20 text-xs text-gray-300 italic">
-                        *Data Source: Anambra State Ministry of Economic Planning
-                    </div>
-                </div>
-            </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-isPrimary/90 to-transparent"></div>
+
+      <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
+        <div class="w-full md:w-1/2 text-white text-center md:text-left">
+          <span class="bg-isAccent text-white px-3 py-1 rounded text-xs font-bold uppercase mb-4 inline-block shadow-lg">
+            The Seven Towns of Unity
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-header font-bold mb-4 leading-tight">
+            Strategic Commerce & <br class="hidden sm:block" />
+            Serene Living
+          </h2>
+          <p class="text-isSecondary text-base sm:text-lg mb-6 sm:mb-8 max-w-md border-l-4 border-isSecondary pl-4 mx-auto md:mx-0">
+            Headquartered in <strong>Ojoto</strong>, Idemili South is a critical junction connecting the industrial north to the commercial south of Anambra.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#leadership" class="bg-white text-isPrimary font-bold py-3 px-6 rounded shadow-lg hover:bg-isSecondary hover:text-white transition">
+              Meet the Administration
+            </a>
+          </div>
         </div>
+
+        <!-- Hide quick facts card on mobile -->
+        <div class="hidden md:block md:w-1/3 mt-8 md:mt-0 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-xl text-white shadow-2xl">
+          <h3 class="font-mono text-sm text-isAccent uppercase mb-4 border-b border-white/20 pb-2 font-bold">
+            LGA Quick Facts
+          </h3>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <span class="text-sm">Headquarters</span>
+              <span class="font-bold font-mono text-lg text-isSecondary">Ojoto</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm">Communities</span>
+              <span class="font-bold font-mono text-lg">7</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm">Key Economic Zone</span>
+              <span class="font-bold font-mono text-lg">Oba / Nnobi</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-white/20 text-xs text-gray-300 italic">
+              *Data Source: Anambra State Ministry of Economic Planning
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section id="leadership" class="py-16 bg-white relative">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/3 relative">
-                    <div class="absolute inset-0 bg-isAccent transform translate-x-3 translate-y-3 rounded-xl"></div>
-                    <div class="relative bg-white border border-gray-200 p-2 rounded-xl shadow-lg">
-                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop" class="w-full h-80 object-cover rounded-lg filter grayscale hover:grayscale-0 transition duration-500" alt="LGA Chairman">
-                        <div class="mt-4 text-center">
-                            <h3 class="text-2xl font-header font-bold text-isPrimary">Hon. Mrs. Amaka Obi</h3>
-                            <p class="text-sm font-bold text-isAccent uppercase tracking-wide">Transition Committee Chairman</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-header font-bold text-gray-800 mb-6 border-l-8 border-isPrimary pl-4">Administrative Leadership</h2>
-                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                        The Idemili South Local Government Council is dedicated to maintaining peace, improving rural infrastructure, and fostering a business-friendly environment across our seven communities.
-                    </p>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-isAccent">
-                            <h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-map-marker-alt text-isAccent mr-2"></i> Official Address</h4>
-                            <p class="text-sm text-gray-600">
-                                Idemili South LGA Secretariat,<br>
-                                Ojoto, Anambra State,<br>
-                                Nigeria.
-                            </p>
-                        </div>
-                        
-                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-isPrimary">
-                            <h4 class="font-bold text-gray-800 mb-2"><i class="fas fa-phone-alt text-isPrimary mr-2"></i> Contact Lines</h4>
-                            <p class="text-sm text-gray-600">
-                                General Inquiry: +234 800-IDEMILI<br>
-                                Emergency: 112 (State Wide)<br>
-                                <a href="mailto:contact@idemilisouth.gov.ng" class="text-isPrimary font-bold hover:underline">contact@idemilisouth.gov.ng</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="mt-8">
-                        <a href="#" class="inline-flex items-center text-isPrimary font-bold hover:text-isAccent transition">
-                            Visit Official Anambra State Portal <i class="fas fa-external-link-alt ml-2"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+          <div class="md:w-1/3 relative">
+            <div class="absolute inset-0 bg-isAccent transform translate-x-3 translate-y-3 rounded-xl"></div>
+            <div class="relative bg-white border border-gray-200 p-2 rounded-xl shadow-lg">
+              <img
+                src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/477505234_122202761060086607_649679540102196083_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG1MC2X_eOd2T_2E4omkGGOC6r0uuLVEGULqvS64tUQZQ7XmLZIAaG0zbYjHVyJpkS2tuZKSzZA1sUi6o_dgRQY&_nc_ohc=g_SeqRO7XZoQ7kNvwFFbHTv&_nc_oc=AdmyIOgiV7-e1M3KuJvkqjOu1MmXyjZTGI6nO6gKEI6gZdOdYeQyRa8zkui_vxlYd6w&_nc_zt=23&_nc_ht=scontent-los2-1.xx&_nc_gid=VmC9JrNmS_Mfr5gGfAscbQ&oh=00_AfimUzWxnctEzzWUuH_CAuYdHVJZZPAfIGLAVlDk0wvIFw&oe=69314125"
+                class="w-full h-80 object-cover rounded-lg filter grayscale hover:grayscale-0 transition duration-500"
+                alt="LGA Chairman"
+              />
+              <div class="mt-4 text-center">
+                <h3 class="text-2xl font-header font-bold text-isPrimary">
+                  Hon. Mrs. Amaka Obi
+                </h3>
+                <p class="text-sm font-bold text-isAccent uppercase tracking-wide">
+                  Transition Committee Chairman
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-header font-bold text-gray-800 mb-6 border-l-8 border-isPrimary pl-4">
+              Administrative Leadership
+            </h2>
+            <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+              The Idemili South Local Government Council is dedicated to maintaining peace, improving rural infrastructure, and fostering a business-friendly environment across our seven communities.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-isAccent">
+                <h4 class="font-bold text-gray-800 mb-2">
+                  <i class="fas fa-map-marker-alt text-isAccent mr-2"></i>
+                  Official Address
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Idemili South LGA Secretariat,<br />
+                  Ojoto, Anambra State,<br />
+                  Nigeria.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-isPrimary">
+                <h4 class="font-bold text-gray-800 mb-2">
+                  <i class="fas fa-phone-alt text-isPrimary mr-2"></i> Contact Lines
+                </h4>
+                <p class="text-sm text-gray-600">
+                  General Inquiry: +234 800-IDEMILI<br />
+                  Emergency: 112 (State Wide)<br />
+                  <a href="mailto:contact@idemilisouth.gov.ng" class="text-isPrimary font-bold hover:underline">contact@idemilisouth.gov.ng</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <a href="#" class="inline-flex items-center text-isPrimary font-bold hover:text-isAccent transition">
+                Visit Official Anambra State Portal
+                <i class="fas fa-external-link-alt ml-2"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="dashboard" class="py-16 bg-gray-100 relative overflow-hidden">
-        <div class="stat-grid absolute inset-0 z-0"></div>
-        <div class="container mx-auto px-6 relative z-10">
-            <h3 class="text-2xl font-header font-bold text-isPrimary mb-8 text-center uppercase">LGA Performance Dashboard</h3>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded shadow-md border-b-4 border-isPrimary group hover:-translate-y-1 transition">
-                    <div class="text-gray-400 text-xs uppercase font-bold mb-2">Total Towns</div>
-                    <div class="text-4xl font-mono font-bold text-gray-800 group-hover:text-isPrimary transition">07</div>
-                    <div class="text-xs text-gray-500 mt-2">Autonomous Communities</div>
-                </div>
-                <div class="bg-white p-6 rounded shadow-md border-b-4 border-isAccent group hover:-translate-y-1 transition">
-                    <div class="text-gray-400 text-xs uppercase font-bold mb-2">Market Activity</div>
-                    <div class="text-4xl font-mono font-bold text-gray-800 group-hover:text-isAccent transition">High</div>
-                    <div class="text-xs text-gray-500 mt-2">Oba & Nnobi Axis</div>
-                </div>
-                <div class="bg-white p-6 rounded shadow-md border-b-4 border-isSecondary group hover:-translate-y-1 transition">
-                    <div class="text-gray-400 text-xs uppercase font-bold mb-2">Land Usage</div>
-                    <div class="text-4xl font-mono font-bold text-gray-800">Mixed</div>
-                    <div class="text-xs text-gray-500 mt-2">Residential / Commercial</div>
-                </div>
-                <div class="bg-white p-6 rounded shadow-md border-b-4 border-isPrimary group hover:-translate-y-1 transition">
-                    <div class="text-gray-400 text-xs uppercase font-bold mb-2">Healthcare</div>
-                    <div class="text-4xl font-mono font-bold text-gray-800">Active</div>
-                    <div class="text-xs text-gray-500 mt-2">PHCs & General Hospital</div>
-                </div>
+      <div class="stat-grid absolute inset-0 z-0"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <h3 class="text-2xl font-header font-bold text-isPrimary mb-8 text-center uppercase">
+          LGA Performance Dashboard
+        </h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded shadow-md border-b-4 border-isPrimary group hover:-translate-y-1 transition">
+            <div class="text-gray-400 text-xs uppercase font-bold mb-2">
+              Total Towns
             </div>
+            <div class="text-4xl font-mono font-bold text-gray-800 group-hover:text-isPrimary transition">
+              07
+            </div>
+            <div class="text-xs text-gray-500 mt-2">Autonomous Communities</div>
+          </div>
+          <div class="bg-white p-6 rounded shadow-md border-b-4 border-isAccent group hover:-translate-y-1 transition">
+            <div class="text-gray-400 text-xs uppercase font-bold mb-2">
+              Market Activity
+            </div>
+            <div class="text-4xl font-mono font-bold text-gray-800 group-hover:text-isAccent transition">
+              High
+            </div>
+            <div class="text-xs text-gray-500 mt-2">Oba & Nnobi Axis</div>
+          </div>
+          <div class="bg-white p-6 rounded shadow-md border-b-4 border-isSecondary group hover:-translate-y-1 transition">
+            <div class="text-gray-400 text-xs uppercase font-bold mb-2">
+              Land Usage
+            </div>
+            <div class="text-4xl font-mono font-bold text-gray-800">Mixed</div>
+            <div class="text-xs text-gray-500 mt-2">
+              Residential / Commercial
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded shadow-md border-b-4 border-isPrimary group hover:-translate-y-1 transition">
+            <div class="text-gray-400 text-xs uppercase font-bold mb-2">
+              Healthcare
+            </div>
+            <div class="text-4xl font-mono font-bold text-gray-800">Active</div>
+            <div class="text-xs text-gray-500 mt-2">
+              PHCs & General Hospital
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="economy" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                
-                <div class="md:w-1/2 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-inner">
-                    <h4 class="font-bold text-center mb-4 text-gray-700">Economic Distribution Estimate</h4>
-                    <canvas id="idemiliChart"></canvas>
-                </div>
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+          <div class="md:w-1/2 bg-gray-50 p-6 rounded-xl border border-gray-100 shadow-inner">
+            <h4 class="font-bold text-center mb-4 text-gray-700">
+              Economic Distribution Estimate
+            </h4>
+            <canvas id="idemiliChart"></canvas>
+          </div>
 
-                <div class="md:w-1/2">
-                    <h3 class="text-2xl font-header font-bold text-isPrimary mb-6">Economic Drivers</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Idemili South operates a dual economy. The northern axis (Oba) is heavily commercial, driven by the International Market and proximity to Onitsha. The southern axis (Nnobi, Awka-Etiti) is famous for transport commerce and medium-scale enterprises.
-                    </p>
-                    <ul class="space-y-4 text-sm text-gray-700">
-                        <li class="flex items-center">
-                            <span class="w-3 h-3 bg-isPrimary rounded-full mr-3"></span>
-                            <strong>Commerce (Oba/Nnobi):</strong> The dominant sector, featuring auto-parts and transport hubs.
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-3 h-3 bg-isAccent rounded-full mr-3"></span>
-                            <strong>Real Estate:</strong> Rapidly growing residential estates serving the Onitsha metropolis.
-                        </li>
-                        <li class="flex items-center">
-                            <span class="w-3 h-3 bg-isSecondary rounded-full mr-3"></span>
-                            <strong>Agriculture (Ojoto/Alor):</strong> Palm oil production and subsistence farming.
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-header font-bold text-isPrimary mb-6">
+              Economic Drivers
+            </h3>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Idemili South operates a dual economy. The northern axis (Oba) is heavily commercial, driven by the International Market and proximity to Onitsha. The southern axis (Nnobi, Awka-Etiti) is famous for transport commerce and medium-scale enterprises.
+            </p>
+            <ul class="space-y-4 text-sm text-gray-700">
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-isPrimary rounded-full mr-3"></span>
+                <strong>Commerce (Oba/Nnobi):</strong> The dominant sector, featuring auto-parts and transport hubs.
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-isAccent rounded-full mr-3"></span>
+                <strong>Real Estate:</strong> Rapidly growing residential estates serving the Onitsha metropolis.
+              </li>
+              <li class="flex items-center">
+                <span class="w-3 h-3 bg-isSecondary rounded-full mr-3"></span>
+                <strong>Agriculture (Ojoto/Alor):</strong> Palm oil production and subsistence farming.
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="towns" class="py-16 bg-isPrimary text-white">
-        <div class="container mx-auto px-6">
-            <div class="flex justify-between items-end mb-6">
-                <div>
-                    <h3 class="text-2xl font-header font-bold">Community Register</h3>
-                    <p class="text-isSecondary text-sm">The 7 Autonomous Communities of Idemili South</p>
-                </div>
-                <button class="bg-isAccent text-white text-xs px-4 py-2 rounded font-bold hover:bg-white hover:text-isAccent transition">Download Map</button>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-xl overflow-hidden text-gray-800">
-                <table class="w-full text-left border-collapse">
-                    <thead class="bg-gray-100 text-xs uppercase font-bold text-gray-500">
-                        <tr>
-                            <th class="p-4 border-b">Town Name</th>
-                            <th class="p-4 border-b">Role</th>
-                            <th class="p-4 border-b hidden md:table-cell">Key Feature</th>
-                            <th class="p-4 border-b">Details</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm font-medium">
-                        <tr class="hover:bg-isSecondary/20 border-b transition">
-                            <td class="p-4 font-bold text-isPrimary">Ojoto</td>
-                            <td class="p-4"><span class="bg-isPrimary text-white text-[10px] px-2 py-1 rounded">Headquarters</span></td>
-                            <td class="p-4 hidden md:table-cell">Administrative Center / Culture</td>
-                            <td class="p-4"><a href="#" class="text-isAccent hover:underline">View Profile</a></td>
-                        </tr>
-                        <tr class="hover:bg-isSecondary/20 border-b transition">
-                            <td class="p-4">Oba</td>
-                            <td class="p-4"><span class="bg-isAccent text-white text-[10px] px-2 py-1 rounded">Commercial Hub</span></td>
-                            <td class="p-4 hidden md:table-cell">International Market / Airport Rd</td>
-                            <td class="p-4"><a href="#" class="text-isAccent hover:underline">View Profile</a></td>
-                        </tr>
-                        <tr class="hover:bg-isSecondary/20 border-b transition">
-                            <td class="p-4">Nnobi</td>
-                            <td class="p-4">Transport Hub</td>
-                            <td class="p-4 hidden md:table-cell">Afor Nnobi Junction</td>
-                            <td class="p-4"><a href="#" class="text-isAccent hover:underline">View Profile</a></td>
-                        </tr>
-                        <tr class="hover:bg-isSecondary/20 border-b transition">
-                            <td class="p-4">Alor</td>
-                            <td class="p-4">Residential</td>
-                            <td class="p-4 hidden md:table-cell">Well-planned estates</td>
-                            <td class="p-4"><a href="#" class="text-isAccent hover:underline">View Profile</a></td>
-                        </tr>
-                        <tr class="hover:bg-isSecondary/20 border-b transition">
-                            <td class="p-4">Awka-Etiti</td>
-                            <td class="p-4">Industrial</td>
-                            <td class="p-4 hidden md:table-cell">Manufacturing / Logistics</td>
-                            <td class="p-4"><a href="#" class="text-isAccent hover:underline">View Profile</a></td>
-                        </tr>
-                        <tr class="hover:bg-isSecondary/20 border-b transition">
-                            <td class="p-4">Nnokwa</td>
-                            <td class="p-4">Agricultural</td>
-                            <td class="p-4 hidden md:table-cell">Heritage / Farming</td>
-                            <td class="p-4"><a href="#" class="text-isAccent hover:underline">View Profile</a></td>
-                        </tr>
-                        <tr class="hover:bg-isSecondary/20 border-b transition">
-                            <td class="p-4">Akwa-Ukwu</td>
-                            <td class="p-4">Community</td>
-                            <td class="p-4 hidden md:table-cell">Agriculture</td>
-                            <td class="p-4"><a href="#" class="text-isAccent hover:underline">View Profile</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-end mb-6">
+          <div>
+            <h3 class="text-2xl font-header font-bold">Community Register</h3>
+            <p class="text-isSecondary text-sm">
+              The 7 Autonomous Communities of Idemili South
+            </p>
+          </div>
+          <button class="bg-isAccent text-white text-xs px-4 py-2 rounded font-bold hover:bg-white hover:text-isAccent transition">
+            Download Map
+          </button>
         </div>
+
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden text-gray-800">
+          <table class="w-full text-left border-collapse">
+            <thead class="bg-gray-100 text-xs uppercase font-bold text-gray-500">
+              <tr>
+                <th class="p-4 border-b">Town Name</th>
+                <th class="p-4 border-b">Role</th>
+                <th class="p-4 border-b hidden md:table-cell">Key Feature</th>
+                <th class="p-4 border-b">Details</th>
+              </tr>
+            </thead>
+            <tbody class="text-sm font-medium">
+              <tr class="hover:bg-isSecondary/20 border-b transition">
+                <td class="p-4 font-bold text-isPrimary">Ojoto</td>
+                <td class="p-4">
+                  <span class="bg-isPrimary text-white text-[10px] px-2 py-1 rounded">Headquarters</span>
+                </td>
+                <td class="p-4 hidden md:table-cell">Administrative Center / Culture</td>
+                <td class="p-4">
+                  <a href="#" class="text-isAccent hover:underline">View Profile</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-isSecondary/20 border-b transition">
+                <td class="p-4">Oba</td>
+                <td class="p-4">
+                  <span class="bg-isAccent text-white text-[10px] px-2 py-1 rounded">Commercial Hub</span>
+                </td>
+                <td class="p-4 hidden md:table-cell">International Market / Airport Rd</td>
+                <td class="p-4">
+                  <a href="#" class="text-isAccent hover:underline">View Profile</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-isSecondary/20 border-b transition">
+                <td class="p-4">Nnobi</td>
+                <td class="p-4">Transport Hub</td>
+                <td class="p-4 hidden md:table-cell">Afor Nnobi Junction</td>
+                <td class="p-4">
+                  <a href="#" class="text-isAccent hover:underline">View Profile</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-isSecondary/20 border-b transition">
+                <td class="p-4">Alor</td>
+                <td class="p-4">Residential</td>
+                <td class="p-4 hidden md:table-cell">Well-planned estates</td>
+                <td class="p-4">
+                  <a href="#" class="text-isAccent hover:underline">View Profile</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-isSecondary/20 border-b transition">
+                <td class="p-4">Awka-Etiti</td>
+                <td class="p-4">Industrial</td>
+                <td class="p-4 hidden md:table-cell">Manufacturing / Logistics</td>
+                <td class="p-4">
+                  <a href="#" class="text-isAccent hover:underline">View Profile</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-isSecondary/20 border-b transition">
+                <td class="p-4">Nnokwa</td>
+                <td class="p-4">Agricultural</td>
+                <td class="p-4 hidden md:table-cell">Heritage / Farming</td>
+                <td class="p-4">
+                  <a href="#" class="text-isAccent hover:underline">View Profile</a>
+                </td>
+              </tr>
+              <tr class="hover:bg-isSecondary/20 border-b transition">
+                <td class="p-4">Akwa-Ukwu</td>
+                <td class="p-4">Community</td>
+                <td class="p-4 hidden md:table-cell">Agriculture</td>
+                <td class="p-4">
+                  <a href="#" class="text-isAccent hover:underline">View Profile</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </section>
 
     <footer id="contact" class="bg-gray-900 text-white pt-12 pb-6 border-t-8 border-isSecondary">
-        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
-            <div>
-                <h5 class="text-2xl font-header font-bold mb-4 text-isSecondary">Idemili South LGA</h5>
-                <p class="text-gray-400 text-sm max-w-sm mx-auto md:mx-0">
-                    The bridge between tradition and modern commerce. Committed to the development of our 7 communities.
-                </p>
-            </div>
-            <div>
-                <h5 class="font-bold mb-4">Official Channels</h5>
-                <ul class="space-y-3 text-sm text-gray-400">
-                    <li><i class="fas fa-envelope mr-2 text-isAccent"></i> info@idemilisouth.an.gov.ng</li>
-                    <li><i class="fas fa-globe mr-2 text-isAccent"></i> www.anambrastate.gov.ng</li>
-                    <li><i class="fas fa-building mr-2 text-isAccent"></i> Secretariat: Ojoto</li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-bold mb-4">Social</h5>
-                <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-isPrimary transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-isPrimary transition"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
+      <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+        <div>
+          <h5 class="text-2xl font-header font-bold mb-4 text-isSecondary">
+            Idemili South LGA
+          </h5>
+          <p class="text-gray-400 text-sm max-w-sm mx-auto md:mx-0">
+            The bridge between tradition and modern commerce. Committed to the development of our 7 communities.
+          </p>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-6 text-center text-xs text-gray-500">
-            &copy; 2025 Idemili South Local Government Council.
+        <div>
+          <h5 class="font-bold mb-4">Official Channels</h5>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li>
+              <i class="fas fa-envelope mr-2 text-isAccent"></i>
+              info@idemilisouth.an.gov.ng
+            </li>
+            <li>
+              <i class="fas fa-globe mr-2 text-isAccent"></i>
+              www.anambrastate.gov.ng
+            </li>
+            <li>
+              <i class="fas fa-building mr-2 text-isAccent"></i> Secretariat: Ojoto
+            </li>
+          </ul>
         </div>
+        <div>
+          <h5 class="font-bold mb-4">Social</h5>
+          <div class="flex justify-center md:justify-start space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-isPrimary transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-isPrimary transition"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-6 text-center text-xs text-gray-500">
+        &copy; 2025 Idemili South Local Government Council.
+      </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const ctx = document.getElementById('idemiliChart').getContext('2d');
-            
-            // Colors from Tailwind Config
-            const colorPrimary = '#2E7D32';   // Green
-            const colorSecondary = '#A5D6A7'; // Light Green
-            const colorAccent = '#FF6F00';    // Orange
+      document.addEventListener("DOMContentLoaded", function () {
+        
+        // --- MOBILE MENU LOGIC ---
+        const btn = document.getElementById("mobile-menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        const links = document.querySelectorAll(".mobile-link");
 
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Commerce (Oba/Nnobi)', 'Agriculture', 'Real Estate', 'Services'],
-                    datasets: [{
-                        label: 'Economic Activity',
-                        data: [45, 20, 25, 10],
-                        backgroundColor: [
-                            colorAccent,    // Commerce (Orange)
-                            colorPrimary,   // Agriculture (Green)
-                            colorSecondary, // Real Estate (Light Green)
-                            '#e0e0e0'       // Services (Grey)
-                        ],
-                        borderWidth: 0,
-                        hoverOffset: 4
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                font: { family: "'Inter', sans-serif" }
-                            }
-                        }
-                    }
-                }
+        if (btn && menu) {
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        }
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                if(menu) menu.classList.add('hidden');
             });
         });
+
+        // --- CHART JS LOGIC ---
+        const ctx = document.getElementById("idemiliChart");
+        
+        // Safety check to ensure chart element exists
+        if(ctx) {
+            const colorPrimary = "#2E7D32"; // Green
+            const colorSecondary = "#A5D6A7"; // Light Green
+            const colorAccent = "#FF6F00"; // Orange
+
+            new Chart(ctx.getContext("2d"), {
+              type: "doughnut",
+              data: {
+                labels: [
+                  "Commerce (Oba/Nnobi)",
+                  "Agriculture",
+                  "Real Estate",
+                  "Services",
+                ],
+                datasets: [
+                  {
+                    label: "Economic Activity",
+                    data: [45, 20, 25, 10],
+                    backgroundColor: [
+                      colorAccent, // Commerce (Orange)
+                      colorPrimary, // Agriculture (Green)
+                      colorSecondary, // Real Estate (Light Green)
+                      "#e0e0e0", // Services (Grey)
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 4,
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    position: "bottom",
+                    labels: {
+                      font: { family: "'Inter', sans-serif" },
+                    },
+                  },
+                },
+              },
+            });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
