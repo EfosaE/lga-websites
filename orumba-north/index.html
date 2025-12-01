@@ -1,1071 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about Orumba North LGA, its towns, history, economy, culture, and key points of interest in Anambra State, Nigeria.">
-    <meta name="keywords" content="Orumba North, Anambra State, Ajalli, Ufuma, LGA, Nigeria, Local Government">
-    <title>Orumba North, Anambra State – Overview, Towns, History & Facts</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/ansg_favicon.png">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orumba North LGA - Concise Overview</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="assets/ansg_favicon.png" />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2E7D32',
-                        secondary: '#C8E6C9',
-                        accent: '#FBC02D'
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2E7D32", // Deep Green
+              secondary: "#E8F5E9", // Light Green
+              accent: "#FBC02D", // Gold
+            },
+          },
+        },
+      };
     </script>
     <style>
-        .hero-bg {
-            background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
-        }
-        .section-pattern {
-            background-image: radial-gradient(circle, #C8E6C9 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
+      .hero-bg {
+        background: linear-gradient(
+            rgba(46, 125, 50, 0.5),
+            rgba(27, 94, 32, 0.9)
+          ),
+          url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLcO9N1Jeqo3FRRK3PdGj2mwhAXntEMY3lSg&s");
+        background-size: cover;
+        background-position: center;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
-</head>
-<body class="font-sans antialiased">
-    
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-primary">Orumba North</span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-primary transition">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
-                    <a href="#towns" class="text-gray-700 hover:text-primary transition">Towns</a>
-                    <a href="#culture" class="text-gray-700 hover:text-primary transition">Culture</a>
-                    <a href="#leadership" class="text-gray-700 hover:text-primary transition">Leadership</a>
-                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
+  </head>
+  <body class="bg-gray-50 font-sans text-gray-800">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <span class="text-2xl font-bold text-primary">Orumba North</span>
+          <div class="hidden md:flex space-x-6 font-medium">
+            <a href="#about" class="hover:text-primary transition">About</a>
+            <a href="#communities" class="hover:text-primary transition"
+              >Communities</a
+            >
+            <a href="#highlights" class="hover:text-primary transition"
+              >Highlights</a
+            >
+            <a href="#gallery" class="hover:text-primary transition"
+              >Photo Stories</a
+            >
+            <a
+              href="#contact"
+              class="px-4 py-2 bg-primary text-white rounded hover:bg-green-800 transition"
+              >Contact</a
+            >
+          </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Home</a>
-                <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">About</a>
-                <a href="#towns" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Towns</a>
-                <a href="#culture" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Culture</a>
-                <a href="#leadership" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Leadership</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Contact</a>
-            </div>
-        </div>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg text-white pt-24 pb-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-5xl md:text-6xl font-bold mb-4">Orumba North</h1>
-                    <p class="text-2xl md:text-3xl mb-6 text-secondary">Where Tradition Meets Progress</p>
-                    <p class="text-lg mb-8 text-gray-100">A vibrant community in the heart of Anambra State, rich in culture, agriculture, and warm hospitality.</p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#about" class="bg-accent hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-3 rounded-lg transition shadow-lg">
-                            Explore Our Story
-                        </a>
-                        <a href="#towns" class="bg-white hover:bg-gray-100 text-primary font-semibold px-8 py-3 rounded-lg transition">
-                            Our Communities
-                        </a>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-accent mb-2">13+</div>
-                                <div class="text-sm text-gray-200">Communities</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-accent mb-2">180K+</div>
-                                <div class="text-sm text-gray-200">Population</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-accent mb-2">1976</div>
-                                <div class="text-sm text-gray-200">Est. Year</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-4xl font-bold text-accent mb-2">452km²</div>
-                                <div class="text-sm text-gray-200">Land Area</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="hero-bg text-white py-24 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h1 class="text-5xl font-bold mb-4">Welcome to Orumba North</h1>
+        <p class="text-xl text-gray-100 mb-8">
+          The Heart of Agriculture and Tradition in Anambra State
+        </p>
+        <div class="flex justify-center gap-4">
+          <a
+            href="#communities"
+            class="bg-accent text-gray-900 font-bold px-6 py-3 rounded hover:bg-yellow-400 transition"
+            >Find Your Town</a
+          >
+          <a
+            href="#contact"
+            class="border-2 border-white px-6 py-3 rounded hover:bg-white hover:text-primary transition"
+            >Get in Touch</a
+          >
         </div>
+      </div>
     </section>
 
-    <!-- Brief Overview -->
-    <section id="about" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Orumba North</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="text-primary text-3xl mb-4"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3 class="text-xl font-semibold mb-2">Location</h3>
-                    <p class="text-gray-600">Situated in the Central Senatorial Zone of Anambra State, Nigeria. Headquarters in Ajalli.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="text-primary text-3xl mb-4"><i class="fas fa-users"></i></div>
-                    <h3 class="text-xl font-semibold mb-2">Population</h3>
-                    <p class="text-gray-600">Approximately 180,000 residents across 13 vibrant communities and numerous villages.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="text-primary text-3xl mb-4"><i class="fas fa-calendar-alt"></i></div>
-                    <h3 class="text-xl font-semibold mb-2">Established</h3>
-                    <p class="text-gray-600">Created in 1976 as part of the local government reforms in Nigeria.</p>
-                </div>
-            </div>
-            <div class="bg-white p-8 rounded-xl shadow-lg">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">Historical Context</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    Orumba North Local Government Area was carved out during the 1976 local government reforms that restructured Nigeria's administrative divisions. The area has deep historical roots in the old Aguata zone and is home to communities with rich Igbo traditions dating back centuries. The people of Orumba North are known for their industrious spirit, strong educational values, and dedication to agricultural excellence.
-                </p>
-                <p class="text-gray-700 leading-relaxed">
-                    Today, Orumba North stands as a testament to the resilience and progress of its people, balancing traditional values with modern development while maintaining its unique cultural identity within Anambra State.
-                </p>
-            </div>
+    <section id="about" class="py-12 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div
+          class="grid md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+          <div class="p-4">
+            <i class="fas fa-map-marker-alt text-3xl text-primary mb-2"></i>
+            <h3 class="font-bold">HQ: Ajalli</h3>
+            <p class="text-sm text-gray-500">Administrative Seat</p>
+          </div>
+          <div class="p-4">
+            <i class="fas fa-users text-3xl text-primary mb-2"></i>
+            <h3 class="font-bold">180k+</h3>
+            <p class="text-sm text-gray-500">Estimated Population</p>
+          </div>
+          <div class="p-4">
+            <i class="fas fa-city text-3xl text-primary mb-2"></i>
+            <h3 class="font-bold">13 Towns</h3>
+            <p class="text-sm text-gray-500">Major Communities</p>
+          </div>
+          <div class="p-4">
+            <i class="fas fa-calendar text-3xl text-primary mb-2"></i>
+            <h3 class="font-bold">Est. 1976</h3>
+            <p class="text-sm text-gray-500">Year Created</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- History & Origins -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">History & Origins of Our People</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">The story of Orumba North is woven from the threads of ancient migrations, settlement, and the enduring spirit of the Igbo people.</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="prose max-w-none">
-                        <h3 class="text-2xl font-semibold text-primary mb-4">Ancient Settlements</h3>
-                        <p class="text-gray-700 mb-4">
-                            The communities that make up Orumba North trace their ancestry to various migration waves across the Igbo heartland. Oral traditions speak of brave ancestors who settled in the fertile lands, establishing towns that would become centers of commerce, learning, and cultural preservation.
-                        </p>
-                        <h3 class="text-2xl font-semibold text-primary mb-4">Colonial Era</h3>
-                        <p class="text-gray-700 mb-4">
-                            During the colonial period, communities in what is now Orumba North were part of the larger Aguata region. The people resisted colonial intrusion while selectively adopting education and Christianity, which led to the establishment of numerous mission schools and churches that continue to shape the area today.
-                        </p>
-                        <h3 class="text-2xl font-semibold text-primary mb-4">Post-Independence Growth</h3>
-                        <p class="text-gray-700">
-                            Following Nigeria's independence and the 1976 local government reforms, Orumba North emerged as a distinct administrative unit. This period saw rapid development in infrastructure, education, and commerce, transforming the area into one of Anambra's progressive local governments.
-                        </p>
-                    </div>
-                </div>
-                <div class="space-y-6">
-                    <div class="bg-secondary p-6 rounded-lg border-l-4 border-primary">
-                        <h4 class="font-semibold text-lg mb-2">Traditional Governance</h4>
-                        <p class="text-gray-700">The area has maintained its traditional leadership structures with titled chiefs (Nze na Ozo) and community councils working alongside modern democratic institutions.</p>
-                    </div>
-                    <div class="bg-secondary p-6 rounded-lg border-l-4 border-primary">
-                        <h4 class="font-semibold text-lg mb-2">Agricultural Heritage</h4>
-                        <p class="text-gray-700">For generations, farming has been the backbone of Orumba North, with yam, cassava, and palm produce forming the economic foundation of communities.</p>
-                    </div>
-                    <div class="bg-secondary p-6 rounded-lg border-l-4 border-primary">
-                        <h4 class="font-semibold text-lg mb-2">Educational Legacy</h4>
-                        <p class="text-gray-700">The area boasts some of the earliest mission schools in Anambra, producing countless professionals who have excelled nationally and internationally.</p>
-                    </div>
-                </div>
-            </div>
+    <section id="communities" class="py-16 bg-secondary">
+      <div class="max-w-6xl mx-auto px-4">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900">Our Communities</h2>
+          <div class="mt-4 md:mt-0 w-full md:w-1/3">
+            <input
+              type="text"
+              id="townSearch"
+              placeholder="Search town..."
+              class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" />
+          </div>
         </div>
+
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          id="townsList"></div>
+      </div>
     </section>
 
-    <!-- Towns & Villages -->
-    <section id="towns" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Communities</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600">Orumba North comprises <span class="font-bold text-primary">13 major communities</span> with numerous villages</p>
+    <section id="highlights" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">
+          Regional Highlights
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+            <div
+              class="w-16 h-16 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fas fa-drum"></i>
             </div>
-            
-            <div class="mb-8">
-                <div class="max-w-md mx-auto">
-                    <input type="text" id="townSearch" placeholder="Search communities..." 
-                           class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent">
-                </div>
+            <h3 class="text-xl font-bold mb-2">Rich Culture</h3>
+            <p class="text-gray-600">
+              Home to the vibrant New Yam Festival (Iwa Ji) and colorful
+              masquerade displays that unite our people.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+            <div
+              class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fas fa-seedling"></i>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="townsList">
-                <!-- Towns will be rendered here by JavaScript -->
+            <h3 class="text-xl font-bold mb-2">Agriculture Hub</h3>
+            <p class="text-gray-600">
+              A major producer of Yam, Cassava, and Palm Oil. Our fertile soil
+              drives the local economy.
+            </p>
+          </div>
+          <div
+            class="text-center p-6 border rounded-xl hover:shadow-lg transition">
+            <div
+              class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fas fa-graduation-cap"></i>
             </div>
+            <h3 class="text-xl font-bold mb-2">Education Legacy</h3>
+            <p class="text-gray-600">
+              Boasting historic mission schools and a population dedicated to
+              academic excellence.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Voices From the Community -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Voices From the Community</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-secondary/30 p-6 rounded-xl">
-                    <div class="text-accent text-4xl mb-4">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">"Orumba North has given me and my children opportunities to thrive. The community support is unmatched. We look out for each other here."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">MO</div>
-                        <div>
-                            <p class="font-semibold">Mrs. Obiageli Nwosu</p>
-                            <p class="text-sm text-gray-600">Teacher, Ufuma</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-secondary/30 p-6 rounded-xl">
-                    <div class="text-accent text-4xl mb-4">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">"As a farmer, the fertile soil here has sustained my family for three generations. The land is our treasure and our pride."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">CE</div>
-                        <div>
-                            <p class="font-semibold">Chief Emeka Okafor</p>
-                            <p class="text-sm text-gray-600">Farmer, Ajalli</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-secondary/30 p-6 rounded-xl">
-                    <div class="text-accent text-4xl mb-4">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">"Returning home after years abroad, I'm impressed by the progress. Our youth are innovative and our culture remains strong."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">DA</div>
-                        <div>
-                            <p class="font-semibold">Dr. Ada Okeke</p>
-                            <p class="text-sm text-gray-600">Medical Doctor, Ndikelionwu</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="gallery" class="py-16 bg-gray-900 text-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold mb-2">Photo Stories</h2>
+          <div class="w-20 h-1 bg-accent mx-auto"></div>
+          <p class="mt-4 text-gray-400">Capturing the spirit of Orumba North</p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl group">
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="assets/yam-festival.webp"
+                alt="New Yam Festival"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+              <div
+                class="absolute bottom-0 left-0 bg-primary text-xs px-2 py-1 font-bold">
+                CULTURE
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="font-bold text-lg">New Yam Festival</h3>
+                <span class="text-xs text-gray-400">Aug 2024</span>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Communities uniting to celebrate the harvest season with
+                traditional dances.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl group">
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="assets/youth-day-program.jpg"
+                alt="Empowerment"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+              <div
+                class="absolute bottom-0 left-0 bg-accent text-gray-900 text-xs px-2 py-1 font-bold">
+                YOUTH
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="font-bold text-lg">Skills Acquisition</h3>
+                <span class="text-xs text-gray-400">Oct 2024</span>
+              </div>
+              <p class="text-gray-400 text-sm">
+                Empowering the next generation with digital and vocational
+                skills.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg overflow-hidden shadow-xl group">
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="assets/market-day-activities.jpg"
+                alt="Market Day"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-80 group-hover:opacity-100" />
+              <div
+                class="absolute bottom-0 left-0 bg-blue-600 text-xs px-2 py-1 font-bold">
+                COMMERCE
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="font-bold text-lg">Eke Ajalli Market</h3>
+                <span class="text-xs text-gray-400">Nov 2024</span>
+              </div>
+              <p class="text-gray-400 text-sm">
+                A bustling day of commerce showing the economic vitality of the
+                LGA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Local Heroes -->
-    <section class="py-16 bg-gradient-to-br from-primary to-green-800 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Local Heroes & Distinguished Sons</h2>
-                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
-                <p class="text-xl text-gray-100">Celebrating those who have brought honor to Orumba North</p>
-            </div>
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center border border-white/20">
-                    <div class="w-20 h-20 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-graduation-cap text-3xl text-gray-900"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Prof. Chukwuma Soludo</h3>
-                    <p class="text-sm text-gray-200 mb-2">Governor, Anambra State</p>
-                    <p class="text-xs text-gray-300">Former CBN Governor & Economist</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center border border-white/20">
-                    <div class="w-20 h-20 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-user-tie text-3xl text-gray-900"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Community Leaders</h3>
-                    <p class="text-sm text-gray-200 mb-2">Traditional Rulers</p>
-                    <p class="text-xs text-gray-300">Preserving our heritage and culture</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center border border-white/20">
-                    <div class="w-20 h-20 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-briefcase text-3xl text-gray-900"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Business Leaders</h3>
-                    <p class="text-sm text-gray-200 mb-2">Entrepreneurs</p>
-                    <p class="text-xs text-gray-300">Creating jobs and opportunities</p>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-center border border-white/20">
-                    <div class="w-20 h-20 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <i class="fas fa-heart text-3xl text-gray-900"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Philanthropists</h3>
-                    <p class="text-sm text-gray-200 mb-2">Community Benefactors</p>
-                    <p class="text-xs text-gray-300">Building schools, roads & hospitals</p>
-                </div>
-            </div>
+    <footer id="contact" class="bg-primary text-white">
+      <div class="border-b border-green-700">
+        <div
+          class="max-w-6xl mx-auto px-4 py-12 flex flex-col md:flex-row items-center gap-8">
+          <div
+            class="w-32 h-32 rounded-full overflow-hidden border-4 border-accent shrink-0">
+            <img
+              src="assets/image_chairman.png"
+              alt="Chairman"
+              class="w-full h-full object-cover" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold">Casmir Chinonso Nwafor</h3>
+            <p class="text-green-200 mb-2">
+              Executive Chairman, Orumba North LGA
+            </p>
+            <p class="italic text-sm text-green-100 max-w-xl">
+              "Committed to transforming Orumba North through sustainable
+              development and economic empowerment."
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Cultural Life & Celebrations -->
-    <section id="culture" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Cultural Life & Celebrations</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-secondary/20 rounded-xl p-8">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-drum"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">New Yam Festival (Iwa Ji)</h3>
-                    <p class="text-gray-700 mb-4">The most important festival in Orumba North, celebrating the harvest season with thanksgiving, masquerade displays, traditional dances, and communal feasting. Each community celebrates with unique customs.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">August</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Harvest</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Tradition</span>
-                    </div>
-                </div>
-                <div class="bg-secondary/20 rounded-xl p-8">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-calendar-day"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">Ofala Festival</h3>
-                    <p class="text-gray-700 mb-4">Annual festivals where traditional rulers appear before their subjects, showcasing cultural regalia, receiving homage, and celebrating community achievements. A display of rich Igbo royalty and tradition.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">December</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Royalty</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Cultural</span>
-                    </div>
-                </div>
-                <div class="bg-secondary/20 rounded-xl p-8">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-church"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">Christmas & Easter</h3>
-                    <p class="text-gray-700 mb-4">Major Christian celebrations bringing together families from across the diaspora. Communities compete in decorations, carol services, and charitable activities during these festive seasons.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">December/April</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Religious</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Family</span>
-                    </div>
-                </div>
-                <div class="bg-secondary/20 rounded-xl p-8">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-ring"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">Traditional Weddings</h3>
-                    <p class="text-gray-700 mb-4">Elaborate ceremonies featuring wine carrying (Igba Nkwu), traditional attire, live bands, and the famous Igbo hospitality. These events showcase the rich cultural heritage of our people.</p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Year-round</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Ceremony</span>
-                        <span class="bg-accent/20 px-3 py-1 rounded-full text-sm">Culture</span>
-                    </div>
-                </div>
-            </div>
+      <div
+        class="max-w-6xl mx-auto px-4 py-8 grid md:grid-cols-3 gap-8 text-sm">
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-accent">Contact Us</h4>
+          <p class="mb-2">
+            <i class="fas fa-map-marker-alt w-6"></i> LGA Secretariat, Ajalli,
+            Anambra State
+          </p>
+          <p class="mb-2"><i class="fas fa-phone w-6"></i> +234 XXX XXX XXXX</p>
+          <p><i class="fas fa-envelope w-6"></i> info@orumbanorthlga.gov.ng</p>
         </div>
-    </section>
-
-    <!-- Key Economic Activities -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Economic Activities</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-seedling"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Agriculture</h3>
-                    <p class="text-gray-700 mb-4">Dominant sector employing over 70% of the population</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Yam cultivation</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Cassava farming</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Palm oil production</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Vegetable farming</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-store"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Trading & Commerce</h3>
-                    <p class="text-gray-700 mb-4">Vibrant markets driving local economy</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Eke Ajalli Market</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Afor Ufuma Market</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Nkwo Markets</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Retail businesses</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="text-primary text-4xl mb-4"><i class="fas fa-hammer"></i></div>
-                    <h3 class="text-xl font-bold mb-3">Artisan & Manufacturing</h3>
-                    <p class="text-gray-700 mb-4">Growing sector creating employment</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Furniture making</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Tailoring & fashion</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Food processing</li>
-                        <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i>Building materials</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="bg-primary text-white p-8 rounded-xl">
-                <h3 class="text-2xl font-bold mb-4">Major Products & Produce</h3>
-                <div class="grid md:grid-cols-4 gap-4">
-                    <div class="text-center">
-                        <div class="text-4xl mb-2">🌾</div>
-                        <p class="font-semibold">Yam (King Crop)</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl mb-2">🌴</div>
-                        <p class="font-semibold">Palm Oil & Kernels</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl mb-2">🥬</div>
-                        <p class="font-semibold">Vegetables</p>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl mb-2">🌽</div>
-                        <p class="font-semibold">Cassava & Maize</p>
-                    </div>
-                </div>
-            </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-accent">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-accent">About Us</a></li>
+            <li>
+              <a href="#communities" class="hover:text-accent">Communities</a>
+            </li>
+            <li>
+              <a href="#gallery" class="hover:text-accent">Photo Gallery</a>
+            </li>
+          </ul>
         </div>
-    </section>
-
-    <!-- Local Businesses Highlight -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Local Business Spotlight</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600">Supporting local enterprises that power our economy</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
-                    <div class="bg-secondary/30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-shopping-basket text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Agricultural Cooperatives</h3>
-                    <p class="text-gray-600 mb-4">Farmer cooperatives pooling resources for better yields and market access, including modern farming equipment and techniques.</p>
-                    <span class="text-primary font-semibold text-sm">Agriculture • Community</span>
-                </div>
-                <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
-                    <div class="bg-secondary/30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-laptop-code text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Tech & Innovation Hubs</h3>
-                    <p class="text-gray-600 mb-4">Emerging technology centers training youth in digital skills, software development, and modern entrepreneurship.</p>
-                    <span class="text-primary font-semibold text-sm">Technology • Education</span>
-                </div>
-                <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
-                    <div class="bg-secondary/30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-mortar-pestle text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Food Processing Units</h3>
-                    <p class="text-gray-600 mb-4">Local businesses adding value to farm produce through processing, packaging, and distribution to wider markets.</p>
-                    <span class="text-primary font-semibold text-sm">Manufacturing • Food</span>
-                </div>
-            </div>
+        <div class="text-green-200">
+          <p>&copy; 2024 Orumba North Local Government Area.</p>
+          <p class="mt-2">Anambra State, Nigeria.</p>
         </div>
-    </section>
-
-    <!-- Important Places & Landmarks -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Important Places & Landmarks</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md flex">
-                    <div class="text-primary text-3xl mr-4"><i class="fas fa-landmark"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">LGA Secretariat, Ajalli</h3>
-                        <p class="text-gray-600">Administrative headquarters coordinating all local government activities and services.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex">
-                    <div class="text-primary text-3xl mr-4"><i class="fas fa-hospital"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">General Hospitals</h3>
-                        <p class="text-gray-600">Primary healthcare facilities in Ajalli and other communities providing medical services.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex">
-                    <div class="text-primary text-3xl mr-4"><i class="fas fa-school"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Educational Institutions</h3>
-                        <p class="text-gray-600">Numerous primary and secondary schools, including renowned mission schools and modern academies.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex">
-                    <div class="text-primary text-3xl mr-4"><i class="fas fa-cross"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Religious Centers</h3>
-                        <p class="text-gray-600">Historic Catholic and Anglican churches, along with numerous Pentecostal churches serving the community.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex">
-                    <div class="text-primary text-3xl mr-4"><i class="fas fa-tree"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Community Squares</h3>
-                        <p class="text-gray-600">Traditional village squares where important meetings, festivals, and cultural events take place.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md flex">
-                    <div class="text-primary text-3xl mr-4"><i class="fas fa-store-alt"></i></div>
-                    <div>
-                        <h3 class="font-bold text-lg mb-2">Major Markets</h3>
-                        <p class="text-gray-600">Bustling markets operating on 4-day Igbo market cycle (Eke, Oye, Afor, Nkwo) across communities.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership -->
-    <section id="leadership" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Leadership</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-            </div>
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-gradient-to-br from-primary to-green-800 rounded-2xl overflow-hidden shadow-2xl">
-                    <div class="grid md:grid-cols-2 gap-0">
-                        <div class="bg-white/10 backdrop-blur-sm p-8 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-accent">
-                                    <img src="assets/image-chairman.png" alt="LGA Chairman" class="w-full h-full object-cover">
-                                </div>
-                                <div class="bg-accent text-gray-900 px-6 py-2 rounded-full inline-block font-semibold">
-                                    LGA Chairman
-                                </div>
-                            </div>
-                        </div>
-                        <div class="p-8 text-white flex flex-col justify-center">
-                            <h3 class="text-3xl font-bold mb-2">Casmir Chinonso Nwafor</h3>
-                            <p class="text-xl mb-6 text-gray-200">Executive Chairman, Orumba North LGA</p>
-                            <div class="space-y-4 mb-6">
-                                <div class="flex items-start">
-                                    <i class="fas fa-quote-left text-accent text-2xl mr-3 mt-1"></i>
-                                    <p class="text-gray-100 italic">Committed to transforming Orumba North through sustainable development, quality education, improved healthcare, and economic empowerment for all our people.</p>
-                                </div>
-                            </div>
-                            <div class="space-y-3">
-                                <div class="flex items-center">
-                                    <i class="fas fa-map-marker-alt text-accent mr-3"></i>
-                                    <span>LGA Secretariat, Ajalli</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="fas fa-phone text-accent mr-3"></i>
-                                    <span>+234 XXX XXX XXXX</span>
-                                </div>
-                                <div class="flex items-center">
-                                    <i class="fas fa-envelope text-accent mr-3"></i>
-                                    <span>info@orumbanorthlga.gov.ng</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Local Government Services -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Local Government Services</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600">Programs and services for the development of our communities</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heartbeat text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-3">Health Programs</h3>
-                    <ul class="text-sm text-gray-600 space-y-2 text-left">
-                        <li>• Primary Healthcare Centers</li>
-                        <li>• Immunization campaigns</li>
-                        <li>• Maternal health services</li>
-                        <li>• Health awareness programs</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-book-reader text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-3">Education Projects</h3>
-                    <ul class="text-sm text-gray-600 space-y-2 text-left">
-                        <li>• School infrastructure development</li>
-                        <li>• Scholarship programs</li>
-                        <li>• Adult literacy classes</li>
-                        <li>• School feeding programs</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-leaf text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-3">Environmental Services</h3>
-                    <ul class="text-sm text-gray-600 space-y-2 text-left">
-                        <li>• Waste management</li>
-                        <li>• Erosion control projects</li>
-                        <li>• Street cleaning initiatives</li>
-                        <li>• Tree planting campaigns</li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-md text-center">
-                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-users text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-3">Empowerment Programs</h3>
-                    <ul class="text-sm text-gray-600 space-y-2 text-left">
-                        <li>• Youth skill acquisition</li>
-                        <li>• Women economic empowerment</li>
-                        <li>• Agricultural support schemes</li>
-                        <li>• Small business grants</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mt-12 bg-white p-8 rounded-xl shadow-md">
-                <h3 class="text-2xl font-bold mb-4 text-gray-900">Tax & Revenue Information</h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h4 class="font-semibold mb-3 text-primary">Local Taxes & Levies</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-primary mr-2 mt-1"></i><span>Tenement rates for property owners</span></li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-primary mr-2 mt-1"></i><span>Market stall fees and levies</span></li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-primary mr-2 mt-1"></i><span>Business premises registration</span></li>
-                            <li class="flex items-start"><i class="fas fa-check-circle text-primary mr-2 mt-1"></i><span>Vehicle registration and licensing</span></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold mb-3 text-primary">Revenue Utilization</h4>
-                        <ul class="space-y-2 text-gray-700">
-                            <li class="flex items-start"><i class="fas fa-arrow-right text-accent mr-2 mt-1"></i><span>Infrastructure development and maintenance</span></li>
-                            <li class="flex items-start"><i class="fas fa-arrow-right text-accent mr-2 mt-1"></i><span>Healthcare and education services</span></li>
-                            <li class="flex items-start"><i class="fas fa-arrow-right text-accent mr-2 mt-1"></i><span>Environmental and sanitation projects</span></li>
-                            <li class="flex items-start"><i class="fas fa-arrow-right text-accent mr-2 mt-1"></i><span>Security and community development</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Community Challenges -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Community Challenges</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600">Being honest about our challenges helps us find better solutions together</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="border-l-4 border-red-500 bg-red-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-lg mb-3 text-red-900">Infrastructure Gaps</h3>
-                    <p class="text-gray-700 mb-3">Many rural roads need rehabilitation, and some communities lack reliable electricity and water supply.</p>
-                    <div class="text-sm text-red-700 font-semibold">Priority: High</div>
-                </div>
-                <div class="border-l-4 border-orange-500 bg-orange-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-lg mb-3 text-orange-900">Youth Unemployment</h3>
-                    <p class="text-gray-700 mb-3">Limited job opportunities lead to youth migration to cities, affecting local workforce and economy.</p>
-                    <div class="text-sm text-orange-700 font-semibold">Priority: High</div>
-                </div>
-                <div class="border-l-4 border-yellow-500 bg-yellow-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-lg mb-3 text-yellow-900">Healthcare Access</h3>
-                    <p class="text-gray-700 mb-3">Need for more health centers and medical personnel, especially in remote communities.</p>
-                    <div class="text-sm text-yellow-700 font-semibold">Priority: Medium</div>
-                </div>
-                <div class="border-l-4 border-blue-500 bg-blue-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-lg mb-3 text-blue-900">Educational Facilities</h3>
-                    <p class="text-gray-700 mb-3">Some schools require renovation and modern learning equipment to improve educational outcomes.</p>
-                    <div class="text-sm text-blue-700 font-semibold">Priority: Medium</div>
-                </div>
-                <div class="border-l-4 border-purple-500 bg-purple-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-lg mb-3 text-purple-900">Erosion Control</h3>
-                    <p class="text-gray-700 mb-3">Gully erosion threatens some communities and farmlands, requiring urgent intervention.</p>
-                    <div class="text-sm text-purple-700 font-semibold">Priority: High</div>
-                </div>
-                <div class="border-l-4 border-green-500 bg-green-50 p-6 rounded-r-lg">
-                    <h3 class="font-bold text-lg mb-3 text-green-900">Agricultural Modernization</h3>
-                    <p class="text-gray-700 mb-3">Farmers need access to modern equipment, improved seedlings, and market linkages.</p>
-                    <div class="text-sm text-green-700 font-semibold">Priority: Medium</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Community Projects & Solutions -->
-    <section class="py-16 bg-gradient-to-br from-primary to-green-800 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Community Projects & Solutions</h2>
-                <div class="w-24 h-1 bg-accent mx-auto mb-6"></div>
-                <p class="text-xl text-gray-100">Working together to build a better Orumba North</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-accent text-gray-900 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-road text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Road Rehabilitation Project</h3>
-                            <p class="text-sm text-accent mb-3">Ongoing • Infrastructure</p>
-                            <p class="text-gray-100 mb-4">Systematic rehabilitation of major roads connecting communities, with community participation in maintenance planning.</p>
-                            <div class="bg-white/20 rounded-full h-3 mb-2">
-                                <div class="bg-accent h-3 rounded-full" style="width: 65%"></div>
-                            </div>
-                            <p class="text-sm text-gray-200">65% Complete</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-accent text-gray-900 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-graduation-cap text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Youth Skills Training</h3>
-                            <p class="text-sm text-accent mb-3">Active • Empowerment</p>
-                            <p class="text-gray-100 mb-4">Quarterly training programs in digital skills, tailoring, welding, and entrepreneurship for unemployed youth.</p>
-                            <div class="flex flex-wrap gap-2 mt-3">
-                                <span class="bg-white/20 px-3 py-1 rounded-full text-xs">500+ Trained</span>
-                                <span class="bg-white/20 px-3 py-1 rounded-full text-xs">4 Batches/Year</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-accent text-gray-900 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-tint text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Clean Water Initiative</h3>
-                            <p class="text-sm text-accent mb-3">Planned • Infrastructure</p>
-                            <p class="text-gray-100 mb-4">Drilling of boreholes and renovation of water facilities in underserved communities for improved water access.</p>
-                            <div class="flex items-center mt-3">
-                                <i class="fas fa-check-circle text-accent mr-2"></i>
-                                <span class="text-sm">8 Communities Targeted</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl border border-white/20">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-accent text-gray-900 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                            <i class="fas fa-seedling text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-2xl font-bold mb-2">Agric Support Scheme</h3>
-                            <p class="text-sm text-accent mb-3">Active • Economic</p>
-                            <p class="text-gray-100 mb-4">Distribution of improved seedlings, fertilizers, and farming equipment to registered farmers at subsidized rates.</p>
-                            <div class="flex items-center mt-3">
-                                <i class="fas fa-users text-accent mr-2"></i>
-                                <span class="text-sm">1,200+ Farmers Benefiting</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 text-center">
-                <a href="#contact" class="bg-accent hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-4 rounded-lg inline-block transition shadow-lg">
-                    Get Involved in Community Projects
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Photo Stories -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Photo Stories</h2>
-                <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
-                <p class="text-xl text-gray-600">Capturing moments that tell our story</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/yam-festival.webp" alt="New Yam Festival 2024" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-2">New Yam Festival 2024</h3>
-                        <p class="text-gray-600 text-sm mb-3">Communities came together to celebrate the harvest with traditional dances, masquerades, and feasting.</p>
-                        <div class="flex items-center text-xs text-gray-500">
-                            <i class="fas fa-calendar mr-2"></i>
-                            <span>August 2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/youth-day-program.jpg" alt="Youth Empowerment Program" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-2">Youth Empowerment Program</h3>
-                        <p class="text-gray-600 text-sm mb-3">Young people receiving training in modern skills and entrepreneurship from expert instructors.</p>
-                        <div class="flex items-center text-xs text-gray-500">
-                            <i class="fas fa-calendar mr-2"></i>
-                            <span>October 2024</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg group">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/market-day-activities.jpg" alt="Market Day Activities" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-2">Market Day Activities</h3>
-                        <p class="text-gray-600 text-sm mb-3">The vibrant scenes from Eke Ajalli market showing the bustling commerce and community interactions.</p>
-                        <div class="flex items-center text-xs text-gray-500">
-                            <i class="fas fa-calendar mr-2"></i>
-                            <span>November 2024</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-accent">Orumba North</h3>
-                    <p class="text-gray-400 mb-4">Building a prosperous and united community through sustainable development and cultural preservation.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#about" class="hover:text-accent transition">About Us</a></li>
-                        <li><a href="#towns" class="hover:text-accent transition">Our Communities</a></li>
-                        <li><a href="#culture" class="hover:text-accent transition">Culture</a></li>
-                        <li><a href="#leadership" class="hover:text-accent transition">Leadership</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-accent transition">Health Programs</a></li>
-                        <li><a href="#" class="hover:text-accent transition">Education</a></li>
-                        <li><a href="#" class="hover:text-accent transition">Empowerment</a></li>
-                        <li><a href="#" class="hover:text-accent transition">Tax Information</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mr-2 mt-1"></i>
-                            <span>Ajalli, Anambra State</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone mr-2"></i>
-                            <span>+234 XXX XXX XXXX</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope mr-2"></i>
-                            <span>info@orumbanorthlga.gov.ng</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Orumba North Local Government Area. All rights reserved.</p>
-                <p class="mt-2 text-sm">Part of Anambra State, Nigeria</p>
-            </div>
-        </div>
+      </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollTop" class="fixed bottom-8 right-8 bg-primary hover:bg-green-700 text-white w-12 h-12 rounded-full shadow-lg hidden items-center justify-center transition">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
     <script>
-        // Towns and Villages Data
-        const towns = [
-            {
-                name: "Ajalli",
-                description: "LGA Headquarters and administrative center",
-                population: "~25,000",
-                marketDay: "Eke",
-                notable: "Secretariat, Major Markets"
-            },
-            {
-                name: "Ufuma",
-                description: "Large commercial town with rich history",
-                population: "~30,000",
-                marketDay: "Afor",
-                notable: "Educational institutions, Commerce"
-            },
-            {
-                name: "Ndikelionwu",
-                description: "Agricultural community",
-                population: "~15,000",
-                marketDay: "Nkwo",
-                notable: "Farming, Palm produce"
-            },
-            {
-                name: "Amaetiti",
-                description: "Growing residential and farming community",
-                population: "~12,000",
-                marketDay: "Oye",
-                notable: "Agriculture, Schools"
-            },
-            {
-                name: "Amaokpala",
-                description: "Traditional community with strong cultural heritage",
-                population: "~10,000",
-                marketDay: "Eke",
-                notable: "Cultural festivals, Farming"
-            },
-            {
-                name: "Ndiokolo",
-                description: "Peaceful agricultural settlement",
-                population: "~8,000",
-                marketDay: "Afor",
-                notable: "Yam cultivation, Community spirit"
-            },
-            {
-                name: "Ndiokpaleke",
-                description: "Emerging town with modern development",
-                population: "~9,000",
-                marketDay: "Nkwo",
-                notable: "Infrastructure growth"
-            },
-            {
-                name: "Ndiukwuenu",
-                description: "Agricultural community",
-                population: "~11,000",
-                marketDay: "Oye",
-                notable: "Cassava farming"
-            },
-            {
-                name: "Obiuno",
-                description: "Traditional settlement",
-                population: "~7,500",
-                marketDay: "Eke",
-                notable: "Cultural preservation"
-            },
-            {
-                name: "Okpeze",
-                description: "Rural community with strong traditions",
-                population: "~8,500",
-                marketDay: "Afor",
-                notable: "Traditional arts"
-            },
-            {
-                name: "Ovoko",
-                description: "Agricultural town",
-                population: "~10,500",
-                marketDay: "Nkwo",
-                notable: "Palm oil production"
-            },
-            {
-                name: "Ugbene",
-                description: "Growing community",
-                population: "~9,500",
-                marketDay: "Oye",
-                notable: "Commerce, Farming"
-            },
-            {
-                name: "Ugbenu",
-                description: "Traditional agricultural community",
-                population: "~8,000",
-                marketDay: "Eke",
-                notable: "Yam farming, Markets"
-            }
-        ];
+      const towns = [
+        { name: "Ajalli", desc: "LGA Headquarters", market: "Eke" },
+        { name: "Ufuma", desc: "Commercial hub", market: "Afor" },
+        { name: "Ndikelionwu", desc: "Agricultural center", market: "Nkwo" },
+        { name: "Amaetiti", desc: "Residential & Farming", market: "Oye" },
+        { name: "Amaokpala", desc: "Cultural heritage", market: "Eke" },
+        { name: "Ndiokolo", desc: "Yam cultivation", market: "Afor" },
+        { name: "Ndiokpaleke", desc: "Emerging development", market: "Nkwo" },
+        { name: "Ndiukwuenu", desc: "Cassava farming", market: "Oye" },
+        { name: "Obiuno", desc: "Traditional settlement", market: "Eke" },
+        { name: "Okpeze", desc: "Arts & crafts", market: "Afor" },
+        { name: "Ovoko", desc: "Palm oil production", market: "Nkwo" },
+        { name: "Ugbene", desc: "Commerce & Farming", market: "Oye" },
+        { name: "Ugbenu", desc: "Agricultural community", market: "Eke" },
+      ];
 
-        // Render Towns
-        function renderTowns(townsToRender) {
-            const townsList = document.getElementById('townsList');
-            townsList.innerHTML = townsToRender.map(town => `
-                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
-                    <div class="flex items-start justify-between mb-3">
-                        <h3 class="text-xl font-bold text-primary">${town.name}</h3>
-                        <span class="bg-secondary px-3 py-1 rounded-full text-xs font-semibold text-primary">${town.marketDay}</span>
+      function renderTowns(list) {
+        const container = document.getElementById("townsList");
+        container.innerHTML = list
+          .map(
+            (t) => `
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100 hover:border-primary transition">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-lg text-primary">${t.name}</h3>
+                        <span class="text-xs font-bold bg-green-100 text-green-800 px-2 py-1 rounded">${t.market}</span>
                     </div>
-                    <p class="text-gray-600 mb-4">${town.description}</p>
-                    <div class="space-y-2 text-sm">
-                        <div class="flex items-center text-gray-700">
-                            <i class="fas fa-users text-primary mr-2"></i>
-                            <span>${town.population}</span>
-                        </div>
-                        <div class="flex items-center text-gray-700">
-                            <i class="fas fa-store text-primary mr-2"></i>
-                            <span>${town.marketDay} Market Day</span>
-                        </div>
-                        <div class="flex items-start text-gray-700">
-                            <i class="fas fa-star text-accent mr-2 mt-1"></i>
-                            <span>${town.notable}</span>
-                        </div>
-                    </div>
+                    <p class="text-gray-600 text-sm">${t.desc}</p>
                 </div>
-            `).join('');
-        }
+            `
+          )
+          .join("");
+      }
 
-        // Initial render
-        renderTowns(towns);
+      renderTowns(towns);
 
-        // Search functionality
-        const searchInput = document.getElementById('townSearch');
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filtered = towns.filter(town => 
-                town.name.toLowerCase().includes(searchTerm) ||
-                town.description.toLowerCase().includes(searchTerm) ||
-                town.notable.toLowerCase().includes(searchTerm)
-            );
-            renderTowns(filtered);
-        });
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // Scroll to top button
-        const scrollTopBtn = document.getElementById('scrollTop');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.remove('hidden');
-                scrollTopBtn.classList.add('flex');
-            } else {
-                scrollTopBtn.classList.add('hidden');
-                scrollTopBtn.classList.remove('flex');
-            }
-        });
-
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // Form submission (placeholder)
-        document.querySelector('form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            e.target.reset();
-        });
+      document.getElementById("townSearch").addEventListener("input", (e) => {
+        const term = e.target.value.toLowerCase();
+        const filtered = towns.filter(
+          (t) =>
+            t.name.toLowerCase().includes(term) ||
+            t.desc.toLowerCase().includes(term)
+        );
+        renderTowns(filtered);
+      });
     </script>
-</body>
+  </body>
 </html>
