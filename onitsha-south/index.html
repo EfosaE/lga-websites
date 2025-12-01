@@ -1,372 +1,1090 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Onitsha South LGA – Culture, Riverfront Life &amp; Places to Visit</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Tourism and culture profile of Onitsha South Local Government Area – cultural identity, history, top places to visit, photo stories, local cuisine, markets and events."
-  />
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind theme for Onitsha South -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            onitshaS: {
-              50:  '#ECEFF1',
-              100: '#CFD8DC', // secondary
-              200: '#B0BEC5',
-              300: '#90A4AE',
-              400: '#78909C',
-              500: '#607D8B',
-              600: '#546E7A',
-              700: '#455A64',
-              800: '#37474F', // primary
-              900: '#263238'
-            },
-            onitshaSAccent: '#FF6D00',
-            onitshaSAccentSoft: '#FFCC80',
-            onitshaSbg: '#F3F4F6',
-            onitshaSSurface: '#FFFFFF'
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onitsha South LGA, Anambra State – Overview, Towns, History & Facts</title>
+    <meta name="description" content="Learn about Onitsha South LGA, its towns, history, economy, culture, and key points of interest. The commercial heart of Anambra State.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ansg_favicon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config for Custom Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#37474F',
+                        secondary: '#B0BEC5',
+                        accent: '#FF6D00'
+                    }
+                }
+            }
         }
-      }
-    };
-  </script>
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #37474F 0%, #546E7A 100%);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #FF6D00;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #FF6D00 0%, #F57C00 100%);
+        }
+        
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body class="bg-onitshaSbg text-slate-900 antialiased">
-  <div class="min-h-screen flex flex-col">
+<body class="font-sans antialiased">
 
-    <!-- HERO (wide, image-style gradient) -->
-    <header class="relative bg-gradient-to-br from-onitshaS-900 via-onitshaS-700 to-onitshaS-800 text-white">
-      <div class="absolute inset-0 opacity-40 pointer-events-none">
-        <div class="absolute -top-24 -left-32 h-72 w-72 rounded-full bg-onitshaSAccent/30 blur-3xl"></div>
-        <div class="absolute -bottom-28 -right-20 h-80 w-80 rounded-full bg-onitshaSAccentSoft/40 blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <p class="inline-flex items-center gap-2 rounded-full bg-onitshaS-900/70 border border-onitshaS-500/60 px-3 py-1 text-[0.7rem] uppercase tracking-wide">
-          <span class="h-1.5 w-1.5 rounded-full bg-onitshaSAccent"></span>
-          Onitsha South Local Government Area · Onitsha Metropolis, Anambra State
-        </p>
-        <h1 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-          Onitsha South: Culture, Streets &amp; Riverfront Stories
-        </h1>
-        <p class="mt-3 text-sm sm:text-base text-onitshaS-100 max-w-2xl">
-          A look at the neighbourhoods, markets, churches, festivals and everyday life that make Onitsha South
-          more than just a part of the famous commercial city – but a community of stories by the Niger.
-        </p>
-
-        <div class="mt-5 flex flex-wrap gap-3 text-[0.75rem]">
-          <a href="#cultural-identity" class="inline-flex items-center gap-2 rounded-full bg-onitshaSAccent px-4 py-2 font-semibold text-slate-900 hover:bg-onitshaSAccentSoft transition">
-            Explore Cultural Identity
-          </a>
-          <a href="#top-places" class="inline-flex items-center gap-2 rounded-full border border-onitshaS-200 bg-onitshaS-900/40 px-4 py-2 font-semibold text-onitshaS-50 hover:border-onitshaSAccent transition">
-            Top Places to Visit
-          </a>
+    <!-- Navigation -->
+    <nav class="nav-sticky">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-landmark text-3xl text-primary"></i>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">Onitsha South LGA</h1>
+                        <p class="text-xs text-gray-600">Anambra State, Nigeria</p>
+                    </div>
+                </div>
+                <button id="menuBtn" class="lg:hidden text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <div id="navMenu" class="hidden lg:flex space-x-6">
+                    <a href="#overview" class="text-gray-700 hover:text-accent transition">Overview</a>
+                    <a href="#economy" class="text-gray-700 hover:text-accent transition">Economy</a>
+                    <a href="#towns" class="text-gray-700 hover:text-accent transition">Towns</a>
+                    <a href="#infrastructure" class="text-gray-700 hover:text-accent transition">Infrastructure</a>
+                    <a href="#investment" class="text-gray-700 hover:text-accent transition">Investment</a>
+                    <a href="#leadership" class="text-gray-700 hover:text-accent transition">Leadership</a>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden mt-4 pb-4 space-y-3">
+                <a href="#overview" class="block text-gray-700 hover:text-accent transition">Overview</a>
+                <a href="#economy" class="block text-gray-700 hover:text-accent transition">Economy</a>
+                <a href="#towns" class="block text-gray-700 hover:text-accent transition">Towns</a>
+                <a href="#infrastructure" class="block text-gray-700 hover:text-accent transition">Infrastructure</a>
+                <a href="#investment" class="block text-gray-700 hover:text-accent transition">Investment</a>
+                <a href="#leadership" class="block text-gray-700 hover:text-accent transition">Leadership</a>
+            </div>
         </div>
-      </div>
-    </header>
+    </nav>
 
-    <!-- TOP SECTION NAV (chips) -->
-    <div class="bg-onitshaS-900 text-onitshaS-50 border-b border-onitshaS-800">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
-        <div class="flex gap-2 text-[0.7rem]">
-          <a href="#overview" class="px-3 py-1.5 rounded-full bg-onitshaS-700 whitespace-nowrap">
-            Overview
-          </a>
-          <a href="#cultural-identity" class="px-3 py-1.5 rounded-full bg-onitshaS-900 hover:bg-onitshaS-700 whitespace-nowrap">
-            Cultural Identity
-          </a>
-          <a href="#history" class="px-3 py-1.5 rounded-full bg-onitshaS-900 hover:bg-onitshaS-700 whitespace-nowrap">
-            Historic Background
-          </a>
-          <a href="#top-places" class="px-3 py-1.5 rounded-full bg-onitshaS-900 hover:bg-onitshaS-700 whitespace-nowrap">
-            Top Places to Visit
-          </a>
-          <a href="#gallery" class="px-3 py-1.5 rounded-full bg-onitshaS-900 hover:bg-onitshaS-700 whitespace-nowrap">
-            Photo Gallery
-          </a>
-          <a href="#famous-people" class="px-3 py-1.5 rounded-full bg-onitshaS-900 hover:bg-onitshaS-700 whitespace-nowrap">
-            Famous People
-          </a>
-          <a href="#cuisine" class="px-3 py-1.5 rounded-full bg-onitshaS-900 hover:bg-onitshaS-700 whitespace-nowrap">
-            Local Cuisine &amp; Markets
-          </a>
-          <a href="#events" class="px-3 py-1.5 rounded-full bg-onitshaS-900 hover:bg-onitshaS-700 whitespace-nowrap">
-            Events Calendar
-          </a>
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-24 lg:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block bg-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Commercial Hub of Anambra
+                </div>
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6">Onitsha South Local Government Area</h1>
+                <p class="text-xl lg:text-2xl mb-8 text-gray-200">The Heart of Commerce in Anambra</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#investment" class="bg-accent hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition">
+                        Investment Opportunities
+                    </a>
+                    <a href="#overview" class="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-lg font-semibold transition">
+                        Learn More
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-1">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 space-y-10">
-
-        <!-- OVERVIEW -->
-        <section id="overview" class="grid lg:grid-cols-[1.6fr,1.4fr] gap-6 items-start">
-          <div class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5">
-            <h2 class="text-lg font-semibold text-onitshaS-900 mb-2">
-              A Brief Look at Onitsha South
-            </h2>
-            <p class="text-sm text-slate-800">
-              Onitsha South is one of the urban local government areas forming the wider Onitsha metropolis in
-              Anambra State. It covers parts of the bustling river city on the eastern bank of the Niger, with a mix
-              of residential quarters, markets, schools, churches and small industries. The headquarters area is
-              commonly associated with neighbourhoods around Fegge and its environs within the city.
-            </p>
-            <p class="mt-3 text-sm text-slate-800">
-              While Onitsha North is often linked with the Main Market and some historic districts, Onitsha South
-              contains its own network of streets, riverfront communities and worship centres that define the rhythm
-              of everyday life – from early‑morning traders to late‑night transport and church activities.
-            </p>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-3 text-xs">
-            <div class="bg-onitshaSSurface rounded-xl shadow-sm border border-onitshaS-100 px-4 py-3">
-              <p class="text-[0.65rem] uppercase tracking-wide text-onitshaS-600">Core Setting</p>
-              <p class="mt-1 text-sm font-semibold text-onitshaS-900">Urban / Riverine</p>
-              <p class="mt-1 text-[0.7rem] text-slate-700">
-                Streets, markets and parishes close to the Niger River and Onitsha’s major transport corridors.
-              </p>
+    <!-- Quick Stats -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stat-card text-white p-6 rounded-lg card-hover">
+                    <div class="text-4xl mb-2"><i class="fas fa-users"></i></div>
+                    <div class="text-3xl font-bold mb-1">~200,000+</div>
+                    <div class="text-sm opacity-90">Estimated Population</div>
+                </div>
+                <div class="bg-primary text-white p-6 rounded-lg card-hover">
+                    <div class="text-4xl mb-2"><i class="fas fa-map-marked-alt"></i></div>
+                    <div class="text-3xl font-bold mb-1">20.2 km²</div>
+                    <div class="text-sm opacity-90">Land Area</div>
+                </div>
+                <div class="bg-secondary text-primary p-6 rounded-lg card-hover">
+                    <div class="text-4xl mb-2"><i class="fas fa-building"></i></div>
+                    <div class="text-3xl font-bold mb-1">16</div>
+                    <div class="text-sm opacity-90">Towns & Communities</div>
+                </div>
+                <div class="bg-primary text-white p-6 rounded-lg card-hover">
+                    <div class="text-4xl mb-2"><i class="fas fa-store"></i></div>
+                    <div class="text-3xl font-bold mb-1">10+</div>
+                    <div class="text-sm opacity-90">Major Markets</div>
+                </div>
             </div>
-            <div class="bg-onitshaSSurface rounded-xl shadow-sm border border-onitshaS-100 px-4 py-3">
-              <p class="text-[0.65rem] uppercase tracking-wide text-onitshaS-600">Communities</p>
-              <p class="mt-1 text-[0.75rem] text-slate-800">
-                A collection of urban neighbourhoods and river‑adjacent communities. Insert exact list of
-                towns/wards here once verified from official sources.
-              </p>
+        </div>
+    </section>
+
+    <!-- Brief Overview -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title">About Onitsha South</h2>
+                <div class="h-4"></div>
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Onitsha South Local Government Area is one of the most commercially vibrant local government areas in Anambra State, Nigeria. Located in the southeastern part of the state, it serves as a major economic nerve center for the entire region.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Established as part of the administrative restructuring of Anambra State, Onitsha South has grown to become a bustling commercial hub, hosting some of the largest markets in West Africa, including the famous Ochanja Market which attracts thousands of buyers and sellers of variety of commodities daily.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            The LGA is strategically positioned along the Niger River, providing excellent access to waterways and connecting various economic zones across Nigeria. Its proximity to the Onitsha Main Market makes it a critical component of the region's trade ecosystem.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                                <span class="font-semibold text-primary">Location</span>
+                            </div>
+                            <p class="text-gray-600 ml-8">Southern Anambra State, Nigeria</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-users text-accent mr-3"></i>
+                                <span class="font-semibold text-primary">Population</span>
+                            </div>
+                            <p class="text-gray-600 ml-8">Approximately 200,000+ (estimated)</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-ruler-combined text-accent mr-3"></i>
+                                <span class="font-semibold text-primary">Landmass</span>
+                            </div>
+                            <p class="text-gray-600 ml-8">20.2 square kilometers</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-calendar-alt text-accent mr-3"></i>
+                                <span class="font-semibold text-primary">Year Created</span>
+                            </div>
+                            <p class="text-gray-600 ml-8">1991</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CULTURAL IDENTITY -->
-        <section id="cultural-identity" class="grid lg:grid-cols-[1.7fr,1.3fr] gap-6">
-          <div class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5">
-            <h2 class="text-lg font-semibold text-onitshaS-900 mb-2">
-              Cultural Identity of Onitsha South
-            </h2>
-            <p class="text-sm text-slate-800 mb-3">
-              Onitsha South shares in the wider Onitsha cultural heritage – riverine Igbo traditions, deep Christian
-              roots, and a long history of trade and migration. Within the LGA, parish churches, schools, markets,
-              town halls and street‑corner gatherings all serve as spaces where culture is lived every day.
-            </p>
-            <div class="grid sm:grid-cols-2 gap-4 text-xs sm:text-[0.8rem]">
-              <div class="rounded-xl bg-onitshaS-100 px-3 py-3">
-                <p class="font-semibold text-onitshaS-900 mb-1">Festivals &amp; Celebrations</p>
-                <ul class="list-disc list-inside text-slate-800 space-y-0.5">
-                  <li>New Yam celebrations with family gatherings and community church thanksgivings.</li>
-                  <li>Harvest / bazaar seasons in many parishes and congregations.</li>
-                  <li>Masquerade and cultural displays around major festive periods (where documented).</li>
-                </ul>
-              </div>
-              <div class="rounded-xl bg-onitshaS-100 px-3 py-3">
-                <p class="font-semibold text-onitshaS-900 mb-1">Faith &amp; Community</p>
-                <p class="text-slate-800">
-                  Churches, prayer centres and mosques are central to community life, with many residents
-                  participating in choir groups, youth fellowships and charitable societies.
-                </p>
-              </div>
-              <div class="rounded-xl bg-onitshaS-100 px-3 py-3">
-                <p class="font-semibold text-onitshaS-900 mb-1">Markets &amp; Street Culture</p>
-                <p class="text-slate-800">
-                  Street vendors, artisans and transport workers give Onitsha South its distinctive soundscape –
-                  voices calling customers, music from shops, and traffic moving towards the river and markets.
-                </p>
-              </div>
-              <div class="rounded-xl bg-onitshaS-100 px-3 py-3">
-                <p class="font-semibold text-onitshaS-900 mb-1">Town Unions &amp; Associations</p>
-                <p class="text-slate-800">
-                  Resident associations, market unions and professional groups help settle disputes, support members,
-                  and organise development projects.
-                </p>
-              </div>
+    <!-- Economic Overview -->
+    <section id="economy" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title inline-block">Economic Overview</h2>
+                    <div class="h-4"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-8">
+                        Onitsha South is predominantly commercial, serving as a major trading hub in West Africa
+                    </p>
+                </div>
+
+                <!-- Key Industries -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-accent text-4xl mb-4"><i class="fas fa-store"></i></div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Trading & Commerce</h3>
+                        <p class="text-gray-600">
+                            Wholesale and retail trading of textiles, electronics, automotive parts, building materials, and general merchandise
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-accent text-4xl mb-4"><i class="fas fa-industry"></i></div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Light Manufacturing</h3>
+                        <p class="text-gray-600">
+                            Small-scale manufacturing of plastics, furniture, metal works, and processed foods
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-accent text-4xl mb-4"><i class="fas fa-truck"></i></div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Import/Export</h3>
+                        <p class="text-gray-600">
+                            Major import and distribution center for goods from Asia, Europe, and other African countries
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-accent text-4xl mb-4"><i class="fas fa-hammer"></i></div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Artisan Services</h3>
+                        <p class="text-gray-600">
+                            Tailoring, welding, carpentry, automobile repairs, and other skilled trades
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-accent text-4xl mb-4"><i class="fas fa-utensils"></i></div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Hospitality</h3>
+                        <p class="text-gray-600">
+                            Hotels, restaurants, event centers catering to the large number of traders and visitors
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+                        <div class="text-accent text-4xl mb-4"><i class="fas fa-coins"></i></div>
+                        <h3 class="text-xl font-bold text-primary mb-3">Financial Services</h3>
+                        <p class="text-gray-600">
+                            Banking, microfinance, money transfer services, and currency exchange
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Commercial Markets -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Major Commercial Markets</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-l-4 border-accent pl-4">
+                            <h4 class="font-bold text-lg text-primary mb-2">Ochanja Market</h4>
+                            <p class="text-gray-600 mb-2">
+                                One of the largest markets in West Africa, specializing in textiles, clothing, footwear, and fashion accessories. Attracts thousands of buyers and sellers of variety of commodities daily.
+                            </p>
+                            <span class="text-sm text-accent font-semibold">Market Days: Daily</span>
+                        </div>
+                        <div class="border-l-4 border-accent pl-4">
+                            <h4 class="font-bold text-lg text-primary mb-2">Electrical/Electronics Market</h4>
+                            <p class="text-gray-600 mb-2">
+                                Major distribution center for electrical appliances, electronics, and telecommunications equipment
+                            </p>
+                            <span class="text-sm text-accent font-semibold">Market Days: Daily</span>
+                        </div>
+                        <div class="border-l-4 border-accent pl-4">
+                            <h4 class="font-bold text-lg text-primary mb-2">Ose Okwodu Market</h4>
+                            <p class="text-gray-600 mb-2">
+                                Traditional market for foodstuffs, provisions, and household items
+                            </p>
+                            <span class="text-sm text-accent font-semibold">Market Days: Every 4 days (Eke day)</span>
+                        </div>
+                        <div class="border-l-4 border-accent pl-4">
+                            <h4 class="font-bold text-lg text-primary mb-2">Pharmaceutical Market</h4>
+                            <p class="text-gray-600 mb-2">
+                                Specialized market for pharmaceutical products and medical supplies
+                            </p>
+                            <span class="text-sm text-accent font-semibold">Market Days: Daily</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <!-- Side “mood board” -->
-          <div class="bg-onitshaS-800 text-onitshaS-50 rounded-2xl shadow-sm px-4 py-5 text-xs sm:text-[0.8rem]">
-            <p class="font-semibold text-onitshaSAccent mb-2">Atmosphere &amp; Everyday Scenes</p>
-            <ul class="list-disc list-inside space-y-1.5">
-              <li>Early‑morning movement as traders and workers head towards the markets and motor parks.</li>
-              <li>Children in uniforms streaming to schools nestled in dense neighbourhoods.</li>
-              <li>Evening lights from churches, shops and homes reflecting the city’s constant activity.</li>
-              <li>Sounds of music, preaching, announcements and conversations mixing in the background.</li>
-            </ul>
-            <p class="mt-3 text-[0.7rem] text-onitshaS-100/80">
-              Replace these generic scenes with specific notes about streets, parishes or landmarks once
-              you gather more detailed local information.
-            </p>
-          </div>
-        </section>
+    <!-- Towns & Villages -->
+    <section id="towns" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title inline-block">Towns & Communities</h2>
+                    <div class="h-4"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-8">
+                        Onitsha South comprises 16 major towns and communities
+                    </p>
+                </div>
 
-        <!-- HISTORIC BACKGROUND -->
-        <section id="history" class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-onitshaS-900 mb-2">
-            Historic Background
-          </h2>
-          <p class="text-sm text-slate-800 mb-2">
-            Onitsha as a whole has a long‑documented history as a river port, trading post and cultural centre – with
-            early encounters involving river traders, missionaries and colonial administrators. Onitsha South, as one
-            of the LGAs carved out in the modern era, carries slices of this history in its streets, churches, schools
-            and markets.
-          </p>
-          <p class="text-sm text-slate-800">
-            For a truly accurate historical timeline specific to Onitsha South (creation date of the LGA, early
-            chairmen, landmark community projects), you should reference official Anambra State publications, the
-            Onitsha traditional council and reputable historical works, then plug that information into this section.
-          </p>
-        </section>
+                <!-- Search Box -->
+                <div class="mb-8">
+                    <div class="relative max-w-md mx-auto">
+                        <input 
+                            type="text" 
+                            id="townSearch" 
+                            placeholder="Search towns and villages..." 
+                            class="w-full px-4 py-3 pl-12 border-2 border-gray-300 rounded-lg focus:border-accent focus:outline-none"
+                        >
+                        <i class="fas fa-search absolute left-4 top-4 text-gray-400"></i>
+                    </div>
+                </div>
 
-        <!-- TOP 5 PLACES TO VISIT -->
-        <section id="top-places" class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-onitshaS-900 mb-3">
-            Top Places to Visit in Onitsha South (Outline)
-          </h2>
-          <p class="text-xs text-slate-700 mb-3">
-            Only list exact names and locations once you verify them – below is a structure you can fill with
-            confirmed spots in Onitsha South.
-          </p>
-          <ol class="list-decimal list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1.5">
-            <li>[Church / Cathedral Name] – a major worship centre and architectural landmark in Onitsha South.</li>
-            <li>[Market or Shopping Cluster] – known for [type of goods] and its lively atmosphere on peak days.</li>
-            <li>[Riverfront or Viewpoint] – offering views towards the Niger and neighbouring communities.</li>
-            <li>[Historic School or Institution] – an education or health facility with long community roots.</li>
-            <li>[Cultural / Event Ground] – where large church conventions, crusades or cultural gatherings are held.</li>
-          </ol>
-        </section>
+                <!-- Towns Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="townsGrid">
+                    <!-- Towns will be populated by JavaScript -->
+                </div>
 
-        <!-- PHOTO GALLERY -->
-        <section id="gallery" class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-onitshaS-900 mb-3">
-            Photo Gallery (Placeholders)
-          </h2>
-          <p class="text-xs text-slate-700 mb-3">
-            Replace these blocks with real images: streetscapes, churches, markets, festivals and river views
-            from Onitsha South.
-          </p>
-          <div class="grid grid-cols-3 gap-3">
-            <div class="col-span-2 aspect-[16/9] rounded-xl bg-onitshaS-400/70 flex items-center justify-center text-[0.7rem] text-white font-semibold">
-              City Streets / Aerial View
+                <!-- Towns Table -->
+                <div class="mt-12 bg-white rounded-lg shadow-md overflow-hidden">
+                    <table class="w-full">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left">#</th>
+                                <th class="px-6 py-4 text-left">Town/Community</th>
+                                <th class="px-6 py-4 text-left">Notable Features</th>
+                            </tr>
+                        </thead>
+                        <tbody id="townsTable">
+                            <!-- Table rows will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col-span-1 aspect-[4/5] rounded-xl bg-onitshaSAccentSoft flex items-center justify-center text-[0.7rem] text-onitshaS-900 font-semibold">
-              Parish / Cathedral
-            </div>
-            <div class="col-span-1 aspect-[4/5] rounded-xl bg-onitshaS-700/80 flex items-center justify-center text-[0.7rem] text-onitshaS-50 font-semibold">
-              Market Scene
-            </div>
-            <div class="col-span-2 aspect-[16/9] rounded-xl bg-onitshaS-200/80 flex items-center justify-center text-[0.7rem] text-onitshaS-900 font-semibold">
-              Festival / Street Procession
-            </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- FAMOUS PEOPLE -->
-        <section id="famous-people" class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-onitshaS-900 mb-3">
-            Famous People Associated with Onitsha (Use with Care)
-          </h2>
-          <p class="text-xs text-slate-700 mb-3">
-            Many well‑known figures trace their roots to Onitsha city in general. When you list individuals here,
-            double‑check that their specific origin is within what is today classified as Onitsha South LGA, and
-            that you reference reliable sources.
-          </p>
-          <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1">
-            <li>[Name 1] – [Profession / contribution] (confirmed Onitsha South link).</li>
-            <li>[Name 2] – [Profession / contribution].</li>
-            <li>[Name 3] – [Profession / contribution].</li>
-          </ul>
-        </section>
+    <!-- Infrastructure -->
+    <section id="infrastructure" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title inline-block">Available Infrastructure</h2>
+                    <div class="h-4"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-8">
+                        Modern facilities and infrastructure supporting business growth
+                    </p>
+                </div>
 
-        <!-- LOCAL CUISINE & MARKETS -->
-        <section id="cuisine" class="grid lg:grid-cols-[1.6fr,1.4fr] gap-6">
-          <div class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5">
-            <h2 class="text-lg font-semibold text-onitshaS-900 mb-2">
-              Local Cuisine &amp; Markets
-            </h2>
-            <p class="text-sm text-slate-800 mb-2">
-              Onitsha South shares the broader culinary traditions of the Onitsha / Anambra area – with emphasis on
-              staple foods like yam, cassava, rice and garri, paired with soups such as ofe onugbu, ofe nsala and
-              other Igbo delicacies.
-            </p>
-            <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1">
-              <li>Roadside spots selling rice and stew, yam porridge and pepper soup.</li>
-              <li>Snack vendors offering fried yam, akara, buns, suya and grilled fish.</li>
-              <li>Neighbourhood markets where vegetables, spices and smoked fish are sold daily.</li>
-            </ul>
-          </div>
-          <div class="bg-onitshaS-800 text-onitshaS-50 rounded-2xl shadow-sm px-5 py-5 text-xs sm:text-[0.8rem]">
-            <h3 class="text-[0.85rem] font-semibold mb-2 text-onitshaSAccent">Market Rhythm</h3>
-            <p class="mb-2">
-              Onitsha is famous for its huge markets; within Onitsha South, smaller but vibrant market clusters
-              support everyday life in residential areas.
-            </p>
-            <ul class="list-disc list-inside space-y-1">
-              <li>[Market A] – daily trading in foodstuffs and household items. (Add when confirmed.)</li>
-              <li>[Market B] – focus on building materials or a specific trade. (Add when confirmed.)</li>
-              <li>Evening roadside markets for quick purchases after work or church activities.</li>
-            </ul>
-            <p class="mt-3 text-[0.7rem] text-onitshaS-100/80">
-              Insert verified market names, locations and notable features as you gather data from local authorities
-              and residents.
-            </p>
-          </div>
-        </section>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Roads & Transportation -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-accent text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-road text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary">Roads & Transportation</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Major access roads connecting to Onitsha Main Market</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Proximity to Niger Bridge linking Eastern and Western Nigeria</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Well-developed intra-city road network</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Public and commercial transportation systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Access to Onitsha River Port</span>
+                            </li>
+                        </ul>
+                    </div>
 
-        <!-- EVENTS CALENDAR -->
-        <section id="events" class="bg-onitshaSSurface rounded-2xl shadow-sm border border-onitshaS-100 px-5 py-5 mb-6">
-          <h2 class="text-lg font-semibold text-onitshaS-900 mb-3">
-            Events Calendar (Template)
-          </h2>
-          <p class="text-xs text-slate-700 mb-3">
-            Populate this calendar with real events once you have dates from churches, community groups, youth
-            organisations and the LGA.
-          </p>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs sm:text-[0.8rem]">
-            <div class="rounded-xl bg-onitshaS-100 px-3 py-3">
-              <p class="font-semibold text-onitshaS-900 mb-1">January – March</p>
-              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
-                <li>[Event] New year thanksgiving / city‑wide church programmes.</li>
-                <li>[Event] Youth sports or street tournaments (if any).</li>
-              </ul>
+                    <!-- Electricity -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-accent text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-bolt text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary">Electricity</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Electricity Distribution Company (EEDC) coverage</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Commercial and industrial power supply</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Alternative power sources widely available</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Generator sales and maintenance services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Growing solar power adoption</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Internet & Telecommunications -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-accent text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-wifi text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary">Internet & Telecommunications</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>4G/5G mobile network coverage (MTN, Airtel, Glo, 9mobile)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Broadband internet service providers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Fiber optic infrastructure in commercial areas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Business centers and cyber cafes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Mobile money and digital payment infrastructure</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Water & Utilities -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-accent text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-tint text-2xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary">Water & Utilities</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Municipal water supply (limited coverage)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Private borehole water sources</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Water treatment and sachet water production</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Waste management and sanitation services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-accent mr-2 mt-1"></i>
+                                <span>Environmental health programs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="rounded-xl bg-onitshaS-100 px-3 py-3">
-              <p class="font-semibold text-onitshaS-900 mb-1">April – August</p>
-              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
-                <li>[Event] Mid‑year conventions / revivals.</li>
-                <li>[Event] Cultural / school events and graduation ceremonies.</li>
-              </ul>
-            </div>
-            <div class="rounded-xl bg-onitshaS-100 px-3 py-3">
-              <p class="font-semibold text-onitshaS-900 mb-1">September – December</p>
-              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
-                <li>New Yam &amp; harvest celebrations.</li>
-                <li>Year‑end carol services and city‑wide church crusades.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-      </div>
-    </main>
+    <!-- Investment Opportunities -->
+    <section id="investment" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title inline-block">Investment Opportunities</h2>
+                    <div class="h-4"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-8">
+                        Strategic opportunities for business growth and development
+                    </p>
+                </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-onitshaS-900 text-onitshaS-100 border-t border-onitshaS-800">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-[0.7rem]">
-          Onitsha South Local Government Area – tourism &amp; cultural storytelling profile for use with verified local data.
-        </p>
-        <p class="text-[0.7rem]">
-          Replace placeholders (names, markets, events) with sourced information as your project evolves.
-        </p>
-      </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="bg-gradient-to-br from-orange-50 to-white border border-accent p-6 rounded-lg card-hover">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-warehouse"></i></div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Warehousing & Logistics</h3>
+                        <p class="text-gray-600 text-sm">
+                            Modern storage facilities and distribution centers for goods
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-50 to-white border border-accent p-6 rounded-lg card-hover">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-hotel"></i></div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Hospitality Services</h3>
+                        <p class="text-gray-600 text-sm">
+                            Hotels, guest houses, and event centers for traders and visitors
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-50 to-white border border-accent p-6 rounded-lg card-hover">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-tools"></i></div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Manufacturing</h3>
+                        <p class="text-gray-600 text-sm">
+                            Light manufacturing of plastics, furniture, and consumer goods
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-50 to-white border border-accent p-6 rounded-lg card-hover">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Education & Training</h3>
+                        <p class="text-gray-600 text-sm">
+                            Schools, vocational centers, and skills acquisition programs
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-50 to-white border border-accent p-6 rounded-lg card-hover">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-heartbeat"></i></div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Healthcare Services</h3>
+                        <p class="text-gray-600 text-sm">
+                            Medical centers, pharmacies, and diagnostic laboratories
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-50 to-white border border-accent p-6 rounded-lg card-hover">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-solar-panel"></i></div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Renewable Energy</h3>
+                        <p class="text-gray-600 text-sm">
+                            Solar power systems and alternative energy solutions
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cost of Doing Business -->
+                <div class="bg-primary text-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Cost of Doing Business</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-semibold mb-3 flex items-center">
+                                <i class="fas fa-store-alt mr-2"></i>
+                                Shop/Store Rental (Annual)
+                            </h4>
+                            <ul class="space-y-2 text-gray-200 ml-6">
+                                <li>• Small shop: ₦300,000 - ₦800,000</li>
+                                <li>• Medium shop: ₦800,000 - ₦2,000,000</li>
+                                <li>• Large shop: ₦2,000,000 - ₦5,000,000+</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-3 flex items-center">
+                                <i class="fas fa-file-invoice-dollar mr-2"></i>
+                                Business Registration & Permits
+                            </h4>
+                            <ul class="space-y-2 text-gray-200 ml-6">
+                                <li>• Business premises permit: ₦5,000 - ₦20,000</li>
+                                <li>• Trade license: ₦10,000 - ₦50,000</li>
+                                <li>• Environmental/waste levy: ₦15,000 - ₦50,000</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-3 flex items-center">
+                                <i class="fas fa-users mr-2"></i>
+                                Labor Costs (Monthly)
+                            </h4>
+                            <ul class="space-y-2 text-gray-200 ml-6">
+                                <li>• Sales assistant: ₦30,000 - ₦60,000</li>
+                                <li>• Skilled worker: ₦50,000 - ₦100,000</li>
+                                <li>• Manager: ₦80,000 - ₦200,000</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold mb-3 flex items-center">
+                                <i class="fas fa-bolt mr-2"></i>
+                                Utilities (Monthly)
+                            </h4>
+                            <ul class="space-y-2 text-gray-200 ml-6">
+                                <li>• Electricity: ₦20,000 - ₦100,000+</li>
+                                <li>• Water: ₦5,000 - ₦15,000</li>
+                                <li>• Waste disposal: ₦5,000 - ₦10,000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-6 p-4 bg-accent rounded-lg">
+                        <p class="text-sm">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            <strong>Note:</strong> Costs vary based on location, shop size, and specific business requirements. Contact the LGA for current rates and detailed information.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landmarks & Important Places -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title inline-block">Important Places & Landmarks</h2>
+                    <div class="h-4"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Government/Administrative -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-landmark"></i></div>
+                        <h3 class="font-bold text-primary mb-3">Government & Administration</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li>• Onitsha South LGA Secretariat</li>
+                            <li>• Council Chambers</li>
+                            <li>• Revenue Office</li>
+                            <li>• Community Development Office</li>
+                        </ul>
+                    </div>
+
+                    <!-- Healthcare -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-hospital"></i></div>
+                        <h3 class="font-bold text-primary mb-3">Healthcare Facilities</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li>• General Hospitals</li>
+                            <li>• Primary Health Centers</li>
+                            <li>• Private Medical Clinics</li>
+                            <li>• Pharmaceutical Stores</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-school"></i></div>
+                        <h3 class="font-bold text-primary mb-3">Educational Institutions</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li>• Public Primary Schools</li>
+                            <li>• Public Secondary Schools</li>
+                            <li>• Private Schools</li>
+                            <li>• Vocational Training Centers</li>
+                        </ul>
+                    </div>
+
+                    <!-- Religious Centers -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-church"></i></div>
+                        <h3 class="font-bold text-primary mb-3">Religious Centers</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li>• Holy Trinity Cathedral</li>
+                            <li>• Various Christian Churches</li>
+                            <li>• Mosques</li>
+                            <li>• Prayer Houses</li>
+                        </ul>
+                    </div>
+
+                    <!-- Financial Services -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-university"></i></div>
+                        <h3 class="font-bold text-primary mb-3">Financial Institutions</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li>• Commercial Banks</li>
+                            <li>• Microfinance Banks</li>
+                            <li>• ATM Centers</li>
+                            <li>• Money Transfer Agencies</li>
+                        </ul>
+                    </div>
+
+                    <!-- Markets -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-accent text-3xl mb-3"><i class="fas fa-shopping-bag"></i></div>
+                        <h3 class="font-bold text-primary mb-3">Commercial Hubs</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li>• Ochanja Market</li>
+                            <li>• Electronics Market</li>
+                            <li>• Ose Okwodu Market</li>
+                            <li>• Various Shopping Plazas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section id="leadership" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title inline-block">Leadership</h2>
+                    <div class="h-4"></div>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-50 to-white border-2 border-secondary rounded-lg p-8 shadow-lg">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-shrink-0">
+                            <div class="w-48 h-48 bg-secondary rounded-lg flex items-center justify-center overflow-hidden">
+                                <i class="fas fa-user-tie text-6xl text-primary"></i>
+                                <!-- Replace with actual image -->
+                                <!-- <img src="assets/chairman.jpg" alt="LGA Chairman" class="w-full h-full object-cover"> -->
+                            </div>
+                        </div>
+                        <div class="flex-1 text-center md:text-left">
+                            <div class="inline-block bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold mb-3">
+                                Executive Chairman
+                            </div>
+                            <h3 class="text-3xl font-bold text-primary mb-2">Mr. Emeka Orji</h3>
+                            <p class="text-lg text-gray-600 mb-4">Onitsha South Local Government Area</p>
+                            <p class="text-gray-700 mb-6 leading-relaxed">
+                                Committed to enhancing commercial activities, improving infrastructure, and creating an enabling environment for business growth and development in Onitsha South LGA.
+                            </p>
+                            <div class="space-y-2 text-gray-600">
+                                <div class="flex items-center justify-center md:justify-start">
+                                    <i class="fas fa-phone text-accent mr-3"></i>
+                                    <span>+234 XXX XXX XXXX</span>
+                                </div>
+                                <div class="flex items-center justify-center md:justify-start">
+                                    <i class="fas fa-envelope text-accent mr-3"></i>
+                                    <span>info@onitsha-south.lg.gov.ng</span>
+                                </div>
+                                <div class="flex items-center justify-center md:justify-start">
+                                    <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                                    <span>LGA Secretariat, Onitsha South</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Government Services -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4 section-title inline-block">Local Government Services</h2>
+                    <div class="h-4"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto mt-8">
+                        Programs and initiatives serving the community
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-accent">
+                        <h3 class="text-xl font-bold text-primary mb-4 flex items-center">
+                            <i class="fas fa-heartbeat text-accent mr-3"></i>
+                            Health Programs
+                        </h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Free immunization for children</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Maternal and child health services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Primary healthcare delivery</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Health awareness campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Environmental health monitoring</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-accent">
+                        <h3 class="text-xl font-bold text-primary mb-4 flex items-center">
+                            <i class="fas fa-graduation-cap text-accent mr-3"></i>
+                            Education Projects
+                        </h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>School infrastructure development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Adult literacy programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Scholarship schemes for indigenes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Teacher training and development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>School feeding programs</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-accent">
+                        <h3 class="text-xl font-bold text-primary mb-4 flex items-center">
+                            <i class="fas fa-leaf text-accent mr-3"></i>
+                            Environmental Services
+                        </h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Waste collection and disposal</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Market sanitation services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Drainage and erosion control</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Environmental cleanliness campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Tree planting initiatives</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-accent">
+                        <h3 class="text-xl font-bold text-primary mb-4 flex items-center">
+                            <i class="fas fa-users text-accent mr-3"></i>
+                            Youth & Women Empowerment
+                        </h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Skills acquisition and vocational training</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Small business grants and loans</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Women empowerment programs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Youth sports and recreation facilities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                <span>Entrepreneurship training</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-accent md:col-span-2">
+                        <h3 class="text-xl font-bold text-primary mb-4 flex items-center">
+                            <i class="fas fa-file-invoice-dollar text-accent mr-3"></i>
+                            Tax & Revenue Information
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-primary mb-2">Business Taxes & Levies</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>Business premises registration</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>Market stall fees</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>Signage and advertisement permits</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>Environmental and waste management levy</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-primary mb-2">Payment Channels</h4>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>LGA Revenue Office</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>Designated bank branches</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>Online payment platforms (where available)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                        <span>Mobile payment options</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Onitsha South LGA</h3>
+                    <p class="text-gray-300 mb-4">
+                        The commercial heart of Anambra State, driving economic growth and development.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-accent transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-2xl hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#overview" class="text-gray-300 hover:text-accent transition">About Us</a></li>
+                        <li><a href="#economy" class="text-gray-300 hover:text-accent transition">Economy</a></li>
+                        <li><a href="#towns" class="text-gray-300 hover:text-accent transition">Towns & Villages</a></li>
+                        <li><a href="#investment" class="text-gray-300 hover:text-accent transition">Investment</a></li>
+                        <li><a href="#leadership" class="text-gray-300 hover:text-accent transition">Leadership</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Onitsha South LGA Secretariat<br>Anambra State, Nigeria</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+234 XXX XXX XXXX</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@onitsha-south.lg.gov.ng</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Onitsha South Local Government Area. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-  </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Towns and Villages Data
+        const townsData = [
+            { name: "Fegge", features: "Major commercial area, residential estates" },
+            { name: "Inland Town", features: "Dense commercial activity, trading hub" },
+            { name: "Woliwo", features: "Residential area, local markets" },
+            { name: "Trans-Nkisi", features: "Growing commercial zone" },
+            { name: "GRA (Government Reserved Area)", features: "Residential estates, government offices" },
+            { name: "Odoakpu", features: "Commercial and residential mix" },
+            { name: "Awada", features: "Residential area, local businesses" },
+            { name: "Ogbommanu", features: "Industrial area, warehouses" },
+            { name: "Coal Camp", features: "Residential area" },
+            { name: "Bida Road", features: "Commercial corridor" },
+            { name: "Ochanja", features: "Major market location" },
+            { name: "Nkwelle", features: "Residential community" },
+            { name: "Dennis Memorial", features: "Educational and residential area" },
+            { name: "New Haven", features: "Residential estates" },
+            { name: "Okpoko", features: "High-density commercial and residential area" },
+            { name: "Obodoukwu", features: "Traditional community" }
+        ];
+
+        // Populate Towns Grid
+        function populateTownsGrid(towns) {
+            const grid = document.getElementById('townsGrid');
+            grid.innerHTML = towns.map(town => `
+                <div class="bg-white p-4 rounded-lg shadow-md card-hover border-l-4 border-accent">
+                    <h4 class="font-bold text-primary mb-1">${town.name}</h4>
+                    <p class="text-sm text-gray-600">${town.features}</p>
+                </div>
+            `).join('');
+        }
+
+        // Populate Towns Table
+        function populateTownsTable(towns) {
+            const table = document.getElementById('townsTable');
+            table.innerHTML = towns.map((town, index) => `
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="px-6 py-4">${index + 1}</td>
+                    <td class="px-6 py-4 font-semibold text-primary">${town.name}</td>
+                    <td class="px-6 py-4 text-gray-600">${town.features}</td>
+                </tr>
+            `).join('');
+        }
+
+        // Search Functionality
+        document.getElementById('townSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredTowns = townsData.filter(town => 
+                town.name.toLowerCase().includes(searchTerm) || 
+                town.features.toLowerCase().includes(searchTerm)
+            );
+            populateTownsGrid(filteredTowns);
+            populateTownsTable(filteredTowns);
+        });
+
+        // Mobile Menu Toggle
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // Close mobile menu if open
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Initialize
+        populateTownsGrid(townsData);
+        populateTownsTable(townsData);
+
+        // Structured Data for SEO
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "GovernmentOrganization",
+            "name": "Onitsha South Local Government Area",
+            "description": "The commercial heart of Anambra State, Nigeria",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Onitsha South",
+                "addressRegion": "Anambra State",
+                "addressCountry": "Nigeria"
+            },
+            "telephone": "+234 XXX XXX XXXX",
+            "email": "info@onitsha-south.lg.gov.ng"
+        };
+
+        // Add structured data to page
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(structuredData);
+        document.head.appendChild(script);
+    </script>
 </body>
 </html>

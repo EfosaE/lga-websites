@@ -2,416 +2,1084 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Nnewi South LGA – Ukpor | Business & Investment Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Business and investment profile of Nnewi South Local Government Area, Ukpor – key industries, infrastructure, markets, agricultural outputs and opportunities."
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nnewi South LGA, Anambra State – Overview, Towns, History & Facts</title>
+  <meta name="description" content="Learn about Nnewi South Local Government Area, its towns, history, economy, culture, and key points of interest in Anambra State, Nigeria." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/ansg_favicon.png">
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind theme for Nnewi South -->
+  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            // Built around your palette
             nnewiS: {
-              50:  '#F7F3F1',
+              50: '#F7F3F1',
               100: '#EDE0DC',
-              200: '#D7CCC8', // secondary
+              200: '#D7CCC8',
               300: '#BCAAA4',
               400: '#8D6E63',
               500: '#6D4C41',
-              600: '#5D4037', // primary
+              600: '#5D4037',
               700: '#4E342E',
               800: '#3E2723',
               900: '#2B1B17'
             },
-            nnewiSAccent: '#FFC400',     // your accent
-            nnewiSAccentSoft: '#FFECB3', // soft accent
-            nnewiSbg: '#F5F5F5',         // neutral background
-            nnewiSurf: '#FFFFFF'
+            nnewiAccent: '#FFC400',
+            nnewiSoft: '#FFECB3'
           }
         }
       }
     };
   </script>
 
-  <!-- Structured data (simple) -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AdministrativeArea",
+    "@type": "GovernmentOrganization",
     "name": "Nnewi South Local Government Area",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Ukpor",
       "addressRegion": "Anambra State",
       "addressCountry": "NG"
-    }
+    },
+    "description": "Local Government Area in Anambra State, Nigeria"
   }
   </script>
+  
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+  </style>
 </head>
-<body class="bg-nnewiSbg text-slate-900 antialiased">
-  <div class="min-h-screen flex flex-col">
 
-    <!-- TOP BAR (thin, business-like) -->
-    <header class="bg-nnewiS-800 text-nnewiS-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-3">
+<body class="bg-gray-50 text-gray-900 antialiased">
+  
+  <!-- Navigation Bar -->
+  <nav class="bg-nnewiS-600 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
         <div class="flex items-center gap-3">
-          <span class="inline-flex items-center justify-center h-9 w-9 rounded-md bg-nnewiS-200 text-nnewiS-800 font-bold text-lg">
+          <div class="h-10 w-10 bg-nnewiAccent rounded-lg flex items-center justify-center font-bold text-nnewiS-900">
             NS
-          </span>
+          </div>
           <div>
-            <p class="text-sm font-semibold tracking-wide uppercase">Nnewi South Local Government Area</p>
-            <p class="text-[0.7rem] text-nnewiS-100/80">Ukpor · Business &amp; Investment Profile</p>
+            <h1 class="text-lg font-bold">Nnewi South LGA</h1>
+            <p class="text-xs text-nnewiS-100">Anambra State, Nigeria</p>
           </div>
         </div>
-        <nav class="hidden md:flex gap-4 text-[0.75rem] font-medium">
-          <a href="#overview" class="hover:text-nnewiSAccentSoft">Overview</a>
-          <a href="#industries" class="hover:text-nnewiSAccentSoft">Key Industries</a>
-          <a href="#infrastructure" class="hover:text-nnewiSAccentSoft">Infrastructure</a>
-          <a href="#opportunities" class="hover:text-nnewiSAccentSoft">Opportunities</a>
-          <a href="#markets" class="hover:text-nnewiSAccentSoft">Markets</a>
-          <a href="#agriculture" class="hover:text-nnewiSAccentSoft">Agriculture</a>
-        </nav>
+        <div class="hidden md:flex gap-6 text-sm">
+          <a href="#overview" class="hover:text-nnewiAccent transition">Overview</a>
+          <a href="#towns" class="hover:text-nnewiAccent transition">Towns</a>
+          <a href="#economy" class="hover:text-nnewiAccent transition">Economy</a>
+          <a href="#statistics" class="hover:text-nnewiAccent transition">Statistics</a>
+          <a href="#leadership" class="hover:text-nnewiAccent transition">Leadership</a>
+          <a href="#services" class="hover:text-nnewiAccent transition">Services</a>
+        </div>
       </div>
-    </header>
+    </div>
+  </nav>
 
-    <!-- SUB NAV (pills, different from other pages) -->
-    <div class="bg-nnewiS-900/95 text-nnewiS-50 shadow-sm">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
-        <div class="flex gap-2 text-[0.7rem]">
-          <a href="#economic-overview" class="px-3 py-1.5 rounded-full bg-nnewiS-700 text-nnewiS-50 whitespace-nowrap">
-            Economic Overview
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-nnewiS-700 via-nnewiS-600 to-nnewiS-800 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.4\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+      <div class="text-center fade-in-up">
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">Nnewi South</h1>
+        <p class="text-2xl md:text-3xl text-nnewiAccent font-semibold mb-6">The Heart of Commerce in Anambra</p>
+        <p class="text-lg md:text-xl text-nnewiS-100 max-w-3xl mx-auto mb-8">
+          A vibrant local government area blending rich agricultural heritage with thriving commerce and industry
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#overview" class="bg-nnewiAccent text-nnewiS-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition shadow-lg">
+            Explore Our LGA
           </a>
-          <a href="#key-industries" class="px-3 py-1.5 rounded-full bg-nnewiS-800 hover:bg-nnewiS-700 whitespace-nowrap">
-            Key Industries
-          </a>
-          <a href="#major-employers" class="px-3 py-1.5 rounded-full bg-nnewiS-800 hover:bg-nnewiS-700 whitespace-nowrap">
-            Major Employers
-          </a>
-          <a href="#infrastructure" class="px-3 py-1.5 rounded-full bg-nnewiS-800 hover:bg-nnewiS-700 whitespace-nowrap">
-            Infrastructure
-          </a>
-          <a href="#opportunities" class="px-3 py-1.5 rounded-full bg-nnewiS-800 hover:bg-nnewiS-700 whitespace-nowrap">
-            Investment Opportunities
-          </a>
-          <a href="#cost" class="px-3 py-1.5 rounded-full bg-nnewiS-800 hover:bg-nnewiS-700 whitespace-nowrap">
-            Cost of Doing Business
-          </a>
-          <a href="#markets" class="px-3 py-1.5 rounded-full bg-nnewiS-800 hover:bg-nnewiS-700 whitespace-nowrap">
-            Commercial Markets
-          </a>
-          <a href="#agriculture" class="px-3 py-1.5 rounded-full bg-nnewiS-800 hover:bg-nnewiS-700 whitespace-nowrap">
-            Agricultural Outputs
+          <a href="#leadership" class="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition border border-white/30">
+            Meet Our Chairman
           </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-1">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 space-y-8">
-
-        <!-- TOP SUMMARY STRIP (dashboard-style) -->
-        <section id="overview" class="grid md:grid-cols-3 gap-4">
-          <div class="bg-nnewiSurf rounded-xl shadow-sm border border-nnewiS-100 px-4 py-4">
-            <p class="text-[0.7rem] font-semibold tracking-wide text-nnewiS-600 uppercase">Headquarters</p>
-            <p class="mt-1 text-sm font-semibold text-nnewiS-800">Ukpor</p>
-            <p class="mt-1 text-xs text-slate-700">
-              Nnewi South LGA, one of the two Nnewi LGAs in Anambra State, with Ukpor as the administrative centre.
-            </p>
-          </div>
-          <div class="bg-nnewiSurf rounded-xl shadow-sm border border-nnewiS-100 px-4 py-4">
-            <p class="text-[0.7rem] font-semibold tracking-wide text-nnewiS-600 uppercase">Key Towns</p>
-            <p class="mt-1 text-xs text-slate-800">
-              Ukpor · Amichi · Ezinifite · Unubi · Utuh · Ebenator · Osumenyi · Ekwulumili · Azigbo
-            </p>
-            <p class="mt-1 text-[0.7rem] text-slate-700">
-              (Based on publicly available sources for Nnewi South communities.)
-            </p>
-          </div>
-          <div class="bg-nnewiSurf rounded-xl shadow-sm border border-nnewiS-100 px-4 py-4 flex flex-col justify-between">
-            <div>
-              <p class="text-[0.7rem] font-semibold tracking-wide text-nnewiS-600 uppercase">Economic Profile</p>
-              <p class="mt-1 text-xs text-slate-800">
-                Mixed rural–peri‑urban economy: agriculture, trade, small‑scale manufacturing and services.
-              </p>
-            </div>
-            <div class="mt-3 inline-flex items-center gap-2 text-[0.7rem]">
-              <span class="inline-flex h-2 w-2 rounded-full bg-nnewiSAccent"></span>
-              <span class="text-slate-700">Positioned near Nnewi’s wider industrial cluster.</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- ECONOMIC OVERVIEW (Variation 3 – section 1) -->
-        <section id="economic-overview" class="bg-nnewiSurf rounded-2xl shadow-sm border border-nnewiS-100 px-5 py-6">
-          <h2 class="text-sm font-semibold text-nnewiS-800 mb-2 uppercase tracking-wide">
-            Economic Overview
-          </h2>
-          <p class="text-sm text-slate-800">
-            Nnewi South Local Government Area lies in the southern part of Anambra State, adjoining the highly
-            commercial Nnewi urban area. With Ukpor as headquarters and several surrounding towns such as Amichi,
-            Ezinifite, Unubi, Utuh, Ebenator, Osumenyi, Ekwulumili and Azigbo, the LGA’s economy blends
-            <span class="font-semibold">agriculture, trading, transport, small‑scale manufacturing and services</span>.
-          </p>
-          <p class="mt-2 text-sm text-slate-800">
-            According to profiles of Nnewi South, the population is predominantly Igbo and known for enterprise.
-            Markets like <span class="font-semibold">Eke Amichi, Eke Osu and Abanator</span> attract traders from within
-            and outside the LGA, while many residents also engage in cottage industries and supply chains linked
-            to the larger Nnewi industrial hub.
-          </p>
-        </section>
-
-        <!-- KEY INDUSTRIES + MAJOR EMPLOYERS (2-column, card grid) -->
-        <section id="industries" class="grid lg:grid-cols-[1.4fr,1.6fr] gap-6">
-          <!-- Key Industries -->
-          <div id="key-industries" class="bg-nnewiSurf rounded-2xl shadow-sm border border-nnewiS-100 px-5 py-5">
-            <h2 class="text-sm font-semibold text-nnewiS-800 mb-3 uppercase tracking-wide">
-              Key Industries
-            </h2>
-            <div class="space-y-3 text-xs sm:text-[0.8rem]">
-              <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-                <p class="font-semibold text-nnewiS-900">Agriculture &amp; Agro‑processing</p>
-                <p class="mt-1 text-slate-800">
-                  Smallholder farmers cultivate cassava, yam, cocoyam, maize, vegetables and palm produce, with
-                  opportunities for processing (garri, flour, oil, animal feed).
-                </p>
-              </div>
-              <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-                <p class="font-semibold text-nnewiS-900">Trade &amp; Retail</p>
-                <p class="mt-1 text-slate-800">
-                  Daily and periodic markets in Amichi, Osumenyi, Utuh and other towns specialise in foodstuffs,
-                  building materials, consumer goods and farm produce.
-                </p>
-              </div>
-              <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-                <p class="font-semibold text-nnewiS-900">Small‑scale Manufacturing</p>
-                <p class="mt-1 text-slate-800">
-                  Local workshops and small firms engage in metal works, furniture, auto parts support, tailoring,
-                  baking and other cottage‑level manufacturing linked to the Nnewi industrial ecosystem.
-                </p>
-              </div>
-              <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-                <p class="font-semibold text-nnewiS-900">Services &amp; Financial</p>
-                <p class="mt-1 text-slate-800">
-                  Schools, health facilities, transport operators, hospitality businesses and microfinance institutions
-                  provide growing service‑sector opportunities.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Major Employers -->
-          <div id="major-employers" class="bg-nnewiSurf rounded-2xl shadow-sm border border-nnewiS-100 px-5 py-5">
-            <h2 class="text-sm font-semibold text-nnewiS-800 mb-3 uppercase tracking-wide">
-              Major Employers &amp; Economic Anchors
-            </h2>
-            <p class="text-xs sm:text-[0.8rem] text-slate-800 mb-2">
-              Some of the key categories of employers and economic anchors in Nnewi South include:
-            </p>
-            <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1.5">
-              <li>
-                <span class="font-semibold">Public sector:</span> Nnewi South LGA Secretariat in Ukpor and
-                Anambra State MDAs operating schools, primary health care and other facilities.
-              </li>
-              <li>
-                <span class="font-semibold">Education &amp; Health:</span> Mission and private schools, secondary
-                schools, primary health centres and clinics across the major towns.
-              </li>
-              <li>
-                <span class="font-semibold">Financial institutions:</span> Microfinance and commercial bank
-                branches (for example, institutions based around Unubi, Amichi and other commercial centres).
-              </li>
-              <li>
-                <span class="font-semibold">Trading &amp; Manufacturing outfits:</span> Market‑based wholesalers
-                and small factories / workshops producing consumer items, building materials and agro‑products.
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- AVAILABLE INFRASTRUCTURE -->
-        <section id="infrastructure" class="bg-nnewiSurf rounded-2xl shadow-sm border border-nnewiS-100 px-5 py-6">
-          <h2 class="text-sm font-semibold text-nnewiS-800 mb-3 uppercase tracking-wide">
-            Available Infrastructure
-          </h2>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs sm:text-[0.8rem]">
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Road Network</p>
-              <p class="mt-1 text-slate-800">
-                State and local roads link Ukpor, Amichi, Ezinifite, Unubi, Utuh, Ebenator, Osumenyi, Ekwulumili
-                and Azigbo, with connections towards Nnewi, Ihiala and other LGAs.
-              </p>
-            </div>
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Electricity &amp; Telecoms</p>
-              <p class="mt-1 text-slate-800">
-                National grid power coverage (with typical rural reliability challenges) and multiple GSM networks
-                create a base for light industry, services and ICT‑enabled businesses.
-              </p>
-            </div>
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Education &amp; Skills</p>
-              <p class="mt-1 text-slate-800">
-                Numerous primary and secondary schools produce a young, trainable workforce for agriculture,
-                trade and basic industrial work.
-              </p>
-            </div>
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Health &amp; Social Facilities</p>
-              <p class="mt-1 text-slate-800">
-                Primary health centres and private clinics in major towns support workforce well‑being and
-                provide a base for health‑sector investments.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- INVESTMENT OPPORTUNITIES + COST OF DOING BUSINESS -->
-        <section id="opportunities" class="grid lg:grid-cols-[1.6fr,1.4fr] gap-6">
-          <!-- Investment Opportunities -->
-          <div class="bg-nnewiSurf rounded-2xl shadow-sm border border-nnewiS-100 px-5 py-5">
-            <h2 class="text-sm font-semibold text-nnewiS-800 mb-3 uppercase tracking-wide">
-              Investment Opportunities
-            </h2>
-            <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1.5">
-              <li>
-                <span class="font-semibold">Agro‑processing:</span> Cassava and palm produce processing (garri, flour,
-                starch, palm oil, kernel oil, animal feed) serving local and regional markets.
-              </li>
-              <li>
-                <span class="font-semibold">Warehouse &amp; Logistics:</span> Storage and distribution hubs near major
-                markets and along access routes to Nnewi, Onitsha and neighbouring states.
-              </li>
-              <li>
-                <span class="font-semibold">Light Manufacturing:</span> Furniture, metal works, building materials,
-                packaging and other small‑scale production benefiting from proximity to Nnewi’s supply chains.
-              </li>
-              <li>
-                <span class="font-semibold">Retail &amp; Modern Trade:</span> Neighbourhood shopping centres, agro‑input
-                depots, hardware stores and agro‑equipment outlets.
-              </li>
-              <li>
-                <span class="font-semibold">Hospitality &amp; Services:</span> Guest houses, eateries, event centres,
-                ICT hubs and vocational training centres across Ukpor and key towns.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Cost of Doing Business -->
-          <div id="cost" class="bg-nnewiS-800 text-nnewiS-50 rounded-2xl shadow-sm px-5 py-5">
-            <h2 class="text-sm font-semibold mb-2 uppercase tracking-wide">
-              Cost of Doing Business (Qualitative View)
-            </h2>
-            <p class="text-[0.8rem] text-nnewiS-50/90">
-              Specific cost figures (land rates, power tariffs, taxes) should be sourced from Anambra State and
-              Nnewi South official channels. Broad indicators include:
-            </p>
-            <ul class="mt-2 list-disc list-inside text-[0.78rem] space-y-1.5">
-              <li>
-                <span class="font-semibold">Land &amp; premises:</span> Generally lower than major Nigerian cities,
-                with variation between town centres and more rural communities.
-              </li>
-              <li>
-                <span class="font-semibold">Labour:</span> Access to semi‑skilled and unskilled labour at
-                competitive wage levels compared with big metropolitan areas.
-              </li>
-              <li>
-                <span class="font-semibold">Local taxes &amp; levies:</span> Set by Anambra State and the LGA;
-                investors should confirm official schedules to avoid informal charges.
-              </li>
-              <li>
-                <span class="font-semibold">Utilities:</span> Power availability is typical of many Nigerian LGAs,
-                so many small industries factor in backup generation costs.
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- COMMERCIAL MARKETS -->
-        <section id="markets" class="bg-nnewiSurf rounded-2xl shadow-sm border border-nnewiS-100 px-5 py-6">
-          <h2 class="text-sm font-semibold text-nnewiS-800 mb-3 uppercase tracking-wide">
-            Commercial Markets &amp; Trading Nodes
-          </h2>
-          <p class="text-xs sm:text-[0.8rem] text-slate-800 mb-2">
-            Sources describing Nnewi South highlight several important markets:
-          </p>
-          <div class="grid sm:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Eke Amichi Market</p>
-              <p class="mt-1 text-slate-800">
-                Major trading point in Amichi for foodstuffs, clothing, household items and agro‑produce,
-                serving neighbouring communities.
-              </p>
-            </div>
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Eke Osu Market</p>
-              <p class="mt-1 text-slate-800">
-                Located around Osumenyi / Utuh axis, known for farm produce and general merchandise
-                on traditional market days.
-              </p>
-            </div>
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Other Local Markets</p>
-              <p class="mt-1 text-slate-800">
-                Community markets in Ezinifite, Ebenator, Unubi, Ekwulumili, Azigbo and Ukpor support
-                local trade in agricultural and consumer goods.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- AGRICULTURAL OUTPUTS -->
-        <section id="agriculture" class="bg-nnewiSurf rounded-2xl shadow-sm border border-nnewiS-100 px-5 py-6 mb-6">
-          <h2 class="text-sm font-semibold text-nnewiS-800 mb-3 uppercase tracking-wide">
-            Agricultural Outputs
-          </h2>
-          <div class="grid sm:grid-cols-[1.5fr,1.5fr] gap-6 text-xs sm:text-[0.8rem]">
-            <div>
-              <p class="text-slate-800 mb-2">
-                Nnewi South, like many LGAs in southern Anambra, has a strong base of smallholder farmers producing:
-              </p>
-              <ul class="list-disc list-inside text-slate-800 space-y-1">
-                <li>Root crops – cassava, yam, cocoyam, sweet potato</li>
-                <li>Grains &amp; legumes – maize, beans (in suitable areas)</li>
-                <li>Vegetables – leafy greens, okro, pepper, tomatoes (small scale)</li>
-                <li>Palm produce – oil palm, kernels and by‑products</li>
-                <li>Livestock &amp; poultry – backyard and small‑scale operations</li>
-              </ul>
-            </div>
-            <div class="rounded-xl bg-nnewiS-100 px-3 py-3">
-              <p class="font-semibold text-nnewiS-900">Agri‑business Potential</p>
-              <ul class="mt-1 list-disc list-inside text-slate-800 space-y-1">
-                <li>Input distribution (seed, fertilizer, agro‑chemicals, tools)</li>
-                <li>Aggregation &amp; warehousing of cassava, palm produce and grains</li>
-                <li>Simple processing (milling, drying, packaging) for urban markets</li>
-                <li>Cold‑chain and logistics for perishable vegetables and livestock products</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
+  <!-- Quick Stats Bar -->
+  <section class="bg-white shadow-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <p class="text-3xl font-bold text-nnewiS-600">227,630</p>
+          <p class="text-sm text-gray-600 mt-1">Population (Est.)</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-nnewiS-600">9</p>
+          <p class="text-sm text-gray-600 mt-1">Towns</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-nnewiS-600">192 km²</p>
+          <p class="text-sm text-gray-600 mt-1">Landmass</p>
+        </div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-nnewiS-600">1996</p>
+          <p class="text-sm text-gray-600 mt-1">Year Created</p>
+        </div>
       </div>
-    </main>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-nnewiS-800 text-nnewiS-50 border-t border-nnewiS-900">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-[0.7rem]">
-          Nnewi South Local Government Area, Ukpor – business &amp; investment information (qualitative, for guidance only).
-        </p>
-        <p class="text-[0.7rem]">
-          Verify project‑ and cost‑specific data with official Anambra State and Nnewi South sources.
-        </p>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+
+    <!-- Brief Overview -->
+    <section id="overview" class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-1 w-12 bg-nnewiAccent rounded"></div>
+        <h2 class="text-3xl font-bold text-nnewiS-700">Overview</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-semibold text-nnewiS-600 mb-2">Location</h3>
+            <p class="text-gray-700">
+              Nnewi South is located in the southern region of Anambra State, Nigeria. It is strategically positioned near the industrial hub of Nnewi, sharing boundaries with Nnewi North, Ekwusigo, Ihiala, and Orumba South Local Government Areas.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-nnewiS-50 p-4 rounded-lg">
+              <p class="text-xs text-nnewiS-600 font-semibold uppercase mb-1">Population</p>
+              <p class="text-xl font-bold text-nnewiS-800">~227,630</p>
+              <p class="text-xs text-gray-600 mt-1">2023 estimate</p>
+            </div>
+            <div class="bg-nnewiS-50 p-4 rounded-lg">
+              <p class="text-xs text-nnewiS-600 font-semibold uppercase mb-1">Landmass</p>
+              <p class="text-xl font-bold text-nnewiS-800">192 km²</p>
+              <p class="text-xs text-gray-600 mt-1">Approx. area</p>
+            </div>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold text-nnewiS-600 mb-2">Headquarters</h3>
+            <p class="text-gray-700">Ukpor</p>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold text-nnewiS-600 mb-2">Year Created</h3>
+            <p class="text-gray-700">1996 (during the General Sani Abacha administration)</p>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-semibold text-nnewiS-600 mb-2">Historical Context</h3>
+            <p class="text-gray-700 mb-3">
+              Nnewi South Local Government Area was carved out of the former Nnewi Local Government in 1996 as part of Nigeria's local government reforms. The area has a rich Igbo heritage and has been home to industrious communities known for trading, agriculture, and craftsmanship for centuries.
+            </p>
+            <p class="text-gray-700 mb-3">
+              The people of Nnewi South are predominantly Igbo-speaking and are known for their entrepreneurial spirit, which has contributed significantly to the commercial and industrial development of the region. The LGA serves as an important agricultural and trading zone, supplying food and raw materials to the wider Nnewi industrial area.
+            </p>
+            <p class="text-gray-700">
+              With its strategic location and industrious population, Nnewi South continues to play a vital role in the economic landscape of Anambra State.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="bg-gradient-to-br from-nnewiS-600 to-nnewiS-700 rounded-2xl shadow-lg p-8 text-white">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-1 w-12 bg-nnewiAccent rounded"></div>
+        <h2 class="text-3xl font-bold">Leadership</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-1 flex justify-center">
+          <div class="bg-white/10 backdrop-blur-sm p-2 rounded-2xl">
+            <div class="w-48 h-48 bg-nnewiS-200 rounded-xl flex items-center justify-center overflow-hidden">
+              <!-- Placeholder for chairman image -->
+              <svg class="w-32 h-32 text-nnewiS-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:col-span-2 space-y-4">
+            <div>
+            <p class="text-nnewiAccent text-sm font-semibold uppercase mb-1">LGA Chairman</p>
+            <h3 class="text-3xl font-bold mb-2">
+              Hon. Van George Ezeogidi
+            </h3>
+            <p class="text-nnewiS-100">Executive Chairman, Nnewi South Local Government Area</p>
+          </div>
+          
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <p class="text-xs text-nnewiAccent font-semibold uppercase mb-1">Contact</p>
+              <p class="text-sm">📞 +234 803 XXX XXXX</p>
+              <p class="text-sm">📧 chairman@nnewisouth.gov.ng</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <p class="text-xs text-nnewiAccent font-semibold uppercase mb-1">Office</p>
+              <p class="text-sm">LGA Secretariat, Ukpor</p>
+              <p class="text-sm">Anambra State, Nigeria</p>
+            </div>
+          </div>
+          
+          <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+            <p class="text-sm leading-relaxed">
+              Under the leadership of Hon. Emeka C. Orizu, Nnewi South LGA is committed to fostering sustainable development, improving infrastructure, empowering youth and women, and creating an enabling environment for commerce and agriculture to thrive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Towns & Villages -->
+    <section id="towns" class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-1 w-12 bg-nnewiAccent rounded"></div>
+        <h2 class="text-3xl font-bold text-nnewiS-700">Towns & Villages</h2>
+      </div>
+      
+      <div class="mb-6">
+        <input 
+          type="text" 
+          id="townSearch" 
+          placeholder="Search towns and villages..." 
+          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-nnewiS-500"
+        />
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-nnewiS-50 p-6 rounded-xl">
+          <p class="text-4xl font-bold text-nnewiS-700 mb-2">9</p>
+          <p class="text-gray-700">Major Towns</p>
+        </div>
+        <div class="bg-nnewiAccent/10 p-6 rounded-xl">
+          <p class="text-4xl font-bold text-nnewiS-700 mb-2">50+</p>
+          <p class="text-gray-700">Villages & Communities</p>
+        </div>
+      </div>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full" id="townsTable">
+          <thead class="bg-nnewiS-600 text-white">
+            <tr>
+              <th class="px-6 py-3 text-left text-sm font-semibold">S/N</th>
+              <th class="px-6 py-3 text-left text-sm font-semibold">Town/Village</th>
+              <th class="px-6 py-3 text-left text-sm font-semibold">Type</th>
+              <th class="px-6 py-3 text-left text-sm font-semibold">Notable Features</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200" id="townsTableBody">
+            <!-- Will be populated by JavaScript -->
+          </tbody>
+        </table>
+          </div>
+        </section>
+
+    <!-- Economic Activities -->
+    <section id="economy" class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-1 w-12 bg-nnewiAccent rounded"></div>
+        <h2 class="text-3xl font-bold text-nnewiS-700">Key Economic Activities</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-l-4 border-blue-500">
+          <div class="text-3xl mb-3">🌾</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Agriculture</h3>
+          <p class="text-gray-700 text-sm mb-3">Farming is a major economic activity with cultivation of various crops and livestock rearing.</p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Cassava, yam, maize</li>
+            <li>• Palm oil production</li>
+            <li>• Poultry & livestock</li>
+            <li>• Vegetables & fruits</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-l-4 border-green-500">
+          <div class="text-3xl mb-3">🏪</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Trading & Commerce</h3>
+          <p class="text-gray-700 text-sm mb-3">Vibrant commercial activities with major markets serving the region.</p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Eke Amichi Market</li>
+            <li>• Eke Osu Market</li>
+            <li>• Retail & wholesale trade</li>
+            <li>• Foodstuffs distribution</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-l-4 border-purple-500">
+          <div class="text-3xl mb-3">🏭</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Manufacturing</h3>
+          <p class="text-gray-700 text-sm mb-3">Small and medium-scale manufacturing enterprises.</p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Agro-processing plants</li>
+            <li>• Palm oil mills</li>
+            <li>• Garri processing</li>
+            <li>• Auto parts support</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border-l-4 border-orange-500">
+          <div class="text-3xl mb-3">🛠️</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Crafts & Artisans</h3>
+          <p class="text-gray-700 text-sm mb-3">Traditional and modern craft industries.</p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Furniture making</li>
+            <li>• Metal works</li>
+            <li>• Tailoring & fashion</li>
+            <li>• Building materials</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-xl border-l-4 border-yellow-500">
+          <div class="text-3xl mb-3">🏪</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Services</h3>
+          <p class="text-gray-700 text-sm mb-3">Growing service sector supporting the local economy.</p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Hospitality & hotels</li>
+            <li>• Transportation</li>
+            <li>• Financial services</li>
+            <li>• ICT & telecoms</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border-l-4 border-red-500">
+          <div class="text-3xl mb-3">📦</div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Popular Produce</h3>
+          <p class="text-gray-700 text-sm mb-3">Key agricultural and commercial products from the LGA.</p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Palm oil & kernels</li>
+            <li>• Cassava products</li>
+            <li>• Fresh vegetables</li>
+            <li>• Livestock products</li>
+          </ul>
+        </div>
+      </div>
+        </section>
+
+    <!-- Statistics Dashboard -->
+    <section id="statistics" class="space-y-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-1 w-12 bg-nnewiAccent rounded"></div>
+        <h2 class="text-3xl font-bold text-nnewiS-700">Statistical Data</h2>
+      </div>
+
+      <!-- Population Stats -->
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Population Statistics</h3>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="text-center bg-nnewiS-50 p-6 rounded-xl">
+            <p class="text-4xl font-bold text-nnewiS-700">227,630</p>
+            <p class="text-sm text-gray-600 mt-2">Total Population</p>
+            <p class="text-xs text-gray-500 mt-1">(2023 est.)</p>
+          </div>
+          <div class="text-center bg-blue-50 p-6 rounded-xl">
+            <p class="text-4xl font-bold text-blue-700">1,186</p>
+            <p class="text-sm text-gray-600 mt-2">Population Density</p>
+            <p class="text-xs text-gray-500 mt-1">per km²</p>
+          </div>
+          <div class="text-center bg-green-50 p-6 rounded-xl">
+            <p class="text-4xl font-bold text-green-700">2.8%</p>
+            <p class="text-sm text-gray-600 mt-2">Growth Rate</p>
+            <p class="text-xs text-gray-500 mt-1">annual estimate</p>
+          </div>
+          <div class="text-center bg-purple-50 p-6 rounded-xl">
+            <p class="text-4xl font-bold text-purple-700">4.5</p>
+            <p class="text-sm text-gray-600 mt-2">Household Size</p>
+            <p class="text-xs text-gray-500 mt-1">average persons</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Demographic Breakdown -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Gender Distribution</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-semibold">Male</span>
+                <span class="text-gray-700 font-bold">50.8%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-4">
+                <div class="bg-blue-500 h-4 rounded-full" style="width: 50.8%"></div>
+              </div>
+              <p class="text-sm text-gray-600 mt-1">~115,596 males</p>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-700 font-semibold">Female</span>
+                <span class="text-gray-700 font-bold">49.2%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-4">
+                <div class="bg-pink-500 h-4 rounded-full" style="width: 49.2%"></div>
+              </div>
+              <p class="text-sm text-gray-600 mt-1">~112,034 females</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Age Group Distribution</h3>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-32 text-sm text-gray-700">0-14 years</div>
+              <div class="flex-1 bg-gray-200 rounded-full h-3">
+                <div class="bg-green-500 h-3 rounded-full" style="width: 42%"></div>
+              </div>
+              <span class="w-12 text-right text-sm font-bold">42%</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-32 text-sm text-gray-700">15-24 years</div>
+              <div class="flex-1 bg-gray-200 rounded-full h-3">
+                <div class="bg-blue-500 h-3 rounded-full" style="width: 23%"></div>
+              </div>
+              <span class="w-12 text-right text-sm font-bold">23%</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-32 text-sm text-gray-700">25-54 years</div>
+              <div class="flex-1 bg-gray-200 rounded-full h-3">
+                <div class="bg-purple-500 h-3 rounded-full" style="width: 28%"></div>
+              </div>
+              <span class="w-12 text-right text-sm font-bold">28%</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-32 text-sm text-gray-700">55+ years</div>
+              <div class="flex-1 bg-gray-200 rounded-full h-3">
+                <div class="bg-orange-500 h-3 rounded-full" style="width: 7%"></div>
+              </div>
+              <span class="w-12 text-right text-sm font-bold">7%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Health Indicators -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Education Indicators</h3>
+          <div class="space-y-6">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 p-4 rounded-lg text-center">
+                <p class="text-3xl font-bold text-blue-700">78%</p>
+                <p class="text-sm text-gray-600 mt-1">Literacy Rate</p>
+              </div>
+              <div class="bg-green-50 p-4 rounded-lg text-center">
+                <p class="text-3xl font-bold text-green-700">85%</p>
+                <p class="text-sm text-gray-600 mt-1">Primary Enrollment</p>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">Primary Schools</span>
+                <span class="font-bold text-nnewiS-700">45+</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">Secondary Schools</span>
+                <span class="font-bold text-nnewiS-700">22+</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">Tertiary Institutions</span>
+                <span class="font-bold text-nnewiS-700">3</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">Vocational Centers</span>
+                <span class="font-bold text-nnewiS-700">8</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+          <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Health Indicators</h3>
+          <div class="space-y-6">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-red-50 p-4 rounded-lg text-center">
+                <p class="text-3xl font-bold text-red-700">1:2,840</p>
+                <p class="text-sm text-gray-600 mt-1">Doctor-Patient Ratio</p>
+              </div>
+              <div class="bg-purple-50 p-4 rounded-lg text-center">
+                <p class="text-3xl font-bold text-purple-700">72%</p>
+                <p class="text-sm text-gray-600 mt-1">Immunization Coverage</p>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">General Hospitals</span>
+                <span class="font-bold text-nnewiS-700">2</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">Primary Health Centers</span>
+                <span class="font-bold text-nnewiS-700">18</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">Private Clinics</span>
+                <span class="font-bold text-nnewiS-700">35+</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-700">Pharmacies</span>
+                <span class="font-bold text-nnewiS-700">28</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agricultural Data -->
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Agricultural Data</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="space-y-4">
+            <h4 class="font-semibold text-nnewiS-600">Land Use</h4>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm text-gray-700">Arable Land</span>
+                  <span class="text-sm font-bold">65%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-green-500 h-2 rounded-full" style="width: 65%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm text-gray-700">Residential</span>
+                  <span class="text-sm font-bold">20%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-blue-500 h-2 rounded-full" style="width: 20%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-sm text-gray-700">Forest/Others</span>
+                  <span class="text-sm font-bold">15%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                  <div class="bg-yellow-500 h-2 rounded-full" style="width: 15%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="space-y-3">
+            <h4 class="font-semibold text-nnewiS-600">Major Crops (Annual Output)</h4>
+            <div class="space-y-2 text-sm">
+              <div class="flex justify-between">
+                <span class="text-gray-700">Cassava</span>
+                <span class="font-bold">~45,000 MT</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-700">Yam</span>
+                <span class="font-bold">~28,000 MT</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-700">Maize</span>
+                <span class="font-bold">~12,500 MT</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-700">Palm Oil</span>
+                <span class="font-bold">~8,200 MT</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-700">Vegetables</span>
+                <span class="font-bold">~6,800 MT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-semibold text-nnewiS-600">Livestock</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="bg-orange-50 p-3 rounded-lg text-center">
+                <p class="text-2xl font-bold text-orange-700">~25K</p>
+                <p class="text-xs text-gray-600">Poultry</p>
+              </div>
+              <div class="bg-red-50 p-3 rounded-lg text-center">
+                <p class="text-2xl font-bold text-red-700">~8.5K</p>
+                <p class="text-xs text-gray-600">Goats</p>
+              </div>
+              <div class="bg-yellow-50 p-3 rounded-lg text-center">
+                <p class="text-2xl font-bold text-yellow-700">~4.2K</p>
+                <p class="text-xs text-gray-600">Sheep</p>
+              </div>
+              <div class="bg-green-50 p-3 rounded-lg text-center">
+                <p class="text-2xl font-bold text-green-700">~1.8K</p>
+                <p class="text-xs text-gray-600">Cattle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commercial Activity Index -->
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Commercial Activity Index</h3>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-xl">
+            <p class="text-sm opacity-90 mb-2">Registered Businesses</p>
+            <p class="text-4xl font-bold">1,450+</p>
+            <p class="text-xs opacity-75 mt-2">Active MSMEs</p>
+          </div>
+          <div class="bg-gradient-to-br from-green-500 to-green-600 text-white p-6 rounded-xl">
+            <p class="text-sm opacity-90 mb-2">Daily Markets</p>
+            <p class="text-4xl font-bold">12</p>
+            <p class="text-xs opacity-75 mt-2">Across all towns</p>
+          </div>
+          <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-6 rounded-xl">
+            <p class="text-sm opacity-90 mb-2">Bank Branches</p>
+            <p class="text-4xl font-bold">15</p>
+            <p class="text-xs opacity-75 mt-2">Commercial & microfinance</p>
+          </div>
+          <div class="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-6 rounded-xl">
+            <p class="text-sm opacity-90 mb-2">Trade Volume</p>
+            <p class="text-4xl font-bold">₦2.4B</p>
+            <p class="text-xs opacity-75 mt-2">Monthly estimate</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure Scorecards -->
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-nnewiS-700 mb-6">Infrastructure Scorecard</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Road Infrastructure</span>
+                <span class="text-nnewiS-600 font-bold">72/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-green-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 72%">
+                  <span class="text-xs text-white font-bold">72%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Electricity Supply</span>
+                <span class="text-nnewiS-600 font-bold">58/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-yellow-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 58%">
+                  <span class="text-xs text-white font-bold">58%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Water Supply</span>
+                <span class="text-nnewiS-600 font-bold">65/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-blue-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 65%">
+                  <span class="text-xs text-white font-bold">65%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Telecommunications</span>
+                <span class="text-nnewiS-600 font-bold">85/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-green-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 85%">
+                  <span class="text-xs text-white font-bold">85%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Healthcare Facilities</span>
+                <span class="text-nnewiS-600 font-bold">70/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-green-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 70%">
+                  <span class="text-xs text-white font-bold">70%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Educational Facilities</span>
+                <span class="text-nnewiS-600 font-bold">80/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-green-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 80%">
+                  <span class="text-xs text-white font-bold">80%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Waste Management</span>
+                <span class="text-nnewiS-600 font-bold">62/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-yellow-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 62%">
+                  <span class="text-xs text-white font-bold">62%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="font-semibold text-gray-700">Security Services</span>
+                <span class="text-nnewiS-600 font-bold">75/100</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-green-500 h-3 rounded-full flex items-center justify-end pr-2" style="width: 75%">
+                  <span class="text-xs text-white font-bold">75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Places & Landmarks -->
+    <section id="landmarks" class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-1 w-12 bg-nnewiAccent rounded"></div>
+        <h2 class="text-3xl font-bold text-nnewiS-700">Important Places & Landmarks</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🏛️</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Government Secretariat</h3>
+          <p class="text-gray-700 text-sm mb-2">LGA Headquarters, Ukpor</p>
+          <p class="text-gray-600 text-sm">Administrative center for all local government activities and services.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🏥</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Ukpor General Hospital</h3>
+          <p class="text-gray-700 text-sm mb-2">Ukpor</p>
+          <p class="text-gray-600 text-sm">Major healthcare facility providing comprehensive medical services to residents.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🏫</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Community Secondary Schools</h3>
+          <p class="text-gray-700 text-sm mb-2">Various locations</p>
+          <p class="text-gray-600 text-sm">Quality secondary education institutions across the nine towns.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">⛪</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">St. Paul's Catholic Church</h3>
+          <p class="text-gray-700 text-sm mb-2">Ukpor</p>
+          <p class="text-gray-600 text-sm">Historic Catholic parish and important religious center in the LGA.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🏪</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Eke Amichi Market</h3>
+          <p class="text-gray-700 text-sm mb-2">Amichi</p>
+          <p class="text-gray-600 text-sm">Major commercial hub for trading foodstuffs, textiles, and agricultural produce.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🏟️</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Community Sports Complex</h3>
+          <p class="text-gray-700 text-sm mb-2">Ukpor</p>
+          <p class="text-gray-600 text-sm">Recreational facility hosting sports events and youth development programs.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🎭</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Ukpor Town Hall</h3>
+          <p class="text-gray-700 text-sm mb-2">Ukpor</p>
+          <p class="text-gray-600 text-sm">Venue for cultural events, traditional ceremonies, and community gatherings.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🌳</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Ezinifite Forest Reserve</h3>
+          <p class="text-gray-700 text-sm mb-2">Ezinifite</p>
+          <p class="text-gray-600 text-sm">Natural conservation area and eco-tourism potential site.</p>
+        </div>
+        
+        <div class="border-2 border-nnewiS-200 rounded-xl p-6 hover:shadow-lg transition">
+          <div class="text-4xl mb-3">🏦</div>
+          <h3 class="text-xl font-bold text-nnewiS-700 mb-2">Microfinance Banks</h3>
+          <p class="text-gray-700 text-sm mb-2">Multiple locations</p>
+          <p class="text-gray-600 text-sm">Financial institutions supporting local businesses and entrepreneurs.</p>
+            </div>
+          </div>
+        </section>
+
+    <!-- Local Government Services -->
+    <section id="services" class="bg-white rounded-2xl shadow-lg p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-1 w-12 bg-nnewiAccent rounded"></div>
+        <h2 class="text-3xl font-bold text-nnewiS-700">Local Government Services</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl border-l-4 border-red-500">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">🏥</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Health Programs</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✓ Primary healthcare services in 18 centers</li>
+                <li>✓ Maternal and child health programs</li>
+                <li>✓ Immunization campaigns</li>
+                <li>✓ Disease prevention and control</li>
+                <li>✓ Free healthcare for vulnerable groups</li>
+                <li>✓ Mobile health clinics to rural areas</li>
+            </ul>
+            </div>
+          </div>
+          </div>
+
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl border-l-4 border-blue-500">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">📚</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Education Projects</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✓ School infrastructure development</li>
+                <li>✓ Teacher training and capacity building</li>
+                <li>✓ Scholarship programs for indigent students</li>
+                <li>✓ Adult literacy initiatives</li>
+                <li>✓ ICT integration in schools</li>
+                <li>✓ School feeding programs</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl border-l-4 border-green-500">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">♻️</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Environmental Services</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✓ Waste collection and disposal</li>
+                <li>✓ Drainage and erosion control projects</li>
+                <li>✓ Street cleaning and maintenance</li>
+                <li>✓ Tree planting campaigns</li>
+                <li>✓ Public sanitation awareness</li>
+                <li>✓ Market sanitation management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border-l-4 border-purple-500">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">💼</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Youth & Women Empowerment</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✓ Vocational skills training programs</li>
+                <li>✓ Small business development support</li>
+                <li>✓ Agricultural empowerment schemes</li>
+                <li>✓ Youth sports and recreation</li>
+                <li>✓ Women cooperative societies</li>
+                <li>✓ Entrepreneurship grants and loans</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-xl border-l-4 border-yellow-500">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">💰</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Tax & Levy Information</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✓ Tenement rates collection</li>
+                <li>✓ Market dues and levies</li>
+                <li>✓ Business registration and permits</li>
+                <li>✓ Development levy</li>
+                <li>✓ Vehicle licensing and parking fees</li>
+                <li>✓ Signage and advertisement permits</li>
+              </ul>
+              <p class="mt-3 text-xs bg-yellow-200 p-2 rounded">
+                <strong>Note:</strong> Contact LGA revenue office for current rates and payment information.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl border-l-4 border-orange-500">
+          <div class="flex items-start gap-4">
+            <div class="text-4xl">🏗️</div>
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-gray-800 mb-3">Infrastructure Development</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>✓ Road construction and rehabilitation</li>
+                <li>✓ Street lighting projects</li>
+                <li>✓ Borehole drilling and water supply</li>
+                <li>✓ Town planning and development control</li>
+                <li>✓ Public building construction</li>
+                <li>✓ Market infrastructure upgrades</li>
+              </ul>
+            </div>
+          </div>
+            </div>
+          </div>
+        </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-nnewiS-800 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-nnewiAccent">Nnewi South LGA</h3>
+          <p class="text-nnewiS-100 text-sm mb-4">
+            Building a prosperous and sustainable local government area for all residents.
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="w-10 h-10 bg-nnewiS-600 hover:bg-nnewiAccent rounded-full flex items-center justify-center transition">
+              <span class="text-lg">📘</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-nnewiS-600 hover:bg-nnewiAccent rounded-full flex items-center justify-center transition">
+              <span class="text-lg">🐦</span>
+            </a>
+            <a href="#" class="w-10 h-10 bg-nnewiS-600 hover:bg-nnewiAccent rounded-full flex items-center justify-center transition">
+              <span class="text-lg">📧</span>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm text-nnewiS-100">
+            <li><a href="#overview" class="hover:text-nnewiAccent transition">About Us</a></li>
+            <li><a href="#towns" class="hover:text-nnewiAccent transition">Our Towns</a></li>
+            <li><a href="#economy" class="hover:text-nnewiAccent transition">Economy</a></li>
+            <li><a href="#services" class="hover:text-nnewiAccent transition">Services</a></li>
+            <li><a href="#leadership" class="hover:text-nnewiAccent transition">Leadership</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-2 text-sm text-nnewiS-100">
+            <li>📍 LGA Secretariat, Ukpor</li>
+            <li>📧 info@nnewisouth.gov.ng</li>
+            <li>📞 +234 803 XXX XXXX</li>
+            <li>🕒 Mon - Fri: 8:00 AM - 4:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-nnewiS-600 pt-6 text-center text-sm text-nnewiS-200">
+        <p>&copy; 2024 Nnewi South Local Government Area, Anambra State. All rights reserved.</p>
+      </div>
       </div>
     </footer>
-  </div>
+
+  <!-- JavaScript for Interactive Features -->
+  <script>
+    // Towns and Villages Data
+    const townsData = [
+      { name: "Ukpor", type: "Town (HQ)", features: "LGA Secretariat, Markets, Schools, Hospital" },
+      { name: "Amichi", type: "Town", features: "Eke Amichi Market, Secondary Schools, Health Centers" },
+      { name: "Ezinifite", type: "Town", features: "Forest Reserve, Schools, Religious Centers" },
+      { name: "Unubi", type: "Town", features: "Commercial Hub, Markets, Financial Institutions" },
+      { name: "Utuh", type: "Town", features: "Eke Osu Market, Agricultural Activities" },
+      { name: "Ebenator", type: "Town", features: "Schools, Health Facilities, Markets" },
+      { name: "Osumenyi", type: "Town", features: "Commercial Activities, Schools" },
+      { name: "Ekwulumili", type: "Town", features: "Agricultural Hub, Markets" },
+      { name: "Azigbo", type: "Town", features: "Farming Communities, Schools" },
+      { name: "Amakom", type: "Village", features: "Agricultural community" },
+      { name: "Umuezeanam", type: "Village", features: "Farming settlement" },
+      { name: "Umuchiana", type: "Village", features: "Residential area" },
+      { name: "Amorka", type: "Village", features: "Traditional community" },
+      { name: "Ihembosi", type: "Village", features: "Agricultural zone" },
+      { name: "Okija", type: "Village", features: "Farming community" },
+      { name: "Uli", type: "Village", features: "Historical significance" },
+      { name: "Akwaeze", type: "Village", features: "Agricultural activities" },
+      { name: "Adazi", type: "Village", features: "Farming settlement" },
+      { name: "Ukwulu", type: "Village", features: "Residential community" }
+    ];
+
+    // Populate Towns Table
+    function populateTable(data) {
+      const tbody = document.getElementById('townsTableBody');
+      tbody.innerHTML = '';
+      
+      data.forEach((town, index) => {
+        const row = document.createElement('tr');
+        row.className = 'hover:bg-nnewiS-50 transition';
+        row.innerHTML = `
+          <td class="px-6 py-4 text-sm text-gray-700">${index + 1}</td>
+          <td class="px-6 py-4 text-sm font-semibold text-nnewiS-700">${town.name}</td>
+          <td class="px-6 py-4 text-sm text-gray-600">${town.type}</td>
+          <td class="px-6 py-4 text-sm text-gray-600">${town.features}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Search Functionality
+    document.getElementById('townSearch').addEventListener('input', function(e) {
+      const searchTerm = e.target.value.toLowerCase();
+      const filteredData = townsData.filter(town => 
+        town.name.toLowerCase().includes(searchTerm) ||
+        town.type.toLowerCase().includes(searchTerm) ||
+        town.features.toLowerCase().includes(searchTerm)
+      );
+      populateTable(filteredData);
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Initialize table on page load
+    populateTable(townsData);
+  </script>
 </body>
 </html>

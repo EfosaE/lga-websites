@@ -1,427 +1,1482 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <title>Oyi LGA – Nteje | Business &amp; Investment Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Business and investment profile of Oyi Local Government Area, Nteje – economic overview, key industries, infrastructure, opportunities, markets and agricultural outputs."
-  />
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind theme for Oyi -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            oyi: {
-              50:  '#E0F2F1',
-              100: '#B2DFDB', // secondary
-              200: '#80CBC4',
-              300: '#4DB6AC',
-              400: '#26A69A',
-              500: '#009688',
-              600: '#00897B',
-              700: '#00796B',
-              800: '#00695C',
-              900: '#004D40'  // primary
-            },
-            oyiAccent: '#FFC107',
-            oyiAccentSoft: '#FFE082',
-            oyiBg: '#F1F8F7',
-            oyiSurface: '#FFFFFF'
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyi LGA - The Heart of Commerce & Culture in Anambra</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ansg_favicon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#004D40',
+                        secondary: '#B2DFDB',
+                        accent: '#FFC107',
+                    }
+                }
+            }
         }
-      }
-    };
-  </script>
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-pattern {
+            background-color: #004D40;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23B2DFDB' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .image-overlay {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-overlay::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,77,64,0.7), transparent);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #FFC107;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #FFC107;
+        }
+    </style>
 </head>
-<body class="bg-oyiBg text-slate-900 antialiased">
-  <div class="min-h-screen flex flex-col">
-
-    <!-- TOP BAR -->
-    <header class="bg-oyi-900 text-oyi-50 shadow-sm">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <span class="inline-flex items-center justify-center h-9 w-9 rounded-md bg-oyi-100 text-oyi-900 font-bold text-lg">
-            OY
-          </span>
-          <div>
-            <p class="text-sm font-semibold tracking-wide uppercase">Oyi Local Government Area</p>
-            <p class="text-[0.7rem] text-oyi-100/80">Nteje · Business &amp; Investment Profile</p>
-          </div>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-landmark text-primary text-2xl mr-3"></i>
+                    <span class="text-xl font-bold text-primary">Oyi LGA</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="#culture" class="text-gray-700 hover:text-primary transition">Culture</a>
+                    <a href="#places" class="text-gray-700 hover:text-primary transition">Places</a>
+                    <a href="#economy" class="text-gray-700 hover:text-primary transition">Economy</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
         </div>
-        <nav class="hidden md:flex gap-4 text-[0.75rem] font-medium">
-          <a href="#overview" class="hover:text-oyiAccentSoft">Overview</a>
-          <a href="#industries" class="hover:text-oyiAccentSoft">Key Industries</a>
-          <a href="#infrastructure" class="hover:text-oyiAccentSoft">Infrastructure</a>
-          <a href="#opportunities" class="hover:text-oyiAccentSoft">Opportunities</a>
-          <a href="#tourism" class="hover:text-oyiAccentSoft">Tourism</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- HERO WITH IMAGE -->
-    <section class="relative bg-oyi-900 text-oyi-50 overflow-hidden">
-      <!-- Background image overlay -->
-      <div class="absolute inset-0">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ogbunike_Cave.jpg" 
-          alt="Ogbunike Caves in Oyi LGA"
-          class="w-full h-full object-cover opacity-40"
-        />
-      </div>
-      
-      <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <p class="inline-flex items-center gap-2 rounded-full bg-oyi-900/80 border border-oyi-400/60 px-3 py-1 text-[0.7rem] uppercase tracking-wide">
-          <span class="h-1.5 w-1.5 rounded-full bg-oyiAccent"></span>
-          Oyi Local Government Area · Headquarters: Nteje
-        </p>
-        <h1 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-          Oyi LGA: Business, Investment &amp; Natural Heritage
-        </h1>
-        <p class="mt-3 text-sm sm:text-base text-oyi-100 max-w-2xl">
-          From the famous Ogbunike Caves to thriving markets and fertile farmlands, Oyi Local Government Area
-          offers investors and businesses a blend of natural attractions, agriculture, trade and growing infrastructure.
-        </p>
-
-        <div class="mt-5 flex flex-wrap gap-3 text-[0.75rem]">
-          <a href="#opportunities" class="inline-flex items-center gap-2 rounded-full bg-oyiAccent px-4 py-2 font-semibold text-slate-900 hover:bg-oyiAccentSoft transition">
-            Explore Investment Opportunities
-          </a>
-          <a href="#tourism" class="inline-flex items-center gap-2 rounded-full border border-oyi-200 bg-oyi-900/50 px-4 py-2 font-semibold text-oyi-50 hover:border-oyiAccent transition">
-            Tourism Highlights
-          </a>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">About</a>
+                <a href="#culture" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Culture</a>
+                <a href="#places" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Places</a>
+                <a href="#economy" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Economy</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Services</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:bg-secondary rounded">Contact</a>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern pt-24 pb-20 px-4 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white space-y-6">
+                    <div class="inline-block bg-accent px-4 py-2 rounded-full text-sm font-semibold text-primary">
+                        Anambra North Senatorial Zone
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                        Discover <span class="text-accent">Oyi</span>
+                    </h1>
+                    <p class="text-2xl text-secondary font-light">The Heart of Commerce & Culture in Anambra</p>
+                    <p class="text-lg text-gray-200 leading-relaxed">
+                        Experience the vibrant blend of traditional heritage and modern commerce in one of Anambra's most dynamic local government areas. Home to the famous Nteje and Awkuzu communities.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#places" class="bg-accent text-primary px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+                            Explore Places
+                        </a>
+                        <a href="#culture" class="border-2 border-secondary text-white px-8 py-3 rounded-full font-semibold hover:bg-secondary hover:text-primary transition">
+                            Our Culture
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden h-48 image-overlay">
+                            <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=400" alt="Oyi Market" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden h-64 image-overlay">
+                            <img src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?w=400" alt="Traditional Festival" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-12">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden h-64 image-overlay">
+                            <img src="https://images.unsplash.com/photo-1610056494052-6a4f83a8368c?w=400" alt="Community" class="w-full h-full object-cover">
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl overflow-hidden h-48 image-overlay">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="Agriculture" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- SECTION TABS -->
-    <div class="bg-oyi-800 text-oyi-50 border-b border-oyi-700">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
-        <div class="flex gap-2 text-[0.7rem]">
-          <a href="#overview" class="px-3 py-1.5 rounded-full bg-oyi-700 whitespace-nowrap">
-            Economic Overview
-          </a>
-          <a href="#industries" class="px-3 py-1.5 rounded-full bg-oyi-900 hover:bg-oyi-700 whitespace-nowrap">
-            Key Industries
-          </a>
-          <a href="#infrastructure" class="px-3 py-1.5 rounded-full bg-oyi-900 hover:bg-oyi-700 whitespace-nowrap">
-            Infrastructure
-          </a>
-          <a href="#opportunities" class="px-3 py-1.5 rounded-full bg-oyi-900 hover:bg-oyi-700 whitespace-nowrap">
-            Investment Opportunities
-          </a>
-          <a href="#markets" class="px-3 py-1.5 rounded-full bg-oyi-900 hover:bg-oyi-700 whitespace-nowrap">
-            Markets
-          </a>
-          <a href="#agriculture" class="px-3 py-1.5 rounded-full bg-oyi-900 hover:bg-oyi-700 whitespace-nowrap">
-            Agriculture
-          </a>
-          <a href="#tourism" class="px-3 py-1.5 rounded-full bg-oyi-900 hover:bg-oyi-700 whitespace-nowrap">
-            Tourism
-          </a>
+    <!-- Quick Stats -->
+    <section class="bg-white py-12 -mt-10 relative z-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-primary rounded-2xl shadow-2xl p-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="stat-number">12</div>
+                        <p class="text-secondary text-sm uppercase tracking-wide">Communities</p>
+                    </div>
+                    <div>
+                        <div class="stat-number">220K+</div>
+                        <p class="text-secondary text-sm uppercase tracking-wide">Population</p>
+                    </div>
+                    <div>
+                        <div class="stat-number">1991</div>
+                        <p class="text-secondary text-sm uppercase tracking-wide">Year Created</p>
+                    </div>
+                    <div>
+                        <div class="stat-number">300km²</div>
+                        <p class="text-secondary text-sm uppercase tracking-wide">Landmass</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-1">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 space-y-8">
-
-        <!-- OVERVIEW + IMAGE -->
-        <section id="overview" class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6 items-start">
-          <div class="bg-oyiSurface rounded-2xl shadow-sm border border-oyi-100 px-5 py-5">
-            <h2 class="text-lg font-semibold text-oyi-900 mb-2">
-              Economic Overview of Oyi LGA
-            </h2>
-            <p class="text-sm text-slate-800 mb-2">
-              Oyi Local Government Area is located in Anambra State with headquarters in Nteje. The LGA comprises
-              towns such as Nteje, Awkuzu, Ogbunike, Umunya and Nkwelle‑Ezunaka. According to available sources,
-              the population is estimated around 239,700 (as of 2022), predominantly Igbo.
-            </p>
-            <p class="text-sm text-slate-800">
-              Oyi's economy blends <span class="font-semibold">agriculture, trading and tourism</span>. Markets
-              like the Modern Aluminium market in Ogbunike serve as trading hubs, while farming (rice, yams, cassava,
-              breadfruit) and fishing remain important. The world‑famous <span class="font-semibold">Ogbunike Caves</span>
-              add a unique tourism dimension.
-            </p>
-          </div>
-
-          <!-- Image: Nigerian market scene -->
-          <div class="rounded-2xl overflow-hidden shadow-md border border-oyi-100">
-            <img 
-              src="https://images.unsplash.com/photo-1589621316382-008455b857cd?w=800" 
-              alt="Market scene in Nigeria"
-              class="w-full h-64 object-cover"
-            />
-            <div class="bg-oyi-100 px-4 py-2 text-xs text-slate-800">
-              <p class="font-semibold">Illustrative: Markets in Oyi LGA</p>
-              <p class="text-[0.7rem] text-slate-700">
-                Replace with actual photos of Ogbunike, Nteje or Awkuzu markets when available.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- KEY INDUSTRIES -->
-        <section id="industries" class="bg-oyiSurface rounded-2xl shadow-sm border border-oyi-100 px-5 py-6">
-          <h2 class="text-sm font-semibold text-oyi-900 mb-3 uppercase tracking-wide">
-            Key Industries &amp; Economic Sectors
-          </h2>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
-            <div class="rounded-xl bg-oyi-100 px-3 py-3">
-              <p class="font-semibold text-oyi-900 mb-1">Agriculture</p>
-              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
-                <li>Rice, yam, cassava, breadfruit cultivation</li>
-                <li>Commercial fishing in rivers and ponds</li>
-                <li>Hunting and bushmeat trade (where legal)</li>
-              </ul>
-            </div>
-            <div class="rounded-xl bg-oyi-100 px-3 py-3">
-              <p class="font-semibold text-oyi-900 mb-1">Trade &amp; Commerce</p>
-              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
-                <li>Modern Aluminium market (Ogbunike) and other trading centres</li>
-                <li>Retail and wholesale of goods from urban centres</li>
-                <li>Transport and logistics on major routes</li>
-              </ul>
-            </div>
-            <div class="rounded-xl bg-oyi-100 px-3 py-3">
-              <p class="font-semibold text-oyi-900 mb-1">Tourism &amp; Hospitality</p>
-              <ul class="list-disc list-inside text-slate-800 space-y-0.5">
-                <li>Ogbunike Caves (UNESCO World Heritage site status potential)</li>
-                <li>Guest houses, small hotels and food services near tourist sites</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- INFRASTRUCTURE + IMAGE -->
-        <section id="infrastructure" class="grid lg:grid-cols-[1.6fr,1.4fr] gap-6">
-          <div class="bg-oyiSurface rounded-2xl shadow-sm border border-oyi-100 px-5 py-5">
-            <h2 class="text-sm font-semibold text-oyi-900 mb-3 uppercase tracking-wide">
-              Available Infrastructure
-            </h2>
-            <div class="space-y-3 text-xs sm:text-[0.8rem]">
-              <div class="rounded-xl bg-oyi-100 px-3 py-3">
-                <p class="font-semibold text-oyi-900 mb-1">Road Network</p>
-                <p class="text-slate-800">
-                  State and local roads connect Nteje, Awkuzu, Ogbunike, Umunya and Nkwelle‑Ezunaka to one another
-                  and to neighbouring LGAs, with links towards Onitsha and Awka.
+    <!-- About Overview -->
+    <section id="about" class="py-20 px-4 bg-gradient-to-b from-white to-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 section-title">About Oyi Local Government</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mt-6">
+                    A rich tapestry of culture, commerce, and community in the heart of Anambra State
                 </p>
-              </div>
-              <div class="rounded-xl bg-oyi-100 px-3 py-3">
-                <p class="font-semibold text-oyi-900 mb-1">Power &amp; Telecoms</p>
-                <p class="text-slate-800">
-                  National grid electricity (with typical reliability issues) and multiple GSM providers create
-                  a base for commerce, light industry and tourism operations.
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-secondary p-3 rounded-lg">
+                            <i class="fas fa-map-marked-alt text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">Strategic Location</h3>
+                            <p class="text-gray-600">
+                                Oyi is located in the Anambra North Senatorial Zone, bordered by Ayamelum and Anambra East LGAs. The area benefits from proximity to the River Anambra, providing rich agricultural lands and fishing opportunities.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-secondary p-3 rounded-lg">
+                            <i class="fas fa-history text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">Historical Background</h3>
+                            <p class="text-gray-600">
+                                Created in 1991 during the state creation exercise, Oyi LGA has evolved from a predominantly agrarian area into a vibrant commercial hub. The area has a rich pre-colonial history with the Nteje and Awkuzu kingdoms being major historical centers of trade and cultural exchange.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-secondary p-3 rounded-lg">
+                            <i class="fas fa-users text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-primary mb-2">Vibrant Population</h3>
+                            <p class="text-gray-600">
+                                With an estimated population of over 220,000 people, Oyi is home to industrious and culturally-rich Igbo communities. The people are predominantly traders, farmers, and craftsmen known for their entrepreneurial spirit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800" alt="Oyi Landscape" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Key Facts Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                    <h4 class="font-semibold text-primary mb-2 text-lg">Administrative Headquarters</h4>
+                    <p class="text-gray-600">Nteje</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                    <h4 class="font-semibold text-primary mb-2 text-lg">Year Created</h4>
+                    <p class="text-gray-600">1991</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                    <h4 class="font-semibold text-primary mb-2 text-lg">Senatorial Zone</h4>
+                    <p class="text-gray-600">Anambra North</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Identity -->
+    <section id="culture" class="py-20 px-4 bg-primary text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Cultural Heritage</h2>
+                <p class="text-secondary text-lg max-w-3xl mx-auto">
+                    Experience the rich traditions, festivals, and cultural practices that define Oyi
                 </p>
-              </div>
-              <div class="rounded-xl bg-oyi-100 px-3 py-3">
-                <p class="font-semibold text-oyi-900 mb-1">Education &amp; Health</p>
-                <p class="text-slate-800">
-                  Primary and secondary schools, plus health centres in major towns, support workforce development
-                  and community well‑being.
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Festivals -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 card-hover">
+                    <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-drum text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Traditional Festivals</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Iwa Ji (New Yam Festival)</strong> - Celebrated annually in August to mark the harvest season
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Ofala Festival</strong> - Traditional ceremony of the Igwe (King) in various communities
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Onwa Ato Festival</strong> - Cultural celebration featuring masquerades and traditional dances
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-star text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Christmas Carnival</strong> - Modern cultural celebration blending tradition with contemporary festivities
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Traditional Rulers -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 card-hover">
+                    <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-crown text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Traditional Leadership</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fas fa-chess-king text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Igwe of Nteje</strong> - HRH Igwe Rowland Odegbo, Eze Nteje III
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chess-king text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Igwe of Awkuzu</strong> - Traditional ruler of Awkuzu community
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chess-king text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Igwe of Umunya</strong> - Traditional head of Umunya town
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-users-crown text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Council of Traditional Rulers</strong> - Collaborative leadership body
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Crafts & Specialties -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 card-hover">
+                    <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Crafts & Specialties</h3>
+                    <ul class="space-y-3 text-gray-200">
+                        <li class="flex items-start">
+                            <i class="fas fa-hammer text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Pottery & Ceramics</strong> - Traditional clay pot making and modern ceramics
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-scissors text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Weaving</strong> - Traditional mat weaving and basket making
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-paint-brush text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Woodcarving</strong> - Intricate designs on masks, sculptures, and furniture
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-tshirt text-accent mr-2 mt-1"></i>
+                            <div>
+                                <strong class="text-white">Traditional Attire</strong> - Production of Akwete cloth and traditional Igbo garments
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Places to Visit -->
+    <section id="places" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 section-title">Top Places to Visit</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mt-6">
+                    Discover the landmarks, institutions, and attractions that make Oyi unique
                 </p>
-              </div>
             </div>
-          </div>
 
-          <!-- Image: Farm/agricultural scene -->
-          <div class="rounded-2xl overflow-hidden shadow-md border border-oyi-100">
-            <img 
-              src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800" 
-              alt="Farm landscape Nigeria"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute bottom-0 left-0 right-0 bg-oyi-900/80 px-4 py-2 text-xs text-oyi-50">
-              <p class="font-semibold">Illustrative: Farmlands in Oyi</p>
-              <p class="text-[0.7rem]">
-                Replace with real images from Oyi communities where consent is obtained.
-              </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Place 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=600" alt="Oyi River" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full">Natural Attraction</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">River Anambra Banks</h3>
+                        <p class="text-gray-600 mb-4">
+                            Scenic riverside views perfect for fishing, boat rides, and enjoying the natural beauty of the waterway that gives our state its name.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-accent"></i>
+                            <span>Nteje/Awkuzu Border</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Place 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=600" alt="Nteje Market" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full">Commerce Hub</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Nteje Main Market</h3>
+                        <p class="text-gray-600 mb-4">
+                            One of the largest markets in Anambra North, bustling with traders selling everything from fresh produce to textiles. Market days are particularly vibrant on Nkwo and Afor days.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-accent"></i>
+                            <span>Nteje Town</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Place 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=600" alt="Catholic Church" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full">Religious Site</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">St. Paul's Catholic Church Nteje</h3>
+                        <p class="text-gray-600 mb-4">
+                            Historic Catholic church established in the early 20th century, featuring beautiful colonial architecture and serving as a spiritual center for the community.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-accent"></i>
+                            <span>Nteje</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Place 4 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600" alt="School" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full">Education</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Community Secondary Schools</h3>
+                        <p class="text-gray-600 mb-4">
+                            Notable educational institutions including Community Secondary School Nteje, CSS Awkuzu, and several quality primary schools providing education to thousands of students.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-accent"></i>
+                            <span>Various Locations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Place 5 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=600" alt="Government Secretariat" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full">Government</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Oyi LG Secretariat</h3>
+                        <p class="text-gray-600 mb-4">
+                            The administrative heart of the local government, housing various departments and serving as the hub for government services and civic activities.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-accent"></i>
+                            <span>Nteje</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Place 6 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1632833239869-a37e3a5806d2?w=600" alt="Health Center" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-accent text-primary text-xs font-bold px-3 py-1 rounded-full">Healthcare</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-3">Oyi General Hospital</h3>
+                        <p class="text-gray-600 mb-4">
+                            Primary healthcare facility serving the LGA with maternity services, emergency care, and general medical services for the community.
+                        </p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-accent"></i>
+                            <span>Nteje</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- INVESTMENT OPPORTUNITIES + IMAGE -->
-        <section id="opportunities" class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6">
-          <div class="bg-oyiSurface rounded-2xl shadow-sm border border-oyi-100 px-5 py-5">
-            <h2 class="text-sm font-semibold text-oyi-900 mb-3 uppercase tracking-wide">
-              Investment Opportunities
-            </h2>
-            <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1.5">
-              <li>
-                <span class="font-semibold">Agro‑processing:</span> Rice milling, cassava processing (garri, starch),
-                breadfruit products, and fish smoking / packaging.
-              </li>
-              <li>
-                <span class="font-semibold">Tourism infrastructure:</span> Guest houses, restaurants, tour guide services
-                and souvenir shops near Ogbunike Caves and other heritage sites.
-              </li>
-              <li>
-                <span class="font-semibold">Retail &amp; distribution:</span> Modern shopping centres, agro‑input stores
-                and building‑material outlets serving local demand.
-              </li>
-              <li>
-                <span class="font-semibold">Light manufacturing:</span> Furniture, metalwork, packaging, and other small‑scale
-                production tapping into the area's skilled artisans and proximity to Onitsha and Awka markets.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Image: Ogbunike Caves -->
-          <div class="rounded-2xl overflow-hidden shadow-md border border-oyi-100">
-            <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ogbunike_Cave.jpg" 
-              alt="Ogbunike Caves entrance"
-              class="w-full h-full object-cover"
-            />
-            <div class="bg-oyi-900/90 px-4 py-2 text-xs text-oyi-50">
-              <p class="font-semibold">Ogbunike Caves, Oyi LGA</p>
-              <p class="text-[0.7rem]">
-                A major tourism asset attracting visitors and offering eco‑tourism investment potential.
-              </p>
+    <!-- Towns & Villages -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 section-title">Towns & Communities</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mt-6">
+                    Oyi LGA comprises 12 vibrant communities, each with its unique character and heritage
+                </p>
             </div>
-          </div>
-        </section>
 
-        <!-- COMMERCIAL MARKETS -->
-        <section id="markets" class="bg-oyiSurface rounded-2xl shadow-sm border border-oyi-100 px-5 py-6">
-          <h2 class="text-sm font-semibold text-oyi-900 mb-3 uppercase tracking-wide">
-            Commercial Markets &amp; Trading Centres
-          </h2>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
-            <div class="rounded-xl bg-oyi-100 px-3 py-3">
-              <p class="font-semibold text-oyi-900 mb-1">Modern Aluminium Market, Ogbunike</p>
-              <p class="text-slate-800">
-                A well‑known trading hub for aluminium products and general merchandise, drawing buyers and sellers
-                from across Anambra and neighbouring areas.
-              </p>
+            <!-- Search Bar -->
+            <div class="mb-8 max-w-2xl mx-auto">
+                <div class="relative">
+                    <input 
+                        type="text" 
+                        id="townSearch" 
+                        placeholder="Search for a town or village..." 
+                        class="w-full px-6 py-4 rounded-full border-2 border-gray-200 focus:border-primary focus:outline-none shadow-lg"
+                    >
+                    <i class="fas fa-search absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
             </div>
-            <div class="rounded-xl bg-oyi-100 px-3 py-3">
-              <p class="font-semibold text-oyi-900 mb-1">Nteje Market</p>
-              <p class="text-slate-800">
-                Serving the headquarters town with foodstuffs, household goods and farm produce on traditional
-                market days.
-              </p>
+
+            <!-- Communities Count -->
+            <div class="text-center mb-8">
+                <p class="text-lg text-gray-600">
+                    <span class="font-bold text-primary text-2xl" id="townCount">12</span> Communities in Oyi LGA
+                </p>
             </div>
-            <div class="rounded-xl bg-oyi-100 px-3 py-3">
-              <p class="font-semibold text-oyi-900 mb-1">Awkuzu &amp; Umunya Markets</p>
-              <p class="text-slate-800">
-                Community markets in Awkuzu and Umunya towns supporting local trade in agricultural and
-                consumer goods.
-              </p>
+
+            <!-- Towns Grid -->
+            <div id="townsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Towns will be dynamically rendered -->
             </div>
-          </div>
-        </section>
 
-        <!-- AGRICULTURAL OUTPUTS + IMAGE -->
-        <section id="agriculture" class="grid lg:grid-cols-[1.6fr,1.4fr] gap-6">
-          <div class="bg-oyiSurface rounded-2xl shadow-sm border border-oyi-100 px-5 py-5">
-            <h2 class="text-sm font-semibold text-oyi-900 mb-3 uppercase tracking-wide">
-              Agricultural Outputs
-            </h2>
-            <p class="text-xs sm:text-[0.8rem] text-slate-800 mb-2">
-              Oyi LGA benefits from fertile soils and river access, supporting a range of crops and fishing:
-            </p>
-            <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1">
-              <li>Rice (wet and upland varieties)</li>
-              <li>Yam, cassava, cocoyam</li>
-              <li>Breadfruit (ukwa) – a notable local staple</li>
-              <li>Vegetables, maize, beans</li>
-              <li>Fresh and smoked fish from rivers and ponds</li>
-            </ul>
-            <p class="mt-3 text-[0.7rem] text-slate-700">
-              For exact production figures and agro‑business data, connect to state agricultural bureau APIs or reports.
-            </p>
-          </div>
-
-          <!-- Image: Rice farming -->
-          <div class="rounded-2xl overflow-hidden shadow-md border border-oyi-100 relative">
-            <img 
-              src="https://images.unsplash.com/photo-1536147116438-62679a5e01f2?w=800" 
-              alt="Rice farming illustration"
-              class="w-full h-full object-cover"
-            />
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-oyi-900/90 to-transparent px-4 py-3 text-xs text-oyi-50">
-              <p class="font-semibold">Rice &amp; Crop Cultivation in Oyi</p>
-              <p class="text-[0.7rem]">
-                Replace with local photos of farms in Oyi communities (Nteje, Awkuzu, Umunya).
-              </p>
+            <!-- No Results Message -->
+            <div id="noResults" class="hidden text-center py-12">
+                <i class="fas fa-search text-6xl text-gray-300 mb-4"></i>
+                <p class="text-xl text-gray-500">No communities found matching your search.</p>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- TOURISM HIGHLIGHT: OGBUNIKE CAVES + IMAGES -->
-        <section id="tourism" class="bg-oyiSurface rounded-2xl shadow-sm border border-oyi-100 px-5 py-6 mb-6">
-          <h2 class="text-lg font-semibold text-oyi-900 mb-3">
-            Tourism Highlight: Ogbunike Caves
-          </h2>
-          <p class="text-sm text-slate-800 mb-4">
-            The <span class="font-semibold">Ogbunike Caves</span>, located in Ogbunike town, are one of Nigeria's
-            most famous natural attractions. The cave system is a network of tunnels and chambers with cultural
-            and spiritual significance. It has been nominated for UNESCO World Heritage status and attracts
-            tourists, researchers and adventurers from within and beyond Nigeria.
-          </p>
-
-          <div class="grid md:grid-cols-3 gap-3">
-            <div class="rounded-xl overflow-hidden shadow-sm border border-oyi-100">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Ogbunike_Cave.jpg" 
-                alt="Ogbunike Cave entrance"
-                class="w-full h-48 object-cover"
-              />
-              <div class="bg-oyi-100 px-3 py-2 text-[0.7rem] text-slate-800">
-                Cave entrance – descending steps
-              </div>
+    <!-- Economic Activities -->
+    <section id="economy" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 section-title">Economic Activities</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mt-6">
+                    Oyi's economy is driven by commerce, agriculture, and entrepreneurship
+                </p>
             </div>
-            <div class="rounded-xl overflow-hidden shadow-sm border border-oyi-100">
-              <img 
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" 
-                alt="Cave interior illustration"
-                class="w-full h-48 object-cover"
-              />
-              <div class="bg-oyi-100 px-3 py-2 text-[0.7rem] text-slate-800">
-                Illustrative: Cave interior (replace with real Ogbunike shots)
-              </div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <!-- Dominant Industries -->
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center">
+                        <span class="bg-accent w-2 h-8 mr-4"></span>
+                        Dominant Industries
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-secondary to-white p-6 rounded-xl border-l-4 border-primary">
+                            <div class="flex items-start">
+                                <i class="fas fa-store text-primary text-3xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg text-primary mb-2">Trading & Commerce</h4>
+                                    <p class="text-gray-600">
+                                        Nteje market is a major commercial hub in Anambra North, attracting traders from neighboring states. The market operates on traditional Igbo market day cycles (Nkwo, Eke, Afor, Oye).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-secondary to-white p-6 rounded-xl border-l-4 border-primary">
+                            <div class="flex items-start">
+                                <i class="fas fa-tractor text-primary text-3xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg text-primary mb-2">Agriculture & Farming</h4>
+                                    <p class="text-gray-600">
+                                        Rice farming, cassava cultivation, yam production, and vegetable farming are major agricultural activities. The proximity to River Anambra provides irrigation opportunities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-secondary to-white p-6 rounded-xl border-l-4 border-primary">
+                            <div class="flex items-start">
+                                <i class="fas fa-fish text-primary text-3xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg text-primary mb-2">Fishing & Aquaculture</h4>
+                                    <p class="text-gray-600">
+                                        River Anambra supports thriving fishing communities. Modern fish farming and aquaculture ventures are increasingly popular.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-r from-secondary to-white p-6 rounded-xl border-l-4 border-primary">
+                            <div class="flex items-start">
+                                <i class="fas fa-industry text-primary text-3xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-lg text-primary mb-2">Small-Scale Manufacturing</h4>
+                                    <p class="text-gray-600">
+                                        Processing of agricultural products, palm oil production, garri processing, and small-scale industrial activities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products & Markets -->
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6 flex items-center">
+                        <span class="bg-accent w-2 h-8 mr-4"></span>
+                        Popular Products & Markets
+                    </h3>
+                    
+                    <!-- Popular Produce -->
+                    <div class="bg-primary text-white p-6 rounded-xl mb-6">
+                        <h4 class="font-bold text-lg mb-4 flex items-center">
+                            <i class="fas fa-seedling text-accent mr-3"></i>
+                            Popular Produce
+                        </h4>
+                        <ul class="grid grid-cols-2 gap-3 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Rice</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Cassava</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Yams</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Vegetables</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Palm Oil</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Fresh Fish</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Garri</li>
+                            <li class="flex items-center"><i class="fas fa-check text-accent mr-2"></i> Fruits</li>
+                        </ul>
+                    </div>
+
+                    <!-- Major Markets -->
+                    <div class="bg-gradient-to-br from-accent to-yellow-500 text-primary p-6 rounded-xl">
+                        <h4 class="font-bold text-lg mb-4 flex items-center">
+                            <i class="fas fa-shopping-basket mr-3"></i>
+                            Major Markets
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg">
+                                <div class="font-bold mb-1">Nteje Main Market (Nkwo)</div>
+                                <div class="text-sm">Largest market - General goods, foodstuffs, textiles</div>
+                            </div>
+                            <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg">
+                                <div class="font-bold mb-1">Awkuzu Market (Eke)</div>
+                                <div class="text-sm">Agricultural produce and local crafts</div>
+                            </div>
+                            <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg">
+                                <div class="font-bold mb-1">Umunya Market (Afor)</div>
+                                <div class="text-sm">Farm produce and household items</div>
+                            </div>
+                            <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg">
+                                <div class="font-bold mb-1">Nkwelle-Ezunaka Market (Oye)</div>
+                                <div class="text-sm">Local foodstuffs and artisan goods</div>
+                            </div>
+                            <div class="bg-white/30 backdrop-blur-sm p-4 rounded-lg">
+                                <div class="font-bold mb-1">Modern Aluminium Market - Ogbunike</div>
+                                <div class="text-sm">One of the several markets in Oyi LGA, serves as a major trading center</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="rounded-xl overflow-hidden shadow-sm border border-oyi-100">
-              <img 
-                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600" 
-                alt="Natural landscape near caves"
-                class="w-full h-48 object-cover"
-              />
-              <div class="bg-oyi-100 px-3 py-2 text-[0.7rem] text-slate-800">
-                Surrounding landscape (illustrative)
-              </div>
+        </div>
+    </section>
+
+    <!-- Famous People & Local Cuisine -->
+    <section class="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16">
+                <!-- Famous People -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8 section-title">Notable Sons & Daughters</h2>
+                    <p class="text-gray-600 mb-8">
+                        Oyi has produced distinguished individuals who have excelled in various fields
+                    </p>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                            <h4 class="font-bold text-lg text-primary mb-2">Dr. Chike Obidigbo</h4>
+                            <p class="text-sm text-gray-500 mb-2">Entrepreneur & Politician</p>
+                            <p class="text-gray-600">Prominent businessman and former governorship aspirant known for philanthropic activities in the LGA.</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                            <h4 class="font-bold text-lg text-primary mb-2">Prof. ABC Nwosu</h4>
+                            <p class="text-sm text-gray-500 mb-2">Academia</p>
+                            <p class="text-gray-600">Renowned professor and scholar contributing to educational development in Nigeria.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                            <h4 class="font-bold text-lg text-primary mb-2">Chief Mrs. Josephine Anenih</h4>
+                            <p class="text-sm text-gray-500 mb-2">Business Leader</p>
+                            <p class="text-gray-600">Successful entrepreneur and women empowerment advocate from Oyi LGA.</p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent">
+                            <h4 class="font-bold text-lg text-primary mb-2">Engr. Emeka Okwuosa</h4>
+                            <p class="text-sm text-gray-500 mb-2">Engineering & Technology</p>
+                            <p class="text-gray-600">Notable engineer contributing to infrastructure development in Anambra State.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local Cuisine -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-8 section-title">Local Cuisine & Delicacies</h2>
+                    <p class="text-gray-600 mb-8">
+                        Experience the authentic flavors of Igbo cuisine in Oyi's restaurants and markets
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-primary text-white p-4 rounded-xl text-center">
+                            <i class="fas fa-utensils text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Ofe Nsala</h4>
+                            <p class="text-sm text-gray-300">White soup</p>
+                        </div>
+                        <div class="bg-primary text-white p-4 rounded-xl text-center">
+                            <i class="fas fa-bowl-food text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Ofe Onugbu</h4>
+                            <p class="text-sm text-gray-300">Bitter leaf soup</p>
+                        </div>
+                        <div class="bg-primary text-white p-4 rounded-xl text-center">
+                            <i class="fas fa-drumstick-bite text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Abacha</h4>
+                            <p class="text-sm text-gray-300">African salad</p>
+                        </div>
+                        <div class="bg-primary text-white p-4 rounded-xl text-center">
+                            <i class="fas fa-fish text-accent text-3xl mb-3"></i>
+                            <h4 class="font-semibold mb-2">Fresh Fish Pepper Soup</h4>
+                            <p class="text-sm text-gray-300">River delicacy</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-accent to-yellow-500 p-6 rounded-xl text-primary">
+                        <h4 class="font-bold text-lg mb-4 flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Where to Eat
+                        </h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Nteje Food Vendors</strong> - Authentic local dishes in market areas
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Riverside Restaurants</strong> - Fresh fish specialties
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mr-3 mt-1"></i>
+                                <div>
+                                    <strong>Mama Put Spots</strong> - Home-cooked traditional meals across all communities
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <p class="mt-4 text-xs text-slate-700">
-            <span class="font-semibold">Investment opportunity:</span> Eco‑tourism facilities, guided tours,
-            souvenir shops, refreshment centres and guest houses near the site can benefit from the steady
-            stream of local and international visitors.
-          </p>
-        </section>
+    <!-- Photo Gallery -->
+    <section class="py-20 px-4 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Photo Gallery</h2>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+                    Visual journey through the beauty and vibrancy of Oyi Local Government
+                </p>
+            </div>
 
-      </div>
-    </main>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-64 rounded-xl overflow-hidden image-overlay card-hover">
+                    <img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400" alt="Market Scene" class="w-full h-full object-cover">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden image-overlay card-hover">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" alt="Agriculture" class="w-full h-full object-cover">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden image-overlay card-hover">
+                    <img src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?w=400" alt="Cultural Dance" class="w-full h-full object-cover">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden image-overlay card-hover">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=400" alt="Landscape" class="w-full h-full object-cover">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden image-overlay card-hover md:col-span-2">
+                    <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800" alt="River" class="w-full h-full object-cover">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden image-overlay card-hover">
+                    <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=400" alt="Community" class="w-full h-full object-cover">
+                </div>
+                <div class="h-64 rounded-xl overflow-hidden image-overlay card-hover">
+                    <img src="https://images.unsplash.com/photo-1610056494052-6a4f83a8368c?w=400" alt="People" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-oyi-900 text-oyi-100 border-t border-oyi-800">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-[0.7rem]">
-          Oyi Local Government Area, Nteje – business &amp; investment profile enhanced with visual elements.
-        </p>
-        <p class="text-[0.7rem]">
-          Replace illustrative stock images with real, locally sourced photography as project develops.
-        </p>
-      </div>
+    <!-- Events Calendar -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 section-title">Events Calendar</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mt-6">
+                    Annual festivals, celebrations, and important dates in Oyi LGA
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gradient-to-br from-primary to-teal-800 text-white p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent text-primary w-16 h-16 rounded-lg flex flex-col items-center justify-center mr-4">
+                            <div class="text-2xl font-bold">AUG</div>
+                            <div class="text-xs">Annual</div>
+                        </div>
+                        <h3 class="text-xl font-bold">Iwa Ji Festival</h3>
+                    </div>
+                    <p class="text-gray-200">New Yam Festival celebrated across all communities with feasting, dancing, and thanksgiving.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-primary to-teal-800 text-white p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent text-primary w-16 h-16 rounded-lg flex flex-col items-center justify-center mr-4">
+                            <div class="text-2xl font-bold">DEC</div>
+                            <div class="text-xs">Annual</div>
+                        </div>
+                        <h3 class="text-xl font-bold">Ofala Festival</h3>
+                    </div>
+                    <p class="text-gray-200">Traditional coronation anniversary celebrations of the royal fathers in various communities.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-primary to-teal-800 text-white p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent text-primary w-16 h-16 rounded-lg flex flex-col items-center justify-center mr-4">
+                            <div class="text-2xl font-bold">DEC</div>
+                            <div class="text-xs">25-31</div>
+                        </div>
+                        <h3 class="text-xl font-bold">Christmas Carnival</h3>
+                    </div>
+                    <p class="text-gray-200">Week-long festivities featuring masquerades, cultural performances, and community gatherings.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-accent to-yellow-500 text-primary p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white w-16 h-16 rounded-lg flex flex-col items-center justify-center mr-4">
+                            <div class="text-2xl font-bold">OCT</div>
+                            <div class="text-xs">1</div>
+                        </div>
+                        <h3 class="text-xl font-bold">Independence Day</h3>
+                    </div>
+                    <p class="text-primary/80">National celebration with local events, parades, and cultural displays.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-accent to-yellow-500 text-primary p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white w-16 h-16 rounded-lg flex flex-col items-center justify-center mr-4">
+                            <div class="text-2xl font-bold">MAR</div>
+                            <div class="text-xs">8</div>
+                        </div>
+                        <h3 class="text-xl font-bold">Women's Day</h3>
+                    </div>
+                    <p class="text-primary/80">Special programs celebrating women's contributions and empowerment initiatives.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-accent to-yellow-500 text-primary p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white w-16 h-16 rounded-lg flex flex-col items-center justify-center mr-4">
+                            <div class="text-2xl font-bold">MAY</div>
+                            <div class="text-xs">27</div>
+                        </div>
+                        <h3 class="text-xl font-bold">Children's Day</h3>
+                    </div>
+                    <p class="text-primary/80">Youth-focused events, competitions, and educational programs across schools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Government Services -->
+    <section id="services" class="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary mb-4 section-title">Government Services</h2>
+                <p class="text-gray-600 text-lg max-w-3xl mx-auto mt-6">
+                    Programs and initiatives improving the lives of Oyi residents
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Health Programs -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Health Programs</h3>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Free maternal health services
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Immunization campaigns
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Primary healthcare centers
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Malaria prevention programs
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Education Projects</h3>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            School infrastructure upgrades
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Teacher training programs
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Student scholarship schemes
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Adult literacy classes
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Environment -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Environmental Services</h3>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Weekly waste collection
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Monthly sanitation exercises
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Drainage maintenance
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Tree planting campaigns
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Empowerment -->
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <div class="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Empowerment Programs</h3>
+                    <ul class="text-gray-600 text-sm space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Youth skills acquisition
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Women's business grants
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Agricultural support schemes
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                            Trader support programs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tax Information -->
+            <div class="mt-12 bg-primary text-white p-8 rounded-2xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 flex items-center">
+                            <i class="fas fa-file-invoice-dollar text-accent mr-3"></i>
+                            Tax & Revenue Information
+                        </h3>
+                        <p class="text-gray-200 mb-4">
+                            Oyi LGA operates a transparent revenue collection system. Taxes and levies support essential services and development projects.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li class="flex items-center"><i class="fas fa-circle text-accent mr-2" style="font-size: 6px;"></i> Market levies and stall fees</li>
+                            <li class="flex items-center"><i class="fas fa-circle text-accent mr-2" style="font-size: 6px;"></i> Tenement rates</li>
+                            <li class="flex items-center"><i class="fas fa-circle text-accent mr-2" style="font-size: 6px;"></i> Business permits and licenses</li>
+                            <li class="flex items-center"><i class="fas fa-circle text-accent mr-2" style="font-size: 6px;"></i> Vehicle parking fees</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                        <h4 class="font-semibold mb-3 text-accent">Payment Channels</h4>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-building text-secondary mr-3"></i>
+                                <span>LG Secretariat Revenue Office</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-university text-secondary mr-3"></i>
+                                <span>Designated bank branches</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-mobile-alt text-secondary mr-3"></i>
+                                <span>Mobile payment platforms (coming soon)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Contact -->
+    <section id="contact" class="py-20 px-4 bg-primary text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Leadership & Contact</h2>
+                <p class="text-secondary text-lg max-w-3xl mx-auto">
+                    Get in touch with the Oyi Local Government administration
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Leadership -->
+                <div>
+                    <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl mb-6">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-accent w-24 h-24 rounded-full flex items-center justify-center mr-6 flex-shrink-0">
+                                <i class="fas fa-user-tie text-primary text-4xl"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="mb-4">
+                                    <h3 class="text-2xl font-bold text-white mb-1">Mr. Emmanuel Nweke</h3>
+                                    <p class="text-accent font-semibold">Executive Chairman, Oyi LGA</p>
+                                    <p class="text-secondary text-sm">Transition Committee Chairman</p>
+                                </div>
+                                <div class="bg-white/10 p-4 rounded-lg mb-4">
+                                    <p class="text-sm text-gray-200 italic">
+                                        "Committed to serving the good people of Oyi with transparency, dedication, and a vision for sustainable development and prosperity for all communities."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-3 text-gray-200 border-t border-white/20 pt-4">
+                            <p class="text-sm">
+                                The chairman oversees all administrative functions, development projects, and ensures efficient service delivery to residents of Oyi LGA.
+                            </p>
+                            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                                <div>
+                                    <h4 class="font-semibold text-white mb-2 flex items-center">
+                                        <i class="fas fa-clock text-accent mr-2"></i>
+                                        Office Hours:
+                                    </h4>
+                                    <p class="text-sm">Monday - Friday: 8:00 AM - 4:00 PM</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white mb-2 flex items-center">
+                                        <i class="fas fa-calendar-check text-accent mr-2"></i>
+                                        Appointments:
+                                    </h4>
+                                    <p class="text-sm">By appointment through secretariat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-accent text-primary p-6 rounded-xl">
+                        <h4 class="font-bold text-lg mb-4">Key Departments</h4>
+                        <div class="grid grid-cols-2 gap-3 text-sm">
+                            <div>• Finance & Accounts</div>
+                            <div>• Works & Housing</div>
+                            <div>• Health & Welfare</div>
+                            <div>• Education</div>
+                            <div>• Agriculture</div>
+                            <div>• Environment</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-white text-primary p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-3 rounded-lg mr-4">
+                                    <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Address</h4>
+                                    <p class="text-gray-600">Oyi Local Government Secretariat<br>Nteje, Anambra State, Nigeria</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-3 rounded-lg mr-4">
+                                    <i class="fas fa-phone text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Phone</h4>
+                                    <p class="text-gray-600">+234 (0) 803 XXX XXXX<br>+234 (0) 806 XXX XXXX</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-3 rounded-lg mr-4">
+                                    <i class="fas fa-envelope text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Email</h4>
+                                    <p class="text-gray-600">info@oyilga.gov.ng<br>chairman@oyilga.gov.ng</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-secondary p-3 rounded-lg mr-4">
+                                    <i class="fas fa-globe text-primary text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-1">Website</h4>
+                                    <a href="#" class="text-accent hover:underline">www.oyilga.gov.ng</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t">
+                            <h4 class="font-semibold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-accent hover:text-primary transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-accent hover:text-primary transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-accent hover:text-primary transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-accent hover:text-primary transition">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-landmark text-accent text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">Oyi LGA</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        The Heart of Commerce & Culture in Anambra State, Nigeria.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-accent transition">About Oyi</a></li>
+                        <li><a href="#culture" class="hover:text-accent transition">Culture</a></li>
+                        <li><a href="#places" class="hover:text-accent transition">Places to Visit</a></li>
+                        <li><a href="#economy" class="hover:text-accent transition">Economy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#services" class="hover:text-accent transition">Health Programs</a></li>
+                        <li><a href="#services" class="hover:text-accent transition">Education</a></li>
+                        <li><a href="#services" class="hover:text-accent transition">Environment</a></li>
+                        <li><a href="#services" class="hover:text-accent transition">Empowerment</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Communities</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Nteje</li>
+                        <li>Awkuzu</li>
+                        <li>Umunya</li>
+                        <li><a href="#" class="text-accent hover:underline">View all 12 communities</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Oyi Local Government Area. All rights reserved.</p>
+                <p class="mt-2">Developed with ❤️ for the people of Oyi</p>
+            </div>
+        </div>
     </footer>
-  </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-accent text-primary w-12 h-12 rounded-full shadow-lg hidden hover:bg-yellow-500 transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Towns and Villages Data
+        const townsData = [
+            {
+                name: "Nteje",
+                type: "Town",
+                description: "Administrative headquarters and largest commercial center",
+                population: "~45,000",
+                features: ["LG Secretariat", "Main Market", "Hospital", "Schools"]
+            },
+            {
+                name: "Awkuzu",
+                type: "Town",
+                description: "Major commercial and residential area along the River Anambra",
+                population: "~35,000",
+                features: ["River Port", "Market", "Health Centers", "Churches"]
+            },
+            {
+                name: "Umunya",
+                type: "Town",
+                description: "Agricultural hub known for rice and cassava farming",
+                population: "~30,000",
+                features: ["Farming Communities", "Market Square", "Schools"]
+            },
+            {
+                name: "Nkwelle-Ezunaka",
+                type: "Town",
+                description: "Riverside community with rich fishing heritage",
+                population: "~20,000",
+                features: ["Fishing Port", "Traditional Shrines", "Markets"]
+            },
+            {
+                name: "Ogbunike",
+                type: "Village",
+                description: "Known for traditional crafts, pottery, and the Modern Aluminium Market",
+                population: "~15,000",
+                features: ["Modern Aluminium Market", "Craft Centers", "Primary Schools"]
+            },
+            {
+                name: "Ukwulu",
+                type: "Village",
+                description: "Peaceful agricultural community",
+                population: "~12,000",
+                features: ["Farmlands", "Community Center"]
+            },
+            {
+                name: "Nri-Uno",
+                type: "Village",
+                description: "Traditional village with historical significance",
+                population: "~10,000",
+                features: ["Historical Sites", "Market"]
+            },
+            {
+                name: "Awkuzu-Igbo",
+                type: "Village",
+                description: "Interior settlement known for farming",
+                population: "~8,000",
+                features: ["Agricultural Fields", "Schools"]
+            },
+            {
+                name: "Umunede",
+                type: "Village",
+                description: "Small farming community",
+                population: "~7,000",
+                features: ["Farms", "Churches"]
+            },
+            {
+                name: "Umuleri",
+                type: "Village",
+                description: "Border community with cultural heritage",
+                population: "~6,000",
+                features: ["Cultural Sites", "Farms"]
+            },
+            {
+                name: "Ofiyi",
+                type: "Village",
+                description: "Emerging residential area",
+                population: "~5,000",
+                features: ["New Developments", "Schools"]
+            },
+            {
+                name: "Nsugbe (Parts)",
+                type: "Village",
+                description: "Shared settlement area",
+                population: "~4,000",
+                features: ["Community Halls", "Markets"]
+            }
+        ];
+
+        // Render Towns
+        function renderTowns(towns) {
+            const townsGrid = document.getElementById('townsGrid');
+            const townCount = document.getElementById('townCount');
+            const noResults = document.getElementById('noResults');
+            
+            townCount.textContent = towns.length;
+            
+            if (towns.length === 0) {
+                townsGrid.classList.add('hidden');
+                noResults.classList.remove('hidden');
+                return;
+            }
+            
+            townsGrid.classList.remove('hidden');
+            noResults.classList.add('hidden');
+            
+            townsGrid.innerHTML = towns.map(town => `
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 ${town.type === 'Town' ? 'border-accent' : 'border-primary'} card-hover">
+                    <div class="flex items-start justify-between mb-3">
+                        <h3 class="text-xl font-bold text-primary">${town.name}</h3>
+                        <span class="bg-${town.type === 'Town' ? 'accent' : 'secondary'} text-${town.type === 'Town' ? 'primary' : 'primary'} text-xs px-3 py-1 rounded-full font-semibold">
+                            ${town.type}
+                        </span>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-3">${town.description}</p>
+                    <div class="flex items-center text-sm text-gray-500 mb-3">
+                        <i class="fas fa-users mr-2 text-accent"></i>
+                        <span>Population: ${town.population}</span>
+                    </div>
+                    <div class="border-t pt-3">
+                        <h4 class="text-xs font-semibold text-gray-500 mb-2">KEY FEATURES:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            ${town.features.map(feature => `
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">${feature}</span>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Search Functionality
+        document.getElementById('townSearch').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = townsData.filter(town => 
+                town.name.toLowerCase().includes(searchTerm) ||
+                town.description.toLowerCase().includes(searchTerm) ||
+                town.type.toLowerCase().includes(searchTerm)
+            );
+            renderTowns(filtered);
+        });
+
+        // Initial render
+        renderTowns(townsData);
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Navbar background on scroll
+        const navbar = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 100) {
+                navbar.classList.add('shadow-xl');
+            } else {
+                navbar.classList.remove('shadow-xl');
+            }
+        });
+
+        // Animation on scroll (simple version)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements with animation
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
+

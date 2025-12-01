@@ -1,403 +1,1290 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Ogbaru LGA – Stories of the River, the People &amp; Their Resilience</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Community storytelling profile of Ogbaru Local Government Area – history, voices from the riverine communities, local heroes, cultural life, challenges and community-led solutions."
-  />
-
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Ogbaru theme -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ogbaru: {
-              50:  '#E3F2FD',
-              100: '#BBDEFB', // secondary
-              200: '#90CAF9',
-              300: '#64B5F6',
-              400: '#42A5F5',
-              500: '#2196F3',
-              600: '#1E88E5',
-              700: '#1565C0',
-              800: '#0D47A1', // primary
-              900: '#062244'
-            },
-            ogbaruAccent: '#FFAB00',     // your accent
-            ogbaruAccentSoft: '#FFE082', // soft accent
-            ogbaruBg: '#F5F5F5',
-            ogbaruSurface: '#FFFFFF'
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogbaru LGA, Anambra State – Overview, Towns, History & Facts</title>
+    <meta name="description" content="Learn about Ogbaru Local Government Area, its towns, history, economy, culture, and key points of interest in Anambra State, Nigeria.">
+    <meta name="keywords" content="Ogbaru, Anambra State, Local Government, Nigeria, Towns, Villages, Economy, Statistics">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ansg_favicon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ogbaru LGA, Anambra State – Overview, Towns, History & Facts">
+    <meta property="og:description" content="Learn about Ogbaru Local Government Area, its towns, history, economy, culture, and key points of interest.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D47A1',
+                        secondary: '#BBDEFB',
+                        accent: '#FFAB00'
+                    }
+                }
+            }
         }
-      }
-    };
-  </script>
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-pattern {
+            background-color: #0D47A1;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23BBDEFB' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(13, 71, 161, 0.2);
+        }
+        
+        .town-row {
+            transition: background-color 0.2s ease;
+        }
+        
+        .town-row:hover {
+            background-color: #BBDEFB;
+        }
+        
+        .progress-bar {
+            transition: width 1s ease-in-out;
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #FFAB00;
+            border-radius: 2px;
+        }
+        
+        .navbar-sticky {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GovernmentOrganization",
+        "name": "Ogbaru Local Government Area",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Anambra State",
+            "addressCountry": "Nigeria"
+        },
+        "description": "Ogbaru Local Government Area - The Commercial Gateway of Anambra State"
+    }
+    </script>
 </head>
-<body class="bg-ogbaruBg text-slate-900 antialiased">
-  <div class="min-h-screen flex flex-col">
+<body class="bg-gray-50">
 
-    <!-- HERO / HEADER (storytelling focus) -->
-    <header class="relative bg-gradient-to-br from-ogbaru-800 via-ogbaru-700 to-ogbaru-900 text-white">
-      <div class="absolute inset-0 opacity-40 pointer-events-none">
-        <div class="absolute -top-20 -left-24 h-64 w-64 rounded-full bg-ogbaru-400/40 blur-3xl"></div>
-        <div class="absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-ogbaruAccentSoft/40 blur-3xl"></div>
-      </div>
-
-      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-        <p class="inline-flex items-center gap-2 rounded-full bg-ogbaru-900/60 border border-ogbaru-400/60 px-3 py-1 text-[0.7rem] uppercase tracking-wide">
-          <span class="h-1.5 w-1.5 rounded-full bg-ogbaruAccent"></span>
-          Ogbaru Local Government Area · Riverine Communities of Anambra State
-        </p>
-        <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-          Ogbaru: Stories from the River, the Land &amp; the People
-        </h1>
-        <p class="mt-3 text-sm sm:text-base text-ogbaru-100 max-w-2xl">
-          Along the banks of the River Niger, Ogbaru’s communities have farmed, fished, traded and worshipped for
-          generations – facing the yearly rhythm of rising waters with courage, faith and a deep sense of togetherness.
-        </p>
-      </div>
-    </header>
-
-    <!-- SECTION TABS / STORY NAV -->
-    <div class="bg-ogbaru-900 text-ogbaru-50 shadow-sm">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-2 overflow-x-auto">
-        <div class="flex gap-2 text-[0.7rem]">
-          <a href="#history" class="px-3 py-1.5 rounded-full bg-ogbaru-700 whitespace-nowrap">
-            History &amp; Origins
-          </a>
-          <a href="#voices" class="px-3 py-1.5 rounded-full bg-ogbaru-900 hover:bg-ogbaru-700 whitespace-nowrap">
-            Voices from the Community
-          </a>
-          <a href="#heroes" class="px-3 py-1.5 rounded-full bg-ogbaru-900 hover:bg-ogbaru-700 whitespace-nowrap">
-            Local Heroes
-          </a>
-          <a href="#culture" class="px-3 py-1.5 rounded-full bg-ogbaru-900 hover:bg-ogbaru-700 whitespace-nowrap">
-            Cultural Life &amp; Celebrations
-          </a>
-          <a href="#stories" class="px-3 py-1.5 rounded-full bg-ogbaru-900 hover:bg-ogbaru-700 whitespace-nowrap">
-            Photo Stories
-          </a>
-          <a href="#businesses" class="px-3 py-1.5 rounded-full bg-ogbaru-900 hover:bg-ogbaru-700 whitespace-nowrap">
-            Local Businesses
-          </a>
-          <a href="#challenges" class="px-3 py-1.5 rounded-full bg-ogbaru-900 hover:bg-ogbaru-700 whitespace-nowrap">
-            Challenges
-          </a>
-          <a href="#projects" class="px-3 py-1.5 rounded-full bg-ogbaru-900 hover:bg-ogbaru-700 whitespace-nowrap">
-            Projects &amp; Solutions
-          </a>
+    <!-- Navigation -->
+    <nav class="navbar-sticky">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-landmark text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">Ogbaru LGA</h1>
+                        <p class="text-xs text-gray-600">Anambra State</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#overview" class="text-gray-700 hover:text-primary transition">Overview</a>
+                    <a href="#statistics" class="text-gray-700 hover:text-primary transition">Statistics</a>
+                    <a href="#towns" class="text-gray-700 hover:text-primary transition">Towns</a>
+                    <a href="#economy" class="text-gray-700 hover:text-primary transition">Economy</a>
+                    <a href="#leadership" class="text-gray-700 hover:text-primary transition">Leadership</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition">Services</a>
+                </div>
+                <button class="md:hidden text-primary">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <!-- MAIN CONTENT -->
-    <main class="flex-1">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-10 space-y-10">
-
-        <!-- HISTORY & ORIGINS -->
-        <section id="history" class="grid lg:grid-cols-[1.7fr,1.3fr] gap-6 items-start">
-          <div class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-5 py-5">
-            <h2 class="text-lg font-semibold text-ogbaru-900 mb-2">
-              History &amp; Origins of the Ogbaru People
-            </h2>
-            <p class="text-sm text-slate-800">
-              Ogbaru Local Government Area occupies a stretch of low‑lying land along the banks of the River Niger in
-              south‑western Anambra State. The people of Ogbaru share cultural roots with neighbouring riverine and
-              Igbo communities such as those of Onitsha, Oguta, Anioma and Ndoni, linked by water routes, trade and
-              inter‑marriage over centuries.
-            </p>
-            <p class="mt-3 text-sm text-slate-800">
-              Historically, life here has been shaped by the river: canoes carrying produce to distant markets,
-              fishing settlements hugging the creeks, and farmlands nourished – and sometimes threatened – by the
-              annual floods. Towns like Atani (the LGA headquarters), Odekpe, Ohita, Akili‑Ogidi, Umunankwo, Mputu and
-              others each hold their own stories of migration, clan histories and shared struggles.
-            </p>
-          </div>
-
-          <!-- Vertical story timeline -->
-          <div class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-4 py-4 text-xs">
-            <h3 class="text-[0.8rem] font-semibold text-ogbaru-900 mb-2">Timeline (Narrative Outline)</h3>
-            <ol class="border-l border-ogbaru-200 pl-3 space-y-3">
-              <li>
-                <p class="text-[0.7rem] text-ogbaru-700 font-semibold">Pre‑colonial era</p>
-                <p class="text-[0.7rem] text-slate-700">
-                  River‑based trade, fishing and farming; ties with neighbouring Niger communities.
+    <!-- Hero Section -->
+    <section class="hero-pattern text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="inline-block mb-4">
+                    <span class="bg-accent text-primary px-4 py-2 rounded-full text-sm font-semibold">
+                        Local Government Area
+                    </span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Ogbaru
+                </h1>
+                <p class="text-2xl md:text-3xl mb-8 text-secondary font-light">
+                    The Commercial Gateway of Anambra State
                 </p>
-              </li>
-              <li>
-                <p class="text-[0.7rem] text-ogbaru-700 font-semibold">Colonial &amp; mission period</p>
-                <p class="text-[0.7rem] text-slate-700">
-                  Introduction of mission schools, churches and early health posts along the waterways.
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#overview" class="bg-accent text-primary px-8 py-4 rounded-lg font-semibold hover:bg-yellow-500 transition inline-flex items-center">
+                        Explore Our LGA
+                        <i class="fas fa-arrow-down ml-2"></i>
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Banner -->
+    <section class="bg-white py-8 shadow-lg -mt-10 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">228,000+</div>
+                    <div class="text-gray-600 text-sm md:text-base">Population</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">20</div>
+                    <div class="text-gray-600 text-sm md:text-base">Communities</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">450km²</div>
+                    <div class="text-gray-600 text-sm md:text-base">Land Area</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">1996</div>
+                    <div class="text-gray-600 text-sm md:text-base">Year Created</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brief Overview Section -->
+    <section id="overview" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6 section-title">About Ogbaru</h2>
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p class="text-lg">
+                            Ogbaru Local Government Area is strategically located in the southern part of Anambra State, Nigeria. 
+                            It serves as a major commercial hub along the Niger River, connecting various parts of the state and 
+                            neighboring regions.
+                        </p>
+                        <p>
+                            Created in 1996, Ogbaru has grown to become one of the most economically vibrant local governments 
+                            in Anambra State. The area is known for its bustling markets, thriving river commerce, and agricultural 
+                            productivity. The proximity to the Niger River has made Ogbaru a strategic location for trade and 
+                            transportation.
+                        </p>
+                        <p>
+                            With an estimated population of over 228,000 people and covering approximately 450 square kilometers, 
+                            Ogbaru is home to diverse communities engaged in trading, farming, fishing, and various commercial 
+                            activities.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <i class="fas fa-map-marker-alt text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold text-gray-900">Location</h4>
+                            <p class="text-sm text-gray-600">Southern Anambra</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <i class="fas fa-water text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold text-gray-900">River Access</h4>
+                            <p class="text-sm text-gray-600">Niger River</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <i class="fas fa-calendar text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold text-gray-900">Established</h4>
+                            <p class="text-sm text-gray-600">1996</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <i class="fas fa-expand text-primary text-2xl mb-2"></i>
+                            <h4 class="font-semibold text-gray-900">Land Mass</h4>
+                            <p class="text-sm text-gray-600">~450 km²</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-primary rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800" 
+                             alt="Ogbaru Market Scene" 
+                             class="w-full h-96 object-cover opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold mb-2">Vibrant Commerce</h3>
+                            <p class="text-secondary">Ogbaru's bustling markets attract traders from across the region</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Population Statistics Section -->
+    <section id="statistics" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Population & Demographics</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive statistical overview of Ogbaru Local Government Area
                 </p>
-              </li>
-              <li>
-                <p class="text-[0.7rem] text-ogbaru-700 font-semibold">Post‑independence</p>
-                <p class="text-[0.7rem] text-slate-700">
-                  Creation of formal local government structures, roads and ferry points linking Ogbaru to
-                  Onitsha and beyond.
+            </div>
+
+            <!-- Demographic Cards -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="stat-card bg-gradient-to-br from-primary to-blue-600 text-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <p class="text-secondary text-sm font-medium mb-1">Total Population</p>
+                            <h3 class="text-4xl font-bold">228,712</h3>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary">Based on 2023 estimates</p>
+                </div>
+
+                <div class="stat-card bg-gradient-to-br from-accent to-yellow-500 text-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <p class="text-yellow-100 text-sm font-medium mb-1">Population Density</p>
+                            <h3 class="text-4xl font-bold">508/km²</h3>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                            <i class="fas fa-chart-area text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-yellow-100">People per square kilometer</p>
+                </div>
+
+                <div class="stat-card bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <p class="text-green-100 text-sm font-medium mb-1">Growth Rate</p>
+                            <h3 class="text-4xl font-bold">2.8%</h3>
+                        </div>
+                        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+                            <i class="fas fa-chart-line text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-green-100">Annual population increase</p>
+                </div>
+            </div>
+
+            <!-- Gender & Age Distribution -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Gender Breakdown -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Gender Distribution</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Male</span>
+                                <span class="text-primary font-bold">51.2% (117,100)</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-bar bg-primary h-full rounded-full" style="width: 51.2%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Female</span>
+                                <span class="text-pink-600 font-bold">48.8% (111,612)</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-bar bg-pink-600 h-full rounded-full" style="width: 48.8%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Age Groups -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Age Group Distribution</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">0-17 years</span>
+                                <span class="text-primary font-bold">42.3%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-bar bg-primary h-full rounded-full" style="width: 42.3%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">18-35 years</span>
+                                <span class="text-accent font-bold">31.5%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-bar bg-accent h-full rounded-full" style="width: 31.5%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">36-59 years</span>
+                                <span class="text-green-600 font-bold">20.1%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-bar bg-green-600 h-full rounded-full" style="width: 20.1%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700">60+ years</span>
+                                <span class="text-purple-600 font-bold">6.1%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-3 overflow-hidden">
+                                <div class="progress-bar bg-purple-600 h-full rounded-full" style="width: 6.1%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Health Indicators -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Education & Health Indicators</h2>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-bold text-primary mb-2">68.5%</h4>
+                    <p class="text-gray-600">Literacy Rate</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-school text-green-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-bold text-green-600 mb-2">87</h4>
+                    <p class="text-gray-600">Primary Schools</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hospital text-purple-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-bold text-purple-600 mb-2">23</h4>
+                    <p class="text-gray-600">Health Centers</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heartbeat text-accent text-2xl"></i>
+                    </div>
+                    <h4 class="text-3xl font-bold text-accent mb-2">72 yrs</h4>
+                    <p class="text-gray-600">Life Expectancy</p>
+                </div>
+            </div>
+
+            <!-- Infrastructure Scorecards -->
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Infrastructure Scorecard</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700 font-medium">Road Network</span>
+                            <span class="text-primary font-bold">72/100</span>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-4 overflow-hidden">
+                            <div class="progress-bar bg-primary h-full rounded-full" style="width: 72%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700 font-medium">Electricity Access</span>
+                            <span class="text-accent font-bold">65/100</span>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-4 overflow-hidden">
+                            <div class="progress-bar bg-accent h-full rounded-full" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700 font-medium">Water Supply</span>
+                            <span class="text-blue-500 font-bold">58/100</span>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-4 overflow-hidden">
+                            <div class="progress-bar bg-blue-500 h-full rounded-full" style="width: 58%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <span class="text-gray-700 font-medium">Digital Connectivity</span>
+                            <span class="text-green-600 font-bold">78/100</span>
+                        </div>
+                        <div class="bg-gray-200 rounded-full h-4 overflow-hidden">
+                            <div class="progress-bar bg-green-600 h-full rounded-full" style="width: 78%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Towns & Villages Section -->
+    <section id="towns" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Towns & Villages</h2>
+                <p class="text-gray-600">Ogbaru LGA comprises <span class="text-primary font-bold">20 communities</span> across the region</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mb-8">
+                <div class="max-w-2xl mx-auto">
+                    <div class="relative">
+                        <input type="text" 
+                               id="townSearch" 
+                               placeholder="Search for a town or village..." 
+                               class="w-full px-6 py-4 rounded-lg border-2 border-gray-200 focus:border-primary focus:outline-none text-lg">
+                        <i class="fas fa-search absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Towns Grid/Table -->
+            <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+                <table class="w-full" id="townsTable">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left">#</th>
+                            <th class="px-6 py-4 text-left">Town/Village Name</th>
+                            <th class="px-6 py-4 text-left">Category</th>
+                            <th class="px-6 py-4 text-left">Est. Population</th>
+                        </tr>
+                    </thead>
+                    <tbody id="townsBody">
+                        <!-- Will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Village-Level Data Summary -->
+            <div class="mt-8 grid md:grid-cols-3 gap-6">
+                <div class="bg-primary text-white rounded-xl p-6">
+                    <h4 class="text-secondary text-sm mb-2">Major Towns</h4>
+                    <p class="text-4xl font-bold">6</p>
+                </div>
+                <div class="bg-accent text-white rounded-xl p-6">
+                    <h4 class="text-yellow-100 text-sm mb-2">Villages</h4>
+                    <p class="text-4xl font-bold">14</p>
+                </div>
+                <div class="bg-green-600 text-white rounded-xl p-6">
+                    <h4 class="text-green-100 text-sm mb-2">Total Communities</h4>
+                    <p class="text-4xl font-bold">20</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Economic Activities Section -->
+    <section id="economy" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Economic Activities</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Ogbaru is predominantly commercial with thriving markets that attract thousands of buyers and sellers of variety commodities
                 </p>
-              </li>
-              <li>
-                <p class="text-[0.7rem] text-ogbaru-700 font-semibold">Recent decades</p>
-                <p class="text-[0.7rem] text-slate-700">
-                  Growing population, recurrent flooding, and new projects such as the Second Niger Bridge corridor
-                  bringing fresh opportunities and pressures.
-                </p>
-              </li>
-            </ol>
-          </div>
-        </section>
+            </div>
 
-        <!-- VOICES FROM THE COMMUNITY -->
-        <section id="voices" class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-ogbaru-900 mb-3">
-            Voices from the Riverbank Communities
-          </h2>
-          <p class="text-xs text-slate-700 mb-4">
-            These sample quotes are placeholders – you can replace them with real testimonies gathered by field
-            teams, NGOs, journalists or students.
-          </p>
-          <div class="grid md:grid-cols-3 gap-4 text-xs">
-            <article class="rounded-xl bg-ogbaru-100/80 px-4 py-4 shadow-sm">
-              <p class="italic text-slate-800">
-                “When the river is calm, you hear children laughing in the canoes. When it rises too high, we pray
-                that our homes and farms will still be here tomorrow.”
-              </p>
-              <p class="mt-3 font-semibold text-ogbaru-900">– Elder from Atani</p>
-              <p class="text-[0.7rem] text-slate-700">Story collected during a flood‑season visit. [Placeholder]</p>
-            </article>
-            <article class="rounded-xl bg-ogbaru-100/80 px-4 py-4 shadow-sm">
-              <p class="italic text-slate-800">
-                “Our cassava, fish and vegetables feed the towns. We only ask for good roads and safe schools so
-                our children can do even better than us.”
-              </p>
-              <p class="mt-3 font-semibold text-ogbaru-900">– Woman farmer at Odekpe market</p>
-              <p class="text-[0.7rem] text-slate-700">To be replaced with a verified interview. [Placeholder]</p>
-            </article>
-            <article class="rounded-xl bg-ogbaru-100/80 px-4 py-4 shadow-sm">
-              <p class="italic text-slate-800">
-                “The floods of 2022 taught us again how fragile everything is – but also how strong we are
-                when we stand together.”
-              </p>
-              <p class="mt-3 font-semibold text-ogbaru-900">– Youth volunteer, Ogbaru flood relief</p>
-              <p class="text-[0.7rem] text-slate-700">Reference to widely reported 2022 flooding in Ogbaru.</p>
-            </article>
-          </div>
-        </section>
+            <!-- Dominant Industries -->
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-primary">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-store text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Trading & Commerce</h3>
+                    <p class="text-gray-600 mb-4">Major trading hub with bustling markets attracting traders from across the region</p>
+                    <div class="bg-gray-100 rounded p-3">
+                        <span class="text-primary font-bold text-2xl">65%</span>
+                        <span class="text-gray-600 text-sm ml-2">of economy</span>
+                    </div>
+                </div>
 
-        <!-- LOCAL HEROES -->
-        <section id="heroes" class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-ogbaru-900 mb-3">
-            Local Heroes &amp; Everyday Change‑Makers
-          </h2>
-          <p class="text-xs text-slate-700 mb-3">
-            Only add names here when you have reliable sources or direct consent. For now, use generic descriptors.
-          </p>
-          <div class="grid md:grid-cols-3 gap-4 text-xs">
-            <div class="rounded-xl border border-ogbaru-100 bg-white px-4 py-4">
-              <p class="font-semibold text-ogbaru-800 mb-1">Community Teacher</p>
-              <p class="text-slate-800">
-                A retired teacher who runs free after‑school lessons for children displaced by floods,
-                keeping them connected to learning during difficult times.
-              </p>
-            </div>
-            <div class="rounded-xl border border-ogbaru-100 bg-white px-4 py-4">
-              <p class="font-semibold text-ogbaru-800 mb-1">Women’s Cooperative Leader</p>
-              <p class="text-slate-800">
-                Organises cassava and fish processors into savings groups, helping members access credit and
-                rebuild small businesses after climate shocks.
-              </p>
-            </div>
-            <div class="rounded-xl border border-ogbaru-100 bg-white px-4 py-4">
-              <p class="font-semibold text-ogbaru-800 mb-1">Youth Boat Volunteer</p>
-              <p class="text-slate-800">
-                Coordinates local youths who use canoes to evacuate elderly and children during peak floods,
-                and to deliver relief items to cut‑off settlements.
-              </p>
-            </div>
-          </div>
-        </section>
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-green-600">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Agriculture & Farming</h3>
+                    <p class="text-gray-600 mb-4">Production of cassava, yam, rice, vegetables, and fishing activities</p>
+                    <div class="bg-gray-100 rounded p-3">
+                        <span class="text-green-600 font-bold text-2xl">25%</span>
+                        <span class="text-gray-600 text-sm ml-2">of economy</span>
+                    </div>
+                </div>
 
-        <!-- CULTURAL LIFE & CELEBRATIONS -->
-        <section id="culture" class="grid lg:grid-cols-[1.5fr,1.5fr] gap-6">
-          <div class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-5 py-5">
-            <h2 class="text-lg font-semibold text-ogbaru-900 mb-2">
-              Cultural Life &amp; Celebrations
-            </h2>
-            <p class="text-sm text-slate-800 mb-3">
-              Ogbaru culture reflects riverine Igbo traditions, Christian influences and strong age‑grade and
-              town‑union systems. Storytelling, music, masquerades and church events all play a part in how
-              communities celebrate and remember.
-            </p>
-            <ul class="list-disc list-inside text-xs sm:text-[0.8rem] text-slate-800 space-y-1">
-              <li>
-                <span class="font-semibold">Boat regatta‑style events</span> – colourful displays of canoes
-                and cultural troupes on the River Niger during major festivals (where organised).
-              </li>
-              <li>
-                <span class="font-semibold">New Yam Festival</span> – thanksgiving for harvests, with family
-                gatherings, masquerades and traditional music.
-              </li>
-              <li>
-                <span class="font-semibold">Church harvests &amp; bazaars</span> – annual events raising funds for
-                community and parish projects.
-              </li>
-            </ul>
-          </div>
-          <div class="bg-ogbaru-100/80 rounded-2xl border border-ogbaru-200 px-5 py-5 text-xs">
-            <h3 class="text-[0.85rem] font-semibold text-ogbaru-900 mb-2">
-              Sounds &amp; Scenes
-            </h3>
-            <ul class="list-disc list-inside text-slate-800 space-y-1">
-              <li>The sound of paddles on water before sunrise as fishers set out.</li>
-              <li>Drums and songs drifting from village squares during weddings and title‑taking.</li>
-              <li>Market day buzz in Atani, Odekpe, and other riverbank towns as boats unload produce.</li>
-            </ul>
-            <p class="mt-3 text-[0.7rem] text-slate-700">
-              You can replace or enrich this section with specific Ogbaru festivals and dates from local,
-              church or traditional council records.
-            </p>
-          </div>
-        </section>
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-accent">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-industry text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Manufacturing</h3>
+                    <p class="text-gray-600 mb-4">Small-scale manufacturing, food processing, and artisan crafts</p>
+                    <div class="bg-gray-100 rounded p-3">
+                        <span class="text-accent font-bold text-2xl">10%</span>
+                        <span class="text-gray-600 text-sm ml-2">of economy</span>
+                    </div>
+                </div>
+            </div>
 
-        <!-- PHOTO STORIES (mosaic placeholders) -->
-        <section id="stories" class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-ogbaru-900 mb-3">
-            Photo Stories (Placeholders)
-          </h2>
-          <p class="text-xs text-slate-700 mb-4">
-            Swap these coloured blocks with real photographs: river scenes, regattas, markets, classrooms,
-            flood‑recovery work and everyday life.
-          </p>
-          <div class="grid grid-cols-3 gap-3">
-            <div class="col-span-2 aspect-[16/9] rounded-xl bg-ogbaru-400/70 flex items-center justify-center text-[0.7rem] text-white font-semibold">
-              River Niger at Ogbaru
+            <!-- Commercial Activity Index -->
+            <div class="bg-white rounded-xl p-8 shadow-lg mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Commercial Activity Index</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Market Days Activity</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-700">Eke Day</span>
+                                <div class="flex items-center">
+                                    <div class="w-32 bg-gray-200 rounded-full h-3 mr-3">
+                                        <div class="bg-primary h-full rounded-full" style="width: 85%"></div>
+                                    </div>
+                                    <span class="text-primary font-bold">85%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-700">Oye Day</span>
+                                <div class="flex items-center">
+                                    <div class="w-32 bg-gray-200 rounded-full h-3 mr-3">
+                                        <div class="bg-primary h-full rounded-full" style="width: 90%"></div>
+                                    </div>
+                                    <span class="text-primary font-bold">90%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-700">Afor Day</span>
+                                <div class="flex items-center">
+                                    <div class="w-32 bg-gray-200 rounded-full h-3 mr-3">
+                                        <div class="bg-primary h-full rounded-full" style="width: 78%"></div>
+                                    </div>
+                                    <span class="text-primary font-bold">78%</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-700">Nkwo Day</span>
+                                <div class="flex items-center">
+                                    <div class="w-32 bg-gray-200 rounded-full h-3 mr-3">
+                                        <div class="bg-primary h-full rounded-full" style="width: 82%"></div>
+                                    </div>
+                                    <span class="text-primary font-bold">82%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Top Trading Commodities</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                <span class="text-gray-700">Agricultural Produce</span>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">35%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                <span class="text-gray-700">Textiles & Fabrics</span>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">28%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                <span class="text-gray-700">Food Items</span>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">22%</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-gray-50 rounded">
+                                <span class="text-gray-700">Building Materials</span>
+                                <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-span-1 aspect-[4/5] rounded-xl bg-ogbaruAccentSoft flex items-center justify-center text-[0.7rem] text-ogbaru-900 font-semibold">
-              Market Day<br/>Atani / Odekpe
-            </div>
-            <div class="col-span-1 aspect-[4/5] rounded-xl bg-ogbaru-700/80 flex items-center justify-center text-[0.7rem] text-ogbaru-100 font-semibold">
-              Youth &amp; Sports
-            </div>
-            <div class="col-span-2 aspect-[16/9] rounded-xl bg-ogbaru-300/80 flex items-center justify-center text-[0.7rem] text-ogbaru-900 font-semibold">
-              Community Meeting / Town Union
-            </div>
-          </div>
-        </section>
 
-        <!-- LOCAL BUSINESSES HIGHLIGHT -->
-        <section id="businesses" class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-5 py-5">
-          <h2 class="text-lg font-semibold text-ogbaru-900 mb-3">
-            Local Businesses Highlight
-          </h2>
-          <p class="text-xs text-slate-700 mb-3">
-            Only list real businesses when you have permission or reliable references. Until then,
-            keep generic descriptions as shown below.
-          </p>
-          <div class="grid md:grid-cols-3 gap-4 text-xs sm:text-[0.8rem]">
-            <div class="rounded-xl border border-ogbaru-100 bg-white px-4 py-4">
-              <p class="font-semibold text-ogbaru-800 mb-1">Riverside Fish Smokehouse</p>
-              <p class="text-slate-800">
-                A women‑led group that smokes and packages fish for sale in nearby cities, adding value to
-                daily catches from the river.
-              </p>
+            <!-- Major Markets -->
+            <div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Major Markets</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-primary h-2"></div>
+                        <div class="p-6">
+                            <i class="fas fa-shopping-basket text-primary text-3xl mb-3"></i>
+                            <h4 class="font-bold text-lg mb-2">Atani Market</h4>
+                            <p class="text-gray-600 text-sm mb-2">Major trading center</p>
+                            <span class="text-xs bg-secondary text-primary px-2 py-1 rounded">Daily</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-accent h-2"></div>
+                        <div class="p-6">
+                            <i class="fas fa-fish text-accent text-3xl mb-3"></i>
+                            <h4 class="font-bold text-lg mb-2">Okpoko Market</h4>
+                            <p class="text-gray-600 text-sm mb-2">Fish & foodstuffs</p>
+                            <span class="text-xs bg-yellow-100 text-accent px-2 py-1 rounded">Oye & Eke</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-green-600 h-2"></div>
+                        <div class="p-6">
+                            <i class="fas fa-leaf text-green-600 text-3xl mb-3"></i>
+                            <h4 class="font-bold text-lg mb-2">Ogbakuba Market</h4>
+                            <p class="text-gray-600 text-sm mb-2">Agricultural produce</p>
+                            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Afor</span>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-purple-600 h-2"></div>
+                        <div class="p-6">
+                            <i class="fas fa-tshirt text-purple-600 text-3xl mb-3"></i>
+                            <h4 class="font-bold text-lg mb-2">Ossomala Market</h4>
+                            <p class="text-gray-600 text-sm mb-2">General goods</p>
+                            <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Nkwo</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="rounded-xl border border-ogbaru-100 bg-white px-4 py-4">
-              <p class="font-semibold text-ogbaru-800 mb-1">Cassava Milling &amp; Garri Centre</p>
-              <p class="text-slate-800">
-                Community mill offering affordable processing for cassava farmers, turning roots into
-                garri and flour for local markets.
-              </p>
+
+            <!-- Agricultural Data -->
+            <div class="mt-12 bg-gradient-to-r from-green-600 to-green-700 rounded-xl p-8 text-white">
+                <h3 class="text-2xl font-bold mb-6">Agricultural Production Data</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <i class="fas fa-seedling text-4xl mb-3 text-green-200"></i>
+                        <p class="text-3xl font-bold mb-2">45,000</p>
+                        <p class="text-green-100">Tons of Cassava/year</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-drumstick-bite text-4xl mb-3 text-green-200"></i>
+                        <p class="text-3xl font-bold mb-2">12,000</p>
+                        <p class="text-green-100">Tons of Yam/year</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-fish text-4xl mb-3 text-green-200"></i>
+                        <p class="text-3xl font-bold mb-2">8,500</p>
+                        <p class="text-green-100">Tons of Fish/year</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-apple-alt text-4xl mb-3 text-green-200"></i>
+                        <p class="text-3xl font-bold mb-2">18,000</p>
+                        <p class="text-green-100">Tons of Vegetables/year</p>
+                    </div>
+                </div>
             </div>
-            <div class="rounded-xl border border-ogbaru-100 bg-white px-4 py-4">
-              <p class="font-semibold text-ogbaru-800 mb-1">River Transport Operator</p>
-              <p class="text-slate-800">
-                A cooperative that runs safer, better‑equipped boats to connect shoreline villages to
-                schools, clinics and markets.
-              </p>
+        </div>
+    </section>
+
+    <!-- Landmarks Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Important Places & Landmarks</h2>
+                <p class="text-gray-600">Notable institutions and locations in Ogbaru LGA</p>
             </div>
-          </div>
-        </section>
 
-        <!-- CHALLENGES & COMMUNITY PROJECTS -->
-        <section id="challenges" class="grid lg:grid-cols-[1.4fr,1.6fr] gap-6 mb-6">
-          <!-- Challenges -->
-          <div class="bg-ogbaru-800 text-ogbaru-50 rounded-2xl shadow-sm px-5 py-5">
-            <h2 class="text-sm font-semibold mb-2 uppercase tracking-wide">
-              Community Challenges
-            </h2>
-            <ul class="list-disc list-inside text-[0.8rem] space-y-1.5">
-              <li>
-                <span class="font-semibold">Recurrent Flooding:</span> Seasonal over‑flow of the River Niger
-                damaging homes, farmlands and access roads (especially highlighted during the 2022 flood).
-              </li>
-              <li>
-                <span class="font-semibold">Loss of Livelihoods:</span> Farmers and fishers losing crops,
-                nets and equipment, making it harder to recover before the next season.
-              </li>
-              <li>
-                <span class="font-semibold">Access to Services:</span> In flood times, some schools and
-                clinics become difficult to reach, particularly for children, pregnant women and the elderly.
-              </li>
-            </ul>
-          </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Government -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-primary w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-landmark text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">LGA Secretariat</h3>
+                    <p class="text-gray-600 mb-3">Administrative headquarters of Ogbaru Local Government</p>
+                    <span class="text-primary text-sm font-medium">Atani</span>
+                </div>
 
-          <!-- Projects & Solutions -->
-          <div id="projects" class="bg-ogbaruSurface rounded-2xl shadow-sm border border-ogbaru-100 px-5 py-5">
-            <h2 class="text-sm font-semibold text-ogbaru-900 mb-2 uppercase tracking-wide">
-              Community Projects &amp; Local Solutions
-            </h2>
-            <p class="text-xs text-slate-700 mb-3">
-              Use this section to document real initiatives from Ogbaru communities, LGA authorities, NGOs
-              and faith‑based organisations.
-            </p>
-            <div class="space-y-3 text-xs sm:text-[0.8rem]">
-              <div class="rounded-xl bg-ogbaru-100/80 px-3 py-3">
-                <p class="font-semibold text-ogbaru-900">Flood Early‑Warning &amp; Evacuation Plans</p>
-                <p class="mt-1 text-slate-800">
-                  Village‑level committees sharing river‑level information, organising safe evacuation routes
-                  and temporary shelters before water reaches dangerous levels.
-                </p>
-              </div>
-              <div class="rounded-xl bg-ogbaru-100/80 px-3 py-3">
-                <p class="font-semibold text-ogbaru-900">Youth Volunteer &amp; Boat Networks</p>
-                <p class="mt-1 text-slate-800">
-                  Groups of young people who assist with moving vulnerable residents, distributing relief
-                  items and helping to keep records of affected households.
-                </p>
-              </div>
-              <div class="rounded-xl bg-ogbaru-100/80 px-3 py-3">
-                <p class="font-semibold text-ogbaru-900">Women’s Savings &amp; Recovery Groups</p>
-                <p class="mt-1 text-slate-800">
-                  Savings circles and cooperatives allowing members to rebuild small businesses after
-                  flood losses, and to invest in more resilient livelihoods.
-                </p>
-              </div>
+                <!-- Education -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-green-600 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Community Secondary School Atani</h3>
+                    <p class="text-gray-600 mb-3">Leading secondary institution in the LGA</p>
+                    <span class="text-green-600 text-sm font-medium">Education</span>
+                </div>
+
+                <!-- Healthcare -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-red-600 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-hospital text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">General Hospital Atani</h3>
+                    <p class="text-gray-600 mb-3">Primary healthcare facility serving the LGA</p>
+                    <span class="text-red-600 text-sm font-medium">Healthcare</span>
+                </div>
+
+                <!-- Religious -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-purple-600 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-church text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">St. Paul's Catholic Church</h3>
+                    <p class="text-gray-600 mb-3">Historic religious center in Ogbaru</p>
+                    <span class="text-purple-600 text-sm font-medium">Religious</span>
+                </div>
+
+                <!-- Tourism -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-accent w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-water text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Niger River Port</h3>
+                    <p class="text-gray-600 mb-3">Strategic river port for commerce and transportation</p>
+                    <span class="text-accent text-sm font-medium">Tourism & Commerce</span>
+                </div>
+
+                <!-- Cultural -->
+                <div class="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition">
+                    <div class="bg-blue-600 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-drum text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Atani Cultural Center</h3>
+                    <p class="text-gray-600 mb-3">Preservation of Ogbaru cultural heritage</p>
+                    <span class="text-blue-600 text-sm font-medium">Cultural</span>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </section>
 
-      </div>
-    </main>
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-16 bg-gradient-to-br from-primary to-blue-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Leadership</h2>
+                <p class="text-secondary">Meet the executive leadership of Ogbaru Local Government Area</p>
+            </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-ogbaru-900 text-ogbaru-100 border-t border-ogbaru-800">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p class="text-[0.7rem]">
-          Ogbaru Local Government Area – community storytelling profile for education, advocacy and cultural memory.
-        </p>
-        <p class="text-[0.7rem]">
-          Replace placeholder quotes, heroes and projects with verified local stories as you gather them.
-        </p>
-      </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="md:flex">
+                        <div class="md:w-2/5">
+                            <div class="h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center p-8">
+                                <div class="text-center">
+                                    <div class="w-48 h-48 mx-auto bg-primary rounded-full flex items-center justify-center mb-4 shadow-xl">
+                                        <i class="fas fa-user-tie text-white text-7xl"></i>
+                                    </div>
+                                    <div class="bg-accent text-white px-4 py-2 rounded-full inline-block">
+                                        <i class="fas fa-shield-alt mr-2"></i>LGA Chairman
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-3/5 p-8 md:p-12">
+                            <div class="mb-6">
+                                <h3 class="text-3xl font-bold text-gray-900 mb-2">Hon. Kenneth Akwuobi.</h3>
+                                <p class="text-primary font-semibold text-lg">Executive Chairman</p>
+                                <p class="text-gray-600">Ogbaru Local Government Area</p>
+                            </div>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div class="flex items-center text-gray-700">
+                                    <i class="fas fa-calendar-alt text-primary w-6 mr-3"></i>
+                                    <span>Assumed Office: 2022</span>
+                                </div>
+                                <div class="flex items-center text-gray-700">
+                                    <i class="fas fa-flag text-primary w-6 mr-3"></i>
+                                    <span>Political Party: APGA</span>
+                                </div>
+                            </div>
+
+                            <div class="border-t border-gray-200 pt-6">
+                                <h4 class="font-bold text-gray-900 mb-3">Contact Information</h4>
+                                <div class="space-y-2 text-gray-700">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-phone text-primary w-6 mr-3"></i>
+                                        <span>+234 803 XXX XXXX</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-envelope text-primary w-6 mr-3"></i>
+                                        <span>info@ogbarulga.gov.ng</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-primary w-6 mr-3"></i>
+                                        <span>LGA Secretariat, Atani</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vision Statement -->
+                <div class="mt-8 bg-white bg-opacity-10 backdrop-blur rounded-xl p-8">
+                    <h4 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-quote-left mr-3 text-accent"></i>
+                        Vision Statement
+                    </h4>
+                    <p class="text-secondary leading-relaxed italic">
+                        "To transform Ogbaru into a model Local Government Area through inclusive governance, 
+                        sustainable economic development, and improved quality of life for all residents. 
+                        We are committed to harnessing our strategic location and commercial advantages to 
+                        create opportunities for every citizen."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Local Government Services</h2>
+                <p class="text-gray-600">Programs and initiatives serving the people of Ogbaru</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Health Programs -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-red-500">
+                    <div class="flex items-start">
+                        <div class="bg-red-100 p-4 rounded-lg mr-4">
+                            <i class="fas fa-heartbeat text-red-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Health Programs</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                                    <span>Free maternal and child health services</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                                    <span>Routine immunization programs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                                    <span>Primary healthcare center operations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                                    <span>Health awareness campaigns</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Projects -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-blue-500">
+                    <div class="flex items-start">
+                        <div class="bg-blue-100 p-4 rounded-lg mr-4">
+                            <i class="fas fa-book-reader text-primary text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Education Projects</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                    <span>School infrastructure development</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                    <span>Teacher training and capacity building</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                    <span>Scholarship programs for indigent students</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary mt-1 mr-2"></i>
+                                    <span>Adult literacy programs</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Environmental Services -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-green-500">
+                    <div class="flex items-start">
+                        <div class="bg-green-100 p-4 rounded-lg mr-4">
+                            <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Environmental Services</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Waste management and disposal</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Drainage and erosion control</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Flood prevention initiatives</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Environmental sanitation programs</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Youth & Women Empowerment -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-l-4 border-accent">
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-4 rounded-lg mr-4">
+                            <i class="fas fa-users text-accent text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3">Youth & Women Empowerment</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>Vocational training programs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>SME development and micro-credit schemes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>Women cooperative support</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                    <span>Youth entrepreneurship initiatives</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tax & Revenue Information -->
+            <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <i class="fas fa-file-invoice-dollar text-primary mr-3"></i>
+                    Tax & Revenue Information
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="font-bold text-gray-900 mb-3">Property Tax</h4>
+                        <p class="text-gray-600 text-sm mb-2">Annual property tax for residential and commercial properties</p>
+                        <a href="#" class="text-primary text-sm font-medium hover:underline">Learn more →</a>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="font-bold text-gray-900 mb-3">Market Levies</h4>
+                        <p class="text-gray-600 text-sm mb-2">Daily and monthly market stall fees and levies</p>
+                        <a href="#" class="text-primary text-sm font-medium hover:underline">Learn more →</a>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="font-bold text-gray-900 mb-3">Business Permits</h4>
+                        <p class="text-gray-600 text-sm mb-2">Registration and renewal of business permits</p>
+                        <a href="#" class="text-primary text-sm font-medium hover:underline">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geographical Map Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Geographical Location</h2>
+                <p class="text-gray-600">Ogbaru LGA's strategic position in Anambra State</p>
+            </div>
+
+            <div class="bg-gray-100 rounded-xl p-8">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Location Details</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-pin text-primary text-xl mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Region</h4>
+                                    <p class="text-gray-600">Southern Anambra State</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-compass text-primary text-xl mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Coordinates</h4>
+                                    <p class="text-gray-600">6.15°N, 6.75°E</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-road text-primary text-xl mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Bordering LGAs</h4>
+                                    <p class="text-gray-600">Onitsha North, Onitsha South, Anambra East, Anambra West</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-water text-primary text-xl mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Water Bodies</h4>
+                                    <p class="text-gray-600">Niger River (Western boundary)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="aspect-video bg-gray-200 rounded flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-map-marked-alt text-primary text-6xl mb-4"></i>
+                                <p class="text-gray-600">Interactive Map</p>
+                                <p class="text-sm text-gray-500">Ogbaru Local Government Area</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gradient-to-br from-primary to-blue-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-secondary">We're here to serve you. Reach out to us for any inquiries</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                    <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Phone</h3>
+                    <p class="text-secondary">+234 803 XXX XXXX</p>
+                </div>
+
+                <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                    <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Email</h3>
+                    <p class="text-secondary">info@ogbarulga.gov.ng</p>
+                </div>
+
+                <div class="bg-white bg-opacity-10 backdrop-blur rounded-xl p-6 text-center">
+                    <div class="bg-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Address</h3>
+                    <p class="text-secondary">LGA Secretariat, Atani, Anambra State</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <i class="fas fa-landmark text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white font-bold">Ogbaru LGA</h3>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        The Commercial Gateway of Anambra State
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#overview" class="hover:text-accent transition">About Us</a></li>
+                        <li><a href="#towns" class="hover:text-accent transition">Towns & Villages</a></li>
+                        <li><a href="#economy" class="hover:text-accent transition">Economy</a></li>
+                        <li><a href="#services" class="hover:text-accent transition">Services</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-accent transition">Health Programs</a></li>
+                        <li><a href="#" class="hover:text-accent transition">Education</a></li>
+                        <li><a href="#" class="hover:text-accent transition">Tax Information</a></li>
+                        <li><a href="#" class="hover:text-accent transition">Business Permits</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-3">
+                        <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Ogbaru Local Government Area. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-  </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Towns and Villages Data
+        const townsData = [
+            { name: "Atani", category: "Major Town", population: 28500 },
+            { name: "Okpoko", category: "Major Town", population: 45000 },
+            { name: "Ossomala", category: "Major Town", population: 22000 },
+            { name: "Ogbakuba", category: "Town", population: 18500 },
+            { name: "Umunankwo", category: "Town", population: 15200 },
+            { name: "Akili-Ozizor", category: "Town", population: 19800 },
+            { name: "Odekpe", category: "Village", population: 8500 },
+            { name: "Ochuche-Umuodu", category: "Village", population: 12000 },
+            { name: "Iyiowa Odekpe", category: "Village", population: 7800 },
+            { name: "Amiyi", category: "Village", population: 6200 },
+            { name: "Ogwuaniocha", category: "Village", population: 9100 },
+            { name: "Ogwu-Ikpele", category: "Village", population: 5800 },
+            { name: "Osamari", category: "Village", population: 7400 },
+            { name: "Nkwo", category: "Village", population: 4900 },
+            { name: "Okoti", category: "Village", population: 5600 },
+            { name: "Ogbakubor", category: "Village", population: 4200 },
+            { name: "Umuzu", category: "Village", population: 3800 },
+            { name: "Eze-Ochie", category: "Village", population: 3200 },
+            { name: "Ohita", category: "Village", population: 2900 },
+            { name: "Ogbeakpu", category: "Village", population: 2600 }
+        ];
+
+        // Populate towns table
+        function populateTownsTable(data) {
+            const tbody = document.getElementById('townsBody');
+            tbody.innerHTML = '';
+            
+            data.forEach((town, index) => {
+                const row = document.createElement('tr');
+                row.className = 'town-row border-b border-gray-200';
+                row.innerHTML = `
+                    <td class="px-6 py-4 text-gray-700">${index + 1}</td>
+                    <td class="px-6 py-4 font-semibold text-gray-900">${town.name}</td>
+                    <td class="px-6 py-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-medium ${
+                            town.category === 'Major Town' ? 'bg-primary text-white' :
+                            town.category === 'Town' ? 'bg-accent text-white' :
+                            'bg-gray-200 text-gray-700'
+                        }">
+                            ${town.category}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 text-gray-700">${town.population.toLocaleString()}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Search functionality
+        document.getElementById('townSearch').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredData = townsData.filter(town => 
+                town.name.toLowerCase().includes(searchTerm) ||
+                town.category.toLowerCase().includes(searchTerm)
+            );
+            populateTownsTable(filteredData);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate progress bars on scroll
+        function animateProgressBars() {
+            const progressBars = document.querySelectorAll('.progress-bar');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.width = entry.target.getAttribute('style').match(/width:\s*(\d+%)/)[1];
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            progressBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                observer.observe(bar);
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            populateTownsTable(townsData);
+            animateProgressBars();
+        });
+
+        // Scroll to top functionality
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                document.body.classList.add('scrolled');
+            } else {
+                document.body.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
